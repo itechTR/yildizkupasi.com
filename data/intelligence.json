@@ -1,12 +1,422 @@
 {
-  "updatedAt": "2026-06-19T12:11:31.070Z",
+  "updatedAt": "2026-06-19T12:24:27.255Z",
   "liveCount": 0,
   "finishedCount": 28,
   "scheduledCount": 76,
+  "groupQualification": {
+    "A": [
+      {
+        "code": "MEX",
+        "team": "Meksika",
+        "probability": 95,
+        "points": 6,
+        "gd": 3,
+        "played": 2
+      },
+      {
+        "code": "KOR",
+        "team": "Güney Kore",
+        "probability": 64,
+        "points": 3,
+        "gd": 0,
+        "played": 2
+      },
+      {
+        "code": "CZE",
+        "team": "Çekya",
+        "probability": 42,
+        "points": 1,
+        "gd": -1,
+        "played": 2
+      },
+      {
+        "code": "RSA",
+        "team": "Güney Afrika",
+        "probability": 36,
+        "points": 1,
+        "gd": -2,
+        "played": 2
+      }
+    ],
+    "B": [
+      {
+        "code": "SUI",
+        "team": "İsviçre",
+        "probability": 95,
+        "points": 4,
+        "gd": 3,
+        "played": 2
+      },
+      {
+        "code": "CAN",
+        "team": "Kanada",
+        "probability": 95,
+        "points": 3,
+        "gd": 6,
+        "played": 1
+      },
+      {
+        "code": "BIH",
+        "team": "Bosna Hersek",
+        "probability": 24,
+        "points": 0,
+        "gd": -3,
+        "played": 1
+      },
+      {
+        "code": "QAT",
+        "team": "Katar",
+        "probability": 20,
+        "points": 1,
+        "gd": -6,
+        "played": 2
+      }
+    ],
+    "C": [
+      {
+        "code": "SCO",
+        "team": "İskoçya",
+        "probability": 74,
+        "points": 3,
+        "gd": 1,
+        "played": 1
+      },
+      {
+        "code": "BRA",
+        "team": "Brezilya",
+        "probability": 52,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      },
+      {
+        "code": "MAR",
+        "team": "Fas",
+        "probability": 52,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      },
+      {
+        "code": "HAI",
+        "team": "Haiti",
+        "probability": 30,
+        "points": 0,
+        "gd": -1,
+        "played": 1
+      }
+    ],
+    "D": [
+      {
+        "code": "USA",
+        "team": "ABD",
+        "probability": 88,
+        "points": 3,
+        "gd": 3,
+        "played": 1
+      },
+      {
+        "code": "AUS",
+        "team": "Avustralya",
+        "probability": 80,
+        "points": 3,
+        "gd": 2,
+        "played": 1
+      },
+      {
+        "code": "TUR",
+        "team": "Türkiye",
+        "probability": 26,
+        "points": 0,
+        "gd": -2,
+        "played": 1
+      },
+      {
+        "code": "PAR",
+        "team": "Paraguay",
+        "probability": 24,
+        "points": 0,
+        "gd": -3,
+        "played": 1
+      }
+    ],
+    "E": [
+      {
+        "code": "GER",
+        "team": "Almanya",
+        "probability": 95,
+        "points": 3,
+        "gd": 6,
+        "played": 1
+      },
+      {
+        "code": "CIV",
+        "team": "Fildişi Sahili",
+        "probability": 74,
+        "points": 3,
+        "gd": 1,
+        "played": 1
+      },
+      {
+        "code": "ECU",
+        "team": "Ekvador",
+        "probability": 30,
+        "points": 0,
+        "gd": -1,
+        "played": 1
+      },
+      {
+        "code": "CUW",
+        "team": "Curaçao",
+        "probability": 12,
+        "points": 0,
+        "gd": -6,
+        "played": 1
+      }
+    ],
+    "F": [
+      {
+        "code": "SWE",
+        "team": "İsveç",
+        "probability": 94,
+        "points": 3,
+        "gd": 4,
+        "played": 1
+      },
+      {
+        "code": "NED",
+        "team": "Hollanda",
+        "probability": 54,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      },
+      {
+        "code": "JPN",
+        "team": "Japonya",
+        "probability": 54,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      },
+      {
+        "code": "TUN",
+        "team": "Tunus",
+        "probability": 20,
+        "points": 0,
+        "gd": -4,
+        "played": 1
+      }
+    ],
+    "G": [
+      {
+        "code": "IRN",
+        "team": "İran",
+        "probability": 54,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      },
+      {
+        "code": "NZL",
+        "team": "Yeni Zelanda",
+        "probability": 54,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      },
+      {
+        "code": "BEL",
+        "team": "Belçika",
+        "probability": 52,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      },
+      {
+        "code": "EGY",
+        "team": "Mısır",
+        "probability": 52,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      }
+    ],
+    "H": [
+      {
+        "code": "CPV",
+        "team": "Cape Verde",
+        "probability": 50,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      },
+      {
+        "code": "ESP",
+        "team": "İspanya",
+        "probability": 50,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      },
+      {
+        "code": "KSA",
+        "team": "Suudi Arabistan",
+        "probability": 42,
+        "points": 0,
+        "gd": 0,
+        "played": 0
+      },
+      {
+        "code": "URU",
+        "team": "Uruguay",
+        "probability": 42,
+        "points": 0,
+        "gd": 0,
+        "played": 0
+      }
+    ],
+    "I": [
+      {
+        "code": "NOR",
+        "team": "Norveç",
+        "probability": 88,
+        "points": 3,
+        "gd": 3,
+        "played": 1
+      },
+      {
+        "code": "FRA",
+        "team": "Fransa",
+        "probability": 82,
+        "points": 3,
+        "gd": 2,
+        "played": 1
+      },
+      {
+        "code": "SEN",
+        "team": "Senegal",
+        "probability": 28,
+        "points": 0,
+        "gd": -2,
+        "played": 1
+      },
+      {
+        "code": "IRQ",
+        "team": "Irak",
+        "probability": 24,
+        "points": 0,
+        "gd": -3,
+        "played": 1
+      }
+    ],
+    "J": [
+      {
+        "code": "ARG",
+        "team": "Arjantin",
+        "probability": 86,
+        "points": 3,
+        "gd": 3,
+        "played": 1
+      },
+      {
+        "code": "AUT",
+        "team": "Avusturya",
+        "probability": 82,
+        "points": 3,
+        "gd": 2,
+        "played": 1
+      },
+      {
+        "code": "JOR",
+        "team": "Ürdün",
+        "probability": 28,
+        "points": 0,
+        "gd": -2,
+        "played": 1
+      },
+      {
+        "code": "ALG",
+        "team": "Cezayir",
+        "probability": 22,
+        "points": 0,
+        "gd": -3,
+        "played": 1
+      }
+    ],
+    "K": [
+      {
+        "code": "COL",
+        "team": "Kolombiya",
+        "probability": 82,
+        "points": 3,
+        "gd": 2,
+        "played": 1
+      },
+      {
+        "code": "COD",
+        "team": "DR Kongo",
+        "probability": 52,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      },
+      {
+        "code": "POR",
+        "team": "Portekiz",
+        "probability": 52,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      },
+      {
+        "code": "UZB",
+        "team": "Özbekistan",
+        "probability": 28,
+        "points": 0,
+        "gd": -2,
+        "played": 1
+      }
+    ],
+    "L": [
+      {
+        "code": "ENG",
+        "team": "İngiltere",
+        "probability": 84,
+        "points": 3,
+        "gd": 2,
+        "played": 1
+      },
+      {
+        "code": "GHA",
+        "team": "Gana",
+        "probability": 74,
+        "points": 3,
+        "gd": 1,
+        "played": 1
+      },
+      {
+        "code": "PAN",
+        "team": "Panama",
+        "probability": 30,
+        "points": 0,
+        "gd": -1,
+        "played": 1
+      },
+      {
+        "code": "CRO",
+        "team": "Hırvatistan",
+        "probability": 30,
+        "points": 0,
+        "gd": -2,
+        "played": 1
+      }
+    ]
+  },
   "radar": [
     {
       "title": "Grup liderleri",
-      "text": "A: Meksika, B: Kanada, C: İskoçya, D: ABD, E: Almanya, F: İsveç, G: İran, H: Cape Verde, I: Norveç, J: Arjantin, K: Kolombiya, L: İngiltere"
+      "text": "A: Meksika, B: İsviçre, C: İskoçya, D: ABD, E: Almanya, F: İsveç, G: İran, H: Cape Verde, I: Norveç, J: Arjantin, K: Kolombiya, L: İngiltere"
     },
     {
       "title": "Gol sinyali",
@@ -26,8 +436,8 @@
     },
     {
       "group": "B",
-      "leader": "CAN",
-      "leaderName": "Kanada",
+      "leader": "SUI",
+      "leaderName": "İsviçre",
       "points": 4
     },
     {
