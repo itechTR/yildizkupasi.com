@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: live-football-data
+  cancel-in-progress: false
+
 jobs:
   update-live-data:
     runs-on: ubuntu-latest
@@ -15,6 +19,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -25,6 +31,7 @@ jobs:
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: node scripts/update-live-data.mjs
+
       - name: Generate intelligence files
         run: node scripts/generate-intelligence.mjs
 
@@ -32,6 +39,14 @@ jobs:
         run: |
           git config user.name "yildizkupasi-bot"
           git config user.email "actions@github.com"
-          git add data/matches.json data/meta.json
-          git diff --cached --quiet || git commit -m "Update live football data"
-          git push
+
+          git pull --rebase origin main
+
+          git add data/*.json
+
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+          else
+            git commit -m "Update live football data and intelligence"
+            git push origin main
+          fi
