@@ -827,3 +827,28 @@ main > #turkiye {
 main > #stats + #turkiye {
   margin-top: 56px !important;
 }
+/* ================================
+   Stats -> Türkiye Merkezi gerçek boşluk
+   ================================ */
+
+#stats.grid.stats {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#stats.grid.stats::after {
+  content: "";
+  display: block;
+  grid-column: 1 / -1;
+  height: 64px;
+}
+
+#turkiye.panel {
+  margin-top: 0 !important;
+}
+
+@media(max-width: 640px) {
+  #stats.grid.stats::after {
+    height: 36px;
+  }
+}
