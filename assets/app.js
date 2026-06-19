@@ -568,14 +568,14 @@ function renderTurkiye() {
           <span>Üst tur sinyali</span>
         </div>
       </div>
-
-      <div class="ai-note" style="margin-top:16px">
-        ${turkiyeData.analysis || ''}
-      </div>
-      <div class="stat qualification-prob">
+    <div class="stat qualification-prob">
         <strong>%${turkiyeData.qualificationProbability ?? '-'}</strong>
         <span>Üst tur ihtimali</span>
       </div>
+      <div class="ai-note" style="margin-top:16px">
+        ${turkiyeData.analysis || ''}
+      </div>
+     
       <h3 style="margin-top:22px">Türkiye maçları</h3>
 
       <div class="match-list" style="margin-top:16px">
