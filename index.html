@@ -3,56 +3,59 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Yıldız Kupası | Bağımsız Dünya Kupası Analiz Merkezi</title>
-  <meta name="description" content="Yıldız Kupası; Dünya Kupası maçlarını, grup tablolarını, olasılıkları ve AI destekli turnuva notlarını izlemek için bağımsız futbol analiz platformudur." />
+
+  <title>Yıldız Kupası AI | Bağımsız Dünya Kupası Analiz Merkezi</title>
+  <meta name="description" content="Yıldız Kupası AI; Dünya Kupası maçlarını, grup tablolarını, Türkiye'nin durumunu, üst tur olasılıklarını ve AI destekli turnuva notlarını izlemek için bağımsız futbol analiz platformudur." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://yildizkupasi.com/" />
-  <meta property="og:title" content="Yıldız Kupası" />
-  <meta property="og:description" content="Canlı skor değil, turnuva zekâsı. Bağımsız Dünya Kupası analiz merkezi." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yildizkupasi.com/" />
-  <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="assets/styles.css" />
+
   <!-- Favicons / App Icons -->
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/app_icon_32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="assets/brand/app_icon_96x96.png">
-<link rel="apple-touch-icon" sizes="192x192" href="assets/brand/app_icon_192x192.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/app_icon_32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/brand/app_icon_96x96.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/brand/app_icon_192x192.png">
 
-<!-- PWA / Browser Theme -->
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#06111f">
-<meta name="msapplication-TileColor" content="#06111f">
+  <!-- PWA / Browser Theme -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#06111f">
+  <meta name="msapplication-TileColor" content="#06111f">
 
-<!-- Social Preview -->
-<meta property="og:title" content="Yıldız Kupası AI">
-<meta property="og:description" content="Bağımsız Dünya Kupası analiz, skor ve turnuva zekâsı platformu.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="assets/brand/main_horizontal_logo_1600x400.png">
+  <!-- Social Preview -->
+  <meta property="og:title" content="Yıldız Kupası AI">
+  <meta property="og:description" content="Bağımsız Dünya Kupası analiz, skor ve turnuva zekâsı platformu.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yildizkupasi.com/">
+  <meta property="og:image" content="https://yildizkupasi.com/assets/brand/main_horizontal_logo_1600x400.png">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Yıldız Kupası AI">
-<meta name="twitter:description" content="Bağımsız Dünya Kupası analiz, skor ve turnuva zekâsı platformu.">
-<meta name="twitter:image" content="assets/brand/main_horizontal_logo_1600x400.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yıldız Kupası AI">
+  <meta name="twitter:description" content="Bağımsız Dünya Kupası analiz, skor ve turnuva zekâsı platformu.">
+  <meta name="twitter:image" content="https://yildizkupasi.com/assets/brand/main_horizontal_logo_1600x400.png">
+
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
+
 <body>
   <header class="topbar">
-<a class="brand brand-logo" href="./" aria-label="YıldızKupası.com ana sayfa">
-  <img
-    src="assets/brand/compact_logo_mark_512x512.png"
-    alt=""
-    class="brand-mark"
-    width="40"
-    height="40"
-  >
-  <span class="brand-text">YILDIZKUPASI.COM</span>
-</a>    <nav class="nav" aria-label="Ana menü">
-      <a href="#matches" data-i18n="nav.matches">Maçlar</a>
-      <a href="#groups" data-i18n="nav.groups">Gruplar</a>
-      <a href="#intelligence" data-i18n="nav.intelligence">Turnuva Zekâsı</a>
+    <a class="brand brand-logo" href="./" aria-label="YıldızKupası.com ana sayfa">
+      <img
+        src="assets/brand/compact_logo_mark_512x512.png"
+        alt=""
+        class="brand-mark"
+        width="40"
+        height="40"
+      >
+      <span class="brand-text">YILDIZKUPASI.COM</span>
+    </a>
+
+    <nav class="nav" aria-label="Ana menü">
       <a href="#turkiye" data-i18n="nav.turkiye">Türkiye Merkezi</a>
+      <a href="#intelligence" data-i18n="nav.intelligence">Turnuva Zekâsı</a>
       <a href="#briefing" data-i18n="nav.briefing">Günlük Not</a>
+      <a href="#groups" data-i18n="nav.groups">Gruplar</a>
+      <a href="#matches" data-i18n="nav.matches">Maçlar</a>
     </nav>
+
     <div class="controls">
       <select id="teamFocus" aria-label="Takım vurgula"></select>
       <button id="langBtn" class="ghost" style="display:none;">EN</button>
@@ -61,16 +64,21 @@
   </header>
 
   <main id="home">
+    <!-- HERO -->
     <section class="hero panel">
       <div>
         <p class="eyebrow" data-i18n="hero.eyebrow">Bağımsız Dünya Kupası Analiz Merkezi</p>
         <h1 data-i18n="hero.title">Yıldız Kupası AI</h1>
-        <p class="lead" data-i18n="hero.lead">Skorları izler, grupları hesaplar, olasılıkları yorumlar ve turnuvayı hikâyeye dönüştürür.</p>
+        <p class="lead" data-i18n="hero.lead">
+          Skorları izler, grupları hesaplar, olasılıkları yorumlar ve turnuvayı hikâyeye dönüştürür.
+        </p>
+
         <div class="hero-actions">
-          <a class="primary" href="#matches" data-i18n="hero.cta">Maçları takip et</a>
+          <a class="primary" href="#turkiye" data-i18n="hero.cta">Türkiye paneline bak</a>
           <a class="secondary" href="#briefing" data-i18n="hero.cta2">Bugünün notunu oku</a>
         </div>
       </div>
+
       <aside class="score-live" aria-live="polite">
         <span class="pulse"></span>
         <div>
@@ -80,51 +88,88 @@
       </aside>
     </section>
 
-    <section class="grid stats" id="stats"></section>
+    <!-- STATS -->
+    <section class="grid stats" id="stats" aria-label="Turnuva istatistikleri"></section>
 
+    <!-- TÜRKİYE MERKEZİ -->
+    <section class="panel turkey" id="turkiye">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="tr.eyebrow">Türkiye Merkezi</p>
+        <h2 data-i18n="tr.title">Türkiye'nin Turnuva Panosu</h2>
+      </div>
+
+      <div id="turkiyeCenter"></div>
+    </section>
+
+    <!-- TURNUVA ZEKÂSI / OLASILIKLAR -->
+    <section class="panel" id="intelligence">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="intel.eyebrow">AI Analiz</p>
+        <h2 data-i18n="intel.title">Şampiyonluk Olasılıkları</h2>
+      </div>
+
+      <div id="probabilities" class="prob-list"></div>
+    </section>
+
+    <!-- GÜNLÜK NOT + RADAR -->
     <section class="two-col">
-      <article class="panel" id="todayPanel">
-        <div class="section-head"><p class="eyebrow" data-i18n="today.eyebrow">Bugün Ne Oldu?</p><h2 data-i18n="today.title">AI Turnuva Özeti</h2></div>
+      <article class="panel" id="briefing">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="today.eyebrow">Bugün Ne Oldu?</p>
+          <h2 data-i18n="today.title">AI Turnuva Özeti</h2>
+        </div>
+
         <div id="aiSummary" class="prose"></div>
       </article>
+
       <article class="panel" id="insightPanel">
-        <div class="section-head"><p class="eyebrow" data-i18n="insight.eyebrow">Sinyaller</p><h2 data-i18n="insight.title">Turnuva Radarı</h2></div>
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="insight.eyebrow">Sinyaller</p>
+          <h2 data-i18n="insight.title">Turnuva Radarı</h2>
+        </div>
+
         <div id="radar" class="radar"></div>
       </article>
     </section>
 
-    <section class="panel" id="matches">
-      <div class="section-head inline">
-        <div><p class="eyebrow" data-i18n="matches.eyebrow">Match Center</p><h2 data-i18n="matches.title">Maçlar</h2></div>
-        <div class="filters"><input id="search" type="search" placeholder="Takım, grup veya aşama ara" /><select id="stageFilter"></select></div>
-      </div>
-      <div id="matchList" class="match-list"></div>
-    </section>
-
+    <!-- GRUPLAR -->
     <section class="panel" id="groups">
-      <div class="section-head"><p class="eyebrow" data-i18n="groups.eyebrow">Puan Durumu</p><h2 data-i18n="groups.title">Gruplar</h2></div>
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="groups.eyebrow">Puan Durumu</p>
+        <h2 data-i18n="groups.title">Gruplar</h2>
+      </div>
+
       <div id="groupTables" class="groups"></div>
     </section>
 
-    <section class="panel" id="intelligence">
-      <div class="section-head"><p class="eyebrow" data-i18n="intel.eyebrow">AI Analiz</p><h2 data-i18n="intel.title">Şampiyonluk Olasılıkları</h2></div>
-      <div id="probabilities" class="prob-list"></div>
-    </section>
+    <!-- MAÇ MERKEZİ EN ALTTA -->
+    <section class="panel" id="matches">
+      <div class="section-head inline">
+        <div>
+          <p class="eyebrow" data-i18n="matches.eyebrow">Match Center</p>
+          <h2 data-i18n="matches.title">Maçlar</h2>
+        </div>
 
-    <section class="panel turkey" id="turkiye">
-      <div class="section-head"><p class="eyebrow" data-i18n="tr.eyebrow">Türkiye Merkezi</p><h2 data-i18n="tr.title">Türkiye'nin Turnuva Panosu</h2></div>
-      <div id="turkiyeCenter"></div>
-    </section>
+        <div class="filters">
+          <input
+            id="search"
+            type="search"
+            placeholder="Takım, grup veya aşama ara"
+            aria-label="Maçlarda ara"
+          />
+          <select id="stageFilter" aria-label="Aşama filtresi"></select>
+        </div>
+      </div>
 
-    <section class="panel" id="briefing">
-      <div class="section-head"><p class="eyebrow" data-i18n="brief.eyebrow">Günlük Bülten</p><h2 data-i18n="brief.title">Yıldız Kupası Notu</h2></div>
-      <div id="dailyBrief" class="prose"></div>
+      <div id="matchList" class="match-list"></div>
     </section>
   </main>
 
   <footer class="footer">
     <strong>YildizKupasi.com</strong>
-    <span data-i18n="footer.copy">Bağımsız futbol bilgi ve analiz platformudur. FIFA®, FIFA World Cup® veya resmi organizatörlerle bağlantılı değildir. Tüm marka ve ticari işaretler sahiplerine aittir.</span>
+    <span data-i18n="footer.copy">
+      Bağımsız futbol bilgi ve analiz platformudur. FIFA®, FIFA World Cup® veya resmi organizatörlerle bağlantılı değildir. Tüm marka ve ticari işaretler sahiplerine aittir.
+    </span>
   </footer>
 
   <script src="assets/app.js" type="module"></script>
