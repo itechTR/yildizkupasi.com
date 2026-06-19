@@ -139,3 +139,10 @@ tr.focus td:first-child::before {
     min-height: auto;
   }
 }
+.qualification-prob strong {
+  color: var(--green) !important;
+}
+
+.qualification-prob {
+  border-color: rgba(39, 225, 157, .45) !important;
+}

@@ -168,6 +168,20 @@ function generateTurkiye(matches, standings) {
   else if (position === 3) qualificationSignal = "Kritik eşikte";
   else if (position >= 4) qualificationSignal = "Baskı altında";
 
+  let qualificationProbability = 25;
+
+  if (position === 1) qualificationProbability = 82;
+  else if (position === 2) qualificationProbability = 68;
+  else if (position === 3) qualificationProbability = 42;
+  else if (position >= 4) qualificationProbability = 18;
+
+  if (turkiye?.points >= 4) qualificationProbability += 8;
+  if (turkiye?.gd > 0) qualificationProbability += 6;
+  if (turkiye?.gd < 0) qualificationProbability -= 6;
+  if (upcoming.length === 0 && position > 2) qualificationProbability -= 15;
+
+  qualificationProbability = Math.max(3, Math.min(95, qualificationProbability));
+
   return {
     updatedAt: new Date().toISOString(),
     team: "TUR",
@@ -175,6 +189,7 @@ function generateTurkiye(matches, standings) {
     group,
     position,
     qualificationSignal,
+    qualificationProbability,
     standing: turkiye,
     playedMatches: played.map(m => ({
       id: m.id,
