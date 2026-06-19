@@ -89,6 +89,9 @@ let lang = localStorage.getItem('yk_lang') || 'tr';
 let focus = localStorage.getItem('yk_focus') || 'TUR';
 let allMatches = [];
 let probs = [];
+let briefingData = null;
+let turkiyeData = null;
+let intelligenceData = null;
 
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
@@ -149,18 +152,20 @@ async function load() {
     safeText('#liveState', lang === 'tr' ? 'Veri yükleniyor' : 'Loading data');
     safeText('#updatedAt', lang === 'tr' ? 'Bekleniyor' : 'Waiting');
 
-    const m = await fetchJson('data/matches.json', { matches: [] });
-
-    let p = { teams: [] };
-    try {
-      p = await fetchJson('data/probs.json', { teams: [] });
-    } catch (probErr) {
-      console.warn('probs.json okunamadı, varsayılan olasılıklar kullanılacak:', probErr);
-      p = { teams: [] };
-    }
+    const [m, p, briefing, turkiye, intelligence] = await Promise.all([
+      fetchJson('data/matches.json', { matches: [] }),
+      fetchJson('data/probs.json', { teams: [] }).catch(() => ({ teams: [] })),
+      fetchJson('data/briefing.json', null).catch(() => null),
+      fetchJson('data/turkiye.json', null).catch(() => null),
+      fetchJson('data/intelligence.json', null).catch(() => null)
+    ]);
 
     allMatches = Array.isArray(m) ? m : (m.matches || []);
     probs = normalizeProbabilities(p);
+
+    briefingData = briefing;
+    turkiyeData = turkiye;
+    intelligenceData = intelligence;
 
     if (!Array.isArray(allMatches)) {
       throw new Error('matches.json içinde maç listesi bulunamadı');
@@ -244,6 +249,35 @@ function renderStats() {
 }
 
 function renderSummary() {
+  if (briefingData) {
+    let html = '';
+
+    if (briefingData.summary?.length) {
+      html += briefingData.summary
+        .map(line => `<p>${line}</p>`)
+        .join('');
+    }
+
+    if (briefingData.latestResults?.length) {
+      html += `<p><strong>Son sonuçlar:</strong> ${
+        briefingData.latestResults.map(x => x.text).join(', ')
+      }.</p>`;
+    }
+
+    if (briefingData.biggestSignals?.length) {
+      html += `<p><strong>Turnuva sinyali:</strong> ${
+        briefingData.biggestSignals.map(x => `${x.signal}: ${x.text}`).join(' | ')
+      }</p>`;
+    }
+
+    if (briefingData.editorialNote) {
+      html += `<p>${briefingData.editorialNote}</p>`;
+    }
+
+    safeHTML('#aiSummary', html);
+    return;
+  }
+
   const last = allMatches.filter(m => m.status === 'finished').slice(-3);
   const next = allMatches.filter(m => m.status !== 'finished').slice(0, 3);
 
@@ -253,28 +287,26 @@ function renderSummary() {
     html += `<p><strong>${lang === 'tr' ? 'Son tablo' : 'Latest picture'}:</strong> ${
       last.map(m => `${name(m.home.code)} ${m.home.score}-${m.away.score} ${name(m.away.code)}`).join(', ')
     }.</p>`;
-  } else {
-    html += `<p><strong>${lang === 'tr' ? 'Turnuva başlamadan önce' : 'Before kick-off'}:</strong> ${
-      lang === 'tr'
-        ? 'platform fikstürü, grup yapısını ve olasılıkları hazırlıyor.'
-        : 'the platform is preparing fixtures, groups and probabilities.'
-    }</p>`;
   }
 
   html += `<p><strong>${lang === 'tr' ? 'Sıradaki maçlar' : 'Next matches'}:</strong> ${
     next.map(m => `${name(m.home.code)} - ${name(m.away.code)}`).join(', ') || '-'
   }.</p>`;
 
-  html += `<p>${
-    lang === 'tr'
-      ? 'Bu alan canlı veri aktıkça otomatik özet mantığıyla güncellenir. Resmi marka kullanmadan yalnızca kamuya açık maç olguları ve özgün yorum katmanı gösterilir.'
-      : 'This area updates as live data arrives, using public match facts and an original analysis layer without official branding.'
-  }</p>`;
-
   safeHTML('#aiSummary', html);
 }
 
 function renderRadar() {
+  if (intelligenceData?.radar?.length) {
+    safeHTML('#radar', intelligenceData.radar.map(item => `
+      <div class="signal">
+        <b>${item.title}</b>
+        <span>${item.text}</span>
+      </div>
+    `).join(''));
+    return;
+  }
+
   const standings = calcStandings();
   const focusGroup = Object.entries(groupMap).find(([g, arr]) => arr.includes(focus))?.[0];
   const table = standings[focusGroup] || [];
@@ -291,12 +323,6 @@ function renderRadar() {
       live
         ? `${name(live.home.code)} - ${name(live.away.code)} (${live.time || ''})`
         : (lang === 'tr' ? 'Şu an canlı maç görünmüyor' : 'No live match visible')
-    ],
-    [
-      lang === 'tr' ? 'Ürün farkı' : 'Product edge',
-      lang === 'tr'
-        ? 'Skorun üzerine analiz, olasılık ve günlük bülten katmanı eklenir.'
-        : 'Adds analysis, probability and daily briefing layers on top of scores.'
     ]
   ].map(([b, s]) => `
     <div class="signal">
@@ -518,35 +544,68 @@ function renderProbabilities() {
 }
 
 function renderTurkiye() {
+  if (turkiyeData) {
+    const standing = turkiyeData.standing || {};
+    const upcoming = turkiyeData.upcomingMatches || [];
+    const played = turkiyeData.playedMatches || [];
+
+    safeHTML('#turkiyeCenter', `
+      <div class="turkey-cards">
+        <div class="stat">
+          <strong>${turkiyeData.position || '-'}</strong>
+          <span>D Grubu sıra</span>
+        </div>
+        <div class="stat">
+          <strong>${standing.points ?? 0}</strong>
+          <span>Puan</span>
+        </div>
+        <div class="stat">
+          <strong>${standing.gd ?? 0}</strong>
+          <span>Averaj</span>
+        </div>
+        <div class="stat">
+          <strong>${turkiyeData.qualificationSignal || '-'}</strong>
+          <span>Üst tur sinyali</span>
+        </div>
+      </div>
+
+      <div class="ai-note" style="margin-top:16px">
+        ${turkiyeData.analysis || ''}
+      </div>
+
+      <h3 style="margin-top:22px">Türkiye maçları</h3>
+
+      <div class="match-list" style="margin-top:16px">
+        ${[...played, ...upcoming].map(m => `
+          <article class="match">
+            <div class="match-head">
+              <span>${m.result ? m.result.toUpperCase() : 'Sıradaki maç'}</span>
+              <span>${m.date ? new Date(m.date).toLocaleString('tr-TR', { dateStyle: 'medium', timeStyle: 'short' }) : ''}</span>
+            </div>
+            <div class="teams">
+              <div class="team-row">
+                <span>${m.text}</span>
+              </div>
+            </div>
+          </article>
+        `).join('')}
+      </div>
+    `);
+
+    return;
+  }
+
   const matches = allMatches.filter(m =>
     m.home?.code === 'TUR' || m.away?.code === 'TUR'
   );
 
-  const s = calcStandings().D || [];
-  const tr = s.find(x => x.code === 'TUR') || {};
-
   safeHTML('#turkiyeCenter', `
-    <div class="turkey-cards">
-      <div class="stat">
-        <strong>${tr.pts ?? 0}</strong>
-        <span>${lang === 'tr' ? 'Puan' : 'Points'}</span>
-      </div>
-      <div class="stat">
-        <strong>${tr.gd ?? 0}</strong>
-        <span>${lang === 'tr' ? 'Averaj' : 'Goal diff'}</span>
-      </div>
-      <div class="stat">
-        <strong>${matches.length}</strong>
-        <span>${lang === 'tr' ? 'Maç' : 'Matches'}</span>
-      </div>
-    </div>
-
-    <div class="match-list" style="margin-top:16px">
+    <div class="match-list">
       ${matches.map(m => `
         <article class="match">
           <div class="match-head">
             <span>${m.group ? m.group + ' Grubu' : m.stage}</span>
-            <span>${new Date(m.date).toLocaleDateString(lang === 'tr' ? 'tr-TR' : 'en-US')}</span>
+            <span>${new Date(m.date).toLocaleDateString('tr-TR')}</span>
           </div>
           <div class="teams">
             <div class="team-row">
