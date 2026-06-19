@@ -816,14 +816,9 @@ main .panel:has(#radar) {
 }
 /* Stats -> Türkiye Merkezi spacing fix */
 main > #stats {
-  margin-bottom: 56px !important;
+  margin-bottom: 64px !important;
 }
 
-main > #turkiye {
-  margin-top: 0 !important;
-}
-
-/* Eğer tarayıcı eski margin davranışını inatla sürdürürse */
 main > #stats + #turkiye {
-  margin-top: 56px !important;
+  margin-top: 64px !important;
 }
