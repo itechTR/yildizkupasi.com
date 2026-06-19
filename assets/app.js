@@ -515,6 +515,31 @@ function renderGroups() {
 }
 
 function renderProbabilities() {
+  if (intelligenceData?.groupQualification) {
+    const focusGroup =
+      Object.entries(groupMap).find(([g, arr]) => arr.includes(focus))?.[0] || "D";
+
+    const rows = intelligenceData.groupQualification[focusGroup] || [];
+
+    safeHTML('#probabilities', `
+      <div class="prob-group-title">
+        ${focusGroup} Grubu Üst Tur Olasılıkları
+      </div>
+
+      ${rows.map(x => `
+        <div class="prob ${x.code === focus ? 'focus-prob' : ''}">
+          <strong>${name(x.code)}</strong>
+          <div class="bar">
+            <span style="width:${Math.max(2, x.probability)}%"></span>
+          </div>
+          <b>%${x.probability}</b>
+        </div>
+      `).join('')}
+    `);
+
+    return;
+  }
+
   let list = probs
     .map(p => ({
       code: p.team || p.code,
@@ -538,7 +563,7 @@ function renderProbabilities() {
       <div class="bar">
         <span style="width:${Math.max(2, x.pct)}%"></span>
       </div>
-      <b>${x.pct}%</b>
+      <b>%${x.pct}</b>
     </div>
   `).join(''));
 }

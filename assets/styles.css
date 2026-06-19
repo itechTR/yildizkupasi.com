@@ -146,3 +146,21 @@ tr.focus td:first-child::before {
 .qualification-prob {
   border-color: rgba(39, 225, 157, .45) !important;
 }
+.prob-group-title {
+  color: var(--gold);
+  font-weight: 900;
+  margin-bottom: 14px;
+  letter-spacing: .04em;
+}
+
+.focus-prob {
+  background: rgba(39, 225, 157, .10);
+  border: 1px solid rgba(39, 225, 157, .35);
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.focus-prob strong::before {
+  content: "★ ";
+  color: var(--gold);
+}

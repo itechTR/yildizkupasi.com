@@ -213,12 +213,54 @@ function generateTurkiye(matches, standings) {
         : "Türkiye için grup verisi henüz oluşmadı."
   };
 }
+function estimateQualificationProbability(team, groupMatches) {
+  let probability = 25;
 
+  if (team.points >= 6) probability = 88;
+  else if (team.points >= 4) probability = 68;
+  else if (team.points >= 3) probability = 52;
+  else if (team.points >= 1) probability = 34;
+  else probability = 18;
+
+  probability += team.gd * 4;
+  probability += team.gf * 2;
+
+  const played = team.played || 0;
+  const remaining = Math.max(0, 3 - played);
+
+  probability += remaining * 8;
+
+  const groupFinished = groupMatches.filter(m => m.status === "finished").length;
+  if (groupFinished >= 6 && team.points < 4) probability -= 18;
+
+  return Math.max(3, Math.min(95, Math.round(probability)));
+}
+
+function generateGroupQualification(matches, standings) {
+  const result = {};
+
+  for (const [group, rows] of Object.entries(standings)) {
+    const groupMatches = matches.filter(m => m.group === group);
+
+    result[group] = rows
+      .map(team => ({
+        code: team.code,
+        team: team.team,
+        probability: estimateQualificationProbability(team, groupMatches),
+        points: team.points,
+        gd: team.gd,
+        played: team.played
+      }))
+      .sort((a, b) => b.probability - a.probability);
+  }
+
+  return result;
+}
 function generateIntelligence(matches, standings) {
   const finished = matches.filter(m => m.status === "finished");
   const live = matches.filter(m => ["live", "in_play"].includes(m.status));
   const upcoming = matches.filter(m => m.status !== "finished").slice(0, 8);
-
+  const groupQualification = generateGroupQualification(matches, standings);
   const groupLeaders = Object.entries(standings).map(([group, rows]) => ({
     group,
     leader: rows[0]?.code,
@@ -240,6 +282,7 @@ function generateIntelligence(matches, standings) {
     liveCount: live.length,
     finishedCount: finished.length,
     scheduledCount: matches.filter(m => m.status !== "finished").length,
+    groupQualification,
     radar: [
       {
         title: "Grup liderleri",
