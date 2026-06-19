@@ -572,7 +572,10 @@ function renderTurkiye() {
       <div class="ai-note" style="margin-top:16px">
         ${turkiyeData.analysis || ''}
       </div>
-
+      <div class="stat qualification-prob">
+        <strong>%${turkiyeData.qualificationProbability ?? '-'}</strong>
+        <span>Üst tur ihtimali</span>
+      </div>
       <h3 style="margin-top:22px">Türkiye maçları</h3>
 
       <div class="match-list" style="margin-top:16px">
