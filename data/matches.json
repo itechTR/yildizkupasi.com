@@ -57,12 +57,12 @@
       "time": null,
       "home": {
         "code": "CAN",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
         "code": "BIH",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "winner": null,
