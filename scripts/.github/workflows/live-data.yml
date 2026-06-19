@@ -1,0 +1,35 @@
+name: Update live football data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-live-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Update World Cup data
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: node scripts/update-live-data.mjs
+
+      - name: Commit updated data
+        run: |
+          git config user.name "yildizkupasi-bot"
+          git config user.email "actions@github.com"
+          git add data/matches.json data/meta.json
+          git diff --cached --quiet || git commit -m "Update live football data"
+          git push
