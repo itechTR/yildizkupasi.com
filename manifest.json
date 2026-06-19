@@ -1,1 +1,30 @@
-{"name":"Yıldız Kupası","short_name":"Yıldız Kupası","start_url":"/","display":"standalone","background_color":"#06111f","theme_color":"#06111f","description":"Bağımsız Dünya Kupası analiz merkezi"}
+{
+  "name": "Yıldız Kupası AI",
+  "short_name": "Yıldız Kupası",
+  "description": "Bağımsız Dünya Kupası analiz, skor ve turnuva zekâsı platformu.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#06111f",
+  "theme_color": "#06111f",
+  "icons": [
+    {
+      "src": "assets/brand/app_icon_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/brand/app_icon_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/brand/app_icon_1024x1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
