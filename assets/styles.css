@@ -730,3 +730,12 @@ tr.focus td:first-child::before{
     gap: 22px;
   }
 }
+/* Final vertical rhythm fix */
+.stats {
+  margin-bottom: 44px;
+}
+
+.stats + .two-col {
+  margin-top: 10px;
+  padding-top: 6px;
+}
