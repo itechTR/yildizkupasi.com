@@ -739,3 +739,12 @@ tr.focus td:first-child::before{
   margin-top: 10px;
   padding-top: 6px;
 }
+/* Final hard spacing fix */
+#stats {
+  margin-bottom: 64px !important;
+}
+
+.two-col {
+  margin-top: 64px !important;
+  padding-top: 8px !important;
+}
