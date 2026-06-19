@@ -836,13 +836,6 @@ main > #stats + #turkiye {
   padding-bottom: 0 !important;
 }
 
-#stats.grid.stats::after {
-  content: "";
-  display: block;
-  grid-column: 1 / -1;
-  height: 32px;
-}
-
 #turkiye.panel {
   margin-top: 0 !important;
 }
@@ -850,5 +843,41 @@ main > #stats + #turkiye {
 @media(max-width: 640px) {
   #stats.grid.stats::after {
     height: 24px;
+  }
+}
+/* Final compact spacing: Stats -> Türkiye Merkezi */
+#stats {
+  margin-bottom: 24px !important;
+  padding-bottom: 0 !important;
+  gap: 18px !important;
+}
+
+#stats::after {
+  display: none !important;
+  content: none !important;
+}
+
+#turkiye {
+  margin-top: 0 !important;
+}
+
+@media(max-width: 640px) {
+  #stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    margin-bottom: 22px !important;
+    gap: 14px !important;
+  }
+
+  #stats .stat {
+    min-height: 112px;
+    padding: 18px 20px;
+  }
+
+  #stats .stat strong {
+    font-size: 30px;
+  }
+
+  #stats .stat span {
+    font-size: 15px;
   }
 }
