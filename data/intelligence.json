@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-19T20:09:16.692Z",
-  "liveCount": 1,
-  "finishedCount": 28,
-  "scheduledCount": 76,
+  "updatedAt": "2026-06-19T21:34:24.283Z",
+  "liveCount": 0,
+  "finishedCount": 29,
+  "scheduledCount": 75,
   "groupQualification": {
     "A": [
       {
@@ -110,18 +110,18 @@
       {
         "code": "USA",
         "team": "ABD",
-        "probability": 88,
-        "points": 3,
-        "gd": 3,
-        "played": 1
+        "probability": 95,
+        "points": 6,
+        "gd": 5,
+        "played": 2
       },
       {
         "code": "AUS",
         "team": "Avustralya",
-        "probability": 80,
+        "probability": 64,
         "points": 3,
-        "gd": 2,
-        "played": 1
+        "gd": 0,
+        "played": 2
       },
       {
         "code": "TUR",
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "ABD - Avustralya, İskoçya - Fas, Brezilya - Haiti, Türkiye - Paraguay, Hollanda - İsveç, Almanya - Fildişi Sahili, Ekvador - Curaçao, Tunus - Japonya"
+      "text": "İskoçya - Fas, Brezilya - Haiti, Türkiye - Paraguay, Hollanda - İsveç, Almanya - Fildişi Sahili, Ekvador - Curaçao, Tunus - Japonya, İspanya - Suudi Arabistan"
     }
   ],
   "groupLeaders": [
@@ -450,7 +450,7 @@
       "group": "D",
       "leader": "USA",
       "leaderName": "ABD",
-      "points": 3
+      "points": 6
     },
     {
       "group": "E",
@@ -530,13 +530,6 @@
   ],
   "upcomingFocus": [
     {
-      "id": "537348",
-      "text": "ABD - Avustralya",
-      "date": "2026-06-19T19:00:00Z",
-      "group": "D",
-      "stage": "group"
-    },
-    {
       "id": "537342",
       "text": "İskoçya - Fas",
       "date": "2026-06-19T22:00:00Z",
@@ -583,6 +576,13 @@
       "text": "Tunus - Japonya",
       "date": "2026-06-21T04:00:00Z",
       "group": "F",
+      "stage": "group"
+    },
+    {
+      "id": "537371",
+      "text": "İspanya - Suudi Arabistan",
+      "date": "2026-06-21T16:00:00Z",
+      "group": "H",
       "stage": "group"
     }
   ]

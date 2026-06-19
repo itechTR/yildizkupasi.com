@@ -1,18 +1,12 @@
 {
-  "updatedAt": "2026-06-19T20:09:16.691Z",
+  "updatedAt": "2026-06-19T21:34:24.282Z",
   "title": "Yıldız Kupası Günlük Notu",
   "summary": [
-    "Turnuvada şu ana kadar 28 maç tamamlandı.",
-    "Şu anda 1 canlı maç görünüyor.",
-    "Sıradaki dikkat çeken maçlar: ABD - Avustralya, İskoçya - Fas, Brezilya - Haiti, Türkiye - Paraguay, Hollanda - İsveç."
+    "Turnuvada şu ana kadar 29 maç tamamlandı.",
+    "Şu anda canlı maç görünmüyor.",
+    "Sıradaki dikkat çeken maçlar: İskoçya - Fas, Brezilya - Haiti, Türkiye - Paraguay, Hollanda - İsveç, Almanya - Fildişi Sahili."
   ],
   "latestResults": [
-    {
-      "id": "537404",
-      "text": "Özbekistan 1-3 Kolombiya",
-      "group": "K",
-      "stage": "group"
-    },
     {
       "id": "537329",
       "text": "Çekya 1-1 Güney Afrika",
@@ -35,6 +29,12 @@
       "id": "537330",
       "text": "Meksika 1-0 Güney Kore",
       "group": "A",
+      "stage": "group"
+    },
+    {
+      "id": "537348",
+      "text": "ABD 2-0 Avustralya",
+      "group": "D",
       "stage": "group"
     }
   ],
