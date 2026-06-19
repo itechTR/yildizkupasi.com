@@ -1,43 +1,9 @@
 {
- "updatedAt": "2026-06-19T03:05:52.677Z",
- "season": "285023",
- "titleOdds": [
-  {
-   "c": "ARG",
-   "p": 19.1
-  },
-  {
-   "c": "ESP",
-   "p": 16.2
-  },
-  {
-   "c": "FRA",
-   "p": 14.9
-  },
-  {
-   "c": "ENG",
-   "p": 8.7
-  },
-  {
-   "c": "BRA",
-   "p": 5.5
-  }
- ],
- "counts": {
-  "matches": 104,
-  "teams": 48,
-  "squads": 48,
-  "weather": 90,
-  "lineups": 28,
-  "flags": 179
- },
- "errors": [
-  "geocode New Tecumseth: no usable result — not cached, will retry next run"
- ],
- "sources": [
-  "api.fifa.com",
-  "en.wikipedia.org",
-  "open-meteo.com",
-  "github.com/martj42/international_results"
- ]
+  "updatedAt": "2026-06-19T10:20:04.824Z",
+  "source": "football-data.org",
+  "competition": "WC",
+  "totalMatches": 104,
+  "finished": 28,
+  "live": 0,
+  "scheduled": 76
 }
