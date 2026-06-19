@@ -840,7 +840,7 @@ main > #stats + #turkiye {
   content: "";
   display: block;
   grid-column: 1 / -1;
-  height: 44px;
+  height: 32px;
 }
 
 #turkiye.panel {
@@ -849,6 +849,6 @@ main > #stats + #turkiye {
 
 @media(max-width: 640px) {
   #stats.grid.stats::after {
-    height: 36px;
+    height: 24px;
   }
 }
