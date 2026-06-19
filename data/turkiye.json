@@ -1,10 +1,11 @@
 {
-  "updatedAt": "2026-06-19T11:08:45.210Z",
+  "updatedAt": "2026-06-19T12:11:31.070Z",
   "team": "TUR",
   "teamName": "Türkiye",
   "group": "D",
   "position": 3,
   "qualificationSignal": "Kritik eşikte",
+  "qualificationProbability": 36,
   "standing": {
     "code": "TUR",
     "team": "Türkiye",

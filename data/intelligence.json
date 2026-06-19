@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-06-19T11:08:45.210Z",
+  "updatedAt": "2026-06-19T12:11:31.070Z",
   "liveCount": 0,
   "finishedCount": 28,
   "scheduledCount": 76,
   "radar": [
     {
       "title": "Grup liderleri",
-      "text": "A: Meksika, B: Kanada, C: İskoçya, D: ABD, E: Almanya, F: İsveç, G: İran, H: Suudi Arabistan, I: Norveç, J: Arjantin, K: Kolombiya, L: İngiltere"
+      "text": "A: Meksika, B: Kanada, C: İskoçya, D: ABD, E: Almanya, F: İsveç, G: İran, H: Cape Verde, I: Norveç, J: Arjantin, K: Kolombiya, L: İngiltere"
     },
     {
       "title": "Gol sinyali",
@@ -62,8 +62,8 @@
     },
     {
       "group": "H",
-      "leader": "KSA",
-      "leaderName": "Suudi Arabistan",
+      "leader": "CPV",
+      "leaderName": "Cape Verde",
       "points": 1
     },
     {
