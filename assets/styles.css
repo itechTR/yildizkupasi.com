@@ -730,21 +730,14 @@ tr.focus td:first-child::before{
     gap: 22px;
   }
 }
-/* Final vertical rhythm fix */
-.stats {
-  margin-bottom: 44px;
+/* Guaranteed gap after stat cards */
+main .panel:has(#aiSummary),
+main .panel:has(#radar) {
+  margin-top: 54px !important;
 }
 
-.stats + .two-col {
-  margin-top: 10px;
-  padding-top: 6px;
-}
-/* Final hard spacing fix */
-#stats {
-  margin-bottom: 64px !important;
-}
-
+/* Keep both panels aligned after the gap */
 .two-col {
-  margin-top: 64px !important;
-  padding-top: 8px !important;
+  gap: 34px !important;
+  align-items: start !important;
 }
