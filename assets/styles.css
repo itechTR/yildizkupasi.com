@@ -741,3 +741,6 @@ main .panel:has(#radar) {
   gap: 34px !important;
   align-items: start !important;
 }
+.language-switch {
+    display:none;
+}
