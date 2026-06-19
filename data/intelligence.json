@@ -1,0 +1,179 @@
+{
+  "updatedAt": "2026-06-19T10:49:48.735Z",
+  "liveCount": 0,
+  "finishedCount": 28,
+  "scheduledCount": 76,
+  "radar": [
+    {
+      "title": "Grup liderleri",
+      "text": "A: Meksika, B: Kanada, C: İskoçya, D: ABD, E: Almanya, F: İsveç, G: İran, H: Suudi Arabistan, I: Norveç, J: Arjantin, K: Kolombiya, L: İngiltere"
+    },
+    {
+      "title": "Gol sinyali",
+      "text": "Son yüksek skorlu maçlar: Avusturya 3-1 Ürdün, İngiltere 4-2 Hırvatistan, Özbekistan 1-3 Kolombiya, İsviçre 4-1 Bosna Hersek, Kanada 6-0 Katar."
+    },
+    {
+      "title": "Yaklaşan kritik maçlar",
+      "text": "ABD - Avustralya, İskoçya - Fas, Brezilya - Haiti, Türkiye - Paraguay, Hollanda - İsveç, Almanya - Fildişi Sahili, Ekvador - Curaçao, Tunus - Japonya"
+    }
+  ],
+  "groupLeaders": [
+    {
+      "group": "A",
+      "leader": "MEX",
+      "leaderName": "Meksika",
+      "points": 6
+    },
+    {
+      "group": "B",
+      "leader": "CAN",
+      "leaderName": "Kanada",
+      "points": 4
+    },
+    {
+      "group": "C",
+      "leader": "SCO",
+      "leaderName": "İskoçya",
+      "points": 3
+    },
+    {
+      "group": "D",
+      "leader": "USA",
+      "leaderName": "ABD",
+      "points": 3
+    },
+    {
+      "group": "E",
+      "leader": "GER",
+      "leaderName": "Almanya",
+      "points": 3
+    },
+    {
+      "group": "F",
+      "leader": "SWE",
+      "leaderName": "İsveç",
+      "points": 3
+    },
+    {
+      "group": "G",
+      "leader": "IRN",
+      "leaderName": "İran",
+      "points": 1
+    },
+    {
+      "group": "H",
+      "leader": "KSA",
+      "leaderName": "Suudi Arabistan",
+      "points": 1
+    },
+    {
+      "group": "I",
+      "leader": "NOR",
+      "leaderName": "Norveç",
+      "points": 3
+    },
+    {
+      "group": "J",
+      "leader": "ARG",
+      "leaderName": "Arjantin",
+      "points": 3
+    },
+    {
+      "group": "K",
+      "leader": "COL",
+      "leaderName": "Kolombiya",
+      "points": 3
+    },
+    {
+      "group": "L",
+      "leader": "ENG",
+      "leaderName": "İngiltere",
+      "points": 3
+    }
+  ],
+  "highScoringMatches": [
+    {
+      "id": "537398",
+      "text": "Avusturya 3-1 Ürdün",
+      "goals": 4
+    },
+    {
+      "id": "537409",
+      "text": "İngiltere 4-2 Hırvatistan",
+      "goals": 6
+    },
+    {
+      "id": "537404",
+      "text": "Özbekistan 1-3 Kolombiya",
+      "goals": 4
+    },
+    {
+      "id": "537335",
+      "text": "İsviçre 4-1 Bosna Hersek",
+      "goals": 5
+    },
+    {
+      "id": "537336",
+      "text": "Kanada 6-0 Katar",
+      "goals": 6
+    }
+  ],
+  "upcomingFocus": [
+    {
+      "id": "537348",
+      "text": "ABD - Avustralya",
+      "date": "2026-06-19T19:00:00Z",
+      "group": "D",
+      "stage": "group"
+    },
+    {
+      "id": "537342",
+      "text": "İskoçya - Fas",
+      "date": "2026-06-19T22:00:00Z",
+      "group": "C",
+      "stage": "group"
+    },
+    {
+      "id": "537341",
+      "text": "Brezilya - Haiti",
+      "date": "2026-06-20T00:30:00Z",
+      "group": "C",
+      "stage": "group"
+    },
+    {
+      "id": "537347",
+      "text": "Türkiye - Paraguay",
+      "date": "2026-06-20T03:00:00Z",
+      "group": "D",
+      "stage": "group"
+    },
+    {
+      "id": "537359",
+      "text": "Hollanda - İsveç",
+      "date": "2026-06-20T17:00:00Z",
+      "group": "F",
+      "stage": "group"
+    },
+    {
+      "id": "537353",
+      "text": "Almanya - Fildişi Sahili",
+      "date": "2026-06-20T20:00:00Z",
+      "group": "E",
+      "stage": "group"
+    },
+    {
+      "id": "537354",
+      "text": "Ekvador - Curaçao",
+      "date": "2026-06-21T00:00:00Z",
+      "group": "E",
+      "stage": "group"
+    },
+    {
+      "id": "537360",
+      "text": "Tunus - Japonya",
+      "date": "2026-06-21T04:00:00Z",
+      "group": "F",
+      "stage": "group"
+    }
+  ]
+}

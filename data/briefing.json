@@ -1,0 +1,59 @@
+{
+  "updatedAt": "2026-06-19T10:49:48.734Z",
+  "title": "Yıldız Kupası Günlük Notu",
+  "summary": [
+    "Turnuvada şu ana kadar 28 maç tamamlandı.",
+    "Şu anda canlı maç görünmüyor.",
+    "Sıradaki dikkat çeken maçlar: ABD - Avustralya, İskoçya - Fas, Brezilya - Haiti, Türkiye - Paraguay, Hollanda - İsveç."
+  ],
+  "latestResults": [
+    {
+      "id": "537404",
+      "text": "Özbekistan 1-3 Kolombiya",
+      "group": "K",
+      "stage": "group"
+    },
+    {
+      "id": "537329",
+      "text": "Çekya 1-1 Güney Afrika",
+      "group": "A",
+      "stage": "group"
+    },
+    {
+      "id": "537335",
+      "text": "İsviçre 4-1 Bosna Hersek",
+      "group": "B",
+      "stage": "group"
+    },
+    {
+      "id": "537336",
+      "text": "Kanada 6-0 Katar",
+      "group": "B",
+      "stage": "group"
+    },
+    {
+      "id": "537330",
+      "text": "Meksika 1-0 Güney Kore",
+      "group": "A",
+      "stage": "group"
+    }
+  ],
+  "biggestSignals": [
+    {
+      "id": "537351",
+      "text": "Almanya 7-1 Curaçao",
+      "signal": "Farklı galibiyet"
+    },
+    {
+      "id": "537336",
+      "text": "Kanada 6-0 Katar",
+      "signal": "Farklı galibiyet"
+    },
+    {
+      "id": "537358",
+      "text": "İsveç 5-1 Tunus",
+      "signal": "Farklı galibiyet"
+    }
+  ],
+  "editorialNote": "Yıldız Kupası, ham skoru değil skorun turnuva içindeki anlamını izler. Grup dengesi, momentum ve kritik eşikler bu notta özetlenir."
+}
