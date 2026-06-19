@@ -27,6 +27,11 @@ jobs:
         with:
           node-version: 20
 
+      - name: Sync branch before generating data
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
       - name: Update World Cup data
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
@@ -39,8 +44,6 @@ jobs:
         run: |
           git config user.name "yildizkupasi-bot"
           git config user.email "actions@github.com"
-
-          git pull --rebase origin main
 
           git add data/*.json
 
