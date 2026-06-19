@@ -81,8 +81,8 @@ const groupMap = {
   H: ['ESP', 'URU', 'KSA', 'CPV'],
   I: ['FRA', 'SEN', 'NOR', 'IRQ'],
   J: ['ARG', 'ALG', 'AUT', 'JOR'],
-  K: ['ENG', 'CRO', 'GHA', 'PAN'],
-  L: ['POR', 'UZB', 'COL']
+  K: ['POR', 'UZB', 'COL', 'COD'],
+  L: ['ENG', 'CRO', 'GHA', 'PAN']
 };
 
 let lang = localStorage.getItem('yk_lang') || 'tr';
