@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-20T01:54:04.972Z",
-  "liveCount": 1,
-  "finishedCount": 30,
-  "scheduledCount": 74,
+  "updatedAt": "2026-06-20T06:19:27.153Z",
+  "liveCount": 0,
+  "finishedCount": 32,
+  "scheduledCount": 72,
   "groupQualification": {
     "A": [
       {
@@ -74,6 +74,14 @@
     ],
     "C": [
       {
+        "code": "BRA",
+        "team": "Brezilya",
+        "probability": 95,
+        "points": 4,
+        "gd": 3,
+        "played": 2
+      },
+      {
         "code": "MAR",
         "team": "Fas",
         "probability": 84,
@@ -90,20 +98,12 @@
         "played": 2
       },
       {
-        "code": "BRA",
-        "team": "Brezilya",
-        "probability": 52,
-        "points": 1,
-        "gd": 0,
-        "played": 1
-      },
-      {
         "code": "HAI",
         "team": "Haiti",
-        "probability": 30,
+        "probability": 10,
         "points": 0,
-        "gd": -1,
-        "played": 1
+        "gd": -4,
+        "played": 2
       }
     ],
     "D": [
@@ -124,20 +124,20 @@
         "played": 2
       },
       {
-        "code": "TUR",
-        "team": "Türkiye",
-        "probability": 26,
-        "points": 0,
-        "gd": -2,
-        "played": 1
-      },
-      {
         "code": "PAR",
         "team": "Paraguay",
-        "probability": 24,
+        "probability": 56,
+        "points": 3,
+        "gd": -2,
+        "played": 2
+      },
+      {
+        "code": "TUR",
+        "team": "Türkiye",
+        "probability": 14,
         "points": 0,
         "gd": -3,
-        "played": 1
+        "played": 2
       }
     ],
     "E": [
@@ -244,22 +244,6 @@
     ],
     "H": [
       {
-        "code": "KSA",
-        "team": "Suudi Arabistan",
-        "probability": 52,
-        "points": 1,
-        "gd": 0,
-        "played": 1
-      },
-      {
-        "code": "URU",
-        "team": "Uruguay",
-        "probability": 52,
-        "points": 1,
-        "gd": 0,
-        "played": 1
-      },
-      {
         "code": "CPV",
         "team": "Cape Verde",
         "probability": 50,
@@ -274,6 +258,22 @@
         "points": 1,
         "gd": 0,
         "played": 1
+      },
+      {
+        "code": "KSA",
+        "team": "Suudi Arabistan",
+        "probability": 42,
+        "points": 0,
+        "gd": 0,
+        "played": 0
+      },
+      {
+        "code": "URU",
+        "team": "Uruguay",
+        "probability": 42,
+        "points": 0,
+        "gd": 0,
+        "played": 0
       }
     ],
     "I": [
@@ -416,7 +416,7 @@
   "radar": [
     {
       "title": "Grup liderleri",
-      "text": "A: Meksika, B: Kanada, C: Fas, D: ABD, E: Almanya, F: İsveç, G: İran, H: Suudi Arabistan, I: Norveç, J: Arjantin, K: Kolombiya, L: İngiltere"
+      "text": "A: Meksika, B: Kanada, C: Brezilya, D: ABD, E: Almanya, F: İsveç, G: İran, H: Cape Verde, I: Norveç, J: Arjantin, K: Kolombiya, L: İngiltere"
     },
     {
       "title": "Gol sinyali",
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Brezilya - Haiti, Türkiye - Paraguay, Hollanda - İsveç, Almanya - Fildişi Sahili, Ekvador - Curaçao, Tunus - Japonya, İspanya - Suudi Arabistan, Belçika - İran"
+      "text": "Hollanda - İsveç, Almanya - Fildişi Sahili, Ekvador - Curaçao, Tunus - Japonya, İspanya - Suudi Arabistan, Belçika - İran, URY - Cape Verde, Yeni Zelanda - Mısır"
     }
   ],
   "groupLeaders": [
@@ -442,8 +442,8 @@
     },
     {
       "group": "C",
-      "leader": "MAR",
-      "leaderName": "Fas",
+      "leader": "BRA",
+      "leaderName": "Brezilya",
       "points": 4
     },
     {
@@ -472,8 +472,8 @@
     },
     {
       "group": "H",
-      "leader": "KSA",
-      "leaderName": "Suudi Arabistan",
+      "leader": "CPV",
+      "leaderName": "Cape Verde",
       "points": 1
     },
     {
@@ -530,20 +530,6 @@
   ],
   "upcomingFocus": [
     {
-      "id": "537341",
-      "text": "Brezilya - Haiti",
-      "date": "2026-06-20T00:30:00Z",
-      "group": "C",
-      "stage": "group"
-    },
-    {
-      "id": "537347",
-      "text": "Türkiye - Paraguay",
-      "date": "2026-06-20T03:00:00Z",
-      "group": "D",
-      "stage": "group"
-    },
-    {
       "id": "537359",
       "text": "Hollanda - İsveç",
       "date": "2026-06-20T17:00:00Z",
@@ -582,6 +568,20 @@
       "id": "537365",
       "text": "Belçika - İran",
       "date": "2026-06-21T19:00:00Z",
+      "group": "G",
+      "stage": "group"
+    },
+    {
+      "id": "537372",
+      "text": "URY - Cape Verde",
+      "date": "2026-06-21T22:00:00Z",
+      "group": "H",
+      "stage": "group"
+    },
+    {
+      "id": "537366",
+      "text": "Yeni Zelanda - Mısır",
+      "date": "2026-06-22T01:00:00Z",
       "group": "G",
       "stage": "group"
     }
