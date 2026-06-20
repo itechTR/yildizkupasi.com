@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-20T21:25:21.053Z",
-  "liveCount": 1,
-  "finishedCount": 33,
-  "scheduledCount": 71,
+  "updatedAt": "2026-06-20T22:42:31.648Z",
+  "liveCount": 0,
+  "finishedCount": 34,
+  "scheduledCount": 70,
   "groupQualification": {
     "A": [
       {
@@ -145,17 +145,17 @@
         "code": "GER",
         "team": "Almanya",
         "probability": 95,
-        "points": 3,
-        "gd": 6,
-        "played": 1
+        "points": 6,
+        "gd": 7,
+        "played": 2
       },
       {
         "code": "CIV",
         "team": "Fildişi Sahili",
-        "probability": 74,
+        "probability": 64,
         "points": 3,
-        "gd": 1,
-        "played": 1
+        "gd": 0,
+        "played": 2
       },
       {
         "code": "ECU",
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Almanya - Fildişi Sahili, Ekvador - Curaçao, Tunus - Japonya, İspanya - Suudi Arabistan, Belçika - İran, URY - Cape Verde, Yeni Zelanda - Mısır, Arjantin - Avusturya"
+      "text": "Ekvador - Curaçao, Tunus - Japonya, İspanya - Suudi Arabistan, Belçika - İran, URY - Cape Verde, Yeni Zelanda - Mısır, Arjantin - Avusturya, Fransa - Irak"
     }
   ],
   "groupLeaders": [
@@ -456,7 +456,7 @@
       "group": "E",
       "leader": "GER",
       "leaderName": "Almanya",
-      "points": 3
+      "points": 6
     },
     {
       "group": "F",
@@ -530,13 +530,6 @@
   ],
   "upcomingFocus": [
     {
-      "id": "537353",
-      "text": "Almanya - Fildişi Sahili",
-      "date": "2026-06-20T20:00:00Z",
-      "group": "E",
-      "stage": "group"
-    },
-    {
       "id": "537354",
       "text": "Ekvador - Curaçao",
       "date": "2026-06-21T00:00:00Z",
@@ -583,6 +576,13 @@
       "text": "Arjantin - Avusturya",
       "date": "2026-06-22T17:00:00Z",
       "group": "J",
+      "stage": "group"
+    },
+    {
+      "id": "537393",
+      "text": "Fransa - Irak",
+      "date": "2026-06-22T21:00:00Z",
+      "group": "I",
       "stage": "group"
     }
   ]
