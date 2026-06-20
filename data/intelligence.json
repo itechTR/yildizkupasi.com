@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-20T11:46:28.864Z",
+  "updatedAt": "2026-06-20T13:16:22.745Z",
   "liveCount": 0,
   "finishedCount": 32,
   "scheduledCount": 72,
@@ -40,6 +40,14 @@
     ],
     "B": [
       {
+        "code": "CAN",
+        "team": "Kanada",
+        "probability": 95,
+        "points": 4,
+        "gd": 6,
+        "played": 2
+      },
+      {
         "code": "SUI",
         "team": "İsviçre",
         "probability": 95,
@@ -48,20 +56,12 @@
         "played": 2
       },
       {
-        "code": "CAN",
-        "team": "Kanada",
-        "probability": 95,
-        "points": 3,
-        "gd": 6,
-        "played": 1
-      },
-      {
         "code": "BIH",
         "team": "Bosna Hersek",
-        "probability": 24,
-        "points": 0,
+        "probability": 34,
+        "points": 1,
         "gd": -3,
-        "played": 1
+        "played": 2
       },
       {
         "code": "QAT",
@@ -244,6 +244,22 @@
     ],
     "H": [
       {
+        "code": "KSA",
+        "team": "Suudi Arabistan",
+        "probability": 52,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      },
+      {
+        "code": "URU",
+        "team": "Uruguay",
+        "probability": 52,
+        "points": 1,
+        "gd": 0,
+        "played": 1
+      },
+      {
         "code": "CPV",
         "team": "Cape Verde",
         "probability": 50,
@@ -258,22 +274,6 @@
         "points": 1,
         "gd": 0,
         "played": 1
-      },
-      {
-        "code": "KSA",
-        "team": "Suudi Arabistan",
-        "probability": 42,
-        "points": 0,
-        "gd": 0,
-        "played": 0
-      },
-      {
-        "code": "URU",
-        "team": "Uruguay",
-        "probability": 42,
-        "points": 0,
-        "gd": 0,
-        "played": 0
       }
     ],
     "I": [
@@ -416,7 +416,7 @@
   "radar": [
     {
       "title": "Grup liderleri",
-      "text": "A: Meksika, B: İsviçre, C: Brezilya, D: ABD, E: Almanya, F: İsveç, G: İran, H: Cape Verde, I: Norveç, J: Arjantin, K: Kolombiya, L: İngiltere"
+      "text": "A: Meksika, B: Kanada, C: Brezilya, D: ABD, E: Almanya, F: İsveç, G: İran, H: Suudi Arabistan, I: Norveç, J: Arjantin, K: Kolombiya, L: İngiltere"
     },
     {
       "title": "Gol sinyali",
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Hollanda - İsveç, Almanya - Fildişi Sahili, Ekvador - Curaçao, Tunus - Japonya, İspanya - Suudi Arabistan, Belçika - İran, URY - Cape Verde, Yeni Zelanda - Mısır"
+      "text": "Hollanda - İsveç, Almanya - Fildişi Sahili, Ekvador - Curaçao, Tunus - Japonya, İspanya - Suudi Arabistan, Belçika - İran, Uruguay - Cape Verde, Yeni Zelanda - Mısır"
     }
   ],
   "groupLeaders": [
@@ -436,8 +436,8 @@
     },
     {
       "group": "B",
-      "leader": "SUI",
-      "leaderName": "İsviçre",
+      "leader": "CAN",
+      "leaderName": "Kanada",
       "points": 4
     },
     {
@@ -472,8 +472,8 @@
     },
     {
       "group": "H",
-      "leader": "CPV",
-      "leaderName": "Cape Verde",
+      "leader": "KSA",
+      "leaderName": "Suudi Arabistan",
       "points": 1
     },
     {
@@ -573,7 +573,7 @@
     },
     {
       "id": "537372",
-      "text": "URY - Cape Verde",
+      "text": "Uruguay - Cape Verde",
       "date": "2026-06-21T22:00:00Z",
       "group": "H",
       "stage": "group"
