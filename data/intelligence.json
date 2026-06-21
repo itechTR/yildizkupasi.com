@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-21T21:43:19.195Z",
-  "liveCount": 0,
+  "updatedAt": "2026-06-21T22:50:19.617Z",
+  "liveCount": 1,
   "finishedCount": 38,
   "scheduledCount": 66,
   "groupQualification": {
@@ -252,14 +252,6 @@
         "played": 2
       },
       {
-        "code": "URU",
-        "team": "Uruguay",
-        "probability": 52,
-        "points": 1,
-        "gd": 0,
-        "played": 1
-      },
-      {
         "code": "CPV",
         "team": "Cape Verde",
         "probability": 50,
@@ -268,12 +260,20 @@
         "played": 1
       },
       {
+        "code": "URU",
+        "team": "Uruguay",
+        "probability": 42,
+        "points": 0,
+        "gd": 0,
+        "played": 0
+      },
+      {
         "code": "KSA",
         "team": "Suudi Arabistan",
-        "probability": 28,
-        "points": 1,
+        "probability": 18,
+        "points": 0,
         "gd": -4,
-        "played": 2
+        "played": 1
       }
     ],
     "I": [
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Uruguay - Cape Verde, Yeni Zelanda - Mısır, Arjantin - Avusturya, Fransa - Irak, Norveç - Senegal, Ürdün - Cezayir, Portekiz - Özbekistan, İngiltere - Gana"
+      "text": "URY - Cape Verde, Yeni Zelanda - Mısır, Arjantin - Avusturya, Fransa - Irak, Norveç - Senegal, Ürdün - Cezayir, Portekiz - Özbekistan, İngiltere - Gana"
     }
   ],
   "groupLeaders": [
@@ -531,7 +531,7 @@
   "upcomingFocus": [
     {
       "id": "537372",
-      "text": "Uruguay - Cape Verde",
+      "text": "URY - Cape Verde",
       "date": "2026-06-21T22:00:00Z",
       "group": "H",
       "stage": "group"
