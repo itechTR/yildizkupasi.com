@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-21T15:20:28.170Z",
-  "liveCount": 0,
+  "updatedAt": "2026-06-21T16:58:59.019Z",
+  "liveCount": 1,
   "finishedCount": 36,
   "scheduledCount": 68,
   "groupQualification": {
@@ -244,22 +244,6 @@
     ],
     "H": [
       {
-        "code": "KSA",
-        "team": "Suudi Arabistan",
-        "probability": 52,
-        "points": 1,
-        "gd": 0,
-        "played": 1
-      },
-      {
-        "code": "URU",
-        "team": "Uruguay",
-        "probability": 52,
-        "points": 1,
-        "gd": 0,
-        "played": 1
-      },
-      {
         "code": "CPV",
         "team": "Cape Verde",
         "probability": 50,
@@ -274,6 +258,22 @@
         "points": 1,
         "gd": 0,
         "played": 1
+      },
+      {
+        "code": "KSA",
+        "team": "Suudi Arabistan",
+        "probability": 42,
+        "points": 0,
+        "gd": 0,
+        "played": 0
+      },
+      {
+        "code": "URU",
+        "team": "Uruguay",
+        "probability": 42,
+        "points": 0,
+        "gd": 0,
+        "played": 0
       }
     ],
     "I": [
@@ -416,7 +416,7 @@
   "radar": [
     {
       "title": "Grup liderleri",
-      "text": "A: Meksika, B: Kanada, C: Brezilya, D: ABD, E: Almanya, F: Hollanda, G: İran, H: Suudi Arabistan, I: Norveç, J: Arjantin, K: Kolombiya, L: İngiltere"
+      "text": "A: Meksika, B: Kanada, C: Brezilya, D: ABD, E: Almanya, F: Hollanda, G: İran, H: Cape Verde, I: Norveç, J: Arjantin, K: Kolombiya, L: İngiltere"
     },
     {
       "title": "Gol sinyali",
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "İspanya - Suudi Arabistan, Belçika - İran, Uruguay - Cape Verde, Yeni Zelanda - Mısır, Arjantin - Avusturya, Fransa - Irak, Norveç - Senegal, Ürdün - Cezayir"
+      "text": "İspanya - Suudi Arabistan, Belçika - İran, URY - Cape Verde, Yeni Zelanda - Mısır, Arjantin - Avusturya, Fransa - Irak, Norveç - Senegal, Ürdün - Cezayir"
     }
   ],
   "groupLeaders": [
@@ -472,8 +472,8 @@
     },
     {
       "group": "H",
-      "leader": "KSA",
-      "leaderName": "Suudi Arabistan",
+      "leader": "CPV",
+      "leaderName": "Cape Verde",
       "points": 1
     },
     {
@@ -545,7 +545,7 @@
     },
     {
       "id": "537372",
-      "text": "Uruguay - Cape Verde",
+      "text": "URY - Cape Verde",
       "date": "2026-06-21T22:00:00Z",
       "group": "H",
       "stage": "group"

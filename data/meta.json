@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-06-21T15:20:28.033Z",
+  "updatedAt": "2026-06-21T16:58:58.894Z",
   "source": "football-data.org",
   "competition": "WC",
   "totalMatches": 104,
   "finished": 36,
-  "live": 0,
-  "scheduled": 68
+  "live": 1,
+  "scheduled": 67
 }
