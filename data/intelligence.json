@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-21T20:12:15.667Z",
-  "liveCount": 1,
-  "finishedCount": 37,
-  "scheduledCount": 67,
+  "updatedAt": "2026-06-21T21:43:19.195Z",
+  "liveCount": 0,
+  "finishedCount": 38,
+  "scheduledCount": 66,
   "groupQualification": {
     "A": [
       {
@@ -210,25 +210,9 @@
     ],
     "G": [
       {
-        "code": "IRN",
-        "team": "İran",
-        "probability": 54,
-        "points": 1,
-        "gd": 0,
-        "played": 1
-      },
-      {
         "code": "NZL",
         "team": "Yeni Zelanda",
         "probability": 54,
-        "points": 1,
-        "gd": 0,
-        "played": 1
-      },
-      {
-        "code": "BEL",
-        "team": "Belçika",
-        "probability": 52,
         "points": 1,
         "gd": 0,
         "played": 1
@@ -240,6 +224,22 @@
         "points": 1,
         "gd": 0,
         "played": 1
+      },
+      {
+        "code": "IRN",
+        "team": "İran",
+        "probability": 46,
+        "points": 2,
+        "gd": 0,
+        "played": 2
+      },
+      {
+        "code": "BEL",
+        "team": "Belçika",
+        "probability": 44,
+        "points": 2,
+        "gd": 0,
+        "played": 2
       }
     ],
     "H": [
@@ -248,8 +248,16 @@
         "team": "İspanya",
         "probability": 95,
         "points": 4,
-        "gd": 5,
+        "gd": 4,
         "played": 2
+      },
+      {
+        "code": "URU",
+        "team": "Uruguay",
+        "probability": 52,
+        "points": 1,
+        "gd": 0,
+        "played": 1
       },
       {
         "code": "CPV",
@@ -260,20 +268,12 @@
         "played": 1
       },
       {
-        "code": "URU",
-        "team": "Uruguay",
-        "probability": 42,
-        "points": 0,
-        "gd": 0,
-        "played": 0
-      },
-      {
         "code": "KSA",
         "team": "Suudi Arabistan",
-        "probability": 14,
-        "points": 0,
-        "gd": -5,
-        "played": 1
+        "probability": 28,
+        "points": 1,
+        "gd": -4,
+        "played": 2
       }
     ],
     "I": [
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: İsviçre 4-1 Bosna Hersek, Kanada 6-0 Katar, Hollanda 5-1 İsveç, Tunus 0-4 Japonya, İspanya 5-0 Suudi Arabistan."
+      "text": "Son yüksek skorlu maçlar: İsviçre 4-1 Bosna Hersek, Kanada 6-0 Katar, Hollanda 5-1 İsveç, Tunus 0-4 Japonya, İspanya 4-0 Suudi Arabistan."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Belçika - İran, URY - Cape Verde, Yeni Zelanda - Mısır, Arjantin - Avusturya, Fransa - Irak, Norveç - Senegal, Ürdün - Cezayir, Portekiz - Özbekistan"
+      "text": "Uruguay - Cape Verde, Yeni Zelanda - Mısır, Arjantin - Avusturya, Fransa - Irak, Norveç - Senegal, Ürdün - Cezayir, Portekiz - Özbekistan, İngiltere - Gana"
     }
   ],
   "groupLeaders": [
@@ -468,7 +468,7 @@
       "group": "G",
       "leader": "IRN",
       "leaderName": "İran",
-      "points": 1
+      "points": 2
     },
     {
       "group": "H",
@@ -524,21 +524,14 @@
     },
     {
       "id": "537371",
-      "text": "İspanya 5-0 Suudi Arabistan",
-      "goals": 5
+      "text": "İspanya 4-0 Suudi Arabistan",
+      "goals": 4
     }
   ],
   "upcomingFocus": [
     {
-      "id": "537365",
-      "text": "Belçika - İran",
-      "date": "2026-06-21T19:00:00Z",
-      "group": "G",
-      "stage": "group"
-    },
-    {
       "id": "537372",
-      "text": "URY - Cape Verde",
+      "text": "Uruguay - Cape Verde",
       "date": "2026-06-21T22:00:00Z",
       "group": "H",
       "stage": "group"
@@ -583,6 +576,13 @@
       "text": "Portekiz - Özbekistan",
       "date": "2026-06-23T17:00:00Z",
       "group": "K",
+      "stage": "group"
+    },
+    {
+      "id": "537411",
+      "text": "İngiltere - Gana",
+      "date": "2026-06-23T20:00:00Z",
+      "group": "L",
       "stage": "group"
     }
   ]
