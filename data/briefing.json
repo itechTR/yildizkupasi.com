@@ -1,24 +1,12 @@
 {
-  "updatedAt": "2026-06-22T00:01:28.402Z",
+  "updatedAt": "2026-06-22T05:24:48.564Z",
   "title": "Yıldız Kupası Günlük Notu",
   "summary": [
-    "Turnuvada şu ana kadar 38 maç tamamlandı.",
-    "Şu anda 1 canlı maç görünüyor.",
-    "Sıradaki dikkat çeken maçlar: Uruguay - Cape Verde, Yeni Zelanda - Mısır, Arjantin - Avusturya, Fransa - Irak, Norveç - Senegal."
+    "Turnuvada şu ana kadar 40 maç tamamlandı.",
+    "Şu anda canlı maç görünmüyor.",
+    "Sıradaki dikkat çeken maçlar: Arjantin - Avusturya, Fransa - Irak, Norveç - Senegal, Ürdün - Cezayir, Portekiz - Özbekistan."
   ],
   "latestResults": [
-    {
-      "id": "537353",
-      "text": "Almanya 2-1 Fildişi Sahili",
-      "group": "E",
-      "stage": "group"
-    },
-    {
-      "id": "537354",
-      "text": "Ekvador 0-0 Curaçao",
-      "group": "E",
-      "stage": "group"
-    },
     {
       "id": "537360",
       "text": "Tunus 0-4 Japonya",
@@ -34,6 +22,18 @@
     {
       "id": "537365",
       "text": "Belçika 0-0 İran",
+      "group": "G",
+      "stage": "group"
+    },
+    {
+      "id": "537372",
+      "text": "Uruguay 2-2 Cape Verde",
+      "group": "H",
+      "stage": "group"
+    },
+    {
+      "id": "537366",
+      "text": "Yeni Zelanda 1-3 Mısır",
       "group": "G",
       "stage": "group"
     }
