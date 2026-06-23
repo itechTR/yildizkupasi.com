@@ -1,3 +1,37 @@
+const AUTO_QUALIFY_LIMIT = 2;
+const BEST_THIRD_QUALIFY_LIMIT = 8;
+function buildThirdPlaceRanking(standings) {
+  const thirdPlacedTeams = Object.entries(standings)
+    .map(([group, table]) => {
+      const sorted = [...table].sort(sortStanding);
+      const third = sorted[2];
+
+      if (!third) return null;
+
+      return {
+        ...third,
+        group,
+        thirdPlaceRank: null
+      };
+    })
+    .filter(Boolean)
+    .sort(sortStanding)
+    .map((team, index) => ({
+      ...team,
+      thirdPlaceRank: index + 1,
+      qualifiesAsThird: index + 1 <= BEST_THIRD_QUALIFY_LIMIT
+    }));
+
+  return thirdPlacedTeams;
+}
+function sortStanding(a, b) {
+  return (
+    b.points - a.points ||
+    b.gd - a.gd ||
+    b.gf - a.gf ||
+    a.team.localeCompare(b.team, "tr")
+  );
+}
 import fs from "fs/promises";
 
 const MATCHES_FILE = "data/matches.json";
@@ -151,7 +185,8 @@ function generateBriefing(matches, standings) {
 function generateTurkiye(matches, standings) {
   const group = "D";
   const table = standings[group] || [];
-  const turkiye = table.find(t => t.code === "TUR") || null;
+  const sortedGroupTable = [...table].sort(sortStanding);
+  const turkiye = sortedGroupTable.find(t => t.code === "TUR") || null;
 
   const turkiyeMatches = matches.filter(
     m => m.home.code === "TUR" || m.away.code === "TUR"
@@ -160,27 +195,74 @@ function generateTurkiye(matches, standings) {
   const played = turkiyeMatches.filter(m => m.status === "finished");
   const upcoming = turkiyeMatches.filter(m => m.status !== "finished");
 
-  const position = table.findIndex(t => t.code === "TUR") + 1;
+  const position = sortedGroupTable.findIndex(t => t.code === "TUR") + 1;
 
+  const allTurkiyeMatchesFinished =
+    turkiyeMatches.length > 0 &&
+    turkiyeMatches.every(m => m.status === "finished");
+
+  const thirdPlaceRanking = buildThirdPlaceRanking(standings);
+  const turkiyeThirdPlaceInfo =
+    position === 3
+      ? thirdPlaceRanking.find(t => t.code === "TUR") || null
+      : null;
+
+  let tournamentStatus = "active";
   let qualificationSignal = "Belirsiz";
-  if (position === 1) qualificationSignal = "Güçlü avantaj";
-  else if (position === 2) qualificationSignal = "Üst tur hattında";
-  else if (position === 3) qualificationSignal = "Kritik eşikte";
-  else if (position >= 4) qualificationSignal = "Baskı altında";
-
   let qualificationProbability = 25;
 
-  if (position === 1) qualificationProbability = 82;
-  else if (position === 2) qualificationProbability = 68;
-  else if (position === 3) qualificationProbability = 42;
-  else if (position >= 4) qualificationProbability = 18;
+  if (position === 1) {
+    qualificationSignal = "Doğrudan üst tur hattında";
+    qualificationProbability = 90;
+  } else if (position === 2) {
+    qualificationSignal = "Doğrudan üst tur hattında";
+    qualificationProbability = 78;
+  } else if (position === 3) {
+    qualificationSignal = "En iyi üçüncüler yarışında";
+
+    if (turkiyeThirdPlaceInfo) {
+      const rank = turkiyeThirdPlaceInfo.thirdPlaceRank;
+
+      if (rank <= 4) qualificationProbability = 68;
+      else if (rank <= 8) qualificationProbability = 52;
+      else if (rank <= 10) qualificationProbability = 28;
+      else qualificationProbability = 12;
+    } else {
+      qualificationProbability = 35;
+    }
+  } else if (position >= 4) {
+    qualificationSignal = "Elenme hattında";
+    qualificationProbability = 8;
+  }
 
   if (turkiye?.points >= 4) qualificationProbability += 8;
+  if (turkiye?.points >= 6) qualificationProbability += 8;
+
   if (turkiye?.gd > 0) qualificationProbability += 6;
   if (turkiye?.gd < 0) qualificationProbability -= 6;
-  if (upcoming.length === 0 && position > 2) qualificationProbability -= 15;
 
-  qualificationProbability = Math.max(3, Math.min(95, qualificationProbability));
+  if (allTurkiyeMatchesFinished) {
+    if (position > 0 && position <= AUTO_QUALIFY_LIMIT) {
+      tournamentStatus = "advanced_auto";
+      qualificationProbability = 100;
+      qualificationSignal = "Doğrudan üst tura çıktı";
+    } else if (position === 3) {
+      if (turkiyeThirdPlaceInfo?.qualifiesAsThird) {
+        tournamentStatus = "advanced_best_third";
+        qualificationProbability = 100;
+        qualificationSignal = "En iyi üçüncüler arasından üst tura çıktı";
+      } else {
+        tournamentStatus = "third_place_wait";
+        qualificationSignal = "En iyi üçüncüler sonucunu bekliyor";
+      }
+    } else {
+      tournamentStatus = "eliminated";
+      qualificationProbability = 0;
+      qualificationSignal = "Turnuvaya veda etti";
+    }
+  }
+
+  qualificationProbability = Math.max(0, Math.min(100, qualificationProbability));
 
   return {
     updatedAt: new Date().toISOString(),
@@ -188,8 +270,11 @@ function generateTurkiye(matches, standings) {
     teamName: "Türkiye",
     group,
     position,
+    tournamentStatus,
     qualificationSignal,
     qualificationProbability,
+    thirdPlaceRank: turkiyeThirdPlaceInfo?.thirdPlaceRank || null,
+    thirdPlaceQualifies: turkiyeThirdPlaceInfo?.qualifiesAsThird || false,
     standing: turkiye,
     playedMatches: played.map(m => ({
       id: m.id,
@@ -208,9 +293,19 @@ function generateTurkiye(matches, standings) {
       opponent: m.home.code === "TUR" ? m.away.code : m.home.code
     })),
     analysis:
-      position > 0
-        ? `Türkiye D Grubu'nda şu an ${position}. sırada. Kalan maçlar üst tur ihtimalini belirleyecek.`
-        : "Türkiye için grup verisi henüz oluşmadı."
+      tournamentStatus === "advanced_auto"
+        ? `Türkiye D Grubu'nu ${position}. sırada tamamladı ve doğrudan üst tura çıktı.`
+        : tournamentStatus === "advanced_best_third"
+          ? `Türkiye D Grubu'nu 3. sırada tamamladı ve en iyi üçüncüler arasından üst tura çıktı.`
+          : tournamentStatus === "third_place_wait"
+            ? `Türkiye D Grubu'nu 3. sırada tamamladı. Üst tur durumu en iyi üçüncüler sıralamasına göre netleşecek.`
+            : tournamentStatus === "eliminated"
+              ? `Türkiye D Grubu'nu ${position}. sırada tamamladı ve turnuvaya veda etti. Yıldız Kupası, kalan maçlarda turnuva zekâsı, favoriler ve günlük notlarla devam ediyor.`
+              : position === 3
+                ? `Türkiye D Grubu'nda şu an 3. sırada. İlk iki sıra doğrudan üst tur anlamına geliyor; üçüncülükte ise en iyi 8 üçüncü takım arasına girmek gerekiyor.`
+                : position > 0
+                  ? `Türkiye D Grubu'nda şu an ${position}. sırada. İlk iki sıra doğrudan üst tur, üçüncülük ise en iyi üçüncüler yarışına kalmak anlamına geliyor.`
+                  : "Türkiye için grup verisi henüz oluşmadı."
   };
 }
 function estimateQualificationProbability(team, groupMatches) {
