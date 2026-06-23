@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-23T18:29:37.763Z",
+  "updatedAt": "2026-06-23T20:40:08.692Z",
   "liveCount": 1,
-  "finishedCount": 44,
-  "scheduledCount": 60,
+  "finishedCount": 45,
+  "scheduledCount": 59,
   "groupQualification": {
     "A": [
       {
@@ -346,6 +346,14 @@
     ],
     "K": [
       {
+        "code": "POR",
+        "team": "Portekiz",
+        "probability": 95,
+        "points": 4,
+        "gd": 5,
+        "played": 2
+      },
+      {
         "code": "COL",
         "team": "Kolombiya",
         "probability": 82,
@@ -362,20 +370,12 @@
         "played": 1
       },
       {
-        "code": "POR",
-        "team": "Portekiz",
-        "probability": 52,
-        "points": 1,
-        "gd": 0,
-        "played": 1
-      },
-      {
         "code": "UZB",
         "team": "Özbekistan",
-        "probability": 28,
+        "probability": 3,
         "points": 0,
-        "gd": -2,
-        "played": 1
+        "gd": -7,
+        "played": 2
       }
     ],
     "L": [
@@ -416,15 +416,15 @@
   "radar": [
     {
       "title": "Grup liderleri",
-      "text": "A: Meksika, B: Kanada, C: Brezilya, D: ABD, E: Almanya, F: Hollanda, G: Mısır, H: İspanya, I: Fransa, J: Arjantin, K: Kolombiya, L: İngiltere"
+      "text": "A: Meksika, B: Kanada, C: Brezilya, D: ABD, E: Almanya, F: Hollanda, G: Mısır, H: İspanya, I: Fransa, J: Arjantin, K: Portekiz, L: İngiltere"
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Tunus 0-4 Japonya, İspanya 4-0 Suudi Arabistan, Uruguay 2-2 Cape Verde, Yeni Zelanda 1-3 Mısır, Norveç 3-2 Senegal."
+      "text": "Son yüksek skorlu maçlar: İspanya 4-0 Suudi Arabistan, Uruguay 2-2 Cape Verde, Yeni Zelanda 1-3 Mısır, Norveç 3-2 Senegal, Portekiz 5-0 Özbekistan."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Portekiz - Özbekistan, İngiltere - Gana, Panama - Hırvatistan, Kolombiya - DR Kongo, İsviçre - Kanada, Bosna Hersek - Katar, Fas - Haiti, İskoçya - Brezilya"
+      "text": "İngiltere - Gana, Panama - Hırvatistan, Kolombiya - DR Kongo, İsviçre - Kanada, Bosna Hersek - Katar, Fas - Haiti, İskoçya - Brezilya, Çekya - Meksika"
     }
   ],
   "groupLeaders": [
@@ -490,9 +490,9 @@
     },
     {
       "group": "K",
-      "leader": "COL",
-      "leaderName": "Kolombiya",
-      "points": 3
+      "leader": "POR",
+      "leaderName": "Portekiz",
+      "points": 4
     },
     {
       "group": "L",
@@ -502,11 +502,6 @@
     }
   ],
   "highScoringMatches": [
-    {
-      "id": "537360",
-      "text": "Tunus 0-4 Japonya",
-      "goals": 4
-    },
     {
       "id": "537371",
       "text": "İspanya 4-0 Suudi Arabistan",
@@ -526,16 +521,14 @@
       "id": "537394",
       "text": "Norveç 3-2 Senegal",
       "goals": 5
+    },
+    {
+      "id": "537405",
+      "text": "Portekiz 5-0 Özbekistan",
+      "goals": 5
     }
   ],
   "upcomingFocus": [
-    {
-      "id": "537405",
-      "text": "Portekiz - Özbekistan",
-      "date": "2026-06-23T17:00:00Z",
-      "group": "K",
-      "stage": "group"
-    },
     {
       "id": "537411",
       "text": "İngiltere - Gana",
@@ -583,6 +576,13 @@
       "text": "İskoçya - Brezilya",
       "date": "2026-06-24T22:00:00Z",
       "group": "C",
+      "stage": "group"
+    },
+    {
+      "id": "537331",
+      "text": "Çekya - Meksika",
+      "date": "2026-06-25T01:00:00Z",
+      "group": "A",
       "stage": "group"
     }
   ]
