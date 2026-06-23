@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-23T00:21:04.919Z",
-  "liveCount": 2,
-  "finishedCount": 41,
-  "scheduledCount": 63,
+  "updatedAt": "2026-06-23T04:37:06.489Z",
+  "liveCount": 1,
+  "finishedCount": 43,
+  "scheduledCount": 61,
   "groupQualification": {
     "A": [
       {
@@ -252,62 +252,62 @@
         "played": 2
       },
       {
-        "code": "URU",
-        "team": "Uruguay",
-        "probability": 48,
-        "points": 2,
-        "gd": 0,
-        "played": 2
-      },
-      {
         "code": "CPV",
         "team": "Cape Verde",
-        "probability": 46,
-        "points": 2,
+        "probability": 50,
+        "points": 1,
         "gd": 0,
-        "played": 2
+        "played": 1
+      },
+      {
+        "code": "URU",
+        "team": "Uruguay",
+        "probability": 42,
+        "points": 0,
+        "gd": 0,
+        "played": 0
       },
       {
         "code": "KSA",
         "team": "Suudi Arabistan",
-        "probability": 28,
-        "points": 1,
+        "probability": 18,
+        "points": 0,
         "gd": -4,
-        "played": 2
+        "played": 1
       }
     ],
     "I": [
       {
-        "code": "NOR",
-        "team": "Norveç",
-        "probability": 88,
-        "points": 3,
-        "gd": 3,
-        "played": 1
-      },
-      {
         "code": "FRA",
         "team": "Fransa",
-        "probability": 82,
-        "points": 3,
-        "gd": 2,
-        "played": 1
+        "probability": 95,
+        "points": 6,
+        "gd": 5,
+        "played": 2
+      },
+      {
+        "code": "NOR",
+        "team": "Norveç",
+        "probability": 95,
+        "points": 6,
+        "gd": 4,
+        "played": 2
       },
       {
         "code": "SEN",
         "team": "Senegal",
-        "probability": 28,
+        "probability": 20,
         "points": 0,
-        "gd": -2,
-        "played": 1
+        "gd": -3,
+        "played": 2
       },
       {
         "code": "IRQ",
         "team": "Irak",
-        "probability": 24,
+        "probability": 4,
         "points": 0,
-        "gd": -3,
-        "played": 1
+        "gd": -6,
+        "played": 2
       }
     ],
     "J": [
@@ -416,15 +416,15 @@
   "radar": [
     {
       "title": "Grup liderleri",
-      "text": "A: Meksika, B: Kanada, C: Brezilya, D: ABD, E: Almanya, F: Hollanda, G: Mısır, H: İspanya, I: Norveç, J: Arjantin, K: Kolombiya, L: İngiltere"
+      "text": "A: Meksika, B: Kanada, C: Brezilya, D: ABD, E: Almanya, F: Hollanda, G: Mısır, H: İspanya, I: Fransa, J: Arjantin, K: Kolombiya, L: İngiltere"
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Hollanda 5-1 İsveç, Tunus 0-4 Japonya, İspanya 4-0 Suudi Arabistan, Uruguay 2-2 Cape Verde, Yeni Zelanda 1-3 Mısır."
+      "text": "Son yüksek skorlu maçlar: Tunus 0-4 Japonya, İspanya 4-0 Suudi Arabistan, URY 2-2 Cape Verde, Yeni Zelanda 1-3 Mısır, Norveç 3-2 Senegal."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Fransa - Irak, Norveç - Senegal, Ürdün - Cezayir, Portekiz - Özbekistan, İngiltere - Gana, Panama - Hırvatistan, Kolombiya - DR Kongo, İsviçre - Kanada"
+      "text": "Ürdün - Cezayir, Portekiz - Özbekistan, İngiltere - Gana, Panama - Hırvatistan, Kolombiya - DR Kongo, İsviçre - Kanada, Bosna Hersek - Katar, Fas - Haiti"
     }
   ],
   "groupLeaders": [
@@ -478,9 +478,9 @@
     },
     {
       "group": "I",
-      "leader": "NOR",
-      "leaderName": "Norveç",
-      "points": 3
+      "leader": "FRA",
+      "leaderName": "Fransa",
+      "points": 6
     },
     {
       "group": "J",
@@ -503,11 +503,6 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537359",
-      "text": "Hollanda 5-1 İsveç",
-      "goals": 6
-    },
-    {
       "id": "537360",
       "text": "Tunus 0-4 Japonya",
       "goals": 4
@@ -519,30 +514,21 @@
     },
     {
       "id": "537372",
-      "text": "Uruguay 2-2 Cape Verde",
+      "text": "URY 2-2 Cape Verde",
       "goals": 4
     },
     {
       "id": "537366",
       "text": "Yeni Zelanda 1-3 Mısır",
       "goals": 4
-    }
-  ],
-  "upcomingFocus": [
-    {
-      "id": "537393",
-      "text": "Fransa - Irak",
-      "date": "2026-06-22T21:00:00Z",
-      "group": "I",
-      "stage": "group"
     },
     {
       "id": "537394",
-      "text": "Norveç - Senegal",
-      "date": "2026-06-23T00:00:00Z",
-      "group": "I",
-      "stage": "group"
-    },
+      "text": "Norveç 3-2 Senegal",
+      "goals": 5
+    }
+  ],
+  "upcomingFocus": [
     {
       "id": "537400",
       "text": "Ürdün - Cezayir",
@@ -583,6 +569,20 @@
       "text": "İsviçre - Kanada",
       "date": "2026-06-24T19:00:00Z",
       "group": "B",
+      "stage": "group"
+    },
+    {
+      "id": "537338",
+      "text": "Bosna Hersek - Katar",
+      "date": "2026-06-24T19:00:00Z",
+      "group": "B",
+      "stage": "group"
+    },
+    {
+      "id": "537344",
+      "text": "Fas - Haiti",
+      "date": "2026-06-24T22:00:00Z",
+      "group": "C",
       "stage": "group"
     }
   ]
