@@ -5,137 +5,69 @@ const T = {
     'nav.intelligence': 'Turnuva Zekâsı',
     'nav.turkiye': 'Türkiye Merkezi',
     'nav.briefing': 'Günlük Not',
-
     'hero.eyebrow': 'Bağımsız Dünya Kupası Analiz Merkezi',
     'hero.title': 'Yıldız Kupası AI',
     'hero.lead': 'Skorları izler, grupları hesaplar, olasılıkları yorumlar ve turnuvayı hikâyeye dönüştürür.',
     'hero.cta': 'Türkiye paneline bak',
     'hero.cta2': 'Bugünün notunu oku',
-
     'today.eyebrow': 'Bugün Ne Oldu?',
     'today.title': 'AI Turnuva Özeti',
-
     'insight.eyebrow': 'Sinyaller',
     'insight.title': 'Turnuva Radarı',
-
     'matches.eyebrow': 'Match Center',
     'matches.title': 'Maçlar',
-
     'groups.eyebrow': 'Puan Durumu',
     'groups.title': 'Gruplar',
-
     'intel.eyebrow': 'AI Analiz',
     'intel.title': 'Üst Tur Olasılıkları',
-
     'tr.eyebrow': 'Türkiye Merkezi',
     'tr.title': 'Türkiye’nin Turnuva Panosu',
-
     'brief.eyebrow': 'Günlük Bülten',
     'brief.title': 'Yıldız Kupası Notu',
-
     'footer.copy': 'Bağımsız futbol bilgi ve analiz platformudur. FIFA®, FIFA World Cup® veya resmi organizatörlerle bağlantılı değildir. Tüm marka ve ticari işaretler sahiplerine aittir.'
   },
-
   en: {
     'nav.matches': 'Matches',
     'nav.groups': 'Groups',
     'nav.intelligence': 'Tournament Intelligence',
-    'nav.turkiye': 'Turkey Hub',
+    'nav.turkiye': 'Türkiye Hub',
     'nav.briefing': 'Daily Brief',
-
     'hero.eyebrow': 'Independent World Cup Intelligence Center',
     'hero.title': 'Yıldız Kupası AI',
     'hero.lead': 'Tracks scores, calculates standings, interprets probabilities and turns the tournament into a story.',
-    'hero.cta': 'View Turkey hub',
+    'hero.cta': 'Track matches',
     'hero.cta2': 'Read today’s brief',
-
     'today.eyebrow': 'What Happened Today?',
     'today.title': 'AI Tournament Summary',
-
     'insight.eyebrow': 'Signals',
     'insight.title': 'Tournament Radar',
-
     'matches.eyebrow': 'Match Center',
     'matches.title': 'Matches',
-
     'groups.eyebrow': 'Standings',
     'groups.title': 'Groups',
-
     'intel.eyebrow': 'AI Analysis',
     'intel.title': 'Qualification Probabilities',
-
-    'tr.eyebrow': 'Turkey Hub',
-    'tr.title': 'Turkey Tournament Board',
-
+    'tr.eyebrow': 'Türkiye Hub',
+    'tr.title': 'Türkiye Tournament Board',
     'brief.eyebrow': 'Daily Brief',
     'brief.title': 'Yıldız Kupası Note',
-
     'footer.copy': 'An independent football information and analysis platform. Not affiliated with FIFA®, FIFA World Cup® or any official tournament organizer. All trademarks belong to their respective owners.'
   }
 };
 
 const teamNames = {
-  MEX: 'Meksika',
-  RSA: 'Güney Afrika',
-  CZE: 'Çekya',
-  KOR: 'Güney Kore',
-
-  CAN: 'Kanada',
-  QAT: 'Katar',
-  SUI: 'İsviçre',
-  BIH: 'Bosna Hersek',
-
-  BRA: 'Brezilya',
-  HAI: 'Haiti',
-  HTI: 'Haiti',
-  MAR: 'Fas',
-  SCO: 'İskoçya',
-
-  AUS: 'Avustralya',
-  PAR: 'Paraguay',
-  USA: 'ABD',
-  TUR: 'Türkiye',
-
-  GER: 'Almanya',
-  CIV: 'Fildişi Sahili',
-  ECU: 'Ekvador',
-  CUW: 'Curaçao',
-
-  NED: 'Hollanda',
-  JPN: 'Japonya',
-  TUN: 'Tunus',
-  SWE: 'İsveç',
-
-  BEL: 'Belçika',
-  EGY: 'Mısır',
-  IRN: 'İran',
-  NZL: 'Yeni Zelanda',
-
-  ESP: 'İspanya',
-  URU: 'Uruguay',
-  KSA: 'Suudi Arabistan',
-  CPV: 'Cape Verde',
-
-  FRA: 'Fransa',
-  SEN: 'Senegal',
-  NOR: 'Norveç',
-  IRQ: 'Irak',
-
-  ARG: 'Arjantin',
-  ALG: 'Cezayir',
-  DZA: 'Cezayir',
-  AUT: 'Avusturya',
-  JOR: 'Ürdün',
-
-  ENG: 'İngiltere',
-  CRO: 'Hırvatistan',
-  GHA: 'Gana',
-  PAN: 'Panama',
-
-  POR: 'Portekiz',
-  UZB: 'Özbekistan',
-  COL: 'Kolombiya',
-  COD: 'DR Kongo'
+  MEX: 'Meksika', RSA: 'Güney Afrika', CZE: 'Çekya', KOR: 'Güney Kore',
+  CAN: 'Kanada', QAT: 'Katar', SUI: 'İsviçre', BIH: 'Bosna Hersek',
+  BRA: 'Brezilya', HAI: 'Haiti', MAR: 'Fas', SCO: 'İskoçya',
+  AUS: 'Avustralya', PAR: 'Paraguay', USA: 'ABD', TUR: 'Türkiye',
+  GER: 'Almanya', CIV: 'Fildişi Sahili', ECU: 'Ekvador', CUW: 'Curaçao',
+  NED: 'Hollanda', JPN: 'Japonya', TUN: 'Tunus', SWE: 'İsveç',
+  BEL: 'Belçika', EGY: 'Mısır', IRN: 'İran', NZL: 'Yeni Zelanda',
+  ESP: 'İspanya', URU: 'Uruguay', KSA: 'Suudi Arabistan', CPV: 'Cape Verde',
+  FRA: 'Fransa', SEN: 'Senegal', NOR: 'Norveç', IRQ: 'Irak',
+  ARG: 'Arjantin', ALG: 'Cezayir', AUT: 'Avusturya', JOR: 'Ürdün',
+  ENG: 'İngiltere', CRO: 'Hırvatistan', GHA: 'Gana', PAN: 'Panama',
+  POR: 'Portekiz', UZB: 'Özbekistan', COL: 'Kolombiya', COD: 'DR Kongo', HTI: 'Haiti', DZA: 'Cezayir'
 };
 
 const groupMap = {
@@ -157,11 +89,28 @@ const AUTO_QUALIFY_LIMIT = 2;
 const BEST_THIRD_QUALIFY_LIMIT = 8;
 const GROUP_COUNT = 12;
 
-// EN butonu geçici olarak gizli.
-// Daha önce tarayıcıda EN seçilmişse, kullanıcı İngilizce arayüzde mahsur kalmasın diye TR’ye zorluyoruz.
+// FIFA 2026 Round of 32 slot yapısı: ilk iki takım doğrudan, en iyi 8 üçüncü takım slot havuzlarına göre yerleşir.
+const ROUND_OF_32_TEMPLATE = [
+  { no: 73, home: { type: 'runner', group: 'A' }, away: { type: 'runner', group: 'B' } },
+  { no: 74, home: { type: 'winner', group: 'E' }, away: { type: 'third', groups: ['A', 'B', 'C', 'D', 'F'] } },
+  { no: 75, home: { type: 'winner', group: 'F' }, away: { type: 'runner', group: 'C' } },
+  { no: 76, home: { type: 'winner', group: 'C' }, away: { type: 'runner', group: 'F' } },
+  { no: 77, home: { type: 'winner', group: 'I' }, away: { type: 'third', groups: ['C', 'D', 'F', 'G', 'H'] } },
+  { no: 78, home: { type: 'runner', group: 'E' }, away: { type: 'runner', group: 'I' } },
+  { no: 79, home: { type: 'winner', group: 'A' }, away: { type: 'third', groups: ['C', 'E', 'F', 'H', 'I'] } },
+  { no: 80, home: { type: 'winner', group: 'L' }, away: { type: 'third', groups: ['E', 'H', 'I', 'J', 'K'] } },
+  { no: 81, home: { type: 'winner', group: 'D' }, away: { type: 'third', groups: ['B', 'E', 'F', 'I', 'J'] } },
+  { no: 82, home: { type: 'winner', group: 'G' }, away: { type: 'third', groups: ['A', 'E', 'H', 'I', 'J'] } },
+  { no: 83, home: { type: 'runner', group: 'K' }, away: { type: 'runner', group: 'L' } },
+  { no: 84, home: { type: 'winner', group: 'H' }, away: { type: 'runner', group: 'J' } },
+  { no: 85, home: { type: 'winner', group: 'B' }, away: { type: 'third', groups: ['E', 'F', 'G', 'I', 'J'] } },
+  { no: 86, home: { type: 'winner', group: 'J' }, away: { type: 'runner', group: 'H' } },
+  { no: 87, home: { type: 'winner', group: 'K' }, away: { type: 'third', groups: ['D', 'E', 'I', 'J', 'L'] } },
+  { no: 88, home: { type: 'runner', group: 'D' }, away: { type: 'runner', group: 'G' } }
+];
+
 let lang = 'tr';
 localStorage.setItem('yk_lang', 'tr');
-
 let focus = localStorage.getItem('yk_focus') || 'TUR';
 let allMatches = [];
 let probs = [];
@@ -169,11 +118,11 @@ let briefingData = null;
 let turkiyeData = null;
 let intelligenceData = null;
 
-const $ = selector => document.querySelector(selector);
-const $$ = selector => [...document.querySelectorAll(selector)];
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
 
-function t(key) {
-  return T[lang]?.[key] || T.tr[key] || key;
+function t(k) {
+  return T[lang]?.[k] || T.tr[k] || k;
 }
 
 function name(code) {
@@ -190,39 +139,6 @@ function safeHTML(selector, value) {
   if (el) el.innerHTML = value;
 }
 
-function escapeHTML(value) {
-  return String(value ?? '')
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#039;');
-}
-
-function pick(value, fallback = '') {
-  if (value && typeof value === 'object' && !Array.isArray(value)) {
-    return value[lang] || value.tr || value.en || fallback;
-  }
-
-  return value ?? fallback;
-}
-
-function formatDateTime(value) {
-  if (!value) return '';
-
-  const d = new Date(value);
-  if (Number.isNaN(d.getTime())) return '';
-
-  return `${d.toLocaleString('tr-TR', {
-    dateStyle: 'medium',
-    timeStyle: 'short'
-  })} · Yerel saat`;
-}
-
-function scoreText(score) {
-  return score === null || score === undefined ? '-' : score;
-}
-
 function applyLang() {
   document.documentElement.lang = lang;
 
@@ -234,7 +150,9 @@ function applyLang() {
 
   const search = $('#search');
   if (search) {
-    search.placeholder = 'Takım, grup veya aşama ara';
+    search.placeholder = lang === 'tr'
+      ? 'Takım, grup veya aşama ara'
+      : 'Search team, group or stage';
   }
 
   renderAll();
@@ -244,29 +162,27 @@ async function fetchJson(path, fallback) {
   const response = await fetch(path, { cache: 'no-store' });
 
   if (!response.ok) {
-    if (fallback !== undefined) return fallback;
     throw new Error(`${path} okunamadı. HTTP ${response.status}`);
   }
 
   try {
     return await response.json();
-  } catch {
-    if (fallback !== undefined) return fallback;
+  } catch (err) {
     throw new Error(`${path} geçerli JSON değil`);
   }
 }
 
 async function load() {
   try {
-    safeText('#liveState', 'Veri yükleniyor');
-    safeText('#updatedAt', 'Bekleniyor');
+    safeText('#liveState', lang === 'tr' ? 'Veri yükleniyor' : 'Loading data');
+    safeText('#updatedAt', lang === 'tr' ? 'Bekleniyor' : 'Waiting');
 
     const [m, p, briefing, turkiye, intelligence] = await Promise.all([
       fetchJson('data/matches.json', { matches: [] }),
-      fetchJson('data/probs.json', { teams: [] }),
-      fetchJson('data/briefing.json', null),
-      fetchJson('data/turkiye.json', null),
-      fetchJson('data/intelligence.json', null)
+      fetchJson('data/probs.json', { teams: [] }).catch(() => ({ teams: [] })),
+      fetchJson('data/briefing.json', null).catch(() => null),
+      fetchJson('data/turkiye.json', null).catch(() => null),
+      fetchJson('data/intelligence.json', null).catch(() => null)
     ]);
 
     allMatches = Array.isArray(m) ? m : (m.matches || []);
@@ -282,49 +198,47 @@ async function load() {
 
     initControls();
 
-    safeText('#liveState', 'Veri yüklendi');
-    safeText('#updatedAt', new Date().toLocaleString('tr-TR'));
+    safeText('#liveState', lang === 'tr' ? 'Veri yüklendi' : 'Data loaded');
+    safeText('#updatedAt', new Date().toLocaleString(lang === 'tr' ? 'tr-TR' : 'en-US'));
 
     renderAll();
-  } catch (error) {
-    console.error('Yıldız Kupası veri/render hatası:', error);
 
-    safeText('#liveState', 'Veri alınamadı');
-    safeText('#updatedAt', error.message || 'Bilinmeyen hata');
+  } catch (e) {
+    console.error('Yıldız Kupası veri/render hatası:', e);
+
+    safeText('#liveState', lang === 'tr' ? 'Veri alınamadı' : 'Data unavailable');
+    safeText('#updatedAt', e.message || (lang === 'tr' ? 'Bilinmeyen hata' : 'Unknown error'));
   }
 }
 
-function normalizeProbabilities(payload) {
-  if (Array.isArray(payload)) return payload;
+function normalizeProbabilities(p) {
+  if (Array.isArray(p)) return p;
 
-  if (Array.isArray(payload?.teams)) return payload.teams;
-  if (Array.isArray(payload?.probs)) return payload.probs;
+  if (Array.isArray(p.teams)) return p.teams;
+  if (Array.isArray(p.probs)) return p.probs;
 
   return [];
 }
 
 function initControls() {
+  ensureMatchupsNav();
   const teams = [...new Set(Object.values(groupMap).flat())]
     .sort((a, b) => name(a).localeCompare(name(b), 'tr'));
 
   const teamFocus = $('#teamFocus');
   if (teamFocus) {
     teamFocus.innerHTML = teams
-      .map(code => `<option value="${code}" ${code === focus ? 'selected' : ''}>${escapeHTML(name(code))}</option>`)
+      .map(c => `<option value="${c}" ${c === focus ? 'selected' : ''}>${name(c)}</option>`)
       .join('');
   }
 
   const stageFilter = $('#stageFilter');
   if (stageFilter) {
-    const currentValue = stageFilter.value || 'all';
-
     stageFilter.innerHTML = `
-      <option value="all">Tüm aşamalar</option>
-      <option value="group">Grup</option>
-      <option value="knockout">Eleme</option>
+      <option value="all">${lang === 'tr' ? 'Tüm aşamalar' : 'All stages'}</option>
+      <option value="group">${lang === 'tr' ? 'Grup' : 'Group'}</option>
+      <option value="knockout">${lang === 'tr' ? 'Eleme' : 'Knockout'}</option>
     `;
-
-    stageFilter.value = currentValue;
   }
 }
 
@@ -339,23 +253,25 @@ function renderAll() {
   if ($('#matchList')) renderMatches();
   if ($('#groupTables')) renderGroups();
   if ($('#probabilities')) renderProbabilities();
+  ensureMatchupsPanel();
+  if ($('#possibleMatchups')) renderMatchupsProjection();
   if ($('#turkiyeCenter')) renderTurkiye();
   if ($('#dailyBrief')) renderBrief();
 }
 
 function renderStats() {
-  const played = allMatches.filter(match => match.status === 'finished').length;
-  const live = allMatches.filter(match => match.status === 'in_play' || match.status === 'live').length;
+  const played = allMatches.filter(m => m.status === 'finished').length;
+  const live = allMatches.filter(m => m.status === 'in_play' || m.status === 'live').length;
 
   safeHTML('#stats', [
-    ['104', 'Maç'],
-    ['48', 'Takım'],
-    [played, 'Tamamlanan'],
-    [live, 'Canlı']
-  ].map(([value, label]) => `
+    ['104', lang === 'tr' ? 'Maç' : 'Matches'],
+    ['48', lang === 'tr' ? 'Takım' : 'Teams'],
+    [played, lang === 'tr' ? 'Tamamlanan' : 'Finished'],
+    [live, lang === 'tr' ? 'Canlı' : 'Live']
+  ].map(x => `
     <div class="stat">
-      <strong>${escapeHTML(value)}</strong>
-      <span>${escapeHTML(label)}</span>
+      <strong>${x[0]}</strong>
+      <span>${x[1]}</span>
     </div>
   `).join(''));
 }
@@ -364,57 +280,45 @@ function renderSummary() {
   if (briefingData) {
     let html = '';
 
-    const summary = pick(briefingData.summary, briefingData.summary);
-    if (Array.isArray(summary) && summary.length) {
-      html += summary
-        .map(line => `<p>${escapeHTML(line)}</p>`)
+    if (briefingData.summary?.length) {
+      html += briefingData.summary
+        .map(line => `<p>${line}</p>`)
         .join('');
     }
 
     if (briefingData.latestResults?.length) {
       html += `<p><strong>Son sonuçlar:</strong> ${
-        briefingData.latestResults.map(item => escapeHTML(pick(item.text))).join(', ')
+        briefingData.latestResults.map(x => x.text).join(', ')
       }.</p>`;
     }
 
     if (briefingData.biggestSignals?.length) {
       html += `<p><strong>Turnuva sinyali:</strong> ${
-        briefingData.biggestSignals
-          .map(item => `${escapeHTML(pick(item.signal))}: ${escapeHTML(pick(item.text))}`)
-          .join(' | ')
+        briefingData.biggestSignals.map(x => `${x.signal}: ${x.text}`).join(' | ')
       }</p>`;
     }
 
     if (briefingData.editorialNote) {
-      html += `<p>${escapeHTML(pick(briefingData.editorialNote))}</p>`;
+      html += `<p>${briefingData.editorialNote}</p>`;
     }
 
     safeHTML('#aiSummary', html);
     return;
   }
 
-  const last = allMatches
-    .filter(match =>
-      match.status === 'finished' &&
-      match.home?.score != null &&
-      match.away?.score != null
-    )
-    .slice(-3);
-
-  const next = allMatches
-    .filter(match => match.status !== 'finished')
-    .slice(0, 3);
+  const last = allMatches.filter(m => m.status === 'finished').slice(-3);
+  const next = allMatches.filter(m => m.status !== 'finished').slice(0, 3);
 
   let html = '';
 
   if (last.length) {
-    html += `<p><strong>Son tablo:</strong> ${
-      last.map(match => `${escapeHTML(name(match.home.code))} ${scoreText(match.home.score)}-${scoreText(match.away.score)} ${escapeHTML(name(match.away.code))}`).join(', ')
+    html += `<p><strong>${lang === 'tr' ? 'Son tablo' : 'Latest picture'}:</strong> ${
+      last.map(m => `${name(m.home.code)} ${m.home.score}-${m.away.score} ${name(m.away.code)}`).join(', ')
     }.</p>`;
   }
 
-  html += `<p><strong>Sıradaki maçlar:</strong> ${
-    next.map(match => `${escapeHTML(name(match.home.code))} - ${escapeHTML(name(match.away.code))}`).join(', ') || '-'
+  html += `<p><strong>${lang === 'tr' ? 'Sıradaki maçlar' : 'Next matches'}:</strong> ${
+    next.map(m => `${name(m.home.code)} - ${name(m.away.code)}`).join(', ') || '-'
   }.</p>`;
 
   safeHTML('#aiSummary', html);
@@ -424,38 +328,34 @@ function renderRadar() {
   if (intelligenceData?.radar?.length) {
     safeHTML('#radar', intelligenceData.radar.map(item => `
       <div class="signal">
-        <b>${escapeHTML(pick(item.title))}</b>
-        <span>${escapeHTML(pick(item.text))}</span>
+        <b>${item.title}</b>
+        <span>${item.text}</span>
       </div>
     `).join(''));
     return;
   }
 
   const standings = calcStandings();
-  const focusGroup = getGroupOfTeam(focus);
+  const focusGroup = Object.entries(groupMap).find(([g, arr]) => arr.includes(focus))?.[0];
   const table = standings[focusGroup] || [];
-  const position = table.findIndex(row => row.code === focus) + 1;
-  const live = allMatches.find(match => ['in_play', 'live'].includes(match.status));
+  const pos = table.findIndex(x => x.code === focus) + 1;
+  const live = allMatches.find(m => ['in_play', 'live'].includes(m.status));
 
   safeHTML('#radar', [
     [
-      'Odak takım',
-      `${name(focus)} ${focusGroup ? focusGroup + ' Grubu' : ''} ${position ? `• ${position}. sıra` : ''}`
+      lang === 'tr' ? 'Odak takım' : 'Focus team',
+      `${name(focus)} ${focusGroup ? focusGroup + ' Grubu' : ''} ${pos ? `• ${pos}. sıra` : ''}`
     ],
     [
-      'Canlı takip',
+      lang === 'tr' ? 'Canlı takip' : 'Live watch',
       live
         ? `${name(live.home.code)} - ${name(live.away.code)} (${live.time || ''})`
-        : 'Şu an canlı maç görünmüyor'
-    ],
-    [
-      'Turnuva formatı',
-      'İlk 2 takım doğrudan çıkar. En iyi 8 üçüncü takım da Son 32’ye kalır.'
+        : (lang === 'tr' ? 'Şu an canlı maç görünmüyor' : 'No live match visible')
     ]
-  ].map(([title, text]) => `
+  ].map(([b, s]) => `
     <div class="signal">
-      <b>${escapeHTML(title)}</b>
-      <span>${escapeHTML(text)}</span>
+      <b>${b}</b>
+      <span>${s}</span>
     </div>
   `).join(''));
 }
@@ -464,100 +364,82 @@ function filteredMatches() {
   const search = $('#search');
   const stageFilter = $('#stageFilter');
 
-  const query = search ? search.value.toLowerCase() : '';
-  const stage = stageFilter ? stageFilter.value : 'all';
+  const q = search ? search.value.toLowerCase() : '';
+  const st = stageFilter ? stageFilter.value : 'all';
 
-  return allMatches.filter(match => {
+  return allMatches.filter(m => {
     const text = [
-      match.stage,
-      match.group,
-      name(match.home?.code),
-      name(match.away?.code),
-      match.home?.code,
-      match.away?.code
+      m.stage,
+      m.group,
+      name(m.home?.code),
+      name(m.away?.code),
+      m.home?.code,
+      m.away?.code
     ].join(' ').toLowerCase();
 
     const stageOk =
-      stage === 'all' ||
-      (stage === 'knockout' ? match.stage !== 'group' : match.stage === stage);
+      st === 'all' ||
+      (st === 'knockout' ? m.stage !== 'group' : m.stage === st);
 
-    return text.includes(query) && stageOk;
+    return text.includes(q) && stageOk;
   }).slice(0, 80);
 }
 
 function renderMatches() {
   const rows = filteredMatches();
 
-  safeHTML('#matchList', rows.map(match => {
-    const cls = match.status === 'finished'
+  safeHTML('#matchList', rows.map(m => {
+    const cls = m.status === 'finished'
       ? 'finished'
-      : (['in_play', 'live'].includes(match.status) ? 'live' : '');
+      : (['in_play', 'live'].includes(m.status) ? 'live' : '');
+
+    const d = new Date(m.date);
 
     return `
       <article class="match ${cls}">
         <div class="match-head">
-          <span>${escapeHTML(match.stage === 'group' ? `Grup ${match.group}` : stageLabel(match.stage))}</span>
-          <span>${escapeHTML(formatDateTime(match.date))}</span>
+          <span>${m.stage === 'group' ? (lang === 'tr' ? 'Grup ' : 'Group ') + m.group : m.stage}</span>
+          <span>${d.toLocaleString(lang === 'tr' ? 'tr-TR' : 'en-US', { dateStyle: 'medium', timeStyle: 'short' })}</span>
         </div>
-
         <div class="teams">
           <div class="team-row">
-            <span>${escapeHTML(name(match.home?.code))}</span>
-            <span class="score">${escapeHTML(scoreText(match.home?.score))}</span>
+            <span>${name(m.home?.code)}</span>
+            <span class="score">${m.home?.score ?? '-'}</span>
           </div>
-
           <div class="team-row">
-            <span>${escapeHTML(name(match.away?.code))}</span>
-            <span class="score">${escapeHTML(scoreText(match.away?.score))}</span>
+            <span>${name(m.away?.code)}</span>
+            <span class="score">${m.away?.score ?? '-'}</span>
           </div>
         </div>
-
-        <div class="ai-note">${escapeHTML(matchNote(match))}</div>
+        <div class="ai-note">${matchNote(m)}</div>
       </article>
     `;
   }).join(''));
 }
 
-function stageLabel(stage) {
-  if (!stage) return '-';
-
-  const labels = {
-    group: 'Grup',
-    knockout: 'Eleme',
-    round_of_32: 'Son 32',
-    roundOf32: 'Son 32',
-    round_32: 'Son 32',
-    last_32: 'Son 32',
-    round_of_16: 'Son 16',
-    quarter_final: 'Çeyrek Final',
-    semi_final: 'Yarı Final',
-    final: 'Final'
-  };
-
-  return labels[stage] || stage;
-}
-
-function matchNote(match) {
-  if (match.status === 'finished') {
-    if (match.home?.score == null || match.away?.score == null) {
-      return 'Maç tamamlandı görünüyor ancak skor verisi henüz eksik. Veri kaynağı güncellendiğinde yenilenecek.';
-    }
-
-    return 'Maç tamamlandı. Sonuç grup/eleme dengelerini otomatik etkiler.';
+function matchNote(m) {
+  if (m.status === 'finished') {
+    return lang === 'tr'
+      ? 'Maç tamamlandı. Sonuç grup/eleme dengelerini otomatik etkiler.'
+      : 'Finished. Result updates group/knockout balance automatically.';
   }
 
-  if (['in_play', 'live'].includes(match.status)) {
-    return 'Canlı maç. Veri akışı güncellendikçe skor ve zaman yenilenir.';
+  if (['in_play', 'live'].includes(m.status)) {
+    return lang === 'tr'
+      ? 'Canlı maç. Veri akışı güncellendikçe skor ve zaman yenilenir.'
+      : 'Live match. Score and clock refresh as data updates.';
   }
 
-  return 'Planlanan maç. Başlama saatleri yerel saate göre gösterilir.';
+  return lang === 'tr'
+    ? 'Planlanan maç. Başlama saatleri yerel saate göre gösterilir.'
+    : 'Scheduled match. Kick-off is shown in local time.';
 }
 
 function calcStandings() {
-  const standings = {};
+  const s = {};
 
-  for (const [group, teams] of Object.entries(groupMap)) {
-    standings[group] = teams.map(code => ({
+  for (const [g, teams] of Object.entries(groupMap)) {
+    s[g] = teams.map(code => ({
       code,
       p: 0,
       w: 0,
@@ -570,54 +452,356 @@ function calcStandings() {
     }));
   }
 
-  const get = (group, code) => standings[group]?.find(row => row.code === code);
+  const get = (g, c) => s[g]?.find(x => x.code === c);
 
   allMatches
-    .filter(match =>
-      match.stage === 'group' &&
-      match.status === 'finished' &&
-      match.home?.score != null &&
-      match.away?.score != null
+    .filter(m =>
+      m.stage === 'group' &&
+      m.status === 'finished' &&
+      m.home?.score != null &&
+      m.away?.score != null
     )
-    .forEach(match => {
-      const home = get(match.group, match.home.code);
-      const away = get(match.group, match.away.code);
+    .forEach(m => {
+      const h = get(m.group, m.home.code);
+      const a = get(m.group, m.away.code);
 
-      if (!home || !away) return;
+      if (!h || !a) return;
 
-      home.p++;
-      away.p++;
+      h.p++;
+      a.p++;
 
-      home.gf += Number(match.home.score);
-      home.ga += Number(match.away.score);
+      h.gf += m.home.score;
+      h.ga += m.away.score;
+      a.gf += m.away.score;
+      a.ga += m.home.score;
 
-      away.gf += Number(match.away.score);
-      away.ga += Number(match.home.score);
+      h.gd = h.gf - h.ga;
+      a.gd = a.gf - a.ga;
 
-      home.gd = home.gf - home.ga;
-      away.gd = away.gf - away.ga;
-
-      if (match.home.score > match.away.score) {
-        home.w++;
-        away.l++;
-        home.pts += 3;
-      } else if (match.home.score < match.away.score) {
-        away.w++;
-        home.l++;
-        away.pts += 3;
+      if (m.home.score > m.away.score) {
+        h.w++;
+        a.l++;
+        h.pts += 3;
+      } else if (m.home.score < m.away.score) {
+        a.w++;
+        h.l++;
+        a.pts += 3;
       } else {
-        home.d++;
-        away.d++;
-        home.pts++;
-        away.pts++;
+        h.d++;
+        a.d++;
+        h.pts++;
+        a.pts++;
       }
     });
 
-  for (const group in standings) {
-    standings[group].sort(sortStanding);
+  for (const g in s) {
+    s[g].sort((a, b) =>
+      b.pts - a.pts ||
+      b.gd - a.gd ||
+      b.gf - a.gf ||
+      name(a.code).localeCompare(name(b.code), 'tr')
+    );
   }
 
-  return standings;
+  return s;
+}
+
+function renderGroups() {
+  const s = calcStandings();
+
+  safeHTML('#groupTables', Object.entries(s).map(([g, rows]) => `
+    <div class="group">
+      <h3>${g} ${lang === 'tr' ? 'Grubu' : 'Group'}</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>${lang === 'tr' ? 'Takım' : 'Team'}</th>
+            <th>O</th>
+            <th>G</th>
+            <th>B</th>
+            <th>M</th>
+            <th>AV</th>
+            <th>P</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows.map(r => `
+            <tr class="${r.code === focus ? 'focus' : ''}">
+              <td>${name(r.code)}</td>
+              <td>${r.p}</td>
+              <td>${r.w}</td>
+              <td>${r.d}</td>
+              <td>${r.l}</td>
+              <td>${r.gd}</td>
+              <td><b>${r.pts}</b></td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    </div>
+  `).join(''));
+}
+
+function renderProbabilities() {
+  if (intelligenceData?.groupQualification) {
+    const focusGroup =
+      Object.entries(groupMap).find(([g, arr]) => arr.includes(focus))?.[0] || "D";
+
+    const rows = intelligenceData.groupQualification[focusGroup] || [];
+
+    safeHTML('#probabilities', `
+      <div class="prob-group-title">
+        ${focusGroup} Grubu Üst Tur Olasılıkları
+      </div>
+
+      <div class="ai-note" style="margin-bottom:16px">
+        Format: Her grubun ilk 2 takımı doğrudan Son 32’ye çıkar. En iyi 8 üçüncü takım da üst tura kalır.
+      </div>
+
+      ${rows.map(x => `
+        <div class="prob ${x.code === focus ? 'focus-prob' : ''}">
+          <strong>${name(x.code)}</strong>
+          <div class="bar">
+            <span style="width:${Math.max(2, x.probability)}%"></span>
+          </div>
+          <b>%${x.probability}</b>
+        </div>
+      `).join('')}
+    `);
+
+    return;
+  }
+
+  let list = probs
+    .map(p => ({
+      code: p.team || p.code,
+      pct: Math.round((p.champion || p.title || p.prob || 0) * 100)
+    }))
+    .filter(x => x.code)
+    .sort((a, b) => b.pct - a.pct)
+    .slice(0, 12);
+
+  if (!list.length) {
+    list = ['BRA', 'FRA', 'ARG', 'ENG', 'ESP', 'POR', 'GER', 'NED']
+      .map((c, i) => ({
+        code: c,
+        pct: [18, 16, 14, 12, 10, 8, 7, 6][i]
+      }));
+  }
+
+  safeHTML('#probabilities', list.map(x => `
+    <div class="prob">
+      <strong>${name(x.code)}</strong>
+      <div class="bar">
+        <span style="width:${Math.max(2, x.pct)}%"></span>
+      </div>
+      <b>%${x.pct}</b>
+    </div>
+  `).join(''));
+}
+
+
+function ensureMatchupsNav() {
+  const nav = $('.nav');
+  if (!nav || nav.querySelector('a[href="#matchups"]')) return;
+
+  const link = document.createElement('a');
+  link.href = '#matchups';
+  link.textContent = 'Olası Eşleşmeler';
+
+  const intelligenceLink = nav.querySelector('a[href="#intelligence"]');
+  if (intelligenceLink) {
+    intelligenceLink.insertAdjacentElement('afterend', link);
+  } else {
+    nav.appendChild(link);
+  }
+}
+
+function ensureMatchupsPanel() {
+  if ($('#matchups')) return;
+
+  const panel = document.createElement('section');
+  panel.className = 'panel';
+  panel.id = 'matchups';
+  panel.innerHTML = `
+    <div class="section-head">
+      <p class="eyebrow">OLASI EŞLEŞMELER</p>
+      <h2>Son 32 Projeksiyonu</h2>
+    </div>
+    <div id="possibleMatchups"></div>
+  `;
+
+  const intelligence = $('#intelligence');
+  const briefing = $('#briefing');
+
+  if (intelligence?.parentNode) {
+    intelligence.insertAdjacentElement('afterend', panel);
+  } else if (briefing?.parentNode) {
+    briefing.insertAdjacentElement('beforebegin', panel);
+  } else {
+    document.querySelector('main')?.appendChild(panel);
+  }
+}
+
+function renderMatchupsProjection() {
+  const standings = calcStandings();
+  const thirdRanking = buildThirdPlaceRanking(standings);
+  const projectedRows = buildRoundOf32Projection(standings, thirdRanking);
+  const turkiyePath = buildTurkiyePathProjection(standings, thirdRanking, projectedRows);
+
+  safeHTML('#possibleMatchups', `
+    <div class="ai-note" style="margin-bottom:18px">
+      Bu bölüm mevcut grup tablolarına göre otomatik projeksiyon üretir. Grup maçları tamamlanmadan kesin eşleşme olarak görülmemelidir. Üçüncü takım slotları, hangi 8 grubun üçüncüsünün üst tura çıktığına göre değişir.
+    </div>
+
+    <div class="two-col" style="margin-bottom:22px">
+      <article class="signal">
+        <b>Türkiye’nin olası yolu</b>
+        <span>${turkiyePath}</span>
+      </article>
+      <article class="signal">
+        <b>Format notu</b>
+        <span>İlk 2 takım doğrudan Son 32’ye çıkar. En iyi 8 üçüncü takım da eleme turuna kalır.</span>
+      </article>
+    </div>
+
+    <h3 style="margin-top:12px">Geçici Son 32 slotları</h3>
+    <div class="match-list" style="margin-top:16px">
+      ${projectedRows.map(row => `
+        <article class="match ${row.involvesFocus ? 'focus-prob' : ''}">
+          <div class="match-head">
+            <span>Maç ${row.no}</span>
+            <span>${row.certainty}</span>
+          </div>
+          <div class="teams">
+            <div class="team-row">
+              <span>${row.home}</span>
+            </div>
+            <div class="team-row">
+              <span>${row.away}</span>
+            </div>
+          </div>
+          <div class="ai-note">${row.note}</div>
+        </article>
+      `).join('')}
+    </div>
+
+    <h3 style="margin-top:22px">Geçici en iyi üçüncüler</h3>
+    <div class="radar" style="margin-top:14px">
+      ${thirdRanking.map(team => `
+        <div class="signal ${team.qualifiesAsThird ? '' : 'dimmed'} ${team.code === focus ? 'focus-prob' : ''}">
+          <b>${team.thirdPlaceRank}. ${name(team.code)}</b>
+          <span>${team.group} Grubu · ${team.pts} puan · AV ${team.gd} · ${team.qualifiesAsThird ? 'üst tur hattında' : 'dışarıda'}</span>
+        </div>
+      `).join('')}
+    </div>
+  `);
+}
+
+function buildRoundOf32Projection(standings, thirdRanking) {
+  return ROUND_OF_32_TEMPLATE.map(slot => {
+    const home = resolveSlotSide(slot.home, standings, thirdRanking);
+    const away = resolveSlotSide(slot.away, standings, thirdRanking);
+    const hasThirdPool = slot.home.type === 'third' || slot.away.type === 'third';
+    const involvesFocus = home.codes.includes(focus) || away.codes.includes(focus);
+
+    return {
+      no: slot.no,
+      home: home.label,
+      away: away.label,
+      certainty: hasThirdPool ? 'Üçüncülük havuzu' : 'Projeksiyon',
+      note: hasThirdPool
+        ? 'Üçüncü takım slotu, FIFA kombinasyon tablosuna ve hangi grupların üçüncüsünün çıktığına bağlıdır.'
+        : 'Mevcut grup sıralamasına göre doğrudan eşleşme projeksiyonu.',
+      involvesFocus
+    };
+  });
+}
+
+function resolveSlotSide(rule, standings, thirdRanking) {
+  if (rule.type === 'winner') {
+    const team = standings[rule.group]?.[0];
+    return {
+      label: team ? `${name(team.code)} · ${rule.group} Grubu lideri` : `${rule.group} Grubu lideri`,
+      codes: team ? [team.code] : []
+    };
+  }
+
+  if (rule.type === 'runner') {
+    const team = standings[rule.group]?.[1];
+    return {
+      label: team ? `${name(team.code)} · ${rule.group} Grubu ikincisi` : `${rule.group} Grubu ikincisi`,
+      codes: team ? [team.code] : []
+    };
+  }
+
+  if (rule.type === 'third') {
+    const candidates = thirdRanking.filter(team => rule.groups.includes(team.group) && team.qualifiesAsThird);
+
+    if (candidates.length) {
+      return {
+        label: candidates.map(team => `${name(team.code)} (${team.group})`).join(' / '),
+        codes: candidates.map(team => team.code)
+      };
+    }
+
+    return {
+      label: `En iyi üçüncü havuzu: ${rule.groups.join('/')}`,
+      codes: []
+    };
+  }
+
+  return { label: 'Belirsiz', codes: [] };
+}
+
+function buildTurkiyePathProjection(standings, thirdRanking, rows) {
+  const group = getGroupOfTeam('TUR') || 'D';
+  const table = standings[group] || [];
+  const position = table.findIndex(team => team.code === 'TUR') + 1;
+  const turkiyeThird = thirdRanking.find(team => team.code === 'TUR');
+  const turkiyeRows = rows.filter(row => row.involvesFocus);
+
+  if (!position) {
+    return 'Türkiye için grup verisi henüz oluşmadı.';
+  }
+
+  if (position <= 2) {
+    const slotText = turkiyeRows.length
+      ? `Olası slot: ${turkiyeRows.map(row => `Maç ${row.no}`).join(', ')}.`
+      : 'Resmi slot, grup sıralaması kesinleştiğinde netleşecek.';
+
+    return `Türkiye şu an D Grubu'nda ${position}. sırada ve doğrudan üst tur hattında. ${slotText}`;
+  }
+
+  if (position === 3) {
+    if (turkiyeThird?.qualifiesAsThird) {
+      const slotText = turkiyeRows.length
+        ? `Türkiye’nin göründüğü olası slotlar: ${turkiyeRows.map(row => `Maç ${row.no}`).join(', ')}.`
+        : 'Üçüncü takım kombinasyonu henüz kesinleşmedi.';
+
+      return `Türkiye şu an en iyi üçüncüler sıralamasında ${turkiyeThird.thirdPlaceRank}/${GROUP_COUNT}. sırada. ${slotText}`;
+    }
+
+    return `Türkiye şu an 3. sırada ama geçici en iyi üçüncüler listesinde ilk ${BEST_THIRD_QUALIFY_LIMIT} dışında görünüyor. Diğer grup sonuçları belirleyici olur.`;
+  }
+
+  return 'Türkiye şu an 4. sırada ve olası Son 32 eşleşme hattının dışında. Son maç sonucu ve grup dengeleri belirleyici olacak.';
+}
+
+function buildThirdPlaceRanking(standings) {
+  return Object.entries(standings)
+    .map(([group, table]) => {
+      const third = [...table].sort(sortStanding)[2];
+      if (!third) return null;
+      return { ...third, group };
+    })
+    .filter(Boolean)
+    .sort(sortStanding)
+    .map((team, index) => ({
+      ...team,
+      thirdPlaceRank: index + 1,
+      qualifiesAsThird: index + 1 <= BEST_THIRD_QUALIFY_LIMIT
+    }));
 }
 
 function sortStanding(a, b) {
@@ -629,480 +813,85 @@ function sortStanding(a, b) {
   );
 }
 
-function renderGroups() {
-  const standings = calcStandings();
-
-  safeHTML('#groupTables', Object.entries(standings).map(([group, rows]) => `
-    <div class="group">
-      <h3>${group} Grubu</h3>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Takım</th>
-            <th>O</th>
-            <th>G</th>
-            <th>B</th>
-            <th>M</th>
-            <th>AV</th>
-            <th>P</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          ${rows.map((row, index) => {
-            const qualifyClass =
-              index < AUTO_QUALIFY_LIMIT
-                ? 'direct-qualify'
-                : index === 2
-                  ? 'third-race'
-                  : '';
-
-            return `
-              <tr class="${row.code === focus ? 'focus' : ''} ${qualifyClass}">
-                <td>${escapeHTML(name(row.code))}</td>
-                <td>${row.p}</td>
-                <td>${row.w}</td>
-                <td>${row.d}</td>
-                <td>${row.l}</td>
-                <td>${row.gd}</td>
-                <td><b>${row.pts}</b></td>
-              </tr>
-            `;
-          }).join('')}
-        </tbody>
-      </table>
-    </div>
-  `).join(''));
+function getGroupOfTeam(code) {
+  return Object.entries(groupMap).find(([, teams]) => teams.includes(code))?.[0] || null;
 }
 
-function renderProbabilities() {
-  if (intelligenceData?.groupQualification) {
-    const focusGroup = getGroupOfTeam(focus) || 'D';
-    const rows = intelligenceData.groupQualification[focusGroup] || [];
+function renderTurkiye() {
+  if (turkiyeData) {
+    const standing = turkiyeData.standing || {};
+    const upcoming = turkiyeData.upcomingMatches || [];
+    const played = turkiyeData.playedMatches || [];
 
-    safeHTML('#probabilities', `
-      <div class="prob-group-title">
-        ${escapeHTML(focusGroup)} Grubu Üst Tur Olasılıkları
-      </div>
-
-      <div class="ai-note" style="margin-bottom:16px">
-        Format: Her grubun ilk 2 takımı doğrudan Son 32’ye çıkar. En iyi 8 üçüncü takım da üst tura kalır.
-      </div>
-
-      ${rows.map(item => `
-        <div class="prob ${item.code === focus ? 'focus-prob' : ''}">
-          <strong>${escapeHTML(name(item.code))}</strong>
-          <div class="bar">
-            <span style="width:${Math.max(2, Number(item.probability || 0))}%"></span>
-          </div>
-          <b>%${escapeHTML(item.probability ?? 0)}</b>
+    safeHTML('#turkiyeCenter', `
+      <div class="turkey-cards">
+        <div class="stat">
+          <strong>${turkiyeData.position || '-'}</strong>
+          <span>D Grubu sıra</span>
         </div>
-      `).join('')}
+        <div class="stat">
+          <strong>${standing.points ?? 0}</strong>
+          <span>Puan</span>
+        </div>
+        <div class="stat">
+          <strong>${standing.gd ?? 0}</strong>
+          <span>Averaj</span>
+        </div>
+        <div class="stat">
+          <strong>${turkiyeData.qualificationSignal || '-'}</strong>
+          <span>Üst tur sinyali</span>
+        </div>
+      </div>
+    <div class="stat qualification-prob">
+        <strong>%${turkiyeData.qualificationProbability ?? '-'}</strong>
+        <span>Üst tur ihtimali</span>
+      </div>
+      <div class="ai-note" style="margin-top:16px">
+        ${turkiyeData.analysis || ''}
+      </div>
+     
+      <h3 style="margin-top:22px">Türkiye maçları</h3>
 
-      ${renderThirdPlaceMiniRanking(focusGroup)}
+      <div class="match-list" style="margin-top:16px">
+        ${[...played, ...upcoming].map(m => `
+          <article class="match">
+            <div class="match-head">
+              <span>${m.result ? m.result.toUpperCase() : 'Sıradaki maç'}</span>
+              <span>${m.date ? new Date(m.date).toLocaleString('tr-TR', { dateStyle: 'medium', timeStyle: 'short' }) : ''}</span>
+            </div>
+            <div class="teams">
+              <div class="team-row">
+                <span>${m.text}</span>
+              </div>
+            </div>
+          </article>
+        `).join('')}
+      </div>
     `);
 
     return;
   }
 
-  let list = probs
-    .map(item => ({
-      code: item.team || item.code,
-      pct: Math.round((item.champion || item.title || item.prob || 0) * 100)
-    }))
-    .filter(item => item.code)
-    .sort((a, b) => b.pct - a.pct)
-    .slice(0, 12);
-
-  if (!list.length) {
-    list = ['BRA', 'FRA', 'ARG', 'ENG', 'ESP', 'POR', 'GER', 'NED']
-      .map((code, index) => ({
-        code,
-        pct: [18, 16, 14, 12, 10, 8, 7, 6][index]
-      }));
-  }
-
-  safeHTML('#probabilities', `
-    <div class="ai-note" style="margin-bottom:16px">
-      Format: Her grubun ilk 2 takımı doğrudan Son 32’ye çıkar. En iyi 8 üçüncü takım da üst tura kalır.
-    </div>
-
-    ${list.map(item => `
-      <div class="prob">
-        <strong>${escapeHTML(name(item.code))}</strong>
-        <div class="bar">
-          <span style="width:${Math.max(2, item.pct)}%"></span>
-        </div>
-        <b>%${item.pct}</b>
-      </div>
-    `).join('')}
-  `);
-}
-
-function renderThirdPlaceMiniRanking(focusGroup) {
-  const ranking = buildThirdPlaceRanking(calcStandings());
-  if (!ranking.length) return '';
-
-  const top = ranking.slice(0, BEST_THIRD_QUALIFY_LIMIT);
-  const focusThird = ranking.find(item => item.code === focus);
-
-  let extra = '';
-
-  if (focusThird && !top.some(item => item.code === focus)) {
-    extra = `
-      <div class="signal" style="margin-top:10px">
-        <b>${escapeHTML(name(focusThird.code))}</b>
-        <span>Geçici en iyi üçüncüler sırası: ${focusThird.thirdPlaceRank}/${GROUP_COUNT}</span>
-      </div>
-    `;
-  }
-
-  return `
-    <div class="ai-note" style="margin-top:18px">
-      Geçici en iyi üçüncüler listesi, oynanan maçlara göre hesaplanır. Gruplar tamamlanmadan kesin sonuç değildir.
-    </div>
-
-    <div class="radar" style="margin-top:12px">
-      ${top.map(item => `
-        <div class="signal ${item.group === focusGroup ? 'focus-prob' : ''}">
-          <b>${item.thirdPlaceRank}. ${escapeHTML(name(item.code))}</b>
-          <span>${item.group} Grubu · ${item.pts} puan · AV ${item.gd}</span>
-        </div>
-      `).join('')}
-      ${extra}
-    </div>
-  `;
-}
-
-function renderTurkiye() {
-  const view = buildTurkiyeView();
-
-  if (!view) {
-    renderTurkiyeFallback();
-    return;
-  }
-
-  const sectionTitle = $('#turkiye h2');
-  if (sectionTitle) sectionTitle.textContent = view.panelTitle;
-
-  safeHTML('#turkiyeCenter', `
-    <div class="turkey-cards">
-      <div class="stat">
-        <strong>${escapeHTML(view.position || '-')}</strong>
-        <span>D Grubu sıra</span>
-      </div>
-
-      <div class="stat">
-        <strong>${escapeHTML(view.points)}</strong>
-        <span>Puan</span>
-      </div>
-
-      <div class="stat">
-        <strong>${escapeHTML(view.gd)}</strong>
-        <span>Averaj</span>
-      </div>
-
-      <div class="stat">
-        <strong class="status-word">${escapeHTML(view.signal)}</strong>
-        <span>${escapeHTML(view.signalSub)}</span>
-      </div>
-    </div>
-
-    <div class="stat qualification-prob">
-      <strong>${escapeHTML(view.probabilityText)}</strong>
-      <span>${escapeHTML(view.probabilityLabel)}</span>
-    </div>
-
-    ${view.thirdPlaceNote ? `
-      <div class="signal" style="margin-top:16px">
-        <b>Üçüncülük hesabı</b>
-        <span>${escapeHTML(view.thirdPlaceNote)}</span>
-      </div>
-    ` : ''}
-
-    <div class="ai-note" style="margin-top:16px">
-      ${escapeHTML(view.analysis)}
-    </div>
-
-    <h3 style="margin-top:22px">Türkiye maçları</h3>
-
-    <div class="match-list" style="margin-top:16px">
-      ${view.matches.map(match => `
-        <article class="match ${escapeHTML(match.className)}">
-          <div class="match-head">
-            <span>${escapeHTML(match.label)}</span>
-            <span>${escapeHTML(match.dateText)}</span>
-          </div>
-
-          <div class="teams">
-            <div class="team-row">
-              <span>${escapeHTML(match.text)}</span>
-            </div>
-          </div>
-        </article>
-      `).join('')}
-    </div>
-  `);
-}
-
-function buildTurkiyeView() {
-  const standings = calcStandings();
-  const group = 'D';
-  const table = standings[group] || [];
-  const row = table.find(item => item.code === 'TUR') || null;
-  const position = table.findIndex(item => item.code === 'TUR') + 1;
-
-  const turkiyeMatches = allMatches.filter(match =>
-    match.home?.code === 'TUR' || match.away?.code === 'TUR'
-  );
-
-  if (!row && !turkiyeData) return null;
-
-  const backendStanding = turkiyeData?.standing || {};
-  const points = row?.pts ?? backendStanding.points ?? backendStanding.pts ?? 0;
-  const gd = row?.gd ?? backendStanding.gd ?? 0;
-
-  const allMatchesFinished =
-    turkiyeMatches.length > 0 &&
-    turkiyeMatches.every(match => match.status === 'finished');
-
-  const thirdPlaceRanking = buildThirdPlaceRanking(standings);
-  const thirdInfo = position === 3
-    ? thirdPlaceRanking.find(item => item.code === 'TUR') || null
-    : null;
-
-  let tournamentStatus = turkiyeData?.tournamentStatus || 'active';
-  let signal = turkiyeData?.qualificationSignal || 'Durum izleniyor';
-  let signalSub = 'Üst tur sinyali';
-  let qualificationProbability = Number(turkiyeData?.qualificationProbability ?? NaN);
-
-  if (position === 1 || position === 2) {
-    signal = 'Doğrudan üst tur hattında';
-    signalSub = position === 1 ? 'Grup liderliği' : 'İlk 2 içinde';
-    if (Number.isNaN(qualificationProbability)) qualificationProbability = position === 1 ? 90 : 78;
-  } else if (position === 3) {
-    signal = 'En iyi üçüncüler yarışında';
-    signalSub = 'Kıyaslı üst tur hattı';
-
-    if (Number.isNaN(qualificationProbability)) {
-      if (thirdInfo?.thirdPlaceRank <= 4) qualificationProbability = 68;
-      else if (thirdInfo?.thirdPlaceRank <= 8) qualificationProbability = 52;
-      else if (thirdInfo?.thirdPlaceRank <= 10) qualificationProbability = 28;
-      else qualificationProbability = 12;
-    }
-  } else if (position >= 4) {
-    signal = 'Elenme hattında';
-    signalSub = 'İlk 3 dışında';
-    if (Number.isNaN(qualificationProbability)) qualificationProbability = 8;
-  }
-
-  if (allMatchesFinished) {
-    if (position > 0 && position <= AUTO_QUALIFY_LIMIT) {
-      tournamentStatus = 'advanced_auto';
-      signal = 'Doğrudan üst tura çıktı';
-      signalSub = 'Son 32';
-      qualificationProbability = 100;
-    } else if (position === 3) {
-      if (thirdInfo?.qualifiesAsThird) {
-        tournamentStatus = 'advanced_best_third';
-        signal = 'En iyi üçüncülerden çıktı';
-        signalSub = 'Son 32';
-        qualificationProbability = 100;
-      } else {
-        tournamentStatus = 'third_place_wait';
-        signal = 'En iyi üçüncüler bekleniyor';
-        signalSub = 'Diğer gruplara bağlı';
-        qualificationProbability = Number.isNaN(qualificationProbability) ? 35 : qualificationProbability;
-      }
-    } else {
-      tournamentStatus = 'eliminated';
-      signal = 'Turnuvaya veda etti';
-      signalSub = 'Grup aşaması';
-      qualificationProbability = 0;
-    }
-  }
-
-  qualificationProbability = Math.max(0, Math.min(100, Number.isNaN(qualificationProbability) ? 25 : qualificationProbability));
-
-  const panelTitle = tournamentStatus === 'eliminated'
-    ? 'Türkiye’nin Turnuva Karnesi'
-    : tournamentStatus === 'advanced_auto' || tournamentStatus === 'advanced_best_third'
-      ? 'Türkiye Üst Turda'
-      : 'Türkiye’nin Turnuva Panosu';
-
-  const probabilityText =
-    tournamentStatus === 'eliminated'
-      ? 'Elendi'
-      : tournamentStatus === 'advanced_auto' || tournamentStatus === 'advanced_best_third'
-        ? 'Üst tur'
-        : `%${qualificationProbability}`;
-
-  const probabilityLabel =
-    tournamentStatus === 'eliminated'
-      ? 'Turnuva durumu'
-      : tournamentStatus === 'advanced_auto'
-        ? 'Doğrudan çıktı'
-        : tournamentStatus === 'advanced_best_third'
-          ? 'En iyi üçüncü'
-          : position === 3
-            ? 'En iyi üçüncüler ihtimali'
-            : 'Üst tur ihtimali';
-
-  const thirdPlaceNote =
-    position === 3
-      ? thirdInfo
-        ? `Türkiye geçici en iyi üçüncüler sıralamasında ${thirdInfo.thirdPlaceRank}/${GROUP_COUNT}. sırada. En iyi ${BEST_THIRD_QUALIFY_LIMIT} üçüncü takım Son 32’ye kalır.`
-        : `Türkiye 3. sırada. İlk iki takım doğrudan çıkar; üçüncüler arasında en iyi ${BEST_THIRD_QUALIFY_LIMIT} takım Son 32’ye kalır.`
-      : '';
-
-  const analysis = buildTurkiyeAnalysis({
-    position,
-    tournamentStatus,
-    thirdInfo,
-    qualificationProbability
-  });
-
-  const matches = turkiyeMatches.map(toTurkiyeMatchCard);
-
-  return {
-    panelTitle,
-    position,
-    points,
-    gd,
-    signal,
-    signalSub,
-    probabilityText,
-    probabilityLabel,
-    thirdPlaceNote,
-    analysis,
-    matches
-  };
-}
-
-function buildTurkiyeAnalysis({ position, tournamentStatus, thirdInfo, qualificationProbability }) {
-  if (tournamentStatus === 'advanced_auto') {
-    return `Türkiye D Grubu'nu ${position}. sırada tamamladı ve doğrudan Son 32’ye çıktı.`;
-  }
-
-  if (tournamentStatus === 'advanced_best_third') {
-    return `Türkiye D Grubu'nu 3. sırada tamamladı ve en iyi üçüncüler arasından Son 32’ye çıktı.`;
-  }
-
-  if (tournamentStatus === 'third_place_wait') {
-    return 'Türkiye D Grubu’nu 3. sırada tamamladı. Üst tur durumu, diğer gruplardaki üçüncülerin puan ve averaj tablosuna göre netleşecek.';
-  }
-
-  if (tournamentStatus === 'eliminated') {
-    return `Türkiye D Grubu'nu ${position}. sırada tamamladı ve turnuvaya veda etti. Yıldız Kupası, kalan maçlarda turnuva zekâsı, favoriler ve günlük notlarla devam ediyor.`;
-  }
-
-  if (position === 1 || position === 2) {
-    return `Türkiye D Grubu'nda şu an ${position}. sırada. İlk iki sıra doğrudan Son 32 anlamına geliyor.`;
-  }
-
-  if (position === 3) {
-    const rankText = thirdInfo
-      ? ` Geçici en iyi üçüncüler sırası: ${thirdInfo.thirdPlaceRank}/${GROUP_COUNT}.`
-      : '';
-
-    return `Türkiye D Grubu'nda şu an 3. sırada. İlk iki takım doğrudan Son 32’ye çıkar; üçüncülükte ise en iyi ${BEST_THIRD_QUALIFY_LIMIT} üçüncü takım arasına girmek gerekiyor.${rankText} Güncel üst tur ihtimali yaklaşık %${qualificationProbability}.`;
-  }
-
-  if (position >= 4) {
-    return `Türkiye D Grubu'nda şu an ${position}. sırada. Üst tur için ilk ikiye yükselmesi ya da en azından 3. sıraya çıkıp en iyi üçüncüler yarışına girmesi gerekiyor.`;
-  }
-
-  return 'Türkiye için grup verisi henüz oluşmadı.';
-}
-
-function buildThirdPlaceRanking(standings) {
-  return Object.entries(standings)
-    .map(([group, table]) => {
-      const sorted = [...table].sort(sortStanding);
-      const third = sorted[2];
-
-      if (!third) return null;
-
-      return {
-        ...third,
-        group
-      };
-    })
-    .filter(Boolean)
-    .sort(sortStanding)
-    .map((team, index) => ({
-      ...team,
-      thirdPlaceRank: index + 1,
-      qualifiesAsThird: index + 1 <= BEST_THIRD_QUALIFY_LIMIT
-    }));
-}
-
-function toTurkiyeMatchCard(match) {
-  const home = name(match.home?.code);
-  const away = name(match.away?.code);
-  const hasScore = match.home?.score != null && match.away?.score != null;
-
-  let text = `${home} - ${away}`;
-  if (hasScore) {
-    text = `${home} ${match.home.score}-${match.away.score} ${away}`;
-  }
-
-  let label = 'Sıradaki maç';
-  let className = '';
-
-  if (match.status === 'finished') {
-    className = 'finished';
-
-    if (hasScore) {
-      if (match.home.score === match.away.score) {
-        label = 'Beraberlik';
-      } else {
-        const turkiyeWon =
-          (match.home.code === 'TUR' && match.home.score > match.away.score) ||
-          (match.away.code === 'TUR' && match.away.score > match.home.score);
-
-        label = turkiyeWon ? 'Galibiyet' : 'Mağlubiyet';
-      }
-    } else {
-      label = 'Maç tamamlandı';
-    }
-  } else if (['in_play', 'live'].includes(match.status)) {
-    label = 'Canlı';
-    className = 'live';
-  }
-
-  return {
-    text,
-    label,
-    className,
-    dateText: formatDateTime(match.date)
-  };
-}
-
-function renderTurkiyeFallback() {
-  const matches = allMatches.filter(match =>
-    match.home?.code === 'TUR' || match.away?.code === 'TUR'
+  const matches = allMatches.filter(m =>
+    m.home?.code === 'TUR' || m.away?.code === 'TUR'
   );
 
   safeHTML('#turkiyeCenter', `
     <div class="match-list">
-      ${matches.map(match => `
+      ${matches.map(m => `
         <article class="match">
           <div class="match-head">
-            <span>${escapeHTML(match.group ? match.group + ' Grubu' : stageLabel(match.stage))}</span>
-            <span>${escapeHTML(formatDateTime(match.date))}</span>
+            <span>${m.group ? m.group + ' Grubu' : m.stage}</span>
+            <span>${new Date(m.date).toLocaleDateString('tr-TR')}</span>
           </div>
-
           <div class="teams">
             <div class="team-row">
-              <span>${escapeHTML(name(match.home?.code))}</span>
-              <span class="score">${escapeHTML(scoreText(match.home?.score))}</span>
+              <span>${name(m.home?.code)}</span>
+              <span class="score">${m.home?.score ?? '-'}</span>
             </div>
-
             <div class="team-row">
-              <span>${escapeHTML(name(match.away?.code))}</span>
-              <span class="score">${escapeHTML(scoreText(match.away?.score))}</span>
+              <span>${name(m.away?.code)}</span>
+              <span class="score">${m.away?.score ?? '-'}</span>
             </div>
           </div>
         </article>
@@ -1112,28 +901,27 @@ function renderTurkiyeFallback() {
 }
 
 function renderBrief() {
-  const finished = allMatches.filter(match => match.status === 'finished').length;
-  const live = allMatches.filter(match => ['in_play', 'live'].includes(match.status)).length;
+  const finished = allMatches.filter(m => m.status === 'finished').length;
+  const live = allMatches.filter(m => ['in_play', 'live'].includes(m.status)).length;
 
   safeHTML('#dailyBrief', `
-    <p><strong>${escapeHTML(new Date().toLocaleDateString('tr-TR', { dateStyle: 'full' }))}</strong></p>
-
-    <p>Turnuvada şu ana kadar ${finished} maç tamamlandı, ${live} maç canlı izleme durumunda görünüyor.</p>
-
-    <p>Yıldız Kupası’nın farkı ham skor göstermek değil; skorun turnuva bağlamını, grup etkisini ve hikâyesini sade biçimde anlatmaktır.</p>
-
-    <p><strong>Format notu:</strong> Grup aşamasında ilk iki takım doğrudan Son 32’ye çıkar. En iyi 8 üçüncü takım da üst tura kalır.</p>
+    <p><strong>${new Date().toLocaleDateString(lang === 'tr' ? 'tr-TR' : 'en-US', { dateStyle: 'full' })}</strong></p>
+    <p>${
+      lang === 'tr'
+        ? `Turnuvada şu ana kadar ${finished} maç tamamlandı, ${live} maç canlı izleme durumunda görünüyor.`
+        : `So far, ${finished} matches are finished and ${live} match(es) appear live.`
+    }</p>
+    <p>${
+      lang === 'tr'
+        ? 'Yıldız Kupası’nın farkı ham skor göstermek değil; skorun turnuva bağlamını, grup etkisini ve hikâyesini sade biçimde anlatmaktır.'
+        : 'Yıldız Kupası is not just about raw scores; it explains tournament context, group impact and the story behind the numbers.'
+    }</p>
   `);
-}
-
-function getGroupOfTeam(code) {
-  return Object.entries(groupMap).find(([, teams]) => teams.includes(code))?.[0] || null;
 }
 
 const langBtn = $('#langBtn');
 if (langBtn) {
   langBtn.addEventListener('click', () => {
-    // EN şimdilik kapalı. Buton tekrar görünür hale getirilirse burası kullanılabilir.
     lang = lang === 'tr' ? 'en' : 'tr';
     localStorage.setItem('yk_lang', lang);
     applyLang();
@@ -1153,8 +941,8 @@ if (themeBtn) {
 
 const teamFocus = $('#teamFocus');
 if (teamFocus) {
-  teamFocus.addEventListener('change', event => {
-    focus = event.target.value;
+  teamFocus.addEventListener('change', e => {
+    focus = e.target.value;
     localStorage.setItem('yk_focus', focus);
     renderAll();
   });
