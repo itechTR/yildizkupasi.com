@@ -817,11 +817,47 @@ function getGroupOfTeam(code) {
   return Object.entries(groupMap).find(([, teams]) => teams.includes(code))?.[0] || null;
 }
 
+function normalizePercentageValue(value) {
+  const n = Number(value);
+
+  if (!Number.isFinite(n)) return null;
+
+  return n > 0 && n <= 1
+    ? Math.round(n * 100)
+    : Math.round(n);
+}
+
+function getQualificationProbabilityForTeam(code) {
+  const group = getGroupOfTeam(code);
+  const groupRows = group ? intelligenceData?.groupQualification?.[group] : null;
+  const intelligenceRow = Array.isArray(groupRows)
+    ? groupRows.find(row => (row.code || row.team) === code)
+    : null;
+
+  const intelligenceProbability = normalizePercentageValue(
+    intelligenceRow?.probability ?? intelligenceRow?.prob
+  );
+
+  if (intelligenceProbability !== null) {
+    return intelligenceProbability;
+  }
+
+  if (code === 'TUR') {
+    return normalizePercentageValue(turkiyeData?.qualificationProbability);
+  }
+
+  return null;
+}
+
 function renderTurkiye() {
   if (turkiyeData) {
     const standing = turkiyeData.standing || {};
     const upcoming = turkiyeData.upcomingMatches || [];
     const played = turkiyeData.playedMatches || [];
+    const turkiyeQualificationProbability = getQualificationProbabilityForTeam('TUR');
+    const turkiyeQualificationLabel = turkiyeQualificationProbability !== null
+      ? `%${turkiyeQualificationProbability}`
+      : '-';
 
     safeHTML('#turkiyeCenter', `
       <div class="turkey-cards">
@@ -843,7 +879,7 @@ function renderTurkiye() {
         </div>
       </div>
     <div class="stat qualification-prob">
-        <strong>%${turkiyeData.qualificationProbability ?? '-'}</strong>
+        <strong>${turkiyeQualificationLabel}</strong>
         <span>Üst tur ihtimali</span>
       </div>
       <div class="ai-note" style="margin-top:16px">
