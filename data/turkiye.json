@@ -1,11 +1,14 @@
 {
-  "updatedAt": "2026-06-23T16:37:01.354Z",
+  "updatedAt": "2026-06-23T18:29:37.762Z",
   "team": "TUR",
   "teamName": "Türkiye",
   "group": "D",
   "position": 4,
-  "qualificationSignal": "Baskı altında",
-  "qualificationProbability": 12,
+  "tournamentStatus": "active",
+  "qualificationSignal": "Elenme hattında",
+  "qualificationProbability": 2,
+  "thirdPlaceRank": null,
+  "thirdPlaceQualifies": false,
   "standing": {
     "code": "TUR",
     "team": "Türkiye",
@@ -38,5 +41,5 @@
       "opponent": "USA"
     }
   ],
-  "analysis": "Türkiye D Grubu'nda şu an 4. sırada. Kalan maçlar üst tur ihtimalini belirleyecek."
+  "analysis": "Türkiye D Grubu'nda şu an 4. sırada. İlk iki sıra doğrudan üst tur, üçüncülük ise en iyi üçüncüler yarışına kalmak anlamına geliyor."
 }
