@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-23T22:04:36.483Z",
+  "updatedAt": "2026-06-23T23:19:37.501Z",
   "liveCount": 1,
-  "finishedCount": 45,
-  "scheduledCount": 59,
+  "finishedCount": 46,
+  "scheduledCount": 58,
   "groupQualification": {
     "A": [
       {
@@ -40,14 +40,6 @@
     ],
     "B": [
       {
-        "code": "CAN",
-        "team": "Kanada",
-        "probability": 95,
-        "points": 4,
-        "gd": 6,
-        "played": 2
-      },
-      {
         "code": "SUI",
         "team": "İsviçre",
         "probability": 95,
@@ -56,12 +48,20 @@
         "played": 2
       },
       {
+        "code": "CAN",
+        "team": "Kanada",
+        "probability": 95,
+        "points": 3,
+        "gd": 6,
+        "played": 1
+      },
+      {
         "code": "BIH",
         "team": "Bosna Hersek",
-        "probability": 34,
-        "points": 1,
+        "probability": 24,
+        "points": 0,
         "gd": -3,
-        "played": 2
+        "played": 1
       },
       {
         "code": "QAT",
@@ -144,10 +144,10 @@
       {
         "code": "GER",
         "team": "Almanya",
-        "probability": 76,
-        "points": 3,
-        "gd": 1,
-        "played": 1
+        "probability": 95,
+        "points": 6,
+        "gd": 7,
+        "played": 2
       },
       {
         "code": "CIV",
@@ -158,20 +158,20 @@
         "played": 2
       },
       {
-        "code": "CUW",
-        "team": "Curaçao",
-        "probability": 42,
-        "points": 0,
-        "gd": 0,
-        "played": 0
-      },
-      {
         "code": "ECU",
         "team": "Ekvador",
-        "probability": 30,
-        "points": 0,
+        "probability": 38,
+        "points": 1,
         "gd": -1,
-        "played": 1
+        "played": 2
+      },
+      {
+        "code": "CUW",
+        "team": "Curaçao",
+        "probability": 20,
+        "points": 1,
+        "gd": -6,
+        "played": 2
       }
     ],
     "F": [
@@ -382,18 +382,18 @@
       {
         "code": "ENG",
         "team": "İngiltere",
-        "probability": 84,
-        "points": 3,
+        "probability": 92,
+        "points": 4,
         "gd": 2,
-        "played": 1
+        "played": 2
       },
       {
         "code": "GHA",
         "team": "Gana",
-        "probability": 74,
-        "points": 3,
+        "probability": 82,
+        "points": 4,
         "gd": 1,
-        "played": 1
+        "played": 2
       },
       {
         "code": "PAN",
@@ -416,7 +416,7 @@
   "radar": [
     {
       "title": "Grup liderleri",
-      "text": "A: Meksika, B: Kanada, C: Brezilya, D: ABD, E: Almanya, F: Hollanda, G: Mısır, H: İspanya, I: Fransa, J: Arjantin, K: Portekiz, L: İngiltere"
+      "text": "A: Meksika, B: İsviçre, C: Brezilya, D: ABD, E: Almanya, F: Hollanda, G: Mısır, H: İspanya, I: Fransa, J: Arjantin, K: Portekiz, L: İngiltere"
     },
     {
       "title": "Gol sinyali",
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "İngiltere - Gana, Panama - Hırvatistan, Kolombiya - DR Kongo, İsviçre - Kanada, Bosna Hersek - Katar, Fas - Haiti, İskoçya - Brezilya, Çekya - Meksika"
+      "text": "Panama - Hırvatistan, Kolombiya - DR Kongo, İsviçre - Kanada, Bosna Hersek - Katar, Fas - Haiti, İskoçya - Brezilya, Çekya - Meksika, Güney Afrika - Güney Kore"
     }
   ],
   "groupLeaders": [
@@ -436,8 +436,8 @@
     },
     {
       "group": "B",
-      "leader": "CAN",
-      "leaderName": "Kanada",
+      "leader": "SUI",
+      "leaderName": "İsviçre",
       "points": 4
     },
     {
@@ -456,7 +456,7 @@
       "group": "E",
       "leader": "GER",
       "leaderName": "Almanya",
-      "points": 3
+      "points": 6
     },
     {
       "group": "F",
@@ -498,7 +498,7 @@
       "group": "L",
       "leader": "ENG",
       "leaderName": "İngiltere",
-      "points": 3
+      "points": 4
     }
   ],
   "highScoringMatches": [
@@ -529,13 +529,6 @@
     }
   ],
   "upcomingFocus": [
-    {
-      "id": "537411",
-      "text": "İngiltere - Gana",
-      "date": "2026-06-23T20:00:00Z",
-      "group": "L",
-      "stage": "group"
-    },
     {
       "id": "537412",
       "text": "Panama - Hırvatistan",
@@ -581,6 +574,13 @@
     {
       "id": "537331",
       "text": "Çekya - Meksika",
+      "date": "2026-06-25T01:00:00Z",
+      "group": "A",
+      "stage": "group"
+    },
+    {
+      "id": "537332",
+      "text": "Güney Afrika - Güney Kore",
       "date": "2026-06-25T01:00:00Z",
       "group": "A",
       "stage": "group"

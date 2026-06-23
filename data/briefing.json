@@ -1,18 +1,12 @@
 {
-  "updatedAt": "2026-06-23T22:04:36.476Z",
+  "updatedAt": "2026-06-23T23:19:37.492Z",
   "title": "Yıldız Kupası Günlük Notu",
   "summary": [
-    "Turnuvada şu ana kadar 45 maç tamamlandı.",
+    "Turnuvada şu ana kadar 46 maç tamamlandı.",
     "Şu anda 1 canlı maç görünüyor.",
-    "Sıradaki dikkat çeken maçlar: İngiltere - Gana, Panama - Hırvatistan, Kolombiya - DR Kongo, İsviçre - Kanada, Bosna Hersek - Katar."
+    "Sıradaki dikkat çeken maçlar: Panama - Hırvatistan, Kolombiya - DR Kongo, İsviçre - Kanada, Bosna Hersek - Katar, Fas - Haiti."
   ],
   "latestResults": [
-    {
-      "id": "537399",
-      "text": "Arjantin 2-0 Avusturya",
-      "group": "J",
-      "stage": "group"
-    },
     {
       "id": "537393",
       "text": "Fransa 3-0 Irak",
@@ -36,12 +30,18 @@
       "text": "Portekiz 5-0 Özbekistan",
       "group": "K",
       "stage": "group"
+    },
+    {
+      "id": "537411",
+      "text": "İngiltere 0-0 Gana",
+      "group": "L",
+      "stage": "group"
     }
   ],
   "biggestSignals": [
     {
       "id": "537351",
-      "text": "Almanya 7-1 CUR",
+      "text": "Almanya 7-1 Curaçao",
       "signal": "Farklı galibiyet"
     },
     {
