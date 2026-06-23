@@ -1,47 +1,47 @@
 {
-  "updatedAt": "2026-06-19T13:52:30.065Z",
+  "updatedAt": "2026-06-23T16:37:01.354Z",
   "title": "Yıldız Kupası Günlük Notu",
   "summary": [
-    "Turnuvada şu ana kadar 28 maç tamamlandı.",
+    "Turnuvada şu ana kadar 44 maç tamamlandı.",
     "Şu anda canlı maç görünmüyor.",
-    "Sıradaki dikkat çeken maçlar: ABD - Avustralya, İskoçya - Fas, Brezilya - Haiti, Türkiye - Paraguay, Hollanda - İsveç."
+    "Sıradaki dikkat çeken maçlar: Portekiz - Özbekistan, İngiltere - Gana, Panama - Hırvatistan, Kolombiya - DR Kongo, İsviçre - Kanada."
   ],
   "latestResults": [
     {
-      "id": "537404",
-      "text": "Özbekistan 1-3 Kolombiya",
-      "group": "K",
+      "id": "537366",
+      "text": "Yeni Zelanda 1-3 Mısır",
+      "group": "G",
       "stage": "group"
     },
     {
-      "id": "537329",
-      "text": "Çekya 1-1 Güney Afrika",
-      "group": "A",
+      "id": "537399",
+      "text": "Arjantin 2-0 Avusturya",
+      "group": "J",
       "stage": "group"
     },
     {
-      "id": "537335",
-      "text": "İsviçre 4-1 Bosna Hersek",
-      "group": "B",
+      "id": "537393",
+      "text": "Fransa 3-0 Irak",
+      "group": "I",
       "stage": "group"
     },
     {
-      "id": "537336",
-      "text": "Kanada 6-0 Katar",
-      "group": "B",
+      "id": "537394",
+      "text": "Norveç 3-2 Senegal",
+      "group": "I",
       "stage": "group"
     },
     {
-      "id": "537330",
-      "text": "Meksika 1-0 Güney Kore",
-      "group": "A",
+      "id": "537400",
+      "text": "Ürdün 1-2 Cezayir",
+      "group": "J",
       "stage": "group"
     }
   ],
   "biggestSignals": [
     {
       "id": "537351",
-      "text": "Almanya 7-1 Curaçao",
+      "text": "Almanya 7-1 CUR",
       "signal": "Farklı galibiyet"
     },
     {

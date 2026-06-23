@@ -1,21 +1,21 @@
 {
-  "updatedAt": "2026-06-19T13:52:30.065Z",
+  "updatedAt": "2026-06-23T16:37:01.354Z",
   "team": "TUR",
   "teamName": "Türkiye",
   "group": "D",
-  "position": 3,
-  "qualificationSignal": "Kritik eşikte",
-  "qualificationProbability": 36,
+  "position": 4,
+  "qualificationSignal": "Baskı altında",
+  "qualificationProbability": 12,
   "standing": {
     "code": "TUR",
     "team": "Türkiye",
-    "played": 1,
+    "played": 2,
     "won": 0,
     "draw": 0,
-    "lost": 1,
+    "lost": 2,
     "gf": 0,
-    "ga": 2,
-    "gd": -2,
+    "ga": 3,
+    "gd": -3,
     "points": 0
   },
   "playedMatches": [
@@ -23,15 +23,14 @@
       "id": "537346",
       "text": "Avustralya 2-0 Türkiye",
       "result": "loss"
+    },
+    {
+      "id": "537347",
+      "text": "Türkiye 0-1 Paraguay",
+      "result": "loss"
     }
   ],
   "upcomingMatches": [
-    {
-      "id": "537347",
-      "text": "Türkiye - Paraguay",
-      "date": "2026-06-20T03:00:00Z",
-      "opponent": "PAR"
-    },
     {
       "id": "537349",
       "text": "Türkiye - ABD",
@@ -39,5 +38,5 @@
       "opponent": "USA"
     }
   ],
-  "analysis": "Türkiye D Grubu'nda şu an 3. sırada. Kalan maçlar üst tur ihtimalini belirleyecek."
+  "analysis": "Türkiye D Grubu'nda şu an 4. sırada. Kalan maçlar üst tur ihtimalini belirleyecek."
 }
