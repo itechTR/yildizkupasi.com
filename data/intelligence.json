@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-25T21:52:02.848Z",
+  "updatedAt": "2026-06-25T23:09:46.925Z",
   "liveCount": 2,
-  "finishedCount": 54,
-  "scheduledCount": 50,
+  "finishedCount": 56,
+  "scheduledCount": 48,
   "groupQualification": {
     "A": [
       {
@@ -146,32 +146,32 @@
         "team": "Almanya",
         "probability": 95,
         "points": 6,
-        "gd": 7,
-        "played": 2
+        "gd": 6,
+        "played": 3
       },
       {
         "code": "CIV",
         "team": "Fildişi Sahili",
-        "probability": 64,
-        "points": 3,
-        "gd": 0,
-        "played": 2
+        "probability": 95,
+        "points": 6,
+        "gd": 2,
+        "played": 3
       },
       {
         "code": "ECU",
         "team": "Ekvador",
-        "probability": 38,
-        "points": 1,
-        "gd": -1,
-        "played": 2
+        "probability": 72,
+        "points": 4,
+        "gd": 0,
+        "played": 3
       },
       {
         "code": "CUW",
         "team": "Curaçao",
-        "probability": 20,
+        "probability": 3,
         "points": 1,
-        "gd": -6,
-        "played": 2
+        "gd": -8,
+        "played": 3
       }
     ],
     "F": [
@@ -252,28 +252,28 @@
         "played": 2
       },
       {
-        "code": "URU",
-        "team": "Uruguay",
-        "probability": 48,
-        "points": 2,
-        "gd": 0,
-        "played": 2
-      },
-      {
         "code": "CPV",
         "team": "Cape Verde",
-        "probability": 46,
-        "points": 2,
+        "probability": 50,
+        "points": 1,
         "gd": 0,
-        "played": 2
+        "played": 1
+      },
+      {
+        "code": "URU",
+        "team": "Uruguay",
+        "probability": 42,
+        "points": 0,
+        "gd": 0,
+        "played": 0
       },
       {
         "code": "KSA",
         "team": "Suudi Arabistan",
-        "probability": 28,
-        "points": 1,
+        "probability": 18,
+        "points": 0,
         "gd": -4,
-        "played": 2
+        "played": 1
       }
     ],
     "I": [
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Ekvador - Almanya, Curaçao - Fildişi Sahili, Tunus - Hollanda, Japonya - İsveç, Türkiye - ABD, Paraguay - Avustralya, Norveç - Fransa, Senegal - Irak"
+      "text": "Tunus - Hollanda, Japonya - İsveç, Türkiye - ABD, Paraguay - Avustralya, Norveç - Fransa, Senegal - Irak, URY - İspanya, Cape Verde - Suudi Arabistan"
     }
   ],
   "groupLeaders": [
@@ -530,20 +530,6 @@
   ],
   "upcomingFocus": [
     {
-      "id": "537355",
-      "text": "Ekvador - Almanya",
-      "date": "2026-06-25T20:00:00Z",
-      "group": "E",
-      "stage": "group"
-    },
-    {
-      "id": "537356",
-      "text": "Curaçao - Fildişi Sahili",
-      "date": "2026-06-25T20:00:00Z",
-      "group": "E",
-      "stage": "group"
-    },
-    {
       "id": "537361",
       "text": "Tunus - Hollanda",
       "date": "2026-06-25T23:00:00Z",
@@ -583,6 +569,20 @@
       "text": "Senegal - Irak",
       "date": "2026-06-26T19:00:00Z",
       "group": "I",
+      "stage": "group"
+    },
+    {
+      "id": "537373",
+      "text": "URY - İspanya",
+      "date": "2026-06-27T00:00:00Z",
+      "group": "H",
+      "stage": "group"
+    },
+    {
+      "id": "537374",
+      "text": "Cape Verde - Suudi Arabistan",
+      "date": "2026-06-27T00:00:00Z",
+      "group": "H",
       "stage": "group"
     }
   ]
