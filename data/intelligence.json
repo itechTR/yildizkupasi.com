@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T13:08:37.425Z",
+  "updatedAt": "2026-06-25T15:45:16.961Z",
   "liveCount": 0,
   "finishedCount": 54,
   "scheduledCount": 50,
@@ -252,28 +252,28 @@
         "played": 2
       },
       {
-        "code": "URU",
-        "team": "Uruguay",
-        "probability": 48,
-        "points": 2,
-        "gd": 0,
-        "played": 2
-      },
-      {
         "code": "CPV",
         "team": "Cape Verde",
-        "probability": 46,
-        "points": 2,
+        "probability": 50,
+        "points": 1,
         "gd": 0,
-        "played": 2
+        "played": 1
+      },
+      {
+        "code": "URU",
+        "team": "Uruguay",
+        "probability": 42,
+        "points": 0,
+        "gd": 0,
+        "played": 0
       },
       {
         "code": "KSA",
         "team": "Suudi Arabistan",
-        "probability": 28,
-        "points": 1,
+        "probability": 18,
+        "points": 0,
         "gd": -4,
-        "played": 2
+        "played": 1
       }
     ],
     "I": [
