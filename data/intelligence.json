@@ -1,41 +1,41 @@
 {
-  "updatedAt": "2026-06-25T00:02:31.510Z",
-  "liveCount": 2,
-  "finishedCount": 50,
-  "scheduledCount": 54,
+  "updatedAt": "2026-06-25T04:20:09.869Z",
+  "liveCount": 0,
+  "finishedCount": 54,
+  "scheduledCount": 50,
   "groupQualification": {
     "A": [
       {
         "code": "MEX",
         "team": "Meksika",
         "probability": 95,
-        "points": 6,
-        "gd": 3,
-        "played": 2
-      },
-      {
-        "code": "KOR",
-        "team": "Güney Kore",
-        "probability": 64,
-        "points": 3,
-        "gd": 0,
-        "played": 2
-      },
-      {
-        "code": "CZE",
-        "team": "Çekya",
-        "probability": 42,
-        "points": 1,
-        "gd": -1,
-        "played": 2
+        "points": 9,
+        "gd": 6,
+        "played": 3
       },
       {
         "code": "RSA",
         "team": "Güney Afrika",
-        "probability": 36,
+        "probability": 68,
+        "points": 4,
+        "gd": -1,
+        "played": 3
+      },
+      {
+        "code": "KOR",
+        "team": "Güney Kore",
+        "probability": 34,
+        "points": 3,
+        "gd": -1,
+        "played": 3
+      },
+      {
+        "code": "CZE",
+        "team": "Çekya",
+        "probability": 4,
         "points": 1,
-        "gd": -2,
-        "played": 2
+        "gd": -4,
+        "played": 3
       }
     ],
     "B": [
@@ -77,33 +77,33 @@
         "code": "BRA",
         "team": "Brezilya",
         "probability": 95,
-        "points": 4,
-        "gd": 3,
-        "played": 2
+        "points": 7,
+        "gd": 6,
+        "played": 3
       },
       {
         "code": "MAR",
         "team": "Fas",
-        "probability": 84,
-        "points": 4,
-        "gd": 1,
-        "played": 2
+        "probability": 95,
+        "points": 7,
+        "gd": 3,
+        "played": 3
       },
       {
         "code": "SCO",
         "team": "İskoçya",
-        "probability": 62,
+        "probability": 24,
         "points": 3,
-        "gd": 0,
-        "played": 2
+        "gd": -3,
+        "played": 3
       },
       {
         "code": "HAI",
         "team": "Haiti",
-        "probability": 10,
+        "probability": 3,
         "points": 0,
-        "gd": -4,
-        "played": 2
+        "gd": -6,
+        "played": 3
       }
     ],
     "D": [
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: URY 2-2 Cape Verde, Yeni Zelanda 1-3 Mısır, Norveç 3-2 Senegal, Portekiz 5-0 Özbekistan, Bosna Hersek 3-1 Katar."
+      "text": "Son yüksek skorlu maçlar: Yeni Zelanda 1-3 Mısır, Norveç 3-2 Senegal, Portekiz 5-0 Özbekistan, Bosna Hersek 3-1 Katar, Fas 4-2 Haiti."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Fas - Haiti, İskoçya - Brezilya, Çekya - Meksika, Güney Afrika - Güney Kore, Ekvador - Almanya, Curaçao - Fildişi Sahili, Tunus - Hollanda, Japonya - İsveç"
+      "text": "Ekvador - Almanya, Curaçao - Fildişi Sahili, Tunus - Hollanda, Japonya - İsveç, Türkiye - ABD, Paraguay - Avustralya, Norveç - Fransa, Senegal - Irak"
     }
   ],
   "groupLeaders": [
@@ -432,7 +432,7 @@
       "group": "A",
       "leader": "MEX",
       "leaderName": "Meksika",
-      "points": 6
+      "points": 9
     },
     {
       "group": "B",
@@ -444,7 +444,7 @@
       "group": "C",
       "leader": "BRA",
       "leaderName": "Brezilya",
-      "points": 4
+      "points": 7
     },
     {
       "group": "D",
@@ -503,11 +503,6 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537372",
-      "text": "URY 2-2 Cape Verde",
-      "goals": 4
-    },
-    {
       "id": "537366",
       "text": "Yeni Zelanda 1-3 Mısır",
       "goals": 4
@@ -526,37 +521,14 @@
       "id": "537338",
       "text": "Bosna Hersek 3-1 Katar",
       "goals": 4
+    },
+    {
+      "id": "537344",
+      "text": "Fas 4-2 Haiti",
+      "goals": 6
     }
   ],
   "upcomingFocus": [
-    {
-      "id": "537344",
-      "text": "Fas - Haiti",
-      "date": "2026-06-24T22:00:00Z",
-      "group": "C",
-      "stage": "group"
-    },
-    {
-      "id": "537343",
-      "text": "İskoçya - Brezilya",
-      "date": "2026-06-24T22:00:00Z",
-      "group": "C",
-      "stage": "group"
-    },
-    {
-      "id": "537331",
-      "text": "Çekya - Meksika",
-      "date": "2026-06-25T01:00:00Z",
-      "group": "A",
-      "stage": "group"
-    },
-    {
-      "id": "537332",
-      "text": "Güney Afrika - Güney Kore",
-      "date": "2026-06-25T01:00:00Z",
-      "group": "A",
-      "stage": "group"
-    },
     {
       "id": "537355",
       "text": "Ekvador - Almanya",
@@ -583,6 +555,34 @@
       "text": "Japonya - İsveç",
       "date": "2026-06-25T23:00:00Z",
       "group": "F",
+      "stage": "group"
+    },
+    {
+      "id": "537349",
+      "text": "Türkiye - ABD",
+      "date": "2026-06-26T02:00:00Z",
+      "group": "D",
+      "stage": "group"
+    },
+    {
+      "id": "537350",
+      "text": "Paraguay - Avustralya",
+      "date": "2026-06-26T02:00:00Z",
+      "group": "D",
+      "stage": "group"
+    },
+    {
+      "id": "537395",
+      "text": "Norveç - Fransa",
+      "date": "2026-06-26T19:00:00Z",
+      "group": "I",
+      "stage": "group"
+    },
+    {
+      "id": "537396",
+      "text": "Senegal - Irak",
+      "date": "2026-06-26T19:00:00Z",
+      "group": "I",
       "stage": "group"
     }
   ]
