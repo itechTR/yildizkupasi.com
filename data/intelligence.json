@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T22:52:32.408Z",
+  "updatedAt": "2026-06-25T00:02:31.510Z",
   "liveCount": 2,
   "finishedCount": 50,
   "scheduledCount": 54,
@@ -252,28 +252,28 @@
         "played": 2
       },
       {
-        "code": "URU",
-        "team": "Uruguay",
-        "probability": 48,
-        "points": 2,
-        "gd": 0,
-        "played": 2
-      },
-      {
         "code": "CPV",
         "team": "Cape Verde",
-        "probability": 46,
-        "points": 2,
+        "probability": 50,
+        "points": 1,
         "gd": 0,
-        "played": 2
+        "played": 1
+      },
+      {
+        "code": "URU",
+        "team": "Uruguay",
+        "probability": 42,
+        "points": 0,
+        "gd": 0,
+        "played": 0
       },
       {
         "code": "KSA",
         "team": "Suudi Arabistan",
-        "probability": 28,
-        "points": 1,
+        "probability": 18,
+        "points": 0,
         "gd": -4,
-        "played": 2
+        "played": 1
       }
     ],
     "I": [
@@ -420,7 +420,7 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Uruguay 2-2 Cape Verde, Yeni Zelanda 1-3 Mısır, Norveç 3-2 Senegal, Portekiz 5-0 Özbekistan, Bosna Hersek 3-1 Katar."
+      "text": "Son yüksek skorlu maçlar: URY 2-2 Cape Verde, Yeni Zelanda 1-3 Mısır, Norveç 3-2 Senegal, Portekiz 5-0 Özbekistan, Bosna Hersek 3-1 Katar."
     },
     {
       "title": "Yaklaşan kritik maçlar",
@@ -504,7 +504,7 @@
   "highScoringMatches": [
     {
       "id": "537372",
-      "text": "Uruguay 2-2 Cape Verde",
+      "text": "URY 2-2 Cape Verde",
       "goals": 4
     },
     {
