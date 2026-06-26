@@ -241,22 +241,66 @@ function initControls() {
     `;
   }
 }
+function isTurkiyeEliminated() {
+  const status = String(turkiyeData?.tournamentStatus || '').toLowerCase();
 
+  const signal = String(turkiyeData?.qualificationSignal || '')
+    .toLocaleLowerCase('tr-TR');
+
+  const analysis = String(turkiyeData?.analysis || '')
+    .toLocaleLowerCase('tr-TR');
+
+  const position = Number(turkiyeData?.position || 0);
+
+  const upcoming = Array.isArray(turkiyeData?.upcomingMatches)
+    ? turkiyeData.upcomingMatches
+    : [];
+
+  return (
+    status === 'eliminated' ||
+    signal.includes('veda') ||
+    signal.includes('elendi') ||
+    analysis.includes('turnuvaya veda') ||
+    (position >= 4 && upcoming.length === 0)
+  );
+}
 function renderAll() {
   if (!allMatches.length) return;
 
   initControls();
+
+  const turkeyEliminated = isTurkiyeEliminated();
+  const hideQualificationPanel = focus === 'TUR' && turkeyEliminated;
 
   if ($('#stats')) renderStats();
   if ($('#aiSummary')) renderSummary();
   if ($('#radar')) renderRadar();
   if ($('#matchList')) renderMatches();
   if ($('#groupTables')) renderGroups();
-  if ($('#probabilities')) renderProbabilities();
+
+  const intelligencePanel = $('#intelligence');
+
+  if (intelligencePanel) {
+    intelligencePanel.style.display = hideQualificationPanel ? 'none' : '';
+  }
+
+  if ($('#probabilities') && !hideQualificationPanel) {
+    renderProbabilities();
+  }
+
   ensureMatchupsPanel();
-  if ($('#possibleMatchups')) renderMatchupsProjection();
-  if ($('#turkiyeCenter')) renderTurkiye();
-  if ($('#dailyBrief')) renderBrief();
+
+  if ($('#possibleMatchups')) {
+    renderMatchupsProjection();
+  }
+
+  if ($('#turkiyeCenter')) {
+    renderTurkiye();
+  }
+
+  if ($('#dailyBrief')) {
+    renderBrief();
+  }
 }
 
 function renderStats() {
