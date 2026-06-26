@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-25T23:09:46.925Z",
-  "liveCount": 2,
-  "finishedCount": 56,
-  "scheduledCount": 48,
+  "updatedAt": "2026-06-26T01:29:54.368Z",
+  "liveCount": 0,
+  "finishedCount": 54,
+  "scheduledCount": 50,
   "groupQualification": {
     "A": [
       {
@@ -146,32 +146,32 @@
         "team": "Almanya",
         "probability": 95,
         "points": 6,
-        "gd": 6,
-        "played": 3
+        "gd": 7,
+        "played": 2
       },
       {
         "code": "CIV",
         "team": "Fildişi Sahili",
-        "probability": 95,
-        "points": 6,
-        "gd": 2,
-        "played": 3
+        "probability": 64,
+        "points": 3,
+        "gd": 0,
+        "played": 2
       },
       {
         "code": "ECU",
         "team": "Ekvador",
-        "probability": 72,
-        "points": 4,
-        "gd": 0,
-        "played": 3
+        "probability": 38,
+        "points": 1,
+        "gd": -1,
+        "played": 2
       },
       {
         "code": "CUW",
         "team": "Curaçao",
-        "probability": 3,
+        "probability": 20,
         "points": 1,
-        "gd": -8,
-        "played": 3
+        "gd": -6,
+        "played": 2
       }
     ],
     "F": [
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Tunus - Hollanda, Japonya - İsveç, Türkiye - ABD, Paraguay - Avustralya, Norveç - Fransa, Senegal - Irak, URY - İspanya, Cape Verde - Suudi Arabistan"
+      "text": "Ekvador - Almanya, Curaçao - Fildişi Sahili, Tunus - Hollanda, Japonya - İsveç, Türkiye - ABD, Paraguay - Avustralya, Norveç - Fransa, Senegal - Irak"
     }
   ],
   "groupLeaders": [
@@ -530,6 +530,20 @@
   ],
   "upcomingFocus": [
     {
+      "id": "537355",
+      "text": "Ekvador - Almanya",
+      "date": "2026-06-25T20:00:00Z",
+      "group": "E",
+      "stage": "group"
+    },
+    {
+      "id": "537356",
+      "text": "Curaçao - Fildişi Sahili",
+      "date": "2026-06-25T20:00:00Z",
+      "group": "E",
+      "stage": "group"
+    },
+    {
       "id": "537361",
       "text": "Tunus - Hollanda",
       "date": "2026-06-25T23:00:00Z",
@@ -569,20 +583,6 @@
       "text": "Senegal - Irak",
       "date": "2026-06-26T19:00:00Z",
       "group": "I",
-      "stage": "group"
-    },
-    {
-      "id": "537373",
-      "text": "URY - İspanya",
-      "date": "2026-06-27T00:00:00Z",
-      "group": "H",
-      "stage": "group"
-    },
-    {
-      "id": "537374",
-      "text": "Cape Verde - Suudi Arabistan",
-      "date": "2026-06-27T00:00:00Z",
-      "group": "H",
       "stage": "group"
     }
   ]
