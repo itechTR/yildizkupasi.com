@@ -670,7 +670,7 @@ function ensureMatchupsPanel() {
   panel.innerHTML = `
     <div class="section-head">
       <p class="eyebrow">OLASI EŞLEŞMELER</p>
-      <h2>Son 32 Projeksiyonu</h2>
+      <h2 id="matchupsTitle">Son 32 Projeksiyonu</h2>
     </div>
     <div id="possibleMatchups"></div>
   `;
@@ -797,7 +797,17 @@ function resolveSlotSide(rule, standings, thirdRanking) {
 
   return { label: 'Belirsiz', codes: [] };
 }
+function buildPostTurkeyPathProjection(projectedRows, thirdRanking) {
+  const qualifyingThirds = thirdRanking
+    .filter(team => team.qualifiesAsThird)
+    .map(team => `${name(team.code)} (${team.group})`);
 
+  const thirdText = qualifyingThirds.length
+    ? `Geçici en iyi üçüncüler hattında öne çıkan takımlar: ${qualifyingThirds.join(', ')}.`
+    : 'En iyi üçüncüler tablosu grup sonuçları netleştikçe şekillenecek.';
+
+  return `Türkiye grup aşamasında turnuvaya veda etti. Yıldız Kupası artık Türkiye ihtimalinden çok Son 32 yolunu, favorilerin olası rakiplerini ve eleme turu senaryolarını izlemeli. ${thirdText}`;
+}
 function buildTurkiyePathProjection(standings, thirdRanking, rows) {
   const group = getGroupOfTeam('TUR') || 'D';
   const table = standings[group] || [];
