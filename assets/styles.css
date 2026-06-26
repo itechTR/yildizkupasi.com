@@ -881,3 +881,20 @@ main > #stats + #turkiye {
     font-size: 15px;
   }
 }
+/* Türkiye elendiğinde panel dili */
+#turkiye.eliminated .status-word,
+#turkiye.eliminated .qualification-prob strong {
+  color: #ffd166 !important;
+}
+
+#turkiye.eliminated .qualification-prob,
+#turkiye.eliminated .turkey-cards .stat:last-child {
+  border-color: rgba(255, 209, 102, .42) !important;
+  box-shadow: 0 0 0 1px rgba(255, 209, 102, .08) inset;
+}
+
+#turkiye.eliminated .qualification-prob {
+  background:
+    radial-gradient(circle at right bottom, rgba(255, 209, 102, .12), transparent 38%),
+    rgba(12, 28, 48, .72);
+}

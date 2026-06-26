@@ -761,6 +761,26 @@ function buildTurkiyePathProjection(standings, thirdRanking, rows) {
   const turkiyeThird = thirdRanking.find(team => team.code === 'TUR');
   const turkiyeRows = rows.filter(row => row.involvesFocus);
 
+  const turkiyeFinishedMatches = allMatches.filter(match =>
+    match.status === 'finished' &&
+    (match.home?.code === 'TUR' || match.away?.code === 'TUR')
+  );
+
+  const turkiyeUpcomingMatches = allMatches.filter(match =>
+    match.status !== 'finished' &&
+    (match.home?.code === 'TUR' || match.away?.code === 'TUR')
+  );
+
+  const isEliminated =
+    String(turkiyeData?.tournamentStatus || '').toLowerCase() === 'eliminated' ||
+    String(turkiyeData?.qualificationSignal || '').toLocaleLowerCase('tr-TR').includes('veda') ||
+    String(turkiyeData?.analysis || '').toLocaleLowerCase('tr-TR').includes('veda etti') ||
+    (position >= 4 && turkiyeFinishedMatches.length >= 3 && turkiyeUpcomingMatches.length === 0);
+
+  if (isEliminated) {
+    return 'Türkiye grup aşamasında turnuvaya veda etti. Olası eşleşmeler bölümü artık Son 32 yolu, favorilerin rotası ve kesinleşen eleme senaryoları için takip edilmeli.';
+  }
+
   if (!position) {
     return 'Türkiye için grup verisi henüz oluşmadı.';
   }
@@ -849,15 +869,92 @@ function getQualificationProbabilityForTeam(code) {
   return null;
 }
 
+function getTurkiyeEliminationState(standing, played, upcoming) {
+  const position = Number(turkiyeData?.position || 0);
+  const playedCount = Array.isArray(played) ? played.length : 0;
+  const upcomingCount = Array.isArray(upcoming) ? upcoming.length : 0;
+
+  const statusText = [
+    turkiyeData?.tournamentStatus,
+    turkiyeData?.qualificationSignal,
+    turkiyeData?.analysis
+  ].join(' ').toLocaleLowerCase('tr-TR');
+
+  const backendSaysEliminated =
+    statusText.includes('eliminated') ||
+    statusText.includes('veda') ||
+    statusText.includes('elendi');
+
+  const groupCompletedAndFourth =
+    position >= 4 &&
+    playedCount >= 3 &&
+    upcomingCount === 0;
+
+  return backendSaysEliminated || groupCompletedAndFourth;
+}
+
+function updateTurkiyeSectionState(isEliminated) {
+  const turkiyeSection = $('#turkiye');
+  if (turkiyeSection) {
+    turkiyeSection.classList.toggle('eliminated', isEliminated);
+  }
+
+  const sectionTitle = $('#turkiye h2');
+  if (sectionTitle) {
+    sectionTitle.textContent = isEliminated
+      ? 'Türkiye’nin Turnuva Karnesi'
+      : 'Türkiye’nin Turnuva Panosu';
+  }
+
+  const sectionEyebrow = $('#turkiye .eyebrow');
+  if (sectionEyebrow) {
+    sectionEyebrow.textContent = isEliminated
+      ? 'TÜRKİYE KARNESİ'
+      : 'TÜRKİYE MERKEZİ';
+  }
+
+  const navTurkiye = document.querySelector('.nav a[href="#turkiye"]');
+  if (navTurkiye) {
+    navTurkiye.textContent = isEliminated
+      ? 'Türkiye Karnesi'
+      : 'Türkiye Merkezi';
+  }
+}
+
 function renderTurkiye() {
   if (turkiyeData) {
     const standing = turkiyeData.standing || {};
     const upcoming = turkiyeData.upcomingMatches || [];
     const played = turkiyeData.playedMatches || [];
-    const turkiyeQualificationProbability = getQualificationProbabilityForTeam('TUR');
-    const turkiyeQualificationLabel = turkiyeQualificationProbability !== null
-      ? `%${turkiyeQualificationProbability}`
-      : '-';
+
+    const isEliminated = getTurkiyeEliminationState(standing, played, upcoming);
+    updateTurkiyeSectionState(isEliminated);
+
+    const turkiyeQualificationProbability = isEliminated
+      ? null
+      : getQualificationProbabilityForTeam('TUR');
+
+    const turkiyeQualificationLabel = isEliminated
+      ? 'Elendi'
+      : turkiyeQualificationProbability !== null
+        ? `%${turkiyeQualificationProbability}`
+        : '-';
+
+    const qualificationLabel = isEliminated
+      ? 'Turnuva durumu'
+      : 'Üst tur ihtimali';
+
+    const signalText = isEliminated
+      ? 'Turnuvaya veda etti'
+      : turkiyeData.qualificationSignal || '-';
+
+    const signalSubText = isEliminated
+      ? 'Grup aşaması tamamlandı'
+      : 'Üst tur sinyali';
+
+    const analysisText = isEliminated
+      ? `Türkiye D Grubu'nu ${turkiyeData.position || '-'}. sırada tamamladı ve turnuvaya veda etti. Yıldız Kupası artık Son 32 yolu, olası eşleşmeler, favoriler ve günlük turnuva notlarıyla devam ediyor.`
+      : turkiyeData.analysis || '';
 
     safeHTML('#turkiyeCenter', `
       <div class="turkey-cards">
@@ -874,18 +971,20 @@ function renderTurkiye() {
           <span>Averaj</span>
         </div>
         <div class="stat">
-          <strong>${turkiyeData.qualificationSignal || '-'}</strong>
-          <span>Üst tur sinyali</span>
+          <strong class="status-word">${signalText}</strong>
+          <span>${signalSubText}</span>
         </div>
       </div>
-    <div class="stat qualification-prob">
+
+      <div class="stat qualification-prob">
         <strong>${turkiyeQualificationLabel}</strong>
-        <span>Üst tur ihtimali</span>
+        <span>${qualificationLabel}</span>
       </div>
+
       <div class="ai-note" style="margin-top:16px">
-        ${turkiyeData.analysis || ''}
+        ${analysisText}
       </div>
-     
+
       <h3 style="margin-top:22px">Türkiye maçları</h3>
 
       <div class="match-list" style="margin-top:16px">
@@ -907,6 +1006,8 @@ function renderTurkiye() {
 
     return;
   }
+
+  updateTurkiyeSectionState(false);
 
   const matches = allMatches.filter(m =>
     m.home?.code === 'TUR' || m.away?.code === 'TUR'
