@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-26T05:52:25.145Z",
+  "updatedAt": "2026-06-26T07:03:02.614Z",
   "liveCount": 0,
-  "finishedCount": 54,
-  "scheduledCount": 50,
+  "finishedCount": 60,
+  "scheduledCount": 44,
   "groupQualification": {
     "A": [
       {
@@ -112,32 +112,32 @@
         "team": "ABD",
         "probability": 95,
         "points": 6,
-        "gd": 5,
-        "played": 2
+        "gd": 4,
+        "played": 3
       },
       {
         "code": "AUS",
         "team": "Avustralya",
-        "probability": 64,
-        "points": 3,
+        "probability": 72,
+        "points": 4,
         "gd": 0,
-        "played": 2
+        "played": 3
       },
       {
         "code": "PAR",
         "team": "Paraguay",
-        "probability": 56,
-        "points": 3,
+        "probability": 64,
+        "points": 4,
         "gd": -2,
-        "played": 2
+        "played": 3
       },
       {
         "code": "TUR",
         "team": "Türkiye",
-        "probability": 14,
-        "points": 0,
-        "gd": -3,
-        "played": 2
+        "probability": 32,
+        "points": 3,
+        "gd": -2,
+        "played": 3
       }
     ],
     "E": [
@@ -146,32 +146,32 @@
         "team": "Almanya",
         "probability": 95,
         "points": 6,
-        "gd": 7,
-        "played": 2
+        "gd": 6,
+        "played": 3
       },
       {
         "code": "CIV",
         "team": "Fildişi Sahili",
-        "probability": 64,
-        "points": 3,
-        "gd": 0,
-        "played": 2
+        "probability": 95,
+        "points": 6,
+        "gd": 2,
+        "played": 3
       },
       {
         "code": "ECU",
         "team": "Ekvador",
-        "probability": 38,
-        "points": 1,
-        "gd": -1,
-        "played": 2
+        "probability": 72,
+        "points": 4,
+        "gd": 0,
+        "played": 3
       },
       {
         "code": "CUW",
         "team": "Curaçao",
-        "probability": 20,
+        "probability": 3,
         "points": 1,
-        "gd": -6,
-        "played": 2
+        "gd": -8,
+        "played": 3
       }
     ],
     "F": [
@@ -179,33 +179,33 @@
         "code": "NED",
         "team": "Hollanda",
         "probability": 95,
-        "points": 4,
-        "gd": 4,
-        "played": 2
+        "points": 7,
+        "gd": 6,
+        "played": 3
       },
       {
         "code": "JPN",
         "team": "Japonya",
         "probability": 95,
-        "points": 4,
+        "points": 5,
         "gd": 4,
-        "played": 2
+        "played": 3
       },
       {
         "code": "SWE",
         "team": "İsveç",
-        "probability": 72,
-        "points": 3,
+        "probability": 82,
+        "points": 4,
         "gd": 0,
-        "played": 2
+        "played": 3
       },
       {
         "code": "TUN",
         "team": "Tunus",
         "probability": 3,
         "points": 0,
-        "gd": -8,
-        "played": 2
+        "gd": -10,
+        "played": 3
       }
     ],
     "G": [
@@ -252,28 +252,28 @@
         "played": 2
       },
       {
-        "code": "CPV",
-        "team": "Cape Verde",
-        "probability": 50,
-        "points": 1,
-        "gd": 0,
-        "played": 1
-      },
-      {
         "code": "URU",
         "team": "Uruguay",
-        "probability": 42,
-        "points": 0,
+        "probability": 48,
+        "points": 2,
         "gd": 0,
-        "played": 0
+        "played": 2
+      },
+      {
+        "code": "CPV",
+        "team": "Cape Verde",
+        "probability": 46,
+        "points": 2,
+        "gd": 0,
+        "played": 2
       },
       {
         "code": "KSA",
         "team": "Suudi Arabistan",
-        "probability": 18,
-        "points": 0,
+        "probability": 28,
+        "points": 1,
         "gd": -4,
-        "played": 1
+        "played": 2
       }
     ],
     "I": [
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Yeni Zelanda 1-3 Mısır, Norveç 3-2 Senegal, Portekiz 5-0 Özbekistan, Bosna Hersek 3-1 Katar, Fas 4-2 Haiti."
+      "text": "Son yüksek skorlu maçlar: Portekiz 5-0 Özbekistan, Bosna Hersek 3-1 Katar, Fas 4-2 Haiti, Tunus 1-3 Hollanda, Türkiye 3-2 ABD."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Ekvador - Almanya, Curaçao - Fildişi Sahili, Tunus - Hollanda, Japonya - İsveç, Türkiye - ABD, Paraguay - Avustralya, Norveç - Fransa, Senegal - Irak"
+      "text": "Norveç - Fransa, Senegal - Irak, Uruguay - İspanya, Cape Verde - Suudi Arabistan, Yeni Zelanda - Belçika, Mısır - İran, Panama - İngiltere, Hırvatistan - Gana"
     }
   ],
   "groupLeaders": [
@@ -462,7 +462,7 @@
       "group": "F",
       "leader": "NED",
       "leaderName": "Hollanda",
-      "points": 4
+      "points": 7
     },
     {
       "group": "G",
@@ -503,16 +503,6 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537366",
-      "text": "Yeni Zelanda 1-3 Mısır",
-      "goals": 4
-    },
-    {
-      "id": "537394",
-      "text": "Norveç 3-2 Senegal",
-      "goals": 5
-    },
-    {
       "id": "537405",
       "text": "Portekiz 5-0 Özbekistan",
       "goals": 5
@@ -526,51 +516,19 @@
       "id": "537344",
       "text": "Fas 4-2 Haiti",
       "goals": 6
-    }
-  ],
-  "upcomingFocus": [
-    {
-      "id": "537355",
-      "text": "Ekvador - Almanya",
-      "date": "2026-06-25T20:00:00Z",
-      "group": "E",
-      "stage": "group"
-    },
-    {
-      "id": "537356",
-      "text": "Curaçao - Fildişi Sahili",
-      "date": "2026-06-25T20:00:00Z",
-      "group": "E",
-      "stage": "group"
     },
     {
       "id": "537361",
-      "text": "Tunus - Hollanda",
-      "date": "2026-06-25T23:00:00Z",
-      "group": "F",
-      "stage": "group"
-    },
-    {
-      "id": "537362",
-      "text": "Japonya - İsveç",
-      "date": "2026-06-25T23:00:00Z",
-      "group": "F",
-      "stage": "group"
+      "text": "Tunus 1-3 Hollanda",
+      "goals": 4
     },
     {
       "id": "537349",
-      "text": "Türkiye - ABD",
-      "date": "2026-06-26T02:00:00Z",
-      "group": "D",
-      "stage": "group"
-    },
-    {
-      "id": "537350",
-      "text": "Paraguay - Avustralya",
-      "date": "2026-06-26T02:00:00Z",
-      "group": "D",
-      "stage": "group"
-    },
+      "text": "Türkiye 3-2 ABD",
+      "goals": 5
+    }
+  ],
+  "upcomingFocus": [
     {
       "id": "537395",
       "text": "Norveç - Fransa",
@@ -583,6 +541,48 @@
       "text": "Senegal - Irak",
       "date": "2026-06-26T19:00:00Z",
       "group": "I",
+      "stage": "group"
+    },
+    {
+      "id": "537373",
+      "text": "Uruguay - İspanya",
+      "date": "2026-06-27T00:00:00Z",
+      "group": "H",
+      "stage": "group"
+    },
+    {
+      "id": "537374",
+      "text": "Cape Verde - Suudi Arabistan",
+      "date": "2026-06-27T00:00:00Z",
+      "group": "H",
+      "stage": "group"
+    },
+    {
+      "id": "537367",
+      "text": "Yeni Zelanda - Belçika",
+      "date": "2026-06-27T03:00:00Z",
+      "group": "G",
+      "stage": "group"
+    },
+    {
+      "id": "537368",
+      "text": "Mısır - İran",
+      "date": "2026-06-27T03:00:00Z",
+      "group": "G",
+      "stage": "group"
+    },
+    {
+      "id": "537413",
+      "text": "Panama - İngiltere",
+      "date": "2026-06-27T21:00:00Z",
+      "group": "L",
+      "stage": "group"
+    },
+    {
+      "id": "537414",
+      "text": "Hırvatistan - Gana",
+      "date": "2026-06-27T21:00:00Z",
+      "group": "L",
       "stage": "group"
     }
   ]
