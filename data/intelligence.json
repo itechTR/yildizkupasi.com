@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-26T20:05:04.485Z",
-  "liveCount": 2,
-  "finishedCount": 60,
-  "scheduledCount": 44,
+  "updatedAt": "2026-06-26T21:38:20.959Z",
+  "liveCount": 0,
+  "finishedCount": 62,
+  "scheduledCount": 42,
   "groupQualification": {
     "A": [
       {
@@ -281,33 +281,33 @@
         "code": "FRA",
         "team": "Fransa",
         "probability": 95,
-        "points": 6,
-        "gd": 5,
-        "played": 2
+        "points": 9,
+        "gd": 8,
+        "played": 3
       },
       {
         "code": "NOR",
         "team": "Norveç",
         "probability": 95,
         "points": 6,
-        "gd": 4,
-        "played": 2
+        "gd": 1,
+        "played": 3
       },
       {
         "code": "SEN",
         "team": "Senegal",
-        "probability": 20,
-        "points": 0,
-        "gd": -3,
-        "played": 2
+        "probability": 58,
+        "points": 3,
+        "gd": 2,
+        "played": 3
       },
       {
         "code": "IRQ",
         "team": "Irak",
-        "probability": 4,
+        "probability": 3,
         "points": 0,
-        "gd": -6,
-        "played": 2
+        "gd": -11,
+        "played": 3
       }
     ],
     "J": [
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Portekiz 5-0 Özbekistan, Bosna Hersek 3-1 Katar, Fas 4-2 Haiti, Tunus 1-3 Hollanda, Türkiye 3-2 ABD."
+      "text": "Son yüksek skorlu maçlar: Fas 4-2 Haiti, Tunus 1-3 Hollanda, Türkiye 3-2 ABD, Norveç 1-4 Fransa, Senegal 5-0 Irak."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Norveç - Fransa, Senegal - Irak, Uruguay - İspanya, Cape Verde - Suudi Arabistan, Yeni Zelanda - Belçika, Mısır - İran, Panama - İngiltere, Hırvatistan - Gana"
+      "text": "Uruguay - İspanya, Cape Verde - Suudi Arabistan, Yeni Zelanda - Belçika, Mısır - İran, Panama - İngiltere, Hırvatistan - Gana, Kolombiya - Portekiz, DR Kongo - Özbekistan"
     }
   ],
   "groupLeaders": [
@@ -480,7 +480,7 @@
       "group": "I",
       "leader": "FRA",
       "leaderName": "Fransa",
-      "points": 6
+      "points": 9
     },
     {
       "group": "J",
@@ -503,16 +503,6 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537405",
-      "text": "Portekiz 5-0 Özbekistan",
-      "goals": 5
-    },
-    {
-      "id": "537338",
-      "text": "Bosna Hersek 3-1 Katar",
-      "goals": 4
-    },
-    {
       "id": "537344",
       "text": "Fas 4-2 Haiti",
       "goals": 6
@@ -526,23 +516,19 @@
       "id": "537349",
       "text": "Türkiye 3-2 ABD",
       "goals": 5
-    }
-  ],
-  "upcomingFocus": [
+    },
     {
       "id": "537395",
-      "text": "Norveç - Fransa",
-      "date": "2026-06-26T19:00:00Z",
-      "group": "I",
-      "stage": "group"
+      "text": "Norveç 1-4 Fransa",
+      "goals": 5
     },
     {
       "id": "537396",
-      "text": "Senegal - Irak",
-      "date": "2026-06-26T19:00:00Z",
-      "group": "I",
-      "stage": "group"
-    },
+      "text": "Senegal 5-0 Irak",
+      "goals": 5
+    }
+  ],
+  "upcomingFocus": [
     {
       "id": "537373",
       "text": "Uruguay - İspanya",
@@ -583,6 +569,20 @@
       "text": "Hırvatistan - Gana",
       "date": "2026-06-27T21:00:00Z",
       "group": "L",
+      "stage": "group"
+    },
+    {
+      "id": "537407",
+      "text": "Kolombiya - Portekiz",
+      "date": "2026-06-27T23:30:00Z",
+      "group": "K",
+      "stage": "group"
+    },
+    {
+      "id": "537408",
+      "text": "DR Kongo - Özbekistan",
+      "date": "2026-06-27T23:30:00Z",
+      "group": "K",
       "stage": "group"
     }
   ]
