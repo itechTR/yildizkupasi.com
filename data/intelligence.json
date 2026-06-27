@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-27T02:02:25.028Z",
-  "liveCount": 2,
-  "finishedCount": 62,
-  "scheduledCount": 42,
+  "updatedAt": "2026-06-27T05:59:56.266Z",
+  "liveCount": 0,
+  "finishedCount": 66,
+  "scheduledCount": 38,
   "groupQualification": {
     "A": [
       {
@@ -210,36 +210,36 @@
     ],
     "G": [
       {
+        "code": "BEL",
+        "team": "Belçika",
+        "probability": 95,
+        "points": 5,
+        "gd": 4,
+        "played": 3
+      },
+      {
         "code": "EGY",
         "team": "Mısır",
-        "probability": 92,
-        "points": 4,
+        "probability": 86,
+        "points": 5,
         "gd": 2,
-        "played": 2
+        "played": 3
       },
       {
         "code": "IRN",
         "team": "İran",
-        "probability": 46,
-        "points": 2,
+        "probability": 40,
+        "points": 3,
         "gd": 0,
-        "played": 2
-      },
-      {
-        "code": "BEL",
-        "team": "Belçika",
-        "probability": 44,
-        "points": 2,
-        "gd": 0,
-        "played": 2
+        "played": 3
       },
       {
         "code": "NZL",
         "team": "Yeni Zelanda",
-        "probability": 40,
+        "probability": 3,
         "points": 1,
-        "gd": -2,
-        "played": 2
+        "gd": -6,
+        "played": 3
       }
     ],
     "H": [
@@ -252,25 +252,25 @@
         "played": 2
       },
       {
-        "code": "URU",
-        "team": "Uruguay",
-        "probability": 48,
+        "code": "CPV",
+        "team": "Cape Verde",
+        "probability": 24,
         "points": 2,
         "gd": 0,
         "played": 2
       },
       {
-        "code": "CPV",
-        "team": "Cape Verde",
-        "probability": 46,
-        "points": 2,
+        "code": "URU",
+        "team": "Uruguay",
+        "probability": 24,
+        "points": 0,
         "gd": 0,
-        "played": 2
+        "played": 0
       },
       {
         "code": "KSA",
         "team": "Suudi Arabistan",
-        "probability": 28,
+        "probability": 8,
         "points": 1,
         "gd": -4,
         "played": 2
@@ -416,15 +416,15 @@
   "radar": [
     {
       "title": "Grup liderleri",
-      "text": "A: Meksika, B: İsviçre, C: Brezilya, D: ABD, E: Almanya, F: Hollanda, G: Mısır, H: İspanya, I: Fransa, J: Arjantin, K: Kolombiya, L: İngiltere"
+      "text": "A: Meksika, B: İsviçre, C: Brezilya, D: ABD, E: Almanya, F: Hollanda, G: Belçika, H: İspanya, I: Fransa, J: Arjantin, K: Kolombiya, L: İngiltere"
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Fas 4-2 Haiti, Tunus 1-3 Hollanda, Türkiye 3-2 ABD, Norveç 1-4 Fransa, Senegal 5-0 Irak."
+      "text": "Son yüksek skorlu maçlar: Tunus 1-3 Hollanda, Türkiye 3-2 ABD, Norveç 1-4 Fransa, Senegal 5-0 Irak, Yeni Zelanda 1-5 Belçika."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Uruguay - İspanya, Cape Verde - Suudi Arabistan, Yeni Zelanda - Belçika, Mısır - İran, Panama - İngiltere, Hırvatistan - Gana, Kolombiya - Portekiz, DR Kongo - Özbekistan"
+      "text": "Panama - İngiltere, Hırvatistan - Gana, Kolombiya - Portekiz, DR Kongo - Özbekistan, Ürdün - Arjantin, Cezayir - Avusturya, TBD - TBD, TBD - TBD"
     }
   ],
   "groupLeaders": [
@@ -466,9 +466,9 @@
     },
     {
       "group": "G",
-      "leader": "EGY",
-      "leaderName": "Mısır",
-      "points": 4
+      "leader": "BEL",
+      "leaderName": "Belçika",
+      "points": 5
     },
     {
       "group": "H",
@@ -503,11 +503,6 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537344",
-      "text": "Fas 4-2 Haiti",
-      "goals": 6
-    },
-    {
       "id": "537361",
       "text": "Tunus 1-3 Hollanda",
       "goals": 4
@@ -526,37 +521,14 @@
       "id": "537396",
       "text": "Senegal 5-0 Irak",
       "goals": 5
-    }
-  ],
-  "upcomingFocus": [
-    {
-      "id": "537373",
-      "text": "Uruguay - İspanya",
-      "date": "2026-06-27T00:00:00Z",
-      "group": "H",
-      "stage": "group"
-    },
-    {
-      "id": "537374",
-      "text": "Cape Verde - Suudi Arabistan",
-      "date": "2026-06-27T00:00:00Z",
-      "group": "H",
-      "stage": "group"
     },
     {
       "id": "537367",
-      "text": "Yeni Zelanda - Belçika",
-      "date": "2026-06-27T03:00:00Z",
-      "group": "G",
-      "stage": "group"
-    },
-    {
-      "id": "537368",
-      "text": "Mısır - İran",
-      "date": "2026-06-27T03:00:00Z",
-      "group": "G",
-      "stage": "group"
-    },
+      "text": "Yeni Zelanda 1-5 Belçika",
+      "goals": 6
+    }
+  ],
+  "upcomingFocus": [
     {
       "id": "537413",
       "text": "Panama - İngiltere",
@@ -584,6 +556,34 @@
       "date": "2026-06-27T23:30:00Z",
       "group": "K",
       "stage": "group"
+    },
+    {
+      "id": "537401",
+      "text": "Ürdün - Arjantin",
+      "date": "2026-06-28T02:00:00Z",
+      "group": "J",
+      "stage": "group"
+    },
+    {
+      "id": "537402",
+      "text": "Cezayir - Avusturya",
+      "date": "2026-06-28T02:00:00Z",
+      "group": "J",
+      "stage": "group"
+    },
+    {
+      "id": "537417",
+      "text": "TBD - TBD",
+      "date": "2026-06-28T19:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537423",
+      "text": "TBD - TBD",
+      "date": "2026-06-29T17:00:00Z",
+      "group": "",
+      "stage": "knockout"
     }
   ]
 }

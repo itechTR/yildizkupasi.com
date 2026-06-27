@@ -1,40 +1,40 @@
 {
-  "updatedAt": "2026-06-27T02:02:25.026Z",
+  "updatedAt": "2026-06-27T05:59:56.265Z",
   "title": "Yıldız Kupası Günlük Notu",
   "summary": [
-    "Turnuvada şu ana kadar 62 maç tamamlandı.",
-    "Şu anda 2 canlı maç görünüyor.",
-    "Sıradaki dikkat çeken maçlar: Uruguay - İspanya, Cape Verde - Suudi Arabistan, Yeni Zelanda - Belçika, Mısır - İran, Panama - İngiltere."
+    "Turnuvada şu ana kadar 66 maç tamamlandı.",
+    "Şu anda canlı maç görünmüyor.",
+    "Sıradaki dikkat çeken maçlar: Panama - İngiltere, Hırvatistan - Gana, Kolombiya - Portekiz, DR Kongo - Özbekistan, Ürdün - Arjantin."
   ],
   "latestResults": [
-    {
-      "id": "537362",
-      "text": "Japonya 1-1 İsveç",
-      "group": "F",
-      "stage": "group"
-    },
-    {
-      "id": "537349",
-      "text": "Türkiye 3-2 ABD",
-      "group": "D",
-      "stage": "group"
-    },
-    {
-      "id": "537350",
-      "text": "Paraguay 0-0 Avustralya",
-      "group": "D",
-      "stage": "group"
-    },
-    {
-      "id": "537395",
-      "text": "Norveç 1-4 Fransa",
-      "group": "I",
-      "stage": "group"
-    },
     {
       "id": "537396",
       "text": "Senegal 5-0 Irak",
       "group": "I",
+      "stage": "group"
+    },
+    {
+      "id": "537373",
+      "text": "URY 0-1 İspanya",
+      "group": "H",
+      "stage": "group"
+    },
+    {
+      "id": "537374",
+      "text": "Cape Verde 0-0 Suudi Arabistan",
+      "group": "H",
+      "stage": "group"
+    },
+    {
+      "id": "537367",
+      "text": "Yeni Zelanda 1-5 Belçika",
+      "group": "G",
+      "stage": "group"
+    },
+    {
+      "id": "537368",
+      "text": "Mısır 1-1 İran",
+      "group": "G",
       "stage": "group"
     }
   ],
