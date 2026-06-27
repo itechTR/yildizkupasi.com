@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T08:47:50.239Z",
+  "updatedAt": "2026-06-27T10:48:53.939Z",
   "liveCount": 0,
   "finishedCount": 66,
   "scheduledCount": 38,
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Panama - İngiltere, Hırvatistan - Gana, Kolombiya - Portekiz, DR Kongo - Özbekistan, Ürdün - Arjantin, Cezayir - Avusturya, TBD - TBD, TBD - TBD"
+      "text": "Panama - İngiltere, Hırvatistan - Gana, Kolombiya - Portekiz, DR Kongo - Özbekistan, Ürdün - Arjantin, Cezayir - Avusturya, Güney Afrika - Kanada, Brezilya - Japonya"
     }
   ],
   "groupLeaders": [
@@ -573,14 +573,14 @@
     },
     {
       "id": "537417",
-      "text": "TBD - TBD",
+      "text": "Güney Afrika - Kanada",
       "date": "2026-06-28T19:00:00Z",
       "group": "",
       "stage": "knockout"
     },
     {
       "id": "537423",
-      "text": "TBD - TBD",
+      "text": "Brezilya - Japonya",
       "date": "2026-06-29T17:00:00Z",
       "group": "",
       "stage": "knockout"
