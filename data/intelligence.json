@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-27T22:33:14.766Z",
+  "updatedAt": "2026-06-27T23:37:57.187Z",
   "liveCount": 2,
-  "finishedCount": 66,
-  "scheduledCount": 38,
+  "finishedCount": 68,
+  "scheduledCount": 36,
   "groupQualification": {
     "A": [
       {
@@ -382,34 +382,34 @@
       {
         "code": "ENG",
         "team": "İngiltere",
-        "probability": 92,
-        "points": 4,
-        "gd": 2,
-        "played": 2
-      },
-      {
-        "code": "GHA",
-        "team": "Gana",
-        "probability": 82,
-        "points": 4,
-        "gd": 1,
-        "played": 2
+        "probability": 95,
+        "points": 7,
+        "gd": 4,
+        "played": 3
       },
       {
         "code": "CRO",
         "team": "Hırvatistan",
-        "probability": 62,
-        "points": 3,
-        "gd": -1,
-        "played": 2
+        "probability": 95,
+        "points": 6,
+        "gd": 0,
+        "played": 3
+      },
+      {
+        "code": "GHA",
+        "team": "Gana",
+        "probability": 72,
+        "points": 4,
+        "gd": 0,
+        "played": 3
       },
       {
         "code": "PAN",
         "team": "Panama",
-        "probability": 18,
+        "probability": 3,
         "points": 0,
-        "gd": -2,
-        "played": 2
+        "gd": -4,
+        "played": 3
       }
     ]
   },
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Panama - İngiltere, Hırvatistan - Gana, Kolombiya - Portekiz, DR Kongo - Özbekistan, Ürdün - Arjantin, Cezayir - Avusturya, Güney Afrika - Kanada, Brezilya - Japonya"
+      "text": "Kolombiya - Portekiz, DR Kongo - Özbekistan, Ürdün - Arjantin, Cezayir - Avusturya, Güney Afrika - Kanada, Brezilya - Japonya, Almanya - TBD, Hollanda - Fas"
     }
   ],
   "groupLeaders": [
@@ -498,7 +498,7 @@
       "group": "L",
       "leader": "ENG",
       "leaderName": "İngiltere",
-      "points": 4
+      "points": 7
     }
   ],
   "highScoringMatches": [
@@ -529,20 +529,6 @@
     }
   ],
   "upcomingFocus": [
-    {
-      "id": "537413",
-      "text": "Panama - İngiltere",
-      "date": "2026-06-27T21:00:00Z",
-      "group": "L",
-      "stage": "group"
-    },
-    {
-      "id": "537414",
-      "text": "Hırvatistan - Gana",
-      "date": "2026-06-27T21:00:00Z",
-      "group": "L",
-      "stage": "group"
-    },
     {
       "id": "537407",
       "text": "Kolombiya - Portekiz",
@@ -582,6 +568,20 @@
       "id": "537423",
       "text": "Brezilya - Japonya",
       "date": "2026-06-29T17:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537415",
+      "text": "Almanya - TBD",
+      "date": "2026-06-29T20:30:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537418",
+      "text": "Hollanda - Fas",
+      "date": "2026-06-30T01:00:00Z",
       "group": "",
       "stage": "knockout"
     }
