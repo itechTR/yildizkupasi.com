@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-27T05:59:56.266Z",
+  "updatedAt": "2026-06-27T08:47:50.239Z",
   "liveCount": 0,
   "finishedCount": 66,
   "scheduledCount": 38,
@@ -247,33 +247,33 @@
         "code": "ESP",
         "team": "İspanya",
         "probability": 95,
-        "points": 4,
-        "gd": 4,
-        "played": 2
+        "points": 7,
+        "gd": 5,
+        "played": 3
       },
       {
         "code": "CPV",
         "team": "Cape Verde",
-        "probability": 24,
-        "points": 2,
+        "probability": 38,
+        "points": 3,
         "gd": 0,
-        "played": 2
+        "played": 3
       },
       {
         "code": "URU",
         "team": "Uruguay",
-        "probability": 24,
-        "points": 0,
-        "gd": 0,
-        "played": 0
+        "probability": 18,
+        "points": 2,
+        "gd": -1,
+        "played": 3
       },
       {
         "code": "KSA",
         "team": "Suudi Arabistan",
-        "probability": 8,
-        "points": 1,
+        "probability": 3,
+        "points": 2,
         "gd": -4,
-        "played": 2
+        "played": 3
       }
     ],
     "I": [
@@ -474,7 +474,7 @@
       "group": "H",
       "leader": "ESP",
       "leaderName": "İspanya",
-      "points": 4
+      "points": 7
     },
     {
       "group": "I",
