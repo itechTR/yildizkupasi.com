@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-28T06:07:13.889Z",
+  "updatedAt": "2026-06-28T09:31:03.396Z",
   "liveCount": 0,
   "finishedCount": 72,
   "scheduledCount": 32,
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Güney Afrika - Kanada, Brezilya - Japonya, Almanya - TBD, Hollanda - Fas, Fildişi Sahili - TBD, TBD - TBD, Meksika - TBD, TBD - TBD"
+      "text": "Güney Afrika - Kanada, Brezilya - Japonya, Almanya - Paraguay, Hollanda - Fas, Fildişi Sahili - Norveç, Fransa - İsveç, Meksika - Ekvador, İngiltere - DR Kongo"
     }
   ],
   "groupLeaders": [
@@ -545,7 +545,7 @@
     },
     {
       "id": "537415",
-      "text": "Almanya - TBD",
+      "text": "Almanya - Paraguay",
       "date": "2026-06-29T20:30:00Z",
       "group": "",
       "stage": "knockout"
@@ -559,28 +559,28 @@
     },
     {
       "id": "537424",
-      "text": "Fildişi Sahili - TBD",
+      "text": "Fildişi Sahili - Norveç",
       "date": "2026-06-30T17:00:00Z",
       "group": "",
       "stage": "knockout"
     },
     {
       "id": "537416",
-      "text": "TBD - TBD",
+      "text": "Fransa - İsveç",
       "date": "2026-06-30T21:00:00Z",
       "group": "",
       "stage": "knockout"
     },
     {
       "id": "537425",
-      "text": "Meksika - TBD",
+      "text": "Meksika - Ekvador",
       "date": "2026-07-01T01:00:00Z",
       "group": "",
       "stage": "knockout"
     },
     {
       "id": "537426",
-      "text": "TBD - TBD",
+      "text": "İngiltere - DR Kongo",
       "date": "2026-07-01T16:00:00Z",
       "group": "",
       "stage": "knockout"
