@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-28T01:51:11.977Z",
+  "updatedAt": "2026-06-28T06:07:13.889Z",
   "liveCount": 0,
-  "finishedCount": 70,
-  "scheduledCount": 34,
+  "finishedCount": 72,
+  "scheduledCount": 32,
   "groupQualification": {
     "A": [
       {
@@ -315,33 +315,33 @@
         "code": "ARG",
         "team": "Arjantin",
         "probability": 95,
-        "points": 6,
-        "gd": 5,
-        "played": 2
+        "points": 9,
+        "gd": 7,
+        "played": 3
       },
       {
         "code": "AUT",
         "team": "Avusturya",
-        "probability": 66,
-        "points": 3,
+        "probability": 80,
+        "points": 4,
         "gd": 0,
-        "played": 2
+        "played": 3
       },
       {
         "code": "ALG",
         "team": "Cezayir",
-        "probability": 56,
-        "points": 3,
+        "probability": 70,
+        "points": 4,
         "gd": -2,
-        "played": 2
+        "played": 3
       },
       {
         "code": "JOR",
         "team": "Ürdün",
-        "probability": 18,
+        "probability": 3,
         "points": 0,
-        "gd": -3,
-        "played": 2
+        "gd": -5,
+        "played": 3
       }
     ],
     "K": [
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Türkiye 3-2 ABD, Norveç 1-4 Fransa, Senegal 5-0 Irak, Yeni Zelanda 1-5 Belçika, DR Kongo 3-1 Özbekistan."
+      "text": "Son yüksek skorlu maçlar: Senegal 5-0 Irak, Yeni Zelanda 1-5 Belçika, DR Kongo 3-1 Özbekistan, Ürdün 1-3 Arjantin, Cezayir 3-3 Avusturya."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Ürdün - Arjantin, Cezayir - Avusturya, Güney Afrika - Kanada, Brezilya - Japonya, Almanya - TBD, Hollanda - Fas, Fildişi Sahili - TBD, TBD - TBD"
+      "text": "Güney Afrika - Kanada, Brezilya - Japonya, Almanya - TBD, Hollanda - Fas, Fildişi Sahili - TBD, TBD - TBD, Meksika - TBD, TBD - TBD"
     }
   ],
   "groupLeaders": [
@@ -486,7 +486,7 @@
       "group": "J",
       "leader": "ARG",
       "leaderName": "Arjantin",
-      "points": 6
+      "points": 9
     },
     {
       "group": "K",
@@ -503,16 +503,6 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537349",
-      "text": "Türkiye 3-2 ABD",
-      "goals": 5
-    },
-    {
-      "id": "537395",
-      "text": "Norveç 1-4 Fransa",
-      "goals": 5
-    },
-    {
       "id": "537396",
       "text": "Senegal 5-0 Irak",
       "goals": 5
@@ -526,23 +516,19 @@
       "id": "537408",
       "text": "DR Kongo 3-1 Özbekistan",
       "goals": 4
-    }
-  ],
-  "upcomingFocus": [
+    },
     {
       "id": "537401",
-      "text": "Ürdün - Arjantin",
-      "date": "2026-06-28T02:00:00Z",
-      "group": "J",
-      "stage": "group"
+      "text": "Ürdün 1-3 Arjantin",
+      "goals": 4
     },
     {
       "id": "537402",
-      "text": "Cezayir - Avusturya",
-      "date": "2026-06-28T02:00:00Z",
-      "group": "J",
-      "stage": "group"
-    },
+      "text": "Cezayir 3-3 Avusturya",
+      "goals": 6
+    }
+  ],
+  "upcomingFocus": [
     {
       "id": "537417",
       "text": "Güney Afrika - Kanada",
@@ -582,6 +568,20 @@
       "id": "537416",
       "text": "TBD - TBD",
       "date": "2026-06-30T21:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537425",
+      "text": "Meksika - TBD",
+      "date": "2026-07-01T01:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537426",
+      "text": "TBD - TBD",
+      "date": "2026-07-01T16:00:00Z",
       "group": "",
       "stage": "knockout"
     }
