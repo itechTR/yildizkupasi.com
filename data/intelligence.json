@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-29T22:20:31.239Z",
-  "liveCount": 1,
-  "finishedCount": 74,
-  "scheduledCount": 30,
+  "updatedAt": "2026-06-29T23:31:08.485Z",
+  "liveCount": 0,
+  "finishedCount": 75,
+  "scheduledCount": 29,
   "groupQualification": {
     "A": [
       {
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Senegal 5-0 Irak, Yeni Zelanda 1-5 Belçika, DR Kongo 3-1 Özbekistan, Ürdün 1-3 Arjantin, Cezayir 3-3 Avusturya."
+      "text": "Son yüksek skorlu maçlar: Yeni Zelanda 1-5 Belçika, DR Kongo 3-1 Özbekistan, Ürdün 1-3 Arjantin, Cezayir 3-3 Avusturya, Almanya 5-6 Paraguay."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Almanya - Paraguay, Hollanda - Fas, Fildişi Sahili - Norveç, Fransa - İsveç, Meksika - Ekvador, İngiltere - DR Kongo, Belçika - Senegal, ABD - Bosna Hersek"
+      "text": "Hollanda - Fas, Fildişi Sahili - Norveç, Fransa - İsveç, Meksika - Ekvador, İngiltere - DR Kongo, Belçika - Senegal, ABD - Bosna Hersek, İspanya - Avusturya"
     }
   ],
   "groupLeaders": [
@@ -503,11 +503,6 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537396",
-      "text": "Senegal 5-0 Irak",
-      "goals": 5
-    },
-    {
       "id": "537367",
       "text": "Yeni Zelanda 1-5 Belçika",
       "goals": 6
@@ -526,16 +521,14 @@
       "id": "537402",
       "text": "Cezayir 3-3 Avusturya",
       "goals": 6
+    },
+    {
+      "id": "537415",
+      "text": "Almanya 5-6 Paraguay",
+      "goals": 11
     }
   ],
   "upcomingFocus": [
-    {
-      "id": "537415",
-      "text": "Almanya - Paraguay",
-      "date": "2026-06-29T20:30:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
     {
       "id": "537418",
       "text": "Hollanda - Fas",
@@ -582,6 +575,13 @@
       "id": "537421",
       "text": "ABD - Bosna Hersek",
       "date": "2026-07-02T00:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537420",
+      "text": "İspanya - Avusturya",
+      "date": "2026-07-02T19:00:00Z",
       "group": "",
       "stage": "knockout"
     }
