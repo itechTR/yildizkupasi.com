@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-29T17:46:14.267Z",
-  "liveCount": 1,
-  "finishedCount": 73,
-  "scheduledCount": 31,
+  "updatedAt": "2026-06-29T19:27:49.316Z",
+  "liveCount": 0,
+  "finishedCount": 74,
+  "scheduledCount": 30,
   "groupQualification": {
     "A": [
       {
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Brezilya - Japonya, Almanya - Paraguay, Hollanda - Fas, Fildişi Sahili - Norveç, Fransa - İsveç, Meksika - Ekvador, İngiltere - DR Kongo, Belçika - Senegal"
+      "text": "Almanya - Paraguay, Hollanda - Fas, Fildişi Sahili - Norveç, Fransa - İsveç, Meksika - Ekvador, İngiltere - DR Kongo, Belçika - Senegal, ABD - Bosna Hersek"
     }
   ],
   "groupLeaders": [
@@ -530,13 +530,6 @@
   ],
   "upcomingFocus": [
     {
-      "id": "537423",
-      "text": "Brezilya - Japonya",
-      "date": "2026-06-29T17:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
-    {
       "id": "537415",
       "text": "Almanya - Paraguay",
       "date": "2026-06-29T20:30:00Z",
@@ -582,6 +575,13 @@
       "id": "537422",
       "text": "Belçika - Senegal",
       "date": "2026-07-01T20:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537421",
+      "text": "ABD - Bosna Hersek",
+      "date": "2026-07-02T00:00:00Z",
       "group": "",
       "stage": "knockout"
     }
