@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-06-29T23:31:08.476Z",
+  "updatedAt": "2026-06-30T01:33:30.851Z",
   "title": "Yıldız Kupası Günlük Notu",
   "summary": [
     "Turnuvada şu ana kadar 75 maç tamamlandı.",
-    "Şu anda canlı maç görünmüyor.",
+    "Şu anda 1 canlı maç görünüyor.",
     "Sıradaki dikkat çeken maçlar: Hollanda - Fas, Fildişi Sahili - Norveç, Fransa - İsveç, Meksika - Ekvador, İngiltere - DR Kongo."
   ],
   "latestResults": [
@@ -33,7 +33,7 @@
     },
     {
       "id": "537415",
-      "text": "Almanya 5-6 Paraguay",
+      "text": "Almanya 4-5 Paraguay",
       "group": "",
       "stage": "knockout"
     }
