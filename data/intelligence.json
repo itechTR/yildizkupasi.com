@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-30T01:33:30.860Z",
-  "liveCount": 1,
-  "finishedCount": 75,
-  "scheduledCount": 29,
+  "updatedAt": "2026-06-30T05:52:10.226Z",
+  "liveCount": 0,
+  "finishedCount": 76,
+  "scheduledCount": 28,
   "groupQualification": {
     "A": [
       {
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Yeni Zelanda 1-5 Belçika, DR Kongo 3-1 Özbekistan, Ürdün 1-3 Arjantin, Cezayir 3-3 Avusturya, Almanya 4-5 Paraguay."
+      "text": "Son yüksek skorlu maçlar: DR Kongo 3-1 Özbekistan, Ürdün 1-3 Arjantin, Cezayir 3-3 Avusturya, Almanya 4-5 Paraguay, Hollanda 3-4 Fas."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Hollanda - Fas, Fildişi Sahili - Norveç, Fransa - İsveç, Meksika - Ekvador, İngiltere - DR Kongo, Belçika - Senegal, ABD - Bosna Hersek, İspanya - Avusturya"
+      "text": "Fildişi Sahili - Norveç, Fransa - İsveç, Meksika - Ekvador, İngiltere - DR Kongo, Belçika - Senegal, ABD - Bosna Hersek, İspanya - Avusturya, Portekiz - Hırvatistan"
     }
   ],
   "groupLeaders": [
@@ -503,11 +503,6 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537367",
-      "text": "Yeni Zelanda 1-5 Belçika",
-      "goals": 6
-    },
-    {
       "id": "537408",
       "text": "DR Kongo 3-1 Özbekistan",
       "goals": 4
@@ -526,16 +521,14 @@
       "id": "537415",
       "text": "Almanya 4-5 Paraguay",
       "goals": 9
+    },
+    {
+      "id": "537418",
+      "text": "Hollanda 3-4 Fas",
+      "goals": 7
     }
   ],
   "upcomingFocus": [
-    {
-      "id": "537418",
-      "text": "Hollanda - Fas",
-      "date": "2026-06-30T01:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
     {
       "id": "537424",
       "text": "Fildişi Sahili - Norveç",
@@ -582,6 +575,13 @@
       "id": "537420",
       "text": "İspanya - Avusturya",
       "date": "2026-07-02T19:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537419",
+      "text": "Portekiz - Hırvatistan",
+      "date": "2026-07-02T23:00:00Z",
       "group": "",
       "stage": "knockout"
     }
