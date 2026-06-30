@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-30T18:14:43.670Z",
-  "liveCount": 1,
-  "finishedCount": 76,
-  "scheduledCount": 28,
+  "updatedAt": "2026-06-30T20:22:30.799Z",
+  "liveCount": 0,
+  "finishedCount": 77,
+  "scheduledCount": 27,
   "groupQualification": {
     "A": [
       {
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Fildişi Sahili - Norveç, Fransa - İsveç, Meksika - Ekvador, İngiltere - DR Kongo, Belçika - Senegal, ABD - Bosna Hersek, İspanya - Avusturya, Portekiz - Hırvatistan"
+      "text": "Fransa - İsveç, Meksika - Ekvador, İngiltere - DR Kongo, Belçika - Senegal, ABD - Bosna Hersek, İspanya - Avusturya, Portekiz - Hırvatistan, İsviçre - Cezayir"
     }
   ],
   "groupLeaders": [
@@ -530,13 +530,6 @@
   ],
   "upcomingFocus": [
     {
-      "id": "537424",
-      "text": "Fildişi Sahili - Norveç",
-      "date": "2026-06-30T17:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
-    {
       "id": "537416",
       "text": "Fransa - İsveç",
       "date": "2026-06-30T21:00:00Z",
@@ -582,6 +575,13 @@
       "id": "537419",
       "text": "Portekiz - Hırvatistan",
       "date": "2026-07-02T23:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537429",
+      "text": "İsviçre - Cezayir",
+      "date": "2026-07-03T03:00:00Z",
       "group": "",
       "stage": "knockout"
     }
