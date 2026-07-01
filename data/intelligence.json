@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-01T00:20:05.558Z",
+  "updatedAt": "2026-07-01T04:59:09.852Z",
   "liveCount": 0,
-  "finishedCount": 78,
-  "scheduledCount": 26,
+  "finishedCount": 79,
+  "scheduledCount": 25,
   "groupQualification": {
     "A": [
       {
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Meksika - Ekvador, İngiltere - DR Kongo, Belçika - Senegal, ABD - Bosna Hersek, İspanya - Avusturya, Portekiz - Hırvatistan, İsviçre - Cezayir, Avustralya - Mısır"
+      "text": "İngiltere - DR Kongo, Belçika - Senegal, ABD - Bosna Hersek, İspanya - Avusturya, Portekiz - Hırvatistan, İsviçre - Cezayir, Avustralya - Mısır, Arjantin - Cape Verde"
     }
   ],
   "groupLeaders": [
@@ -530,13 +530,6 @@
   ],
   "upcomingFocus": [
     {
-      "id": "537425",
-      "text": "Meksika - Ekvador",
-      "date": "2026-07-01T01:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
-    {
       "id": "537426",
       "text": "İngiltere - DR Kongo",
       "date": "2026-07-01T16:00:00Z",
@@ -582,6 +575,13 @@
       "id": "537428",
       "text": "Avustralya - Mısır",
       "date": "2026-07-03T18:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537427",
+      "text": "Arjantin - Cape Verde",
+      "date": "2026-07-03T22:00:00Z",
       "group": "",
       "stage": "knockout"
     }
