@@ -241,33 +241,38 @@ function initControls() {
     `;
   }
 }
+
+
 function isTurkiyeEliminated() {
-  const status = String(turkiyeData?.tournamentStatus || '').toLowerCase();
-
-  const signal = String(turkiyeData?.qualificationSignal || '')
-    .toLocaleLowerCase('tr-TR');
-
-  const analysis = String(turkiyeData?.analysis || '')
-    .toLocaleLowerCase('tr-TR');
+  const statusText = [
+    turkiyeData?.tournamentStatus,
+    turkiyeData?.qualificationSignal,
+    turkiyeData?.analysis
+  ].join(' ').toLocaleLowerCase('tr-TR');
 
   const position = Number(turkiyeData?.position || 0);
+
+  const played = Array.isArray(turkiyeData?.playedMatches)
+    ? turkiyeData.playedMatches
+    : [];
 
   const upcoming = Array.isArray(turkiyeData?.upcomingMatches)
     ? turkiyeData.upcomingMatches
     : [];
 
   return (
-    status === 'eliminated' ||
-    signal.includes('veda') ||
-    signal.includes('elendi') ||
-    analysis.includes('turnuvaya veda') ||
-    (position >= 4 && upcoming.length === 0)
+    statusText.includes('eliminated') ||
+    statusText.includes('veda') ||
+    statusText.includes('elendi') ||
+    (position >= 4 && played.length >= 3 && upcoming.length === 0)
   );
 }
+
 function renderAll() {
   if (!allMatches.length) return;
 
   initControls();
+  ensureBracketStyles();
 
   const turkeyEliminated = isTurkiyeEliminated();
   const hideQualificationPanel = focus === 'TUR' && turkeyEliminated;
@@ -279,7 +284,6 @@ function renderAll() {
   if ($('#groupTables')) renderGroups();
 
   const intelligencePanel = $('#intelligence');
-
   if (intelligencePanel) {
     intelligencePanel.style.display = hideQualificationPanel ? 'none' : '';
   }
@@ -691,17 +695,37 @@ function renderMatchupsProjection() {
   const standings = calcStandings();
   const thirdRanking = buildThirdPlaceRanking(standings);
   const projectedRows = buildRoundOf32Projection(standings, thirdRanking);
-  const turkiyePath = buildTurkiyePathProjection(standings, thirdRanking, projectedRows);
+
+  const turkeyEliminated = isTurkiyeEliminated();
+
+  const matchupsTitle = $('#matchupsTitle');
+  if (matchupsTitle) {
+    matchupsTitle.textContent = turkeyEliminated
+      ? 'Son 32 Yol Haritası'
+      : 'Son 32 Projeksiyonu';
+  }
+
+  const introText = turkeyEliminated
+    ? 'Türkiye’nin turnuvası tamamlandı. Bu bölüm artık Son 32 yolu, favorilerin rotası, en iyi üçüncüler tablosu ve kesinleşen eleme senaryoları için takip edilmelidir.'
+    : 'Bu bölüm mevcut grup tablolarına göre otomatik projeksiyon üretir. Grup maçları tamamlanmadan kesin eşleşme olarak görülmemelidir. Üçüncü takım slotları, hangi 8 grubun üçüncüsünün üst tura çıktığına göre değişir.';
+
+  const pathTitle = turkeyEliminated
+    ? 'Türkiye sonrası turnuva yolu'
+    : 'Türkiye’nin olası yolu';
+
+  const pathText = turkeyEliminated
+    ? buildPostTurkeyPathProjection(projectedRows, thirdRanking)
+    : buildTurkiyePathProjection(standings, thirdRanking, projectedRows);
 
   safeHTML('#possibleMatchups', `
     <div class="ai-note" style="margin-bottom:18px">
-      Bu bölüm mevcut grup tablolarına göre otomatik projeksiyon üretir. Grup maçları tamamlanmadan kesin eşleşme olarak görülmemelidir. Üçüncü takım slotları, hangi 8 grubun üçüncüsünün üst tura çıktığına göre değişir.
+      ${introText}
     </div>
 
     <div class="two-col" style="margin-bottom:22px">
       <article class="signal">
-        <b>Türkiye’nin olası yolu</b>
-        <span>${turkiyePath}</span>
+        <b>${pathTitle}</b>
+        <span>${pathText}</span>
       </article>
       <article class="signal">
         <b>Format notu</b>
@@ -709,7 +733,10 @@ function renderMatchupsProjection() {
       </article>
     </div>
 
-    <h3 style="margin-top:12px">Geçici Son 32 slotları</h3>
+    <h3 style="margin-top:12px">Eleme Ağacı</h3>
+    ${renderEliminationBracket(projectedRows)}
+
+    <h3 style="margin-top:22px">Geçici Son 32 slotları</h3>
     <div class="match-list" style="margin-top:16px">
       ${projectedRows.map(row => `
         <article class="match ${row.involvesFocus ? 'focus-prob' : ''}">
@@ -741,6 +768,287 @@ function renderMatchupsProjection() {
     </div>
   `);
 }
+
+
+function buildPostTurkeyPathProjection(projectedRows, thirdRanking) {
+  const qualifyingThirds = thirdRanking
+    .filter(team => team.qualifiesAsThird)
+    .map(team => `${name(team.code)} (${team.group})`);
+
+  const thirdText = qualifyingThirds.length
+    ? `Geçici en iyi üçüncüler hattında öne çıkan takımlar: ${qualifyingThirds.join(', ')}.`
+    : 'En iyi üçüncüler tablosu grup sonuçları netleştikçe şekillenecek.';
+
+  const likelyBigRoutes = projectedRows
+    .slice(0, 6)
+    .map(row => `Maç ${row.no}`)
+    .join(', ');
+
+  return `Türkiye grup aşamasında turnuvaya veda etti. Yıldız Kupası artık Türkiye ihtimalinden çok Son 32 yolunu, favorilerin olası rakiplerini ve eleme turu senaryolarını izlemeli. İlk projeksiyon slotları ${likelyBigRoutes} üzerinden şekilleniyor. ${thirdText}`;
+}
+
+function renderEliminationBracket(projectedRows) {
+  const r32 = projectedRows.map(row => ({
+    title: `Maç ${row.no}`,
+    top: compactBracketLabel(row.home),
+    bottom: compactBracketLabel(row.away),
+    meta: row.certainty,
+    focus: row.involvesFocus
+  }));
+
+  const r16 = Array.from({ length: 8 }, (_, index) => ({
+    title: `Son 16 ${index + 1}`,
+    top: `M${r32[index * 2]?.title?.replace('Maç ', '') || '-'} galibi`,
+    bottom: `M${r32[index * 2 + 1]?.title?.replace('Maç ', '') || '-'} galibi`,
+    meta: 'Bekliyor',
+    focus: false,
+    placeholder: true
+  }));
+
+  const qf = Array.from({ length: 4 }, (_, index) => ({
+    title: `Çeyrek ${index + 1}`,
+    top: `S16-${index * 2 + 1} galibi`,
+    bottom: `S16-${index * 2 + 2} galibi`,
+    meta: 'Projeksiyon',
+    focus: false,
+    placeholder: true
+  }));
+
+  const sf = Array.from({ length: 2 }, (_, index) => ({
+    title: `Yarı Final ${index + 1}`,
+    top: `ÇF-${index * 2 + 1} galibi`,
+    bottom: `ÇF-${index * 2 + 2} galibi`,
+    meta: 'Projeksiyon',
+    focus: false,
+    placeholder: true
+  }));
+
+  const final = [{
+    title: 'Final',
+    top: 'YF-1 galibi',
+    bottom: 'YF-2 galibi',
+    meta: 'Final yolu',
+    focus: false,
+    placeholder: true
+  }];
+
+  return `
+    <div class="bracket-note">
+      Masaüstünde yatay kaydırarak tüm yolu görebilirsin. Mobilde her tur ayrı kolon gibi akar, çünkü bracket tasarlayanlar insan parmağını hiç düşünmemiş.
+    </div>
+    <div class="yk-bracket-scroll">
+      <div class="yk-bracket-board">
+        ${renderBracketStage('Son 32', r32, 'round32')}
+        ${renderBracketStage('Son 16', r16, 'round16')}
+        ${renderBracketStage('Çeyrek Final', qf, 'quarter')}
+        ${renderBracketStage('Yarı Final', sf, 'semi')}
+        ${renderBracketStage('Final', final, 'final')}
+      </div>
+    </div>
+  `;
+}
+
+function renderBracketStage(title, matches, className) {
+  return `
+    <div class="yk-bracket-stage ${className}">
+      <div class="yk-bracket-stage-title">${title}</div>
+      <div class="yk-bracket-stage-body">
+        ${matches.map(match => renderBracketMatch(match)).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function renderBracketMatch(match) {
+  return `
+    <article class="yk-bracket-match ${match.focus ? 'focus' : ''} ${match.placeholder ? 'placeholder' : ''}">
+      <div class="yk-bracket-match-head">
+        <span>${match.title}</span>
+        <small>${match.meta}</small>
+      </div>
+      <div class="yk-bracket-team">
+        <span>${match.top}</span>
+        <b>–</b>
+      </div>
+      <div class="yk-bracket-team">
+        <span>${match.bottom}</span>
+        <b>–</b>
+      </div>
+    </article>
+  `;
+}
+
+function compactBracketLabel(label) {
+  if (!label) return 'Belirsiz';
+
+  return label
+    .replace(' · ', ' / ')
+    .replace(' Grubu lideri', ' lideri')
+    .replace(' Grubu ikincisi', ' ikincisi')
+    .replace('En iyi üçüncü havuzu:', '3. havuzu:');
+}
+
+function ensureBracketStyles() {
+  if (document.getElementById('yk-bracket-style')) return;
+
+  const style = document.createElement('style');
+  style.id = 'yk-bracket-style';
+  style.textContent = `
+    .bracket-note {
+      margin: 12px 0 14px;
+      color: var(--muted);
+      font-weight: 750;
+      line-height: 1.45;
+    }
+
+    .yk-bracket-scroll {
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding: 12px 2px 20px;
+      scrollbar-color: rgba(38, 217, 201, .45) rgba(13, 34, 58, .55);
+    }
+
+    .yk-bracket-board {
+      min-width: 1320px;
+      display: grid;
+      grid-template-columns: 320px 280px 260px 240px 220px;
+      gap: 26px;
+      align-items: stretch;
+    }
+
+    .yk-bracket-stage {
+      min-width: 0;
+    }
+
+    .yk-bracket-stage-title {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 950;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      margin: 0 0 14px;
+    }
+
+    .yk-bracket-stage-body {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+    }
+
+    .yk-bracket-stage.round16 .yk-bracket-stage-body {
+      padding-top: 42px;
+      gap: 72px;
+    }
+
+    .yk-bracket-stage.quarter .yk-bracket-stage-body {
+      padding-top: 118px;
+      gap: 176px;
+    }
+
+    .yk-bracket-stage.semi .yk-bracket-stage-body {
+      padding-top: 280px;
+      gap: 390px;
+    }
+
+    .yk-bracket-stage.final .yk-bracket-stage-body {
+      padding-top: 608px;
+    }
+
+    .yk-bracket-match {
+      position: relative;
+      border: 1px solid rgba(70, 143, 208, .42);
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at right bottom, rgba(38, 217, 201, .10), transparent 36%),
+        linear-gradient(180deg, rgba(18, 41, 70, .92), rgba(11, 27, 48, .92));
+      box-shadow: 0 16px 32px rgba(0, 0, 0, .18);
+      padding: 14px;
+    }
+
+    .yk-bracket-match::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -27px;
+      width: 26px;
+      height: 1px;
+      background: rgba(38, 217, 201, .38);
+    }
+
+    .yk-bracket-stage.final .yk-bracket-match::after {
+      display: none;
+    }
+
+    .yk-bracket-match.focus {
+      border-color: rgba(42, 230, 166, .76);
+      box-shadow: 0 0 0 1px rgba(42, 230, 166, .15) inset, 0 18px 36px rgba(0, 0, 0, .24);
+    }
+
+    .yk-bracket-match.placeholder {
+      opacity: .86;
+      border-style: dashed;
+    }
+
+    .yk-bracket-match-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--gold);
+      font-weight: 950;
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .yk-bracket-match-head small {
+      color: var(--muted);
+      letter-spacing: 0;
+      text-transform: none;
+      font-size: 12px;
+    }
+
+    .yk-bracket-team {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      min-height: 34px;
+      color: var(--text);
+      font-weight: 900;
+      font-size: 15px;
+      border-top: 1px solid rgba(255, 255, 255, .06);
+      padding-top: 8px;
+      margin-top: 8px;
+    }
+
+    .yk-bracket-team b {
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    @media (max-width: 760px) {
+      .yk-bracket-board {
+        min-width: 1040px;
+        grid-template-columns: 260px 230px 220px 210px 200px;
+        gap: 18px;
+      }
+
+      .yk-bracket-team {
+        font-size: 13px;
+      }
+
+      .yk-bracket-match {
+        border-radius: 16px;
+        padding: 12px;
+      }
+    }
+  `;
+
+  document.head.appendChild(style);
+}
+
 
 function buildRoundOf32Projection(standings, thirdRanking) {
   return ROUND_OF_32_TEMPLATE.map(slot => {
@@ -797,17 +1105,7 @@ function resolveSlotSide(rule, standings, thirdRanking) {
 
   return { label: 'Belirsiz', codes: [] };
 }
-function buildPostTurkeyPathProjection(projectedRows, thirdRanking) {
-  const qualifyingThirds = thirdRanking
-    .filter(team => team.qualifiesAsThird)
-    .map(team => `${name(team.code)} (${team.group})`);
 
-  const thirdText = qualifyingThirds.length
-    ? `Geçici en iyi üçüncüler hattında öne çıkan takımlar: ${qualifyingThirds.join(', ')}.`
-    : 'En iyi üçüncüler tablosu grup sonuçları netleştikçe şekillenecek.';
-
-  return `Türkiye grup aşamasında turnuvaya veda etti. Yıldız Kupası artık Türkiye ihtimalinden çok Son 32 yolunu, favorilerin olası rakiplerini ve eleme turu senaryolarını izlemeli. ${thirdText}`;
-}
 function buildTurkiyePathProjection(standings, thirdRanking, rows) {
   const group = getGroupOfTeam('TUR') || 'D';
   const table = standings[group] || [];
