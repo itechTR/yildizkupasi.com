@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-01T17:10:32.669Z",
-  "liveCount": 1,
-  "finishedCount": 79,
-  "scheduledCount": 25,
+  "updatedAt": "2026-07-01T19:12:27.653Z",
+  "liveCount": 0,
+  "finishedCount": 80,
+  "scheduledCount": 24,
   "groupQualification": {
     "A": [
       {
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "İngiltere - DR Kongo, Belçika - Senegal, ABD - Bosna Hersek, İspanya - Avusturya, Portekiz - Hırvatistan, İsviçre - Cezayir, Avustralya - Mısır, Arjantin - Cape Verde"
+      "text": "Belçika - Senegal, ABD - Bosna Hersek, İspanya - Avusturya, Portekiz - Hırvatistan, İsviçre - Cezayir, Avustralya - Mısır, Arjantin - Cape Verde, Kolombiya - Gana"
     }
   ],
   "groupLeaders": [
@@ -530,13 +530,6 @@
   ],
   "upcomingFocus": [
     {
-      "id": "537426",
-      "text": "İngiltere - DR Kongo",
-      "date": "2026-07-01T16:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
-    {
       "id": "537422",
       "text": "Belçika - Senegal",
       "date": "2026-07-01T20:00:00Z",
@@ -582,6 +575,13 @@
       "id": "537427",
       "text": "Arjantin - Cape Verde",
       "date": "2026-07-03T22:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537430",
+      "text": "Kolombiya - Gana",
+      "date": "2026-07-04T01:30:00Z",
       "group": "",
       "stage": "knockout"
     }
