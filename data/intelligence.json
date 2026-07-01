@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-06-26T16:06:04.430Z",
+  "updatedAt": "2026-07-01T08:53:34.519Z",
   "liveCount": 0,
-  "finishedCount": 60,
-  "scheduledCount": 44,
+  "finishedCount": 79,
+  "scheduledCount": 25,
   "groupQualification": {
     "A": [
       {
@@ -210,36 +210,36 @@
     ],
     "G": [
       {
+        "code": "BEL",
+        "team": "Belçika",
+        "probability": 95,
+        "points": 5,
+        "gd": 4,
+        "played": 3
+      },
+      {
         "code": "EGY",
         "team": "Mısır",
-        "probability": 92,
-        "points": 4,
+        "probability": 86,
+        "points": 5,
         "gd": 2,
-        "played": 2
+        "played": 3
       },
       {
         "code": "IRN",
         "team": "İran",
-        "probability": 46,
-        "points": 2,
+        "probability": 40,
+        "points": 3,
         "gd": 0,
-        "played": 2
-      },
-      {
-        "code": "BEL",
-        "team": "Belçika",
-        "probability": 44,
-        "points": 2,
-        "gd": 0,
-        "played": 2
+        "played": 3
       },
       {
         "code": "NZL",
         "team": "Yeni Zelanda",
-        "probability": 40,
+        "probability": 3,
         "points": 1,
-        "gd": -2,
-        "played": 2
+        "gd": -6,
+        "played": 3
       }
     ],
     "H": [
@@ -247,33 +247,33 @@
         "code": "ESP",
         "team": "İspanya",
         "probability": 95,
-        "points": 4,
-        "gd": 4,
-        "played": 2
-      },
-      {
-        "code": "URU",
-        "team": "Uruguay",
-        "probability": 48,
-        "points": 2,
-        "gd": 0,
-        "played": 2
+        "points": 7,
+        "gd": 5,
+        "played": 3
       },
       {
         "code": "CPV",
         "team": "Cape Verde",
-        "probability": 46,
-        "points": 2,
+        "probability": 38,
+        "points": 3,
         "gd": 0,
-        "played": 2
+        "played": 3
+      },
+      {
+        "code": "URU",
+        "team": "Uruguay",
+        "probability": 18,
+        "points": 2,
+        "gd": -1,
+        "played": 3
       },
       {
         "code": "KSA",
         "team": "Suudi Arabistan",
-        "probability": 28,
-        "points": 1,
+        "probability": 3,
+        "points": 2,
         "gd": -4,
-        "played": 2
+        "played": 3
       }
     ],
     "I": [
@@ -281,33 +281,33 @@
         "code": "FRA",
         "team": "Fransa",
         "probability": 95,
-        "points": 6,
-        "gd": 5,
-        "played": 2
+        "points": 9,
+        "gd": 8,
+        "played": 3
       },
       {
         "code": "NOR",
         "team": "Norveç",
         "probability": 95,
         "points": 6,
-        "gd": 4,
-        "played": 2
+        "gd": 1,
+        "played": 3
       },
       {
         "code": "SEN",
         "team": "Senegal",
-        "probability": 20,
-        "points": 0,
-        "gd": -3,
-        "played": 2
+        "probability": 58,
+        "points": 3,
+        "gd": 2,
+        "played": 3
       },
       {
         "code": "IRQ",
         "team": "Irak",
-        "probability": 4,
+        "probability": 3,
         "points": 0,
-        "gd": -6,
-        "played": 2
+        "gd": -11,
+        "played": 3
       }
     ],
     "J": [
@@ -315,33 +315,33 @@
         "code": "ARG",
         "team": "Arjantin",
         "probability": 95,
-        "points": 6,
-        "gd": 5,
-        "played": 2
+        "points": 9,
+        "gd": 7,
+        "played": 3
       },
       {
         "code": "AUT",
         "team": "Avusturya",
-        "probability": 66,
-        "points": 3,
+        "probability": 80,
+        "points": 4,
         "gd": 0,
-        "played": 2
+        "played": 3
       },
       {
         "code": "ALG",
         "team": "Cezayir",
-        "probability": 56,
-        "points": 3,
+        "probability": 70,
+        "points": 4,
         "gd": -2,
-        "played": 2
+        "played": 3
       },
       {
         "code": "JOR",
         "team": "Ürdün",
-        "probability": 18,
+        "probability": 3,
         "points": 0,
-        "gd": -3,
-        "played": 2
+        "gd": -5,
+        "played": 3
       }
     ],
     "K": [
@@ -349,82 +349,82 @@
         "code": "COL",
         "team": "Kolombiya",
         "probability": 95,
-        "points": 6,
+        "points": 7,
         "gd": 3,
-        "played": 2
+        "played": 3
       },
       {
         "code": "POR",
         "team": "Portekiz",
         "probability": 95,
-        "points": 4,
+        "points": 5,
         "gd": 5,
-        "played": 2
+        "played": 3
       },
       {
         "code": "COD",
         "team": "DR Kongo",
-        "probability": 40,
-        "points": 1,
-        "gd": -1,
-        "played": 2
+        "probability": 80,
+        "points": 4,
+        "gd": 1,
+        "played": 3
       },
       {
         "code": "UZB",
         "team": "Özbekistan",
         "probability": 3,
         "points": 0,
-        "gd": -7,
-        "played": 2
+        "gd": -9,
+        "played": 3
       }
     ],
     "L": [
       {
         "code": "ENG",
         "team": "İngiltere",
-        "probability": 92,
-        "points": 4,
-        "gd": 2,
-        "played": 2
-      },
-      {
-        "code": "GHA",
-        "team": "Gana",
-        "probability": 82,
-        "points": 4,
-        "gd": 1,
-        "played": 2
+        "probability": 95,
+        "points": 7,
+        "gd": 4,
+        "played": 3
       },
       {
         "code": "CRO",
         "team": "Hırvatistan",
-        "probability": 62,
-        "points": 3,
-        "gd": -1,
-        "played": 2
+        "probability": 95,
+        "points": 6,
+        "gd": 0,
+        "played": 3
+      },
+      {
+        "code": "GHA",
+        "team": "Gana",
+        "probability": 72,
+        "points": 4,
+        "gd": 0,
+        "played": 3
       },
       {
         "code": "PAN",
         "team": "Panama",
-        "probability": 18,
+        "probability": 3,
         "points": 0,
-        "gd": -2,
-        "played": 2
+        "gd": -4,
+        "played": 3
       }
     ]
   },
   "radar": [
     {
       "title": "Grup liderleri",
-      "text": "A: Meksika, B: İsviçre, C: Brezilya, D: ABD, E: Almanya, F: Hollanda, G: Mısır, H: İspanya, I: Fransa, J: Arjantin, K: Kolombiya, L: İngiltere"
+      "text": "A: Meksika, B: İsviçre, C: Brezilya, D: ABD, E: Almanya, F: Hollanda, G: Belçika, H: İspanya, I: Fransa, J: Arjantin, K: Kolombiya, L: İngiltere"
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Portekiz 5-0 Özbekistan, Bosna Hersek 3-1 Katar, Fas 4-2 Haiti, Tunus 1-3 Hollanda, Türkiye 3-2 ABD."
+      "text": "Son yüksek skorlu maçlar: DR Kongo 3-1 Özbekistan, Ürdün 1-3 Arjantin, Cezayir 3-3 Avusturya, Almanya 4-5 Paraguay, Hollanda 3-4 Fas."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Norveç - Fransa, Senegal - Irak, Uruguay - İspanya, Cape Verde - Suudi Arabistan, Yeni Zelanda - Belçika, Mısır - İran, Panama - İngiltere, Hırvatistan - Gana"
+      "text": "İngiltere - DR Kongo, Belçika - Senegal, ABD - Bosna Hersek, İspanya - Avusturya, Portekiz - Hırvatistan, İsviçre - Cezayir, Avustralya - Mısır, Arjantin - Cape Verde"
     }
   ],
   "groupLeaders": [
@@ -466,124 +466,124 @@
     },
     {
       "group": "G",
-      "leader": "EGY",
-      "leaderName": "Mısır",
-      "points": 4
+      "leader": "BEL",
+      "leaderName": "Belçika",
+      "points": 5
     },
     {
       "group": "H",
       "leader": "ESP",
       "leaderName": "İspanya",
-      "points": 4
+      "points": 7
     },
     {
       "group": "I",
       "leader": "FRA",
       "leaderName": "Fransa",
-      "points": 6
+      "points": 9
     },
     {
       "group": "J",
       "leader": "ARG",
       "leaderName": "Arjantin",
-      "points": 6
+      "points": 9
     },
     {
       "group": "K",
       "leader": "COL",
       "leaderName": "Kolombiya",
-      "points": 6
+      "points": 7
     },
     {
       "group": "L",
       "leader": "ENG",
       "leaderName": "İngiltere",
-      "points": 4
+      "points": 7
     }
   ],
   "highScoringMatches": [
     {
-      "id": "537405",
-      "text": "Portekiz 5-0 Özbekistan",
-      "goals": 5
-    },
-    {
-      "id": "537338",
-      "text": "Bosna Hersek 3-1 Katar",
+      "id": "537408",
+      "text": "DR Kongo 3-1 Özbekistan",
       "goals": 4
     },
     {
-      "id": "537344",
-      "text": "Fas 4-2 Haiti",
+      "id": "537401",
+      "text": "Ürdün 1-3 Arjantin",
+      "goals": 4
+    },
+    {
+      "id": "537402",
+      "text": "Cezayir 3-3 Avusturya",
       "goals": 6
     },
     {
-      "id": "537361",
-      "text": "Tunus 1-3 Hollanda",
-      "goals": 4
+      "id": "537415",
+      "text": "Almanya 4-5 Paraguay",
+      "goals": 9
     },
     {
-      "id": "537349",
-      "text": "Türkiye 3-2 ABD",
-      "goals": 5
+      "id": "537418",
+      "text": "Hollanda 3-4 Fas",
+      "goals": 7
     }
   ],
   "upcomingFocus": [
     {
-      "id": "537395",
-      "text": "Norveç - Fransa",
-      "date": "2026-06-26T19:00:00Z",
-      "group": "I",
-      "stage": "group"
+      "id": "537426",
+      "text": "İngiltere - DR Kongo",
+      "date": "2026-07-01T16:00:00Z",
+      "group": "",
+      "stage": "knockout"
     },
     {
-      "id": "537396",
-      "text": "Senegal - Irak",
-      "date": "2026-06-26T19:00:00Z",
-      "group": "I",
-      "stage": "group"
+      "id": "537422",
+      "text": "Belçika - Senegal",
+      "date": "2026-07-01T20:00:00Z",
+      "group": "",
+      "stage": "knockout"
     },
     {
-      "id": "537373",
-      "text": "Uruguay - İspanya",
-      "date": "2026-06-27T00:00:00Z",
-      "group": "H",
-      "stage": "group"
+      "id": "537421",
+      "text": "ABD - Bosna Hersek",
+      "date": "2026-07-02T00:00:00Z",
+      "group": "",
+      "stage": "knockout"
     },
     {
-      "id": "537374",
-      "text": "Cape Verde - Suudi Arabistan",
-      "date": "2026-06-27T00:00:00Z",
-      "group": "H",
-      "stage": "group"
+      "id": "537420",
+      "text": "İspanya - Avusturya",
+      "date": "2026-07-02T19:00:00Z",
+      "group": "",
+      "stage": "knockout"
     },
     {
-      "id": "537367",
-      "text": "Yeni Zelanda - Belçika",
-      "date": "2026-06-27T03:00:00Z",
-      "group": "G",
-      "stage": "group"
+      "id": "537419",
+      "text": "Portekiz - Hırvatistan",
+      "date": "2026-07-02T23:00:00Z",
+      "group": "",
+      "stage": "knockout"
     },
     {
-      "id": "537368",
-      "text": "Mısır - İran",
-      "date": "2026-06-27T03:00:00Z",
-      "group": "G",
-      "stage": "group"
+      "id": "537429",
+      "text": "İsviçre - Cezayir",
+      "date": "2026-07-03T03:00:00Z",
+      "group": "",
+      "stage": "knockout"
     },
     {
-      "id": "537413",
-      "text": "Panama - İngiltere",
-      "date": "2026-06-27T21:00:00Z",
-      "group": "L",
-      "stage": "group"
+      "id": "537428",
+      "text": "Avustralya - Mısır",
+      "date": "2026-07-03T18:00:00Z",
+      "group": "",
+      "stage": "knockout"
     },
     {
-      "id": "537414",
-      "text": "Hırvatistan - Gana",
-      "date": "2026-06-27T21:00:00Z",
-      "group": "L",
-      "stage": "group"
+      "id": "537427",
+      "text": "Arjantin - Cape Verde",
+      "date": "2026-07-03T22:00:00Z",
+      "group": "",
+      "stage": "knockout"
     }
   ]
 }
