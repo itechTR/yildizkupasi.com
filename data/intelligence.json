@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-02T01:53:17.373Z",
-  "liveCount": 1,
-  "finishedCount": 81,
-  "scheduledCount": 23,
+  "updatedAt": "2026-07-02T05:55:20.527Z",
+  "liveCount": 0,
+  "finishedCount": 82,
+  "scheduledCount": 22,
   "groupQualification": {
     "A": [
       {
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "ABD - Bosna Hersek, İspanya - Avusturya, Portekiz - Hırvatistan, İsviçre - Cezayir, Avustralya - Mısır, Arjantin - Cape Verde, Kolombiya - Gana, Kanada - Fas"
+      "text": "İspanya - Avusturya, Portekiz - Hırvatistan, İsviçre - Cezayir, Avustralya - Mısır, Arjantin - Cape Verde, Kolombiya - Gana, Kanada - Fas, Paraguay - Fransa"
     }
   ],
   "groupLeaders": [
@@ -530,13 +530,6 @@
   ],
   "upcomingFocus": [
     {
-      "id": "537421",
-      "text": "ABD - Bosna Hersek",
-      "date": "2026-07-02T00:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
-    {
       "id": "537420",
       "text": "İspanya - Avusturya",
       "date": "2026-07-02T19:00:00Z",
@@ -582,6 +575,13 @@
       "id": "537376",
       "text": "Kanada - Fas",
       "date": "2026-07-04T17:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537375",
+      "text": "Paraguay - Fransa",
+      "date": "2026-07-04T21:00:00Z",
       "group": "",
       "stage": "knockout"
     }
