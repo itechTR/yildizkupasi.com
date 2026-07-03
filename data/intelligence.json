@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-03T20:55:41.005Z",
+  "updatedAt": "2026-07-03T22:05:35.417Z",
   "liveCount": 1,
-  "finishedCount": 85,
-  "scheduledCount": 19,
+  "finishedCount": 86,
+  "scheduledCount": 18,
   "groupQualification": {
     "A": [
       {
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Ürdün 1-3 Arjantin, Cezayir 3-3 Avusturya, Almanya 4-5 Paraguay, Hollanda 3-4 Fas, Belçika 3-2 Senegal."
+      "text": "Son yüksek skorlu maçlar: Cezayir 3-3 Avusturya, Almanya 4-5 Paraguay, Hollanda 3-4 Fas, Belçika 3-2 Senegal, Avustralya 3-5 Mısır."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Avustralya - Mısır, Arjantin - Cape Verde, Kolombiya - Gana, Kanada - Fas, Paraguay - Fransa, Brezilya - Norveç, Meksika - İngiltere, TBD - TBD"
+      "text": "Arjantin - Cape Verde, Kolombiya - Gana, Kanada - Fas, Paraguay - Fransa, Brezilya - Norveç, Meksika - İngiltere, TBD - TBD, ABD - Belçika"
     }
   ],
   "groupLeaders": [
@@ -503,11 +503,6 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537401",
-      "text": "Ürdün 1-3 Arjantin",
-      "goals": 4
-    },
-    {
       "id": "537402",
       "text": "Cezayir 3-3 Avusturya",
       "goals": 6
@@ -526,16 +521,14 @@
       "id": "537422",
       "text": "Belçika 3-2 Senegal",
       "goals": 5
+    },
+    {
+      "id": "537428",
+      "text": "Avustralya 3-5 Mısır",
+      "goals": 8
     }
   ],
   "upcomingFocus": [
-    {
-      "id": "537428",
-      "text": "Avustralya - Mısır",
-      "date": "2026-07-03T18:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
     {
       "id": "537427",
       "text": "Arjantin - Cape Verde",
@@ -582,6 +575,13 @@
       "id": "537379",
       "text": "TBD - TBD",
       "date": "2026-07-06T19:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537380",
+      "text": "ABD - Belçika",
+      "date": "2026-07-07T00:00:00Z",
       "group": "",
       "stage": "knockout"
     }
