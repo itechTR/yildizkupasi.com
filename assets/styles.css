@@ -898,39 +898,110 @@ main > #stats + #turkiye {
     radial-gradient(circle at right bottom, rgba(255, 209, 102, .12), transparent 38%),
     rgba(12, 28, 48, .72);
 }
+
 /* ================================
-   Bracket alignment fix
+   Bracket alignment fix - grid based
    ================================ */
 
+.yk-bracket-scroll {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding: 12px 2px 24px !important;
+}
+
 .yk-bracket-board {
-  min-width: 1500px !important;
-  grid-template-columns: 340px 300px 280px 260px 240px !important;
-  gap: 34px !important;
+  min-width: 1580px !important;
+  display: grid !important;
+  grid-template-columns: 360px 320px 300px 280px 250px !important;
+  gap: 36px !important;
+  align-items: start !important;
 }
 
-.yk-bracket-stage.round16 .yk-bracket-stage-body {
-  padding-top: 54px !important;
-  gap: 96px !important;
+.yk-bracket-stage {
+  min-width: 0 !important;
 }
 
-.yk-bracket-stage.quarter .yk-bracket-stage-body {
-  padding-top: 176px !important;
-  gap: 246px !important;
+.yk-bracket-stage-body {
+  display: grid !important;
+  grid-template-rows: repeat(32, 50px) !important;
+  gap: 0 !important;
+  padding-top: 0 !important;
+  position: relative !important;
 }
 
-.yk-bracket-stage.semi .yk-bracket-stage-body {
-  padding-top: 440px !important;
-  gap: 540px !important;
-}
-
+.yk-bracket-stage.round32 .yk-bracket-stage-body,
+.yk-bracket-stage.round16 .yk-bracket-stage-body,
+.yk-bracket-stage.quarter .yk-bracket-stage-body,
+.yk-bracket-stage.semi .yk-bracket-stage-body,
 .yk-bracket-stage.final .yk-bracket-stage-body {
-  padding-top: 720px !important;
+  gap: 0 !important;
+  padding-top: 0 !important;
 }
 
 .yk-bracket-match {
+  position: relative !important;
   min-height: 138px !important;
+  align-self: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+
+.round32 .yk-bracket-match:nth-child(1) { grid-row: 1 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(2) { grid-row: 3 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(3) { grid-row: 5 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(4) { grid-row: 7 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(5) { grid-row: 9 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(6) { grid-row: 11 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(7) { grid-row: 13 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(8) { grid-row: 15 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(9) { grid-row: 17 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(10) { grid-row: 19 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(11) { grid-row: 21 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(12) { grid-row: 23 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(13) { grid-row: 25 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(14) { grid-row: 27 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(15) { grid-row: 29 / span 3 !important; }
+.round32 .yk-bracket-match:nth-child(16) { grid-row: 31 / span 3 !important; }
+
+.round16 .yk-bracket-match:nth-child(1) { grid-row: 2 / span 4 !important; }
+.round16 .yk-bracket-match:nth-child(2) { grid-row: 6 / span 4 !important; }
+.round16 .yk-bracket-match:nth-child(3) { grid-row: 10 / span 4 !important; }
+.round16 .yk-bracket-match:nth-child(4) { grid-row: 14 / span 4 !important; }
+.round16 .yk-bracket-match:nth-child(5) { grid-row: 18 / span 4 !important; }
+.round16 .yk-bracket-match:nth-child(6) { grid-row: 22 / span 4 !important; }
+.round16 .yk-bracket-match:nth-child(7) { grid-row: 26 / span 4 !important; }
+.round16 .yk-bracket-match:nth-child(8) { grid-row: 30 / span 4 !important; }
+
+.quarter .yk-bracket-match:nth-child(1) { grid-row: 4 / span 8 !important; }
+.quarter .yk-bracket-match:nth-child(2) { grid-row: 12 / span 8 !important; }
+.quarter .yk-bracket-match:nth-child(3) { grid-row: 20 / span 8 !important; }
+.quarter .yk-bracket-match:nth-child(4) { grid-row: 28 / span 8 !important; }
+
+.semi .yk-bracket-match:nth-child(1) { grid-row: 8 / span 16 !important; }
+.semi .yk-bracket-match:nth-child(2) { grid-row: 24 / span 16 !important; }
+
+.final .yk-bracket-match:nth-child(1) {
+  grid-row: 16 / span 16 !important;
 }
 
 .yk-bracket-team {
   min-height: 36px !important;
 }
+
+.yk-bracket-team b {
+  color: var(--gold) !important;
+}
+
+@media(max-width: 760px) {
+  .yk-bracket-board {
+    min-width: 1320px !important;
+    grid-template-columns: 300px 270px 250px 230px 220px !important;
+    gap: 28px !important;
+  }
+
+  .yk-bracket-match {
+    min-height: 132px !important;
+  }
+}
+
