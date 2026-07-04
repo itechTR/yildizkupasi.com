@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-04T01:02:26.666Z",
+  "updatedAt": "2026-07-04T04:46:24.343Z",
   "liveCount": 0,
-  "finishedCount": 87,
-  "scheduledCount": 17,
+  "finishedCount": 88,
+  "scheduledCount": 16,
   "groupQualification": {
     "A": [
       {
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Kolombiya - Gana, Kanada - Fas, Paraguay - Fransa, Brezilya - Norveç, Meksika - İngiltere, TBD - TBD, ABD - Belçika, TBD - TBD"
+      "text": "Kanada - Fas, Paraguay - Fransa, Brezilya - Norveç, Meksika - İngiltere, TBD - TBD, ABD - Belçika, TBD - TBD, TBD - TBD"
     }
   ],
   "groupLeaders": [
@@ -530,13 +530,6 @@
   ],
   "upcomingFocus": [
     {
-      "id": "537430",
-      "text": "Kolombiya - Gana",
-      "date": "2026-07-04T01:30:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
-    {
       "id": "537376",
       "text": "Kanada - Fas",
       "date": "2026-07-04T17:00:00Z",
@@ -582,6 +575,13 @@
       "id": "537381",
       "text": "TBD - TBD",
       "date": "2026-07-07T16:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537382",
+      "text": "TBD - TBD",
+      "date": "2026-07-07T20:00:00Z",
       "group": "",
       "stage": "knockout"
     }
