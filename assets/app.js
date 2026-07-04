@@ -1062,20 +1062,15 @@ function ensureBracketStyles() {
     .yk-bracket-scroll {
       overflow-x: auto;
       overflow-y: hidden;
-      padding: 12px 2px 20px;
-      scrollbar-color: rgba(38, 217, 201, .45) rgba(13, 34, 58, .55);
+      padding: 12px 2px 24px;
     }
 
     .yk-bracket-board {
-      min-width: 1320px;
+      min-width: 1560px;
       display: grid;
-      grid-template-columns: 320px 280px 260px 240px 220px;
-      gap: 26px;
-      align-items: stretch;
-    }
-
-    .yk-bracket-stage {
-      min-width: 0;
+      grid-template-columns: 360px 320px 300px 280px 250px;
+      gap: 36px;
+      align-items: start;
     }
 
     .yk-bracket-stage-title {
@@ -1084,52 +1079,56 @@ function ensureBracketStyles() {
       font-weight: 950;
       letter-spacing: .16em;
       text-transform: uppercase;
-      margin: 0 0 14px;
+      margin: 0 0 16px;
     }
 
     .yk-bracket-stage-body {
       display: flex;
       flex-direction: column;
-      gap: 14px;
       position: relative;
     }
 
+    .yk-bracket-stage.round32 .yk-bracket-stage-body {
+      gap: 16px;
+    }
+
     .yk-bracket-stage.round16 .yk-bracket-stage-body {
-      padding-top: 42px;
-      gap: 72px;
+      padding-top: 74px;
+      gap: 124px;
     }
 
     .yk-bracket-stage.quarter .yk-bracket-stage-body {
-      padding-top: 118px;
-      gap: 176px;
+      padding-top: 218px;
+      gap: 332px;
     }
 
     .yk-bracket-stage.semi .yk-bracket-stage-body {
-      padding-top: 280px;
-      gap: 390px;
+      padding-top: 536px;
+      gap: 650px;
     }
 
     .yk-bracket-stage.final .yk-bracket-stage-body {
-      padding-top: 608px;
+      padding-top: 980px;
     }
 
     .yk-bracket-match {
       position: relative;
+      min-height: 150px;
       border: 1px solid rgba(70, 143, 208, .42);
       border-radius: 18px;
       background:
         radial-gradient(circle at right bottom, rgba(38, 217, 201, .10), transparent 36%),
         linear-gradient(180deg, rgba(18, 41, 70, .92), rgba(11, 27, 48, .92));
       box-shadow: 0 16px 32px rgba(0, 0, 0, .18);
-      padding: 14px;
+      padding: 14px 16px;
     }
 
     .yk-bracket-match::after {
       content: "";
       position: absolute;
       top: 50%;
-      right: -27px;
-      width: 26px;
+      right: -37px;
+      width: 36px;
       height: 1px;
       background: rgba(38, 217, 201, .38);
     }
@@ -1140,7 +1139,6 @@ function ensureBracketStyles() {
 
     .yk-bracket-match.focus {
       border-color: rgba(42, 230, 166, .76);
-      box-shadow: 0 0 0 1px rgba(42, 230, 166, .15) inset, 0 18px 36px rgba(0, 0, 0, .24);
     }
 
     .yk-bracket-match.placeholder {
@@ -1168,11 +1166,11 @@ function ensureBracketStyles() {
     }
 
     .yk-bracket-team {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr auto;
       align-items: center;
       gap: 12px;
-      min-height: 34px;
+      min-height: 40px;
       color: var(--text);
       font-weight: 900;
       font-size: 15px;
@@ -1182,24 +1180,30 @@ function ensureBracketStyles() {
     }
 
     .yk-bracket-team b {
-      color: var(--muted);
-      font-size: 18px;
+      color: var(--gold);
+      font-size: 22px;
+      min-width: 32px;
+      text-align: right;
+    }
+
+    .yk-bracket-team.winner span {
+      color: var(--gold);
     }
 
     @media (max-width: 760px) {
       .yk-bracket-board {
-        min-width: 1040px;
-        grid-template-columns: 260px 230px 220px 210px 200px;
-        gap: 18px;
+        min-width: 1280px;
+        grid-template-columns: 300px 270px 250px 230px 220px;
+        gap: 28px;
+      }
+
+      .yk-bracket-match {
+        min-height: 142px;
+        padding: 12px;
       }
 
       .yk-bracket-team {
         font-size: 13px;
-      }
-
-      .yk-bracket-match {
-        border-radius: 16px;
-        padding: 12px;
       }
     }
   `;
