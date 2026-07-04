@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-03T23:17:01.574Z",
-  "liveCount": 1,
-  "finishedCount": 86,
-  "scheduledCount": 18,
+  "updatedAt": "2026-07-04T01:02:26.666Z",
+  "liveCount": 0,
+  "finishedCount": 87,
+  "scheduledCount": 17,
   "groupQualification": {
     "A": [
       {
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Cezayir 3-3 Avusturya, Almanya 4-5 Paraguay, Hollanda 3-4 Fas, Belçika 3-2 Senegal, Avustralya 3-5 Mısır."
+      "text": "Son yüksek skorlu maçlar: Almanya 4-5 Paraguay, Hollanda 3-4 Fas, Belçika 3-2 Senegal, Avustralya 3-5 Mısır, Arjantin 3-2 Cape Verde."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Arjantin - Cape Verde, Kolombiya - Gana, Kanada - Fas, Paraguay - Fransa, Brezilya - Norveç, Meksika - İngiltere, TBD - TBD, ABD - Belçika"
+      "text": "Kolombiya - Gana, Kanada - Fas, Paraguay - Fransa, Brezilya - Norveç, Meksika - İngiltere, TBD - TBD, ABD - Belçika, TBD - TBD"
     }
   ],
   "groupLeaders": [
@@ -503,11 +503,6 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537402",
-      "text": "Cezayir 3-3 Avusturya",
-      "goals": 6
-    },
-    {
       "id": "537415",
       "text": "Almanya 4-5 Paraguay",
       "goals": 9
@@ -526,16 +521,14 @@
       "id": "537428",
       "text": "Avustralya 3-5 Mısır",
       "goals": 8
+    },
+    {
+      "id": "537427",
+      "text": "Arjantin 3-2 Cape Verde",
+      "goals": 5
     }
   ],
   "upcomingFocus": [
-    {
-      "id": "537427",
-      "text": "Arjantin - Cape Verde",
-      "date": "2026-07-03T22:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
     {
       "id": "537430",
       "text": "Kolombiya - Gana",
@@ -582,6 +575,13 @@
       "id": "537380",
       "text": "ABD - Belçika",
       "date": "2026-07-07T00:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537381",
+      "text": "TBD - TBD",
+      "date": "2026-07-07T16:00:00Z",
       "group": "",
       "stage": "knockout"
     }
