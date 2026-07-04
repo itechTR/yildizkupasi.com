@@ -898,3 +898,39 @@ main > #stats + #turkiye {
     radial-gradient(circle at right bottom, rgba(255, 209, 102, .12), transparent 38%),
     rgba(12, 28, 48, .72);
 }
+/* ================================
+   Bracket alignment fix
+   ================================ */
+
+.yk-bracket-board {
+  min-width: 1500px !important;
+  grid-template-columns: 340px 300px 280px 260px 240px !important;
+  gap: 34px !important;
+}
+
+.yk-bracket-stage.round16 .yk-bracket-stage-body {
+  padding-top: 54px !important;
+  gap: 96px !important;
+}
+
+.yk-bracket-stage.quarter .yk-bracket-stage-body {
+  padding-top: 176px !important;
+  gap: 246px !important;
+}
+
+.yk-bracket-stage.semi .yk-bracket-stage-body {
+  padding-top: 440px !important;
+  gap: 540px !important;
+}
+
+.yk-bracket-stage.final .yk-bracket-stage-body {
+  padding-top: 720px !important;
+}
+
+.yk-bracket-match {
+  min-height: 138px !important;
+}
+
+.yk-bracket-team {
+  min-height: 36px !important;
+}
