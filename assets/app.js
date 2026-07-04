@@ -786,24 +786,182 @@ function buildPostTurkeyPathProjection(projectedRows, thirdRanking) {
 
   return `Türkiye grup aşamasında turnuvaya veda etti. Yıldız Kupası artık Türkiye ihtimalinden çok Son 32 yolunu, favorilerin olası rakiplerini ve eleme turu senaryolarını izlemeli. İlk projeksiyon slotları ${likelyBigRoutes} üzerinden şekilleniyor. ${thirdText}`;
 }
+function asNumberOrNull(value) {
+  if (value === null || value === undefined || value === '') return null;
+  const n = Number(value);
+  return Number.isFinite(n) ? n : null;
+}
 
+function getMatchNo(match) {
+  const direct = asNumberOrNull(
+    match?.no ??
+    match?.matchNo ??
+    match?.match_no ??
+    match?.matchNumber ??
+    match?.match_number ??
+    match?.fixtureNo ??
+    match?.fixture_no
+  );
+
+  if (direct !== null) return direct;
+
+  const text = String(match?.id ?? match?.code ?? match?.name ?? match?.title ?? '');
+  const found = text.match(/(?:M|Maç|Match)\s*(\d+)/i);
+  return found ? Number(found[1]) : null;
+}
+
+function getTeamCodeFromSide(side) {
+  return side?.code ?? side?.team ?? side?.teamCode ?? side?.countryCode ?? side?.id ?? null;
+}
+
+function getSideScore(side) {
+  return asNumberOrNull(side?.score ?? side?.goals ?? side?.goal ?? side?.fullTimeScore ?? side?.regularScore);
+}
+
+function getSidePenalty(side) {
+  return asNumberOrNull(
+    side?.penalty ??
+    side?.penalties ??
+    side?.penaltyScore ??
+    side?.shootout ??
+    side?.shootoutScore
+  );
+}
+
+function getTopLevelPenalty(match, side) {
+  const prefix = side === 'home' ? 'home' : 'away';
+  const altPrefix = side === 'home' ? 'Home' : 'Away';
+
+  return asNumberOrNull(
+    match?.[`${prefix}Penalty`] ??
+    match?.[`${prefix}_penalty`] ??
+    match?.[`${prefix}Penalties`] ??
+    match?.[`${prefix}_penalties`] ??
+    match?.[`penalty${altPrefix}`] ??
+    match?.[`penalties${altPrefix}`] ??
+    match?.penalties?.[prefix] ??
+    match?.penaltyScore?.[prefix] ??
+    match?.shootout?.[prefix]
+  );
+}
+
+function isFinishedMatch(match) {
+  const status = String(match?.status ?? match?.matchStatus ?? match?.match_status ?? '').toLowerCase();
+  return ['finished', 'ft', 'ms', 'completed', 'played', 'aet', 'pen'].some(x => status.includes(x));
+}
+
+function sameCode(a, b) {
+  return a && b && String(a).toUpperCase() === String(b).toUpperCase();
+}
+
+function findKnockoutMatchForRow(row) {
+  const rowNo = Number(row.no);
+
+  const byNo = allMatches.find(match => {
+    if (String(match?.stage || '').toLowerCase() === 'group') return false;
+    return getMatchNo(match) === rowNo;
+  });
+
+  if (byNo) return byNo;
+
+  const homeCodes = row.homeCodes || [];
+  const awayCodes = row.awayCodes || [];
+
+  return allMatches.find(match => {
+    if (String(match?.stage || '').toLowerCase() === 'group') return false;
+
+    const homeCode = getTeamCodeFromSide(match.home);
+    const awayCode = getTeamCodeFromSide(match.away);
+
+    const direct = homeCodes.some(code => sameCode(code, homeCode)) && awayCodes.some(code => sameCode(code, awayCode));
+    const reversed = homeCodes.some(code => sameCode(code, awayCode)) && awayCodes.some(code => sameCode(code, homeCode));
+
+    return direct || reversed;
+  });
+}
+
+function formatBracketScore(score, penalty) {
+  if (score === null || score === undefined) return '–';
+  return penalty === null || penalty === undefined ? String(score) : `${score} (${penalty})`;
+}
+
+function getKnockoutResult(row) {
+  const match = findKnockoutMatchForRow(row);
+  if (!match) return null;
+
+  const homeCode = getTeamCodeFromSide(match.home);
+  const awayCode = getTeamCodeFromSide(match.away);
+  const homeScore = getSideScore(match.home);
+  const awayScore = getSideScore(match.away);
+  const homePenalty = getSidePenalty(match.home) ?? getTopLevelPenalty(match, 'home');
+  const awayPenalty = getSidePenalty(match.away) ?? getTopLevelPenalty(match, 'away');
+
+  if (homeScore === null || awayScore === null) return null;
+
+  let winnerCode = null;
+
+  if (homeScore > awayScore) {
+    winnerCode = homeCode;
+  } else if (awayScore > homeScore) {
+    winnerCode = awayCode;
+  } else if (homePenalty !== null && awayPenalty !== null) {
+    winnerCode = homePenalty > awayPenalty ? homeCode : awayCode;
+  } else if (match.winner || match.winnerCode || match.winner_code) {
+    winnerCode = match.winner?.code ?? match.winnerCode ?? match.winner_code;
+  }
+
+  return {
+    match,
+    homeCode,
+    awayCode,
+    home: name(homeCode),
+    away: name(awayCode),
+    homeScore,
+    awayScore,
+    homePenalty,
+    awayPenalty,
+    homeDisplayScore: formatBracketScore(homeScore, homePenalty),
+    awayDisplayScore: formatBracketScore(awayScore, awayPenalty),
+    winnerCode,
+    winnerLabel: winnerCode ? name(winnerCode) : null,
+    finished: isFinishedMatch(match)
+  };
+}
+
+function buildWinnerPlaceholder(match, fallback) {
+  return match?.winnerLabel || fallback;
+}
 function renderEliminationBracket(projectedRows) {
-  const r32 = projectedRows.map(row => ({
-    title: `Maç ${row.no}`,
-    top: compactBracketLabel(row.home),
-    bottom: compactBracketLabel(row.away),
-    meta: row.certainty,
-    focus: row.involvesFocus
-  }));
+  const r32 = projectedRows.map(row => {
+    const result = getKnockoutResult(row);
 
-  const r16 = Array.from({ length: 8 }, (_, index) => ({
-    title: `Son 16 ${index + 1}`,
-    top: `M${r32[index * 2]?.title?.replace('Maç ', '') || '-'} galibi`,
-    bottom: `M${r32[index * 2 + 1]?.title?.replace('Maç ', '') || '-'} galibi`,
-    meta: 'Bekliyor',
-    focus: false,
-    placeholder: true
-  }));
+    return {
+      title: `Maç ${row.no}`,
+      top: result ? result.home : compactBracketLabel(row.home),
+      bottom: result ? result.away : compactBracketLabel(row.away),
+      topScore: result?.homeDisplayScore,
+      bottomScore: result?.awayDisplayScore,
+      winnerCode: result?.winnerCode,
+      winnerLabel: result?.winnerLabel,
+      meta: result ? (result.finished ? 'Tamamlandı' : 'Sonuç girildi') : row.certainty,
+      focus: row.involvesFocus || result?.homeCode === focus || result?.awayCode === focus,
+      completed: Boolean(result)
+    };
+  });
+
+  const r16 = Array.from({ length: 8 }, (_, index) => {
+    const first = r32[index * 2];
+    const second = r32[index * 2 + 1];
+
+    return {
+      title: `Son 16 ${index + 1}`,
+      top: buildWinnerPlaceholder(first, `M${first?.title?.replace('Maç ', '') || '-'} galibi`),
+      bottom: buildWinnerPlaceholder(second, `M${second?.title?.replace('Maç ', '') || '-'} galibi`),
+      meta: first?.winnerLabel || second?.winnerLabel ? 'Projeksiyon' : 'Bekliyor',
+      focus: first?.winnerCode === focus || second?.winnerCode === focus,
+      placeholder: !(first?.winnerLabel && second?.winnerLabel)
+    };
+  });
 
   const qf = Array.from({ length: 4 }, (_, index) => ({
     title: `Çeyrek ${index + 1}`,
@@ -834,7 +992,7 @@ function renderEliminationBracket(projectedRows) {
 
   return `
     <div class="bracket-note">
-      Masaüstünde yatay kaydırarak tüm yolu görebilirsin. Mobilde her tur ayrı kolon gibi akar, çünkü bracket tasarlayanlar insan parmağını hiç düşünmemiş.
+      Masaüstünde yatay kaydırarak tüm yolu görebilirsin. Oynanan maçlar skorla birlikte görünür; kazanan varsa bir sonraki turun satırına otomatik taşınır.
     </div>
     <div class="yk-bracket-scroll">
       <div class="yk-bracket-board">
@@ -861,18 +1019,18 @@ function renderBracketStage(title, matches, className) {
 
 function renderBracketMatch(match) {
   return `
-    <article class="yk-bracket-match ${match.focus ? 'focus' : ''} ${match.placeholder ? 'placeholder' : ''}">
+    <article class="yk-bracket-match ${match.focus ? 'focus' : ''} ${match.placeholder ? 'placeholder' : ''} ${match.completed ? 'completed' : ''}">
       <div class="yk-bracket-match-head">
         <span>${match.title}</span>
         <small>${match.meta}</small>
       </div>
-      <div class="yk-bracket-team">
+      <div class="yk-bracket-team ${match.winnerCode && match.top === match.winnerLabel ? 'winner' : ''}">
         <span>${match.top}</span>
-        <b>–</b>
+        <b>${match.topScore ?? '–'}</b>
       </div>
-      <div class="yk-bracket-team">
+      <div class="yk-bracket-team ${match.winnerCode && match.bottom === match.winnerLabel ? 'winner' : ''}">
         <span>${match.bottom}</span>
-        <b>–</b>
+        <b>${match.bottomScore ?? '–'}</b>
       </div>
     </article>
   `;
@@ -1058,9 +1216,13 @@ function buildRoundOf32Projection(standings, thirdRanking) {
     const involvesFocus = home.codes.includes(focus) || away.codes.includes(focus);
 
     return {
-      no: slot.no,
-      home: home.label,
-      away: away.label,
+  no: slot.no,
+  home: home.label,
+  away: away.label,
+  homeCodes: home.codes,
+  awayCodes: away.codes,
+  homeRule: slot.home,
+  awayRule: slot.away,
       certainty: hasThirdPool ? 'Üçüncülük havuzu' : 'Projeksiyon',
       note: hasThirdPool
         ? 'Üçüncü takım slotu, FIFA kombinasyon tablosuna ve hangi grupların üçüncüsünün çıktığına bağlıdır.'
