@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-04T22:08:04.051Z",
-  "liveCount": 1,
-  "finishedCount": 89,
-  "scheduledCount": 15,
+  "updatedAt": "2026-07-04T23:12:22.230Z",
+  "liveCount": 0,
+  "finishedCount": 90,
+  "scheduledCount": 14,
   "groupQualification": {
     "A": [
       {
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Paraguay - Fransa, Brezilya - Norveç, Meksika - İngiltere, Portekiz - İspanya, ABD - Belçika, Arjantin - Mısır, İsviçre - Kolombiya, TBD - TBD"
+      "text": "Brezilya - Norveç, Meksika - İngiltere, Portekiz - İspanya, ABD - Belçika, Arjantin - Mısır, İsviçre - Kolombiya, TBD - TBD, TBD - TBD"
     }
   ],
   "groupLeaders": [
@@ -530,13 +530,6 @@
   ],
   "upcomingFocus": [
     {
-      "id": "537375",
-      "text": "Paraguay - Fransa",
-      "date": "2026-07-04T21:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
-    {
       "id": "537377",
       "text": "Brezilya - Norveç",
       "date": "2026-07-05T20:00:00Z",
@@ -582,6 +575,13 @@
       "id": "537383",
       "text": "TBD - TBD",
       "date": "2026-07-09T20:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537384",
+      "text": "TBD - TBD",
+      "date": "2026-07-10T19:00:00Z",
       "group": "",
       "stage": "knockout"
     }
