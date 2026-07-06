@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-06T01:27:37.919Z",
-  "liveCount": 1,
-  "finishedCount": 91,
-  "scheduledCount": 13,
+  "updatedAt": "2026-07-06T06:04:45.062Z",
+  "liveCount": 0,
+  "finishedCount": 92,
+  "scheduledCount": 12,
   "groupQualification": {
     "A": [
       {
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Almanya 4-5 Paraguay, Hollanda 3-4 Fas, Belçika 3-2 Senegal, Avustralya 3-5 Mısır, Arjantin 3-2 Cape Verde."
+      "text": "Son yüksek skorlu maçlar: Hollanda 3-4 Fas, Belçika 3-2 Senegal, Avustralya 3-5 Mısır, Arjantin 3-2 Cape Verde, Meksika 2-3 İngiltere."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Meksika - İngiltere, Portekiz - İspanya, ABD - Belçika, Arjantin - Mısır, İsviçre - Kolombiya, Fransa - Fas, TBD - TBD, TBD - TBD"
+      "text": "Portekiz - İspanya, ABD - Belçika, Arjantin - Mısır, İsviçre - Kolombiya, Fransa - Fas, TBD - TBD, TBD - TBD, TBD - TBD"
     }
   ],
   "groupLeaders": [
@@ -503,11 +503,6 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537415",
-      "text": "Almanya 4-5 Paraguay",
-      "goals": 9
-    },
-    {
       "id": "537418",
       "text": "Hollanda 3-4 Fas",
       "goals": 7
@@ -526,16 +521,14 @@
       "id": "537427",
       "text": "Arjantin 3-2 Cape Verde",
       "goals": 5
+    },
+    {
+      "id": "537378",
+      "text": "Meksika 2-3 İngiltere",
+      "goals": 5
     }
   ],
   "upcomingFocus": [
-    {
-      "id": "537378",
-      "text": "Meksika - İngiltere",
-      "date": "2026-07-06T01:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
     {
       "id": "537379",
       "text": "Portekiz - İspanya",
@@ -582,6 +575,13 @@
       "id": "537385",
       "text": "TBD - TBD",
       "date": "2026-07-11T21:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537386",
+      "text": "TBD - TBD",
+      "date": "2026-07-12T01:00:00Z",
       "group": "",
       "stage": "knockout"
     }
