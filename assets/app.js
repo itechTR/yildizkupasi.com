@@ -913,68 +913,128 @@ function getKnockoutResult(row) {
 function buildWinnerPlaceholder(match, fallback) {
   return match?.winnerLabel || fallback;
 }
+const BRACKET_ADVANCEMENT = {
+  89: [73, 76],
+  90: [75, 78],
+  91: [74, 77],
+  92: [79, 80],
+  93: [84, 83],
+  94: [82, 81],
+  95: [87, 86],
+  96: [85, 88],
+  97: [89, 90],
+  98: [93, 94],
+  99: [91, 92],
+  100: [95, 96],
+  101: [97, 98],
+  102: [99, 100],
+  104: [101, 102],
+  103: [101, 102]
+};
+
+function getMatchByNo(no) {
+  const n = Number(no);
+  return allMatches.find(match => Number(match?.n ?? match?.no ?? match?.matchNumber) === n) || null;
+}
+
+function isRealCode(code) {
+  return Boolean(code && code !== 'TBD' && code !== '-' && code !== 'Bekleniyor');
+}
+
+function getMatchStatusLabel(match) {
+  if (!match) return 'Bekliyor';
+  const status = String(match.status || '').toLowerCase();
+  if (status === 'finished' || status === 'ft' || status === 'ms') return 'Tamamlandı';
+  if (status === 'live' || status === 'in_play') return 'Canlı';
+  return 'Planlandı';
+}
+
+function getResolvedWinnerCode(matchNo) {
+  const match = getMatchByNo(matchNo);
+  if (!match) return null;
+
+  if (isRealCode(match.winner)) return match.winner;
+
+  const homeScore = asNumberOrNull(match.home?.score);
+  const awayScore = asNumberOrNull(match.away?.score);
+  const homePen = asNumberOrNull(match.home?.pen ?? match.home?.penalty ?? match.home?.penalties);
+  const awayPen = asNumberOrNull(match.away?.pen ?? match.away?.penalty ?? match.away?.penalties);
+
+  if (homeScore === null || awayScore === null) return null;
+  if (homeScore > awayScore) return match.home?.code;
+  if (awayScore > homeScore) return match.away?.code;
+  if (homePen !== null && awayPen !== null) return homePen > awayPen ? match.home?.code : match.away?.code;
+
+  return null;
+}
+
+function getResolvedSide(matchNo, sideIndex) {
+  const match = getMatchByNo(matchNo);
+  const sideKey = sideIndex === 0 ? 'home' : 'away';
+  const code = match?.[sideKey]?.code;
+
+  if (isRealCode(code)) {
+    return { code, label: name(code), sourceMatchNo: null };
+  }
+
+  const sourceNo = BRACKET_ADVANCEMENT[Number(matchNo)]?.[sideIndex];
+  if (sourceNo) {
+    const winnerCode = getResolvedWinnerCode(sourceNo);
+    if (isRealCode(winnerCode)) {
+      return { code: winnerCode, label: name(winnerCode), sourceMatchNo: sourceNo };
+    }
+    return { code: null, label: `M${sourceNo} galibi`, sourceMatchNo: sourceNo };
+  }
+
+  return { code: null, label: 'Bekleniyor', sourceMatchNo: null };
+}
+
+function getDisplayScore(match, sideKey) {
+  if (!match) return null;
+  const score = asNumberOrNull(match?.[sideKey]?.score);
+  const pen = asNumberOrNull(match?.[sideKey]?.pen ?? match?.[sideKey]?.penalty ?? match?.[sideKey]?.penalties);
+  if (score === null) return null;
+  return pen === null ? String(score) : `${score} (${pen})`;
+}
+
+function buildBracketMatchFromNo(matchNo, titlePrefix) {
+  const match = getMatchByNo(matchNo);
+  const home = getResolvedSide(matchNo, 0);
+  const away = getResolvedSide(matchNo, 1);
+  const winnerCode = getResolvedWinnerCode(matchNo);
+  const homeScore = getDisplayScore(match, 'home');
+  const awayScore = getDisplayScore(match, 'away');
+  const completed = Boolean(winnerCode && homeScore !== null && awayScore !== null);
+
+  return {
+    no: Number(matchNo),
+    title: `${titlePrefix || 'Maç'} ${matchNo}`,
+    top: home.label,
+    bottom: away.label,
+    topCode: home.code,
+    bottomCode: away.code,
+    topScore: homeScore,
+    bottomScore: awayScore,
+    winnerCode,
+    winnerLabel: winnerCode ? name(winnerCode) : null,
+    meta: getMatchStatusLabel(match),
+    focus: home.code === focus || away.code === focus,
+    completed,
+    placeholder: !completed,
+    date: match?.date || null
+  };
+}
+
 function renderEliminationBracket(projectedRows) {
-  const r32 = projectedRows.map(row => {
-    const result = getKnockoutResult(row);
-
-    return {
-      title: `Maç ${row.no}`,
-      top: result ? result.home : compactBracketLabel(row.home),
-      bottom: result ? result.away : compactBracketLabel(row.away),
-      topScore: result?.homeDisplayScore,
-      bottomScore: result?.awayDisplayScore,
-      winnerCode: result?.winnerCode,
-      winnerLabel: result?.winnerLabel,
-      meta: result ? (result.finished ? 'Tamamlandı' : 'Sonuç girildi') : row.certainty,
-      focus: row.involvesFocus || result?.homeCode === focus || result?.awayCode === focus,
-      completed: Boolean(result)
-    };
-  });
-
-  const r16 = Array.from({ length: 8 }, (_, index) => {
-    const first = r32[index * 2];
-    const second = r32[index * 2 + 1];
-
-    return {
-      title: `Son 16 ${index + 1}`,
-      top: buildWinnerPlaceholder(first, `M${first?.title?.replace('Maç ', '') || '-'} galibi`),
-      bottom: buildWinnerPlaceholder(second, `M${second?.title?.replace('Maç ', '') || '-'} galibi`),
-      meta: first?.winnerLabel || second?.winnerLabel ? 'Projeksiyon' : 'Bekliyor',
-      focus: first?.winnerCode === focus || second?.winnerCode === focus,
-      placeholder: !(first?.winnerLabel && second?.winnerLabel)
-    };
-  });
-
-  const qf = Array.from({ length: 4 }, (_, index) => ({
-    title: `Çeyrek ${index + 1}`,
-    top: `S16-${index * 2 + 1} galibi`,
-    bottom: `S16-${index * 2 + 2} galibi`,
-    meta: 'Projeksiyon',
-    focus: false,
-    placeholder: true
-  }));
-
-  const sf = Array.from({ length: 2 }, (_, index) => ({
-    title: `Yarı Final ${index + 1}`,
-    top: `ÇF-${index * 2 + 1} galibi`,
-    bottom: `ÇF-${index * 2 + 2} galibi`,
-    meta: 'Projeksiyon',
-    focus: false,
-    placeholder: true
-  }));
-
-  const final = [{
-    title: 'Final',
-    top: 'YF-1 galibi',
-    bottom: 'YF-2 galibi',
-    meta: 'Final yolu',
-    focus: false,
-    placeholder: true
-  }];
+  const r32 = Array.from({ length: 16 }, (_, index) => buildBracketMatchFromNo(73 + index, 'Maç'));
+  const r16 = Array.from({ length: 8 }, (_, index) => buildBracketMatchFromNo(89 + index, 'Maç'));
+  const qf = Array.from({ length: 4 }, (_, index) => buildBracketMatchFromNo(97 + index, 'Maç'));
+  const sf = Array.from({ length: 2 }, (_, index) => buildBracketMatchFromNo(101 + index, 'Maç'));
+  const final = [buildBracketMatchFromNo(104, 'Maç')];
 
   return `
     <div class="bracket-note">
-      Masaüstünde yatay kaydırarak tüm yolu görebilirsin. Oynanan maçlar skorla birlikte görünür; kazanan varsa bir sonraki turun satırına otomatik taşınır.
+      Finale giden yol doğrudan <strong>data/matches.json</strong> üzerinden çizilir. Sonuç girildikçe kazananlar sonraki tura otomatik taşınır.
     </div>
     <div class="yk-bracket-scroll">
       <div class="yk-bracket-board">
@@ -1000,17 +1060,20 @@ function renderBracketStage(title, matches, className) {
 }
 
 function renderBracketMatch(match) {
+  const topWinner = match.winnerCode && match.topCode === match.winnerCode;
+  const bottomWinner = match.winnerCode && match.bottomCode === match.winnerCode;
+
   return `
     <article class="yk-bracket-match ${match.focus ? 'focus' : ''} ${match.placeholder ? 'placeholder' : ''} ${match.completed ? 'completed' : ''}">
       <div class="yk-bracket-match-head">
         <span>${match.title}</span>
         <small>${match.meta}</small>
       </div>
-      <div class="yk-bracket-team ${match.winnerCode && match.top === match.winnerLabel ? 'winner' : ''}">
+      <div class="yk-bracket-team ${topWinner ? 'winner' : ''}">
         <span>${match.top}</span>
         <b>${match.topScore ?? '–'}</b>
       </div>
-      <div class="yk-bracket-team ${match.winnerCode && match.bottom === match.winnerLabel ? 'winner' : ''}">
+      <div class="yk-bracket-team ${bottomWinner ? 'winner' : ''}">
         <span>${match.bottom}</span>
         <b>${match.bottomScore ?? '–'}</b>
       </div>
