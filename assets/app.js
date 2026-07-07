@@ -273,11 +273,13 @@ function renderAll() {
 
   initControls();
   ensureBracketStyles();
+  initFinalRoadControls();
 
   const turkeyEliminated = isTurkiyeEliminated();
   const hideQualificationPanel = focus === 'TUR' && turkeyEliminated;
 
   if ($('#stats')) renderStats();
+  if ($('#finalRoadBoard')) renderFinalRoad();
   if ($('#aiSummary')) renderSummary();
   if ($('#radar')) renderRadar();
   if ($('#matchList')) renderMatches();
@@ -800,8 +802,7 @@ function getMatchNo(match) {
     match?.matchNumber ??
     match?.match_number ??
     match?.fixtureNo ??
-    match?.fixture_no ??
-    match?.n
+    match?.fixture_no
   );
 
   if (direct !== null) return direct;
@@ -821,7 +822,6 @@ function getSideScore(side) {
 
 function getSidePenalty(side) {
   return asNumberOrNull(
-    side?.pen ??
     side?.penalty ??
     side?.penalties ??
     side?.penaltyScore ??
@@ -882,23 +882,9 @@ function findKnockoutMatchForRow(row) {
   });
 }
 
-function getDisplayScoreValue(score, penalty) {
-  if (score === null || score === undefined) return null;
-
-  // football-data.org tarafında bazı penaltılı maçlarda score alanı normal süre + penaltı gibi geliyor.
-  // Örn: Almanya 4, pen 3 => ekranda 1 (3) gösterilmeli. Futbol da matematikle kavga etmesin bari.
-  if (penalty !== null && penalty !== undefined) {
-    const regular = Number(score) - Number(penalty);
-    return Number.isFinite(regular) && regular >= 0 ? regular : score;
-  }
-
-  return score;
-}
-
 function formatBracketScore(score, penalty) {
-  const displayScore = getDisplayScoreValue(score, penalty);
-  if (displayScore === null || displayScore === undefined) return '–';
-  return penalty === null || penalty === undefined ? String(displayScore) : `${displayScore} (${penalty})`;
+  if (score === null || score === undefined) return '–';
+  return penalty === null || penalty === undefined ? String(score) : `${score} (${penalty})`;
 }
 
 function getKnockoutResult(row) {
@@ -916,12 +902,12 @@ function getKnockoutResult(row) {
 
   let winnerCode = null;
 
-  if (homePenalty !== null && awayPenalty !== null) {
-    winnerCode = homePenalty > awayPenalty ? homeCode : awayCode;
-  } else if (homeScore > awayScore) {
+  if (homeScore > awayScore) {
     winnerCode = homeCode;
   } else if (awayScore > homeScore) {
     winnerCode = awayCode;
+  } else if (homePenalty !== null && awayPenalty !== null) {
+    winnerCode = homePenalty > awayPenalty ? homeCode : awayCode;
   } else if (match.winner || match.winnerCode || match.winner_code) {
     winnerCode = match.winner?.code ?? match.winnerCode ?? match.winner_code;
   }
@@ -947,75 +933,11 @@ function getKnockoutResult(row) {
 function buildWinnerPlaceholder(match, fallback) {
   return match?.winnerLabel || fallback;
 }
-function getKnockoutMatchByNo(matchNo) {
-  return allMatches.find(match => {
-    if (String(match?.stage || '').toLowerCase() === 'group') return false;
-    return getMatchNo(match) === Number(matchNo);
-  }) || null;
-}
-
-function getMatchSideLabel(side) {
-  const code = getTeamCodeFromSide(side);
-  if (!code || code === 'TBD') return 'Belirsiz';
-  return name(code);
-}
-
-function getStageMatchFromActual(matchNo, fallbackMatch) {
-  const actual = getKnockoutMatchByNo(matchNo);
-
-  if (!actual) {
-    return fallbackMatch || {
-      title: `Maç ${matchNo}`,
-      top: 'Belirsiz',
-      bottom: 'Belirsiz',
-      meta: 'Bekliyor',
-      placeholder: true,
-      bracketRow: 'auto'
-    };
-  }
-
-  const homeCode = getTeamCodeFromSide(actual.home);
-  const awayCode = getTeamCodeFromSide(actual.away);
-  const homeScore = getSideScore(actual.home);
-  const awayScore = getSideScore(actual.away);
-  const homePenalty = getSidePenalty(actual.home) ?? getTopLevelPenalty(actual, 'home');
-  const awayPenalty = getSidePenalty(actual.away) ?? getTopLevelPenalty(actual, 'away');
-
-  let winnerCode = actual.winner?.code ?? actual.winnerCode ?? actual.winner_code ?? actual.winner ?? null;
-
-  if (!winnerCode && homeScore !== null && awayScore !== null) {
-    if (homePenalty !== null && awayPenalty !== null) {
-      winnerCode = homePenalty > awayPenalty ? homeCode : awayCode;
-    } else if (homeScore > awayScore) {
-      winnerCode = homeCode;
-    } else if (awayScore > homeScore) {
-      winnerCode = awayCode;
-    }
-  }
-
-  const hasScore = homeScore !== null && awayScore !== null;
-  const finished = isFinishedMatch(actual) && hasScore;
-
-  return {
-    title: `Maç ${matchNo}`,
-    top: getMatchSideLabel(actual.home),
-    bottom: getMatchSideLabel(actual.away),
-    topScore: hasScore ? formatBracketScore(homeScore, homePenalty) : undefined,
-    bottomScore: hasScore ? formatBracketScore(awayScore, awayPenalty) : undefined,
-    winnerCode,
-    winnerLabel: winnerCode ? name(winnerCode) : null,
-    meta: finished ? 'Tamamlandı' : (hasScore ? 'Sonuç girildi' : 'Bekliyor'),
-    focus: sameCode(homeCode, focus) || sameCode(awayCode, focus),
-    completed: finished,
-    placeholder: !hasScore,
-    matchNo
-  };
-}
-
 function renderEliminationBracket(projectedRows) {
-  const r32 = projectedRows.map((row, index) => {
+  const r32 = projectedRows.map(row => {
     const result = getKnockoutResult(row);
-    const fallback = {
+
+    return {
       title: `Maç ${row.no}`,
       top: result ? result.home : compactBracketLabel(row.home),
       bottom: result ? result.away : compactBracketLabel(row.away),
@@ -1024,71 +946,55 @@ function renderEliminationBracket(projectedRows) {
       winnerCode: result?.winnerCode,
       winnerLabel: result?.winnerLabel,
       meta: result ? (result.finished ? 'Tamamlandı' : 'Sonuç girildi') : row.certainty,
-      focus: row.involvesFocus || sameCode(result?.homeCode, focus) || sameCode(result?.awayCode, focus),
-      completed: Boolean(result?.finished),
-      placeholder: !result,
-      matchNo: row.no
-    };
-
-    return {
-      ...getStageMatchFromActual(row.no, fallback),
-      bracketRow: `${index + 1} / span 1`
+      focus: row.involvesFocus || result?.homeCode === focus || result?.awayCode === focus,
+      completed: Boolean(result)
     };
   });
 
-  const r16 = Array.from({ length: 8 }, (_, index) => ({
-    ...getStageMatchFromActual(89 + index, {
-      title: `Maç ${89 + index}`,
-      top: buildWinnerPlaceholder(r32[index * 2], `M${73 + index * 2} galibi`),
-      bottom: buildWinnerPlaceholder(r32[index * 2 + 1], `M${74 + index * 2} galibi`),
-      meta: r32[index * 2]?.winnerLabel || r32[index * 2 + 1]?.winnerLabel ? 'Projeksiyon' : 'Bekliyor',
-      focus: r32[index * 2]?.winnerCode === focus || r32[index * 2 + 1]?.winnerCode === focus,
-      placeholder: !(r32[index * 2]?.winnerLabel && r32[index * 2 + 1]?.winnerLabel),
-      matchNo: 89 + index
-    }),
-    bracketRow: `${index * 2 + 1} / span 2`
-  }));
+  const r16 = Array.from({ length: 8 }, (_, index) => {
+    const first = r32[index * 2];
+    const second = r32[index * 2 + 1];
+
+    return {
+      title: `Son 16 ${index + 1}`,
+      top: buildWinnerPlaceholder(first, `M${first?.title?.replace('Maç ', '') || '-'} galibi`),
+      bottom: buildWinnerPlaceholder(second, `M${second?.title?.replace('Maç ', '') || '-'} galibi`),
+      meta: first?.winnerLabel || second?.winnerLabel ? 'Projeksiyon' : 'Bekliyor',
+      focus: first?.winnerCode === focus || second?.winnerCode === focus,
+      placeholder: !(first?.winnerLabel && second?.winnerLabel)
+    };
+  });
 
   const qf = Array.from({ length: 4 }, (_, index) => ({
-    ...getStageMatchFromActual(97 + index, {
-      title: `Maç ${97 + index}`,
-      top: `S16-${index * 2 + 1} galibi`,
-      bottom: `S16-${index * 2 + 2} galibi`,
-      meta: 'Projeksiyon',
-      placeholder: true,
-      matchNo: 97 + index
-    }),
-    bracketRow: `${index * 4 + 1} / span 4`
+    title: `Çeyrek ${index + 1}`,
+    top: `S16-${index * 2 + 1} galibi`,
+    bottom: `S16-${index * 2 + 2} galibi`,
+    meta: 'Projeksiyon',
+    focus: false,
+    placeholder: true
   }));
 
   const sf = Array.from({ length: 2 }, (_, index) => ({
-    ...getStageMatchFromActual(101 + index, {
-      title: `Maç ${101 + index}`,
-      top: `ÇF-${index * 2 + 1} galibi`,
-      bottom: `ÇF-${index * 2 + 2} galibi`,
-      meta: 'Projeksiyon',
-      placeholder: true,
-      matchNo: 101 + index
-    }),
-    bracketRow: `${index * 8 + 1} / span 8`
+    title: `Yarı Final ${index + 1}`,
+    top: `ÇF-${index * 2 + 1} galibi`,
+    bottom: `ÇF-${index * 2 + 2} galibi`,
+    meta: 'Projeksiyon',
+    focus: false,
+    placeholder: true
   }));
 
   const final = [{
-    ...getStageMatchFromActual(103, {
-      title: 'Final',
-      top: 'YF-1 galibi',
-      bottom: 'YF-2 galibi',
-      meta: 'Final yolu',
-      placeholder: true,
-      matchNo: 103
-    }),
     title: 'Final',
-    bracketRow: '1 / span 16'
+    top: 'YF-1 galibi',
+    bottom: 'YF-2 galibi',
+    meta: 'Final yolu',
+    focus: false,
+    placeholder: true
   }];
 
   return `
     <div class="bracket-note">
-      Oynanan maçlar skorla görünür; sonraki turda gerçek fikstür varsa doğrudan matches.json verisi kullanılır. Nihayet aynı evrende yaşıyoruz.
+      Masaüstünde yatay kaydırarak tüm yolu görebilirsin. Oynanan maçlar skorla birlikte görünür; kazanan varsa bir sonraki turun satırına otomatik taşınır.
     </div>
     <div class="yk-bracket-scroll">
       <div class="yk-bracket-board">
@@ -1114,10 +1020,8 @@ function renderBracketStage(title, matches, className) {
 }
 
 function renderBracketMatch(match) {
-  const rowStyle = match.bracketRow ? ` style="grid-row:${match.bracketRow}"` : '';
-
   return `
-    <article class="yk-bracket-match ${match.focus ? 'focus' : ''} ${match.placeholder ? 'placeholder' : ''} ${match.completed ? 'completed' : ''}"${rowStyle}>
+    <article class="yk-bracket-match ${match.focus ? 'focus' : ''} ${match.placeholder ? 'placeholder' : ''} ${match.completed ? 'completed' : ''}">
       <div class="yk-bracket-match-head">
         <span>${match.title}</span>
         <small>${match.meta}</small>
@@ -1145,8 +1049,8 @@ function compactBracketLabel(label) {
 }
 
 function ensureBracketStyles() {
-  const oldStyle = document.getElementById('yk-bracket-style');
-  if (oldStyle) oldStyle.remove();
+  const old = document.getElementById('yk-bracket-style');
+  if (old) old.remove();
 
   const style = document.createElement('style');
   style.id = 'yk-bracket-style';
@@ -1166,10 +1070,13 @@ function ensureBracketStyles() {
     }
 
     .yk-bracket-board {
-      min-width: 1540px;
+      --card-h: 150px;
+      --step-y: 166px;
+      --col-gap: 36px;
+      min-width: 1580px;
       display: grid;
-      grid-template-columns: 360px 320px 290px 260px 240px;
-      column-gap: 34px;
+      grid-template-columns: 360px 320px 300px 280px 250px;
+      gap: var(--col-gap);
       align-items: start;
     }
 
@@ -1184,29 +1091,18 @@ function ensureBracketStyles() {
       letter-spacing: .16em;
       text-transform: uppercase;
       margin: 0 0 16px;
-      height: 18px;
     }
 
     .yk-bracket-stage-body {
-      --bracket-row-height: 154px;
-      --bracket-row-gap: 16px;
-      display: grid;
-      grid-template-rows: repeat(16, var(--bracket-row-height));
-      row-gap: var(--bracket-row-gap);
       position: relative;
-      min-height: calc((16 * var(--bracket-row-height)) + (15 * var(--bracket-row-gap)));
-    }
-
-    .yk-bracket-stage.round16 .yk-bracket-match,
-    .yk-bracket-stage.quarter .yk-bracket-match,
-    .yk-bracket-stage.semi .yk-bracket-match,
-    .yk-bracket-stage.final .yk-bracket-match {
-      align-self: center;
+      min-height: calc(var(--step-y) * 16);
     }
 
     .yk-bracket-match {
-      position: relative;
-      min-height: 138px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      min-height: var(--card-h);
       border: 1px solid rgba(70, 143, 208, .42);
       border-radius: 18px;
       background:
@@ -1216,12 +1112,48 @@ function ensureBracketStyles() {
       padding: 14px 16px;
     }
 
+    .round32 .yk-bracket-match:nth-child(1) { top: calc(var(--step-y) * 0); }
+    .round32 .yk-bracket-match:nth-child(2) { top: calc(var(--step-y) * 1); }
+    .round32 .yk-bracket-match:nth-child(3) { top: calc(var(--step-y) * 2); }
+    .round32 .yk-bracket-match:nth-child(4) { top: calc(var(--step-y) * 3); }
+    .round32 .yk-bracket-match:nth-child(5) { top: calc(var(--step-y) * 4); }
+    .round32 .yk-bracket-match:nth-child(6) { top: calc(var(--step-y) * 5); }
+    .round32 .yk-bracket-match:nth-child(7) { top: calc(var(--step-y) * 6); }
+    .round32 .yk-bracket-match:nth-child(8) { top: calc(var(--step-y) * 7); }
+    .round32 .yk-bracket-match:nth-child(9) { top: calc(var(--step-y) * 8); }
+    .round32 .yk-bracket-match:nth-child(10) { top: calc(var(--step-y) * 9); }
+    .round32 .yk-bracket-match:nth-child(11) { top: calc(var(--step-y) * 10); }
+    .round32 .yk-bracket-match:nth-child(12) { top: calc(var(--step-y) * 11); }
+    .round32 .yk-bracket-match:nth-child(13) { top: calc(var(--step-y) * 12); }
+    .round32 .yk-bracket-match:nth-child(14) { top: calc(var(--step-y) * 13); }
+    .round32 .yk-bracket-match:nth-child(15) { top: calc(var(--step-y) * 14); }
+    .round32 .yk-bracket-match:nth-child(16) { top: calc(var(--step-y) * 15); }
+
+    .round16 .yk-bracket-match:nth-child(1) { top: calc(var(--step-y) * .5); }
+    .round16 .yk-bracket-match:nth-child(2) { top: calc(var(--step-y) * 2.5); }
+    .round16 .yk-bracket-match:nth-child(3) { top: calc(var(--step-y) * 4.5); }
+    .round16 .yk-bracket-match:nth-child(4) { top: calc(var(--step-y) * 6.5); }
+    .round16 .yk-bracket-match:nth-child(5) { top: calc(var(--step-y) * 8.5); }
+    .round16 .yk-bracket-match:nth-child(6) { top: calc(var(--step-y) * 10.5); }
+    .round16 .yk-bracket-match:nth-child(7) { top: calc(var(--step-y) * 12.5); }
+    .round16 .yk-bracket-match:nth-child(8) { top: calc(var(--step-y) * 14.5); }
+
+    .quarter .yk-bracket-match:nth-child(1) { top: calc(var(--step-y) * 1.5); }
+    .quarter .yk-bracket-match:nth-child(2) { top: calc(var(--step-y) * 5.5); }
+    .quarter .yk-bracket-match:nth-child(3) { top: calc(var(--step-y) * 9.5); }
+    .quarter .yk-bracket-match:nth-child(4) { top: calc(var(--step-y) * 13.5); }
+
+    .semi .yk-bracket-match:nth-child(1) { top: calc(var(--step-y) * 3.5); }
+    .semi .yk-bracket-match:nth-child(2) { top: calc(var(--step-y) * 11.5); }
+
+    .final .yk-bracket-match:nth-child(1) { top: calc(var(--step-y) * 7.5); }
+
     .yk-bracket-match::after {
       content: "";
       position: absolute;
       top: 50%;
-      right: -35px;
-      width: 34px;
+      right: calc(var(--col-gap) * -1 - 1px);
+      width: var(--col-gap);
       height: 1px;
       background: rgba(38, 217, 201, .38);
     }
@@ -1241,7 +1173,7 @@ function ensureBracketStyles() {
     }
 
     .yk-bracket-match.completed {
-      border-color: rgba(255, 209, 102, .42);
+      opacity: 1;
     }
 
     .yk-bracket-match-head {
@@ -1261,7 +1193,6 @@ function ensureBracketStyles() {
       letter-spacing: 0;
       text-transform: none;
       font-size: 12px;
-      white-space: nowrap;
     }
 
     .yk-bracket-team {
@@ -1285,10 +1216,9 @@ function ensureBracketStyles() {
 
     .yk-bracket-team b {
       color: var(--gold);
-      font-size: 21px;
-      min-width: 36px;
+      font-size: 22px;
+      min-width: 32px;
       text-align: right;
-      white-space: nowrap;
     }
 
     .yk-bracket-team.winner span {
@@ -1297,19 +1227,14 @@ function ensureBracketStyles() {
 
     @media (max-width: 760px) {
       .yk-bracket-board {
-        min-width: 1240px;
-        grid-template-columns: 290px 260px 240px 220px 200px;
-        column-gap: 26px;
-      }
-
-      .yk-bracket-stage-body {
-        --bracket-row-height: 148px;
-        --bracket-row-gap: 14px;
+        --card-h: 142px;
+        --step-y: 158px;
+        --col-gap: 28px;
+        min-width: 1280px;
+        grid-template-columns: 300px 270px 250px 230px 220px;
       }
 
       .yk-bracket-match {
-        min-height: 132px;
-        border-radius: 16px;
         padding: 12px;
       }
 
@@ -1682,6 +1607,311 @@ function renderBrief() {
         : 'Yıldız Kupası is not just about raw scores; it explains tournament context, group impact and the story behind the numbers.'
     }</p>
   `);
+}
+
+
+
+/* ================================
+   V2 Final-focused modular dashboard
+   ================================ */
+
+const ROUND_LABELS = {
+  r32: 'Son 32',
+  r16: 'Son 16',
+  qf: 'Çeyrek Final',
+  sf: 'Yarı Final',
+  third: 'Üçüncülük',
+  final: 'Final'
+};
+
+const ROUND_RANGES = [
+  { id: 'r32', label: 'Son 32', min: 73, max: 88 },
+  { id: 'r16', label: 'Son 16', min: 89, max: 96 },
+  { id: 'qf', label: 'Çeyrek Final', min: 97, max: 100 },
+  { id: 'sf', label: 'Yarı Final', min: 101, max: 102 },
+  { id: 'third', label: 'Üçüncülük', min: 103, max: 103 },
+  { id: 'final', label: 'Final', min: 104, max: 104 }
+];
+
+function getRoundIdForMatchNo(no) {
+  const n = Number(no);
+  return ROUND_RANGES.find(r => n >= r.min && n <= r.max)?.id || 'other';
+}
+
+function formatMatchDate(value) {
+  if (!value) return '-';
+  return new Date(value).toLocaleString('tr-TR', { dateStyle: 'medium', timeStyle: 'short' });
+}
+
+function hasRealTeam(code) {
+  return code && code !== 'TBD' && code !== '-';
+}
+
+function sideDisplay(match, sideName) {
+  const side = match?.[sideName] || {};
+  const code = side.code;
+  return hasRealTeam(code) ? name(code) : 'Bekleniyor';
+}
+
+function sideScoreDisplay(match, sideName) {
+  const side = match?.[sideName] || {};
+  const score = side.score;
+  const pen = side.pen ?? side.penalty ?? side.penalties;
+  if (score === null || score === undefined) return '–';
+  return pen === null || pen === undefined ? String(score) : `${score} (${pen})`;
+}
+
+function getMatchWinnerCode(match) {
+  if (!match) return null;
+  if (match.winner) return match.winner;
+  const hs = match.home?.score;
+  const as = match.away?.score;
+  const hp = match.home?.pen ?? match.home?.penalty ?? match.home?.penalties;
+  const ap = match.away?.pen ?? match.away?.penalty ?? match.away?.penalties;
+  if (hs === null || hs === undefined || as === null || as === undefined) return null;
+  if (hs > as) return match.home?.code;
+  if (as > hs) return match.away?.code;
+  if (hp !== null && hp !== undefined && ap !== null && ap !== undefined) {
+    return hp > ap ? match.home?.code : match.away?.code;
+  }
+  return null;
+}
+
+function getKnockoutMatches() {
+  return allMatches
+    .filter(match => match.stage !== 'group' && Number(match.n || match.no || match.matchNumber) >= 73)
+    .sort((a, b) => Number(a.n || a.no || 0) - Number(b.n || b.no || 0));
+}
+
+function getRoundMatches(roundId) {
+  return getKnockoutMatches().filter(match => getRoundIdForMatchNo(match.n || match.no || match.matchNumber) === roundId);
+}
+
+function getSurvivors() {
+  const losers = new Set();
+  const winners = new Set();
+
+  getKnockoutMatches().forEach(match => {
+    const winner = getMatchWinnerCode(match);
+    const home = match.home?.code;
+    const away = match.away?.code;
+    if (!winner) return;
+    winners.add(winner);
+    if (home && home !== winner && home !== 'TBD') losers.add(home);
+    if (away && away !== winner && away !== 'TBD') losers.add(away);
+  });
+
+  const scheduledTeams = new Set();
+  getKnockoutMatches().forEach(match => {
+    if (match.status === 'finished') return;
+    [match.home?.code, match.away?.code].filter(hasRealTeam).forEach(code => scheduledTeams.add(code));
+  });
+
+  const codes = new Set([...scheduledTeams, ...[...winners].filter(code => !losers.has(code))]);
+  return [...codes].filter(hasRealTeam).sort((a, b) => name(a).localeCompare(name(b), 'tr'));
+}
+
+function getNextImportantMatches() {
+  const now = Date.now();
+  const upcoming = getKnockoutMatches()
+    .filter(match => match.status !== 'finished')
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  const live = upcoming.filter(match => ['in_play', 'live'].includes(match.status));
+  return [...live, ...upcoming.filter(match => !live.includes(match))].slice(0, 4);
+}
+
+function getChampionRadar() {
+  const survivors = getSurvivors();
+  const brandWeight = {
+    FRA: 96, ESP: 94, ENG: 91, ARG: 90, BEL: 88, POR: 87, BRA: 86, MAR: 84,
+    NOR: 80, COL: 78, SUI: 76, EGY: 73, USA: 72, MEX: 70, CAN: 68, PAR: 67
+  };
+
+  return survivors
+    .map(code => {
+      const next = getKnockoutMatches().find(match =>
+        match.status !== 'finished' && [match.home?.code, match.away?.code].includes(code)
+      );
+      const base = brandWeight[code] ?? 62;
+      const routePenalty = next ? Math.min(10, Math.max(0, Number(next.n || 100) - 96)) : 6;
+      return {
+        code,
+        name: name(code),
+        score: Math.max(35, Math.min(99, base - routePenalty)),
+        next: next ? `M${next.n} · ${sideDisplay(next, 'home')} - ${sideDisplay(next, 'away')}` : 'Rakip bekleniyor'
+      };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 8);
+}
+
+function renderFinalRoad() {
+  const root = $('#finalRoadBoard');
+  if (!root) return;
+
+  const roundSelect = $('#roundFocus');
+  const selectedRound = roundSelect ? roundSelect.value : 'all';
+  const visibleRounds = ROUND_RANGES
+    .filter(round => ['r16', 'qf', 'sf', 'final'].includes(round.id))
+    .filter(round => selectedRound === 'all' || round.id === selectedRound);
+
+  const nextMatches = getNextImportantMatches();
+  const radar = getChampionRadar();
+  const survivors = getSurvivors();
+  const finalMatch = getRoundMatches('final')[0];
+
+  root.innerHTML = `
+    <div class="final-road-layout">
+      <aside class="final-road-summary">
+        <div class="final-podium-card">
+          <span class="mini-label">Final hedefi</span>
+          <strong>${finalMatch ? formatMatchDate(finalMatch.date) : 'Takvim bekleniyor'}</strong>
+          <p>Merkez artık finale kalan rota, çeyrek final baskısı ve şampiyonluk sinyalleri üzerinden çalışır.</p>
+        </div>
+
+        <div class="final-mini-stats">
+          <div><strong>${survivors.length}</strong><span>Kalan takım</span></div>
+          <div><strong>${getKnockoutMatches().filter(m => m.status === 'finished').length}</strong><span>Eleme sonucu</span></div>
+          <div><strong>${nextMatches.length}</strong><span>Sıradaki maç</span></div>
+        </div>
+
+        <div class="champion-radar-card">
+          <div class="mini-label">Şampiyonluk radarı</div>
+          ${radar.map(team => `
+            <button class="radar-team" type="button" data-focus-team="${team.code}">
+              <span>${team.name}</span>
+              <i style="width:${team.score}%"></i>
+              <b>${team.score}</b>
+            </button>
+          `).join('') || '<p class="muted-text">Radar için kalan takım verisi bekleniyor.</p>'}
+        </div>
+      </aside>
+
+      <section class="final-road-main">
+        <div class="next-match-strip">
+          ${nextMatches.map(match => renderFinalRoadMatchCard(match, true)).join('') || '<div class="empty-state">Sıradaki maç verisi bekleniyor.</div>'}
+        </div>
+
+        <div class="round-stack">
+          ${visibleRounds.map(round => renderFinalRoadRound(round)).join('')}
+        </div>
+      </section>
+    </div>
+
+    <div id="matchDrawer" class="match-drawer" hidden></div>
+  `;
+
+  root.querySelectorAll('[data-match-no]').forEach(btn => {
+    btn.addEventListener('click', () => openMatchDrawer(Number(btn.dataset.matchNo)));
+  });
+
+  root.querySelectorAll('[data-focus-team]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      focus = btn.dataset.focusTeam;
+      localStorage.setItem('yk_focus', focus);
+      const teamFocus = $('#teamFocus');
+      if (teamFocus) teamFocus.value = focus;
+      renderAll();
+    });
+  });
+}
+
+function renderFinalRoadRound(round) {
+  const matches = getRoundMatches(round.id);
+  return `
+    <article class="final-round-module" data-round="${round.id}">
+      <div class="module-head">
+        <div>
+          <span class="mini-label">${round.label}</span>
+          <h3>${round.label === 'Final' ? 'Kupa maçı' : `${round.label} hattı`}</h3>
+        </div>
+        <small>${matches.length} maç</small>
+      </div>
+      <div class="module-match-grid">
+        ${matches.map(match => renderFinalRoadMatchCard(match)).join('') || '<div class="empty-state">Bu tur için maç verisi bekleniyor.</div>'}
+      </div>
+    </article>
+  `;
+}
+
+function renderFinalRoadMatchCard(match, compact = false) {
+  const winner = getMatchWinnerCode(match);
+  const round = ROUND_LABELS[getRoundIdForMatchNo(match.n)] || 'Eleme';
+  const isFocus = [match.home?.code, match.away?.code].includes(focus);
+  const statusLabel = match.status === 'finished'
+    ? 'Tamamlandı'
+    : ['live', 'in_play'].includes(match.status)
+      ? 'Canlı'
+      : 'Planlandı';
+
+  return `
+    <button class="final-match-card ${compact ? 'compact' : ''} ${isFocus ? 'focus' : ''}" type="button" data-match-no="${match.n}">
+      <span class="final-match-meta">M${match.n} · ${round} · ${statusLabel}</span>
+      <strong>${formatMatchDate(match.date)}</strong>
+      <div class="final-team-row ${winner === match.home?.code ? 'winner' : ''}">
+        <span>${sideDisplay(match, 'home')}</span>
+        <b>${sideScoreDisplay(match, 'home')}</b>
+      </div>
+      <div class="final-team-row ${winner === match.away?.code ? 'winner' : ''}">
+        <span>${sideDisplay(match, 'away')}</span>
+        <b>${sideScoreDisplay(match, 'away')}</b>
+      </div>
+    </button>
+  `;
+}
+
+function openMatchDrawer(matchNo) {
+  const drawer = $('#matchDrawer');
+  if (!drawer) return;
+  const match = getKnockoutMatches().find(m => Number(m.n) === Number(matchNo));
+  if (!match) return;
+
+  const winner = getMatchWinnerCode(match);
+  const nextMatch = getKnockoutMatches().find(m =>
+    m.status !== 'finished' && winner && [m.home?.code, m.away?.code].includes(winner)
+  );
+
+  drawer.hidden = false;
+  drawer.innerHTML = `
+    <div class="drawer-card">
+      <button class="drawer-close" type="button" aria-label="Kapat">×</button>
+      <span class="mini-label">Maç ${match.n}</span>
+      <h3>${sideDisplay(match, 'home')} - ${sideDisplay(match, 'away')}</h3>
+      <p>${formatMatchDate(match.date)} · ${ROUND_LABELS[getRoundIdForMatchNo(match.n)] || 'Eleme'}</p>
+      <div class="drawer-score">
+        <strong>${sideDisplay(match, 'home')} <b>${sideScoreDisplay(match, 'home')}</b></strong>
+        <strong>${sideDisplay(match, 'away')} <b>${sideScoreDisplay(match, 'away')}</b></strong>
+      </div>
+      <div class="ai-note">
+        ${winner ? `${name(winner)} tur atlayan takım olarak görünüyor.` : 'Bu maç için kazanan henüz netleşmedi.'}
+        ${nextMatch ? ` Sıradaki rota: M${nextMatch.n}, ${sideDisplay(nextMatch, 'home')} - ${sideDisplay(nextMatch, 'away')}.` : ''}
+      </div>
+    </div>
+  `;
+
+  drawer.querySelector('.drawer-close')?.addEventListener('click', () => {
+    drawer.hidden = true;
+    drawer.innerHTML = '';
+  });
+}
+
+function initFinalRoadControls() {
+  const roundFocus = $('#roundFocus');
+  if (roundFocus && !roundFocus.dataset.bound) {
+    roundFocus.dataset.bound = '1';
+    roundFocus.addEventListener('change', renderFinalRoad);
+  }
+
+  const scenarioBtn = $('#scenarioBtn');
+  if (scenarioBtn && !scenarioBtn.dataset.bound) {
+    scenarioBtn.dataset.bound = '1';
+    scenarioBtn.addEventListener('click', () => {
+      const panel = $('#finalRoadBoard');
+      if (!panel) return;
+      panel.classList.toggle('scenario-mode');
+    });
+  }
 }
 
 const langBtn = $('#langBtn');

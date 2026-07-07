@@ -49,11 +49,13 @@
     </a>
 
     <nav class="nav" aria-label="Ana menü">
-      <a href="#turkiye" data-i18n="nav.turkiye">Türkiye Merkezi</a>
+      <a href="#finalRoad">Final Yolu</a>
+      <a href="#matchups">Eleme Ağacı</a>
       <a href="#intelligence" data-i18n="nav.intelligence">Turnuva Zekâsı</a>
       <a href="#briefing" data-i18n="nav.briefing">Günlük Not</a>
-      <a href="#groups" data-i18n="nav.groups">Gruplar</a>
       <a href="#matches" data-i18n="nav.matches">Maçlar</a>
+      <a href="#groups" data-i18n="nav.groups">Gruplar</a>
+      <a href="#turkiye" data-i18n="nav.turkiye">Türkiye Karnesi</a>
     </nav>
 
     <div class="controls">
@@ -68,14 +70,14 @@
     <section class="hero panel">
       <div>
         <p class="eyebrow" data-i18n="hero.eyebrow">Bağımsız Dünya Kupası Analiz Merkezi</p>
-        <h1 data-i18n="hero.title">Yıldız Kupası AI</h1>
-        <p class="lead" data-i18n="hero.lead">
-          Skorları izler, grupları hesaplar, olasılıkları yorumlar ve turnuvayı hikâyeye dönüştürür.
+        <h1>Finale Giden Yol</h1>
+        <p class="lead">
+          Yıldız Kupası artık final merkezli çalışır: kalan takımlar, maç rotaları, favoriler ve şampiyonluk senaryoları tek panelde izlenir.
         </p>
 
         <div class="hero-actions">
-          <a class="primary" href="#turkiye" data-i18n="hero.cta">Türkiye paneline bak</a>
-          <a class="secondary" href="#briefing" data-i18n="hero.cta2">Bugünün notunu oku</a>
+          <a class="primary" href="#finalRoad">Final yolunu aç</a>
+          <a class="secondary" href="#matchups">Eleme ağacına bak</a>
         </div>
       </div>
 
@@ -90,6 +92,28 @@
 
     <!-- STATS -->
     <section class="grid stats" id="stats" aria-label="Turnuva istatistikleri"></section>
+
+    <!-- FİNAL YOLU -->
+    <section class="panel final-road-panel" id="finalRoad">
+      <div class="section-head final-road-head">
+        <div>
+          <p class="eyebrow">FİNALE GİDEN YOL</p>
+          <h2>Final Merkezi</h2>
+        </div>
+        <div class="final-road-actions">
+          <select id="roundFocus" aria-label="Tur seçimi">
+            <option value="all">Tüm turlar</option>
+            <option value="r16">Son 16</option>
+            <option value="qf">Çeyrek Final</option>
+            <option value="sf">Yarı Final</option>
+            <option value="final">Final</option>
+          </select>
+          <button class="ghost" id="scenarioBtn" type="button">Senaryo modu</button>
+        </div>
+      </div>
+
+      <div id="finalRoadBoard"></div>
+    </section>
 
     <!-- TÜRKİYE MERKEZİ -->
     <section class="panel turkey" id="turkiye">
