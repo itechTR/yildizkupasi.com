@@ -435,35 +435,68 @@ function filteredMatches() {
 }
 
 function renderMatches() {
-  const rows = filteredMatches();
 
-  safeHTML('#matchList', rows.map(m => {
-    const cls = m.status === 'finished'
-      ? 'finished'
-      : (['in_play', 'live'].includes(m.status) ? 'live' : '');
+  const knockoutMatches = allMatches
+    .filter(m => 
+      m.stage &&
+      String(m.stage).toLowerCase() !== "group"
+    )
+    .sort((a,b)=> Number(a.n) - Number(b.n));
 
-    const d = new Date(m.date);
 
-    return `
-      <article class="match ${cls}">
-        <div class="match-head">
-          <span>${m.stage === 'group' ? (lang === 'tr' ? 'Grup ' : 'Group ') + m.group : m.stage}</span>
-          <span>${d.toLocaleString(lang === 'tr' ? 'tr-TR' : 'en-US', { dateStyle: 'medium', timeStyle: 'short' })}</span>
-        </div>
-        <div class="teams">
-          <div class="team-row">
-            <span>${name(m.home?.code)}</span>
-            <span class="score">${m.home?.score ?? '-'}</span>
+  return `
+    <section class="section-card">
+      <div class="section-kicker">
+        MAÇ MERKEZİ
+      </div>
+
+      <h2>Tüm Eleme Maçları</h2>
+
+      <div class="match-grid">
+
+      ${knockoutMatches.map(match => {
+
+        const homeScore =
+          match.home.score ?? "-";
+
+        const awayScore =
+          match.away.score ?? "-";
+
+
+        return `
+        <article class="match-card">
+
+          <div class="match-top">
+             <span>${match.stage}</span>
+             <span>${formatDate(match.date)}</span>
           </div>
-          <div class="team-row">
-            <span>${name(m.away?.code)}</span>
-            <span class="score">${m.away?.score ?? '-'}</span>
+
+          <div class="match-row">
+            <b>${name(match.home.code)}</b>
+            <strong>${homeScore}</strong>
           </div>
-        </div>
-        <div class="ai-note">${matchNote(m)}</div>
-      </article>
-    `;
-  }).join(''));
+
+          <div class="match-row">
+            <b>${name(match.away.code)}</b>
+            <strong>${awayScore}</strong>
+          </div>
+
+          <p>
+          ${
+           match.status === "finished"
+           ? "Maç tamamlandı."
+           : "Planlandı."
+          }
+          </p>
+
+        </article>
+        `;
+
+      }).join("")}
+
+      </div>
+    </section>
+  `;
 }
 
 function matchNote(m) {
