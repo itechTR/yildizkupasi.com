@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-07T21:52:42.373Z",
-  "liveCount": 1,
-  "finishedCount": 95,
-  "scheduledCount": 9,
+  "updatedAt": "2026-07-07T22:54:58.976Z",
+  "liveCount": 0,
+  "finishedCount": 96,
+  "scheduledCount": 8,
   "groupQualification": {
     "A": [
       {
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Avustralya 3-5 Mısır, Arjantin 3-2 Cape Verde, Meksika 2-3 İngiltere, ABD 1-4 Belçika, Arjantin 3-2 Mısır."
+      "text": "Son yüksek skorlu maçlar: Arjantin 3-2 Cape Verde, Meksika 2-3 İngiltere, ABD 1-4 Belçika, Arjantin 3-2 Mısır, İsviçre 4-3 Kolombiya."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "İsviçre - Kolombiya, Fransa - Fas, İspanya - Belçika, Norveç - İngiltere, TBD - TBD, TBD - TBD, TBD - TBD, TBD - TBD"
+      "text": "Fransa - Fas, İspanya - Belçika, Norveç - İngiltere, TBD - TBD, TBD - TBD, TBD - TBD, TBD - TBD, TBD - TBD"
     }
   ],
   "groupLeaders": [
@@ -503,11 +503,6 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537428",
-      "text": "Avustralya 3-5 Mısır",
-      "goals": 8
-    },
-    {
       "id": "537427",
       "text": "Arjantin 3-2 Cape Verde",
       "goals": 5
@@ -526,16 +521,14 @@
       "id": "537381",
       "text": "Arjantin 3-2 Mısır",
       "goals": 5
+    },
+    {
+      "id": "537382",
+      "text": "İsviçre 4-3 Kolombiya",
+      "goals": 7
     }
   ],
   "upcomingFocus": [
-    {
-      "id": "537382",
-      "text": "İsviçre - Kolombiya",
-      "date": "2026-07-07T20:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
     {
       "id": "537383",
       "text": "Fransa - Fas",
@@ -583,6 +576,13 @@
       "text": "TBD - TBD",
       "date": "2026-07-18T21:00:00Z",
       "group": "E",
+      "stage": "knockout"
+    },
+    {
+      "id": "537390",
+      "text": "TBD - TBD",
+      "date": "2026-07-19T19:00:00Z",
+      "group": "L",
       "stage": "knockout"
     }
   ]
