@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "updatedAt": "2026-07-04T07:32:13.963Z",
+=======
+  "updatedAt": "2026-07-07T08:50:59.138Z",
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
   "source": "football-data.org",
   "competition": "WC",
   "matches": [
@@ -23,7 +27,11 @@
       },
       "winner": "MEX",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537328",
@@ -45,7 +53,11 @@
       },
       "winner": "KOR",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537333",
@@ -67,7 +79,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537345",
@@ -89,7 +105,11 @@
       },
       "winner": "USA",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537334",
@@ -111,7 +131,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537339",
@@ -133,7 +157,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537340",
@@ -155,7 +183,11 @@
       },
       "winner": "SCO",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537346",
@@ -177,7 +209,11 @@
       },
       "winner": "AUS",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537351",
@@ -199,7 +235,11 @@
       },
       "winner": "GER",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537357",
@@ -221,7 +261,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537352",
@@ -243,7 +287,11 @@
       },
       "winner": "CIV",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537358",
@@ -265,7 +313,11 @@
       },
       "winner": "SWE",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537369",
@@ -287,7 +339,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537363",
@@ -309,7 +365,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537370",
@@ -331,7 +391,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537364",
@@ -353,7 +417,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537391",
@@ -375,7 +443,11 @@
       },
       "winner": "FRA",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537392",
@@ -397,7 +469,11 @@
       },
       "winner": "NOR",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537397",
@@ -419,7 +495,11 @@
       },
       "winner": "ARG",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537398",
@@ -441,7 +521,11 @@
       },
       "winner": "AUT",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537403",
@@ -463,7 +547,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537409",
@@ -485,7 +573,11 @@
       },
       "winner": "ENG",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537410",
@@ -507,7 +599,11 @@
       },
       "winner": "GHA",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537404",
@@ -529,7 +625,11 @@
       },
       "winner": "COL",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537329",
@@ -551,7 +651,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537335",
@@ -573,7 +677,11 @@
       },
       "winner": "SUI",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537336",
@@ -595,7 +703,11 @@
       },
       "winner": "CAN",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537330",
@@ -617,7 +729,11 @@
       },
       "winner": "MEX",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537348",
@@ -639,7 +755,11 @@
       },
       "winner": "USA",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537342",
@@ -661,7 +781,11 @@
       },
       "winner": "MAR",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537341",
@@ -683,7 +807,11 @@
       },
       "winner": "BRA",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537347",
@@ -705,7 +833,11 @@
       },
       "winner": "PAR",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537359",
@@ -727,7 +859,11 @@
       },
       "winner": "NED",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537353",
@@ -749,7 +885,11 @@
       },
       "winner": "GER",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537354",
@@ -771,7 +911,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537360",
@@ -793,7 +937,11 @@
       },
       "winner": "JPN",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537371",
@@ -815,7 +963,11 @@
       },
       "winner": "ESP",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537365",
@@ -837,7 +989,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537372",
@@ -859,7 +1015,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537366",
@@ -881,7 +1041,11 @@
       },
       "winner": "EGY",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537399",
@@ -903,7 +1067,11 @@
       },
       "winner": "ARG",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537393",
@@ -925,7 +1093,11 @@
       },
       "winner": "FRA",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537394",
@@ -947,7 +1119,11 @@
       },
       "winner": "NOR",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537400",
@@ -969,7 +1145,11 @@
       },
       "winner": "ALG",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537405",
@@ -991,7 +1171,11 @@
       },
       "winner": "POR",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537411",
@@ -1013,7 +1197,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537412",
@@ -1035,7 +1223,11 @@
       },
       "winner": "CRO",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537406",
@@ -1057,7 +1249,11 @@
       },
       "winner": "COL",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537337",
@@ -1079,7 +1275,11 @@
       },
       "winner": "SUI",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537338",
@@ -1101,7 +1301,11 @@
       },
       "winner": "BIH",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537344",
@@ -1123,7 +1327,11 @@
       },
       "winner": "MAR",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537343",
@@ -1145,7 +1353,11 @@
       },
       "winner": "BRA",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537331",
@@ -1167,7 +1379,11 @@
       },
       "winner": "MEX",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537332",
@@ -1189,7 +1405,11 @@
       },
       "winner": "RSA",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537355",
@@ -1211,7 +1431,11 @@
       },
       "winner": "ECU",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537356",
@@ -1233,7 +1457,11 @@
       },
       "winner": "CIV",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537361",
@@ -1255,7 +1483,11 @@
       },
       "winner": "NED",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537362",
@@ -1277,7 +1509,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537349",
@@ -1299,7 +1535,11 @@
       },
       "winner": "TUR",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537350",
@@ -1321,7 +1561,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537395",
@@ -1343,7 +1587,11 @@
       },
       "winner": "FRA",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537396",
@@ -1365,7 +1613,11 @@
       },
       "winner": "SEN",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537373",
@@ -1387,7 +1639,11 @@
       },
       "winner": "ESP",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537374",
@@ -1409,7 +1665,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537367",
@@ -1431,7 +1691,11 @@
       },
       "winner": "BEL",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537368",
@@ -1453,7 +1717,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537413",
@@ -1475,7 +1743,11 @@
       },
       "winner": "ENG",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537414",
@@ -1497,7 +1769,11 @@
       },
       "winner": "CRO",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537407",
@@ -1519,7 +1795,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537408",
@@ -1541,7 +1821,11 @@
       },
       "winner": "COD",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537401",
@@ -1563,7 +1847,11 @@
       },
       "winner": "ARG",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537402",
@@ -1585,7 +1873,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537417",
@@ -1607,7 +1899,11 @@
       },
       "winner": "CAN",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537423",
@@ -1629,7 +1925,11 @@
       },
       "winner": "BRA",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537415",
@@ -1651,7 +1951,11 @@
       },
       "winner": "PAR",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537418",
@@ -1673,7 +1977,11 @@
       },
       "winner": "MAR",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537424",
@@ -1695,7 +2003,11 @@
       },
       "winner": "NOR",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537416",
@@ -1717,7 +2029,11 @@
       },
       "winner": "FRA",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537425",
@@ -1739,7 +2055,11 @@
       },
       "winner": "MEX",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537426",
@@ -1761,7 +2081,11 @@
       },
       "winner": "ENG",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537422",
@@ -1783,7 +2107,11 @@
       },
       "winner": "BEL",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537421",
@@ -1805,7 +2133,11 @@
       },
       "winner": "USA",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537420",
@@ -1827,7 +2159,11 @@
       },
       "winner": "ESP",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537419",
@@ -1849,7 +2185,11 @@
       },
       "winner": "POR",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537429",
@@ -1871,7 +2211,11 @@
       },
       "winner": "SUI",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537428",
@@ -1893,7 +2237,11 @@
       },
       "winner": "EGY",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537427",
@@ -1915,7 +2263,11 @@
       },
       "winner": "ARG",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537430",
@@ -1937,7 +2289,11 @@
       },
       "winner": "COL",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537376",
@@ -1959,7 +2315,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537375",
@@ -1981,7 +2341,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537377",
@@ -1989,43 +2353,51 @@
       "stage": "knockout",
       "group": "",
       "date": "2026-07-05T20:00:00Z",
-      "status": "scheduled",
+      "status": "finished",
       "time": null,
       "home": {
         "code": "BRA",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
         "code": "NOR",
-        "score": null,
+        "score": 2,
         "pen": null
       },
-      "winner": null,
+      "winner": "NOR",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537378",
       "n": 92,
       "stage": "knockout",
       "group": "",
-      "date": "2026-07-06T00:00:00Z",
-      "status": "scheduled",
+      "date": "2026-07-06T01:00:00Z",
+      "status": "finished",
       "time": null,
       "home": {
         "code": "MEX",
-        "score": null,
+        "score": 2,
         "pen": null
       },
       "away": {
         "code": "ENG",
-        "score": null,
+        "score": 3,
         "pen": null
       },
-      "winner": null,
+      "winner": "ENG",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537379",
@@ -2033,21 +2405,25 @@
       "stage": "knockout",
       "group": "",
       "date": "2026-07-06T19:00:00Z",
-      "status": "scheduled",
+      "status": "finished",
       "time": null,
       "home": {
         "code": "POR",
-        "score": null,
+        "score": 0,
         "pen": null
       },
       "away": {
         "code": "ESP",
-        "score": null,
+        "score": 1,
         "pen": null
       },
-      "winner": null,
+      "winner": "ESP",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537380",
@@ -2055,21 +2431,25 @@
       "stage": "knockout",
       "group": "",
       "date": "2026-07-07T00:00:00Z",
-      "status": "scheduled",
+      "status": "finished",
       "time": null,
       "home": {
         "code": "USA",
-        "score": null,
+        "score": 1,
         "pen": null
       },
       "away": {
         "code": "BEL",
-        "score": null,
+        "score": 4,
         "pen": null
       },
-      "winner": null,
+      "winner": "BEL",
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537381",
@@ -2091,7 +2471,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537382",
@@ -2113,7 +2497,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537383",
@@ -2135,7 +2523,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.137Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537384",
@@ -2146,18 +2538,22 @@
       "status": "scheduled",
       "time": null,
       "home": {
-        "code": "TBD",
+        "code": "ESP",
         "score": null,
         "pen": null
       },
       "away": {
-        "code": "TBD",
+        "code": "BEL",
         "score": null,
         "pen": null
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.138Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537385",
@@ -2168,18 +2564,22 @@
       "status": "scheduled",
       "time": null,
       "home": {
-        "code": "TBD",
+        "code": "NOR",
         "score": null,
         "pen": null
       },
       "away": {
-        "code": "TBD",
+        "code": "ENG",
         "score": null,
         "pen": null
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.138Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537386",
@@ -2201,7 +2601,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.138Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537387",
@@ -2223,7 +2627,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.138Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537388",
@@ -2245,7 +2653,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.138Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537389",
@@ -2267,7 +2679,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.138Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     },
     {
       "id": "537390",
@@ -2289,7 +2705,11 @@
       },
       "winner": null,
       "source": "football-data.org",
+<<<<<<< HEAD
       "lastUpdated": "2026-07-04T07:32:13.962Z"
+=======
+      "lastUpdated": "2026-07-07T08:50:59.138Z"
+>>>>>>> 219773bc87a4f9b36ca0f45edecc7cce963cea8f
     }
   ]
 }
