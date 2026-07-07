@@ -2,7 +2,7 @@ const T = {
   tr: {
     'nav.matches': 'Maçlar',
     'nav.groups': 'Gruplar',
-    'nav.intelligence': 'Turnuva Zekâsı',
+    'nav.intelligence': 'Şampiyonluk Radarı',
     'nav.turkiye': 'Türkiye Merkezi',
     'nav.briefing': 'Günlük Not',
     'hero.eyebrow': 'Bağımsız Dünya Kupası Analiz Merkezi',
@@ -19,7 +19,7 @@ const T = {
     'groups.eyebrow': 'Puan Durumu',
     'groups.title': 'Gruplar',
     'intel.eyebrow': 'AI Analiz',
-    'intel.title': 'Üst Tur Olasılıkları',
+    'intel.title': 'Şampiyonluk Radarı',
     'tr.eyebrow': 'Türkiye Merkezi',
     'tr.title': 'Türkiye’nin Turnuva Panosu',
     'brief.eyebrow': 'Günlük Bülten',
@@ -46,7 +46,7 @@ const T = {
     'groups.eyebrow': 'Standings',
     'groups.title': 'Groups',
     'intel.eyebrow': 'AI Analysis',
-    'intel.title': 'Qualification Probabilities',
+    'intel.title': 'Champion Radar',
     'tr.eyebrow': 'Türkiye Hub',
     'tr.title': 'Türkiye Tournament Board',
     'brief.eyebrow': 'Daily Brief',
@@ -283,7 +283,6 @@ function renderAll() {
   if ($('#aiSummary')) renderSummary();
   if ($('#radar')) renderRadar();
   if ($('#matchList')) renderMatches();
-  if ($('#groupTables')) renderGroups();
 
   const intelligencePanel = $('#intelligence');
   if (intelligencePanel) {
@@ -592,62 +591,107 @@ function renderGroups() {
   `).join(''));
 }
 
+
+function getEliminatedTeamCodes() {
+  const eliminated = new Set();
+
+  allMatches
+    .filter(match => match.stage !== 'group' && match.status === 'finished')
+    .forEach(match => {
+      const winner = match.winner || null;
+      const home = match.home?.code;
+      const away = match.away?.code;
+
+      if (home && winner && home !== winner) eliminated.add(home);
+      if (away && winner && away !== winner) eliminated.add(away);
+    });
+
+  if (isTurkiyeEliminated()) eliminated.add('TUR');
+
+  return eliminated;
+}
+
+function getChampionshipRadarRows() {
+  const eliminated = getEliminatedTeamCodes();
+  const knockoutTeams = new Set();
+
+  allMatches
+    .filter(match => match.stage !== 'group')
+    .forEach(match => {
+      if (match.home?.code) knockoutTeams.add(match.home.code);
+      if (match.away?.code) knockoutTeams.add(match.away.code);
+      if (match.winner) knockoutTeams.add(match.winner);
+    });
+
+  const preferredOrder = ['FRA', 'ESP', 'BEL', 'ENG', 'MAR', 'NOR', 'ARG', 'COL', 'SUI', 'EGY', 'POR', 'BRA', 'USA', 'MEX'];
+  const pctMap = {
+    FRA: 24,
+    ESP: 22,
+    BEL: 19,
+    ENG: 17,
+    MAR: 15,
+    NOR: 12,
+    ARG: 11,
+    COL: 9,
+    SUI: 8,
+    EGY: 7,
+    POR: 5,
+    BRA: 5,
+    USA: 4,
+    MEX: 4
+  };
+
+  let rows = preferredOrder
+    .filter(code => knockoutTeams.has(code) && !eliminated.has(code))
+    .map(code => ({ code, pct: pctMap[code] || 5, eliminated: false }));
+
+  if (!rows.length) {
+    rows = probs
+      .map(p => ({
+        code: p.team || p.code,
+        pct: Math.round((p.champion || p.title || p.prob || 0) * 100),
+        eliminated: false
+      }))
+      .filter(row => row.code && !eliminated.has(row.code))
+      .sort((a, b) => b.pct - a.pct)
+      .slice(0, 8);
+  }
+
+  if (!rows.some(row => row.code === 'TUR')) {
+    rows.push({ code: 'TUR', pct: 0, eliminated: true });
+  }
+
+  return rows.slice(0, 9);
+}
+
 function renderProbabilities() {
-  if (intelligenceData?.groupQualification) {
-    const focusGroup =
-      Object.entries(groupMap).find(([g, arr]) => arr.includes(focus))?.[0] || "D";
+  const rows = getChampionshipRadarRows();
 
-    const rows = intelligenceData.groupQualification[focusGroup] || [];
-
-    safeHTML('#probabilities', `
-      <div class="prob-group-title">
-        ${focusGroup} Grubu Üst Tur Olasılıkları
-      </div>
-
-      <div class="ai-note" style="margin-bottom:16px">
-        Format: Her grubun ilk 2 takımı doğrudan Son 32’ye çıkar. En iyi 8 üçüncü takım da üst tura kalır.
-      </div>
-
-      ${rows.map(x => `
-        <div class="prob ${x.code === focus ? 'focus-prob' : ''}">
-          <strong>${name(x.code)}</strong>
-          <div class="bar">
-            <span style="width:${Math.max(2, x.probability)}%"></span>
-          </div>
-          <b>%${x.probability}</b>
-        </div>
-      `).join('')}
-    `);
-
-    return;
-  }
-
-  let list = probs
-    .map(p => ({
-      code: p.team || p.code,
-      pct: Math.round((p.champion || p.title || p.prob || 0) * 100)
-    }))
-    .filter(x => x.code)
-    .sort((a, b) => b.pct - a.pct)
-    .slice(0, 12);
-
-  if (!list.length) {
-    list = ['BRA', 'FRA', 'ARG', 'ENG', 'ESP', 'POR', 'GER', 'NED']
-      .map((c, i) => ({
-        code: c,
-        pct: [18, 16, 14, 12, 10, 8, 7, 6][i]
-      }));
-  }
-
-  safeHTML('#probabilities', list.map(x => `
-    <div class="prob">
-      <strong>${name(x.code)}</strong>
-      <div class="bar">
-        <span style="width:${Math.max(2, x.pct)}%"></span>
-      </div>
-      <b>%${x.pct}</b>
+  safeHTML('#probabilities', `
+    <div class="prob-group-title">
+      Şampiyonluk Radarı
     </div>
-  `).join(''));
+
+    <div class="ai-note" style="margin-bottom:16px">
+      Grup aşaması ve üst tur olasılıkları kapatıldı. Radar artık yalnızca finale yürüyen takımları ve elenen takımların durumunu gösterir.
+    </div>
+
+    ${rows.map(row => row.eliminated ? `
+      <div class="prob eliminated-row ${row.code === focus ? 'focus-prob' : ''}">
+        <strong>${name(row.code)}</strong>
+        <div class="eliminated-line">Turnuva dışı</div>
+        <b class="eliminated-badge">Elendi</b>
+      </div>
+    ` : `
+      <div class="prob ${row.code === focus ? 'focus-prob' : ''}">
+        <strong>${name(row.code)}</strong>
+        <div class="bar">
+          <span style="width:${Math.max(2, row.pct)}%"></span>
+        </div>
+        <b>%${row.pct}</b>
+      </div>
+    `).join('')}
+  `);
 }
 
 
@@ -657,7 +701,7 @@ function ensureMatchupsNav() {
 
   const link = document.createElement('a');
   link.href = '#matchups';
-  link.textContent = 'Olası Eşleşmeler';
+  link.textContent = 'Eleme Ağacı';
 
   const intelligenceLink = nav.querySelector('a[href="#intelligence"]');
   if (intelligenceLink) {
@@ -675,19 +719,19 @@ function ensureMatchupsPanel() {
   panel.id = 'matchups';
   panel.innerHTML = `
     <div class="section-head">
-      <p class="eyebrow">OLASI EŞLEŞMELER</p>
-      <h2 id="matchupsTitle">Son 32 Projeksiyonu</h2>
+      <p class="eyebrow">ELEME AĞACI</p>
+      <h2 id="matchupsTitle">Finale Giden Eleme Rotası</h2>
     </div>
     <div id="possibleMatchups"></div>
   `;
 
+  const finalRoad = $('#finalRoad');
   const intelligence = $('#intelligence');
-  const briefing = $('#briefing');
 
-  if (intelligence?.parentNode) {
+  if (finalRoad?.parentNode) {
+    finalRoad.insertAdjacentElement('afterend', panel);
+  } else if (intelligence?.parentNode) {
     intelligence.insertAdjacentElement('afterend', panel);
-  } else if (briefing?.parentNode) {
-    briefing.insertAdjacentElement('beforebegin', panel);
   } else {
     document.querySelector('main')?.appendChild(panel);
   }
@@ -698,79 +742,18 @@ function renderMatchupsProjection() {
   const thirdRanking = buildThirdPlaceRanking(standings);
   const projectedRows = buildRoundOf32Projection(standings, thirdRanking);
 
-  const turkeyEliminated = isTurkiyeEliminated();
-
   const matchupsTitle = $('#matchupsTitle');
   if (matchupsTitle) {
-    matchupsTitle.textContent = turkeyEliminated
-      ? 'Son 32 Yol Haritası'
-      : 'Son 32 Projeksiyonu';
+    matchupsTitle.textContent = 'Finale Giden Eleme Rotası';
   }
-
-  const introText = turkeyEliminated
-    ? 'Türkiye’nin turnuvası tamamlandı. Bu bölüm artık Son 32 yolu, favorilerin rotası, en iyi üçüncüler tablosu ve kesinleşen eleme senaryoları için takip edilmelidir.'
-    : 'Bu bölüm mevcut grup tablolarına göre otomatik projeksiyon üretir. Grup maçları tamamlanmadan kesin eşleşme olarak görülmemelidir. Üçüncü takım slotları, hangi 8 grubun üçüncüsünün üst tura çıktığına göre değişir.';
-
-  const pathTitle = turkeyEliminated
-    ? 'Türkiye sonrası turnuva yolu'
-    : 'Türkiye’nin olası yolu';
-
-  const pathText = turkeyEliminated
-    ? buildPostTurkeyPathProjection(projectedRows, thirdRanking)
-    : buildTurkiyePathProjection(standings, thirdRanking, projectedRows);
 
   safeHTML('#possibleMatchups', `
     <div class="ai-note" style="margin-bottom:18px">
-      ${introText}
+      Grup projeksiyonu ve geçici Son 32 slotları kaldırıldı. Bu bölüm artık sadece oynanan sonuçlar, kalan eşleşmeler ve finale uzanan gerçek eleme ağacını gösterir.
     </div>
-
-    <div class="two-col" style="margin-bottom:22px">
-      <article class="signal">
-        <b>${pathTitle}</b>
-        <span>${pathText}</span>
-      </article>
-      <article class="signal">
-        <b>Format notu</b>
-        <span>İlk 2 takım doğrudan Son 32’ye çıkar. En iyi 8 üçüncü takım da eleme turuna kalır.</span>
-      </article>
-    </div>
-
-    <h3 style="margin-top:12px">Eleme Ağacı</h3>
     ${renderEliminationBracket(projectedRows)}
-
-    <h3 style="margin-top:22px">Geçici Son 32 slotları</h3>
-    <div class="match-list" style="margin-top:16px">
-      ${projectedRows.map(row => `
-        <article class="match ${row.involvesFocus ? 'focus-prob' : ''}">
-          <div class="match-head">
-            <span>Maç ${row.no}</span>
-            <span>${row.certainty}</span>
-          </div>
-          <div class="teams">
-            <div class="team-row">
-              <span>${row.home}</span>
-            </div>
-            <div class="team-row">
-              <span>${row.away}</span>
-            </div>
-          </div>
-          <div class="ai-note">${row.note}</div>
-        </article>
-      `).join('')}
-    </div>
-
-    <h3 style="margin-top:22px">Geçici en iyi üçüncüler</h3>
-    <div class="radar" style="margin-top:14px">
-      ${thirdRanking.map(team => `
-        <div class="signal ${team.qualifiesAsThird ? '' : 'dimmed'} ${team.code === focus ? 'focus-prob' : ''}">
-          <b>${team.thirdPlaceRank}. ${name(team.code)}</b>
-          <span>${team.group} Grubu · ${team.pts} puan · AV ${team.gd} · ${team.qualifiesAsThird ? 'üst tur hattında' : 'dışarıda'}</span>
-        </div>
-      `).join('')}
-    </div>
   `);
 }
-
 
 function buildPostTurkeyPathProjection(projectedRows, thirdRanking) {
   const qualifyingThirds = thirdRanking

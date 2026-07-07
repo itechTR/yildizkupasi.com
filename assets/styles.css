@@ -1277,3 +1277,52 @@ main > #stats + #turkiye {
     grid-template-columns:84px 1fr 32px;
   }
 }
+
+/* ================================
+   V2.1 Final-focus cleanup
+   ================================ */
+
+.eliminated-row {
+  grid-template-columns: 130px 1fr auto;
+  border: 1px solid rgba(255, 107, 107, .38);
+  background: rgba(255, 107, 107, .08);
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.eliminated-line {
+  color: var(--muted);
+  font-weight: 850;
+}
+
+.eliminated-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 86px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(255, 107, 107, .16);
+  border: 1px solid rgba(255, 107, 107, .52);
+  color: #ff8b8b !important;
+  font-size: 14px;
+  font-weight: 950;
+}
+
+#matchups .section-head .eyebrow {
+  color: var(--gold);
+}
+
+#groups {
+  display: none !important;
+}
+
+@media(max-width:640px) {
+  .eliminated-row {
+    grid-template-columns: 1fr;
+  }
+
+  .eliminated-badge {
+    width: fit-content;
+  }
+}
