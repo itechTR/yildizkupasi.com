@@ -744,13 +744,10 @@ function renderMatchupsProjection() {
 
   const matchupsTitle = $('#matchupsTitle');
   if (matchupsTitle) {
-    matchupsTitle.textContent = 'Finale Giden Eleme Rotası';
+    matchupsTitle.textContent = 'Finale Giden Yol';
   }
 
   safeHTML('#possibleMatchups', `
-    <div class="ai-note" style="margin-bottom:18px">
-      Grup projeksiyonu ve geçici Son 32 slotları kaldırıldı. Bu bölüm artık sadece oynanan sonuçlar, kalan eşleşmeler ve finale uzanan gerçek eleme ağacını gösterir.
-    </div>
     ${renderEliminationBracket(projectedRows)}
   `);
 }

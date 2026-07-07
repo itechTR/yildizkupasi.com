@@ -32,7 +32,7 @@
   <meta name="twitter:description" content="Bağımsız Dünya Kupası analiz, skor ve turnuva zekâsı platformu.">
   <meta name="twitter:image" content="https://yildizkupasi.com/assets/brand/main_horizontal_logo_1600x400.png">
 
-  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="stylesheet" href="assets/styles.css?v=2.2" />
 </head>
 
 <body>
@@ -51,14 +51,11 @@
     <nav class="nav" aria-label="Ana menü">
       <a href="#finalRoad">Final Yolu</a>
       <a href="#matchups">Eleme Ağacı</a>
-      <a href="#intelligence" data-i18n="nav.intelligence">Turnuva Zekâsı</a>
       <a href="#briefing" data-i18n="nav.briefing">Günlük Not</a>
       <a href="#matches" data-i18n="nav.matches">Maçlar</a>
     </nav>
 
     <div class="controls">
-      <select id="teamFocus" aria-label="Takım vurgula"></select>
-      <button id="langBtn" class="ghost" style="display:none;">EN</button>
       <button id="themeBtn" class="ghost" aria-label="Tema değiştir">◐</button>
     </div>
   </header>
@@ -113,45 +110,14 @@
       <div id="finalRoadBoard"></div>
     </section>
 
-    <!-- TÜRKİYE MERKEZİ -->
-    <section class="panel turkey" id="turkiye">
+    <!-- GÜNLÜK NOT -->
+    <section class="panel" id="briefing">
       <div class="section-head">
-        <p class="eyebrow" data-i18n="tr.eyebrow">Türkiye Merkezi</p>
-        <h2 data-i18n="tr.title">Türkiye'nin Turnuva Panosu</h2>
+        <p class="eyebrow" data-i18n="today.eyebrow">Bugün Ne Oldu?</p>
+        <h2 data-i18n="today.title">AI Turnuva Özeti</h2>
       </div>
 
-      <div id="turkiyeCenter"></div>
-    </section>
-
-    <!-- TURNUVA ZEKÂSI / OLASILIKLAR -->
-    <section class="panel" id="intelligence">
-      <div class="section-head">
-        <p class="eyebrow" data-i18n="intel.eyebrow">AI Analiz</p>
-        <h2 data-i18n="intel.title">Şampiyonluk Olasılıkları</h2>
-      </div>
-
-      <div id="probabilities" class="prob-list"></div>
-    </section>
-
-    <!-- GÜNLÜK NOT + RADAR -->
-    <section class="two-col">
-      <article class="panel" id="briefing">
-        <div class="section-head">
-          <p class="eyebrow" data-i18n="today.eyebrow">Bugün Ne Oldu?</p>
-          <h2 data-i18n="today.title">AI Turnuva Özeti</h2>
-        </div>
-
-        <div id="aiSummary" class="prose"></div>
-      </article>
-
-      <article class="panel" id="insightPanel">
-        <div class="section-head">
-          <p class="eyebrow" data-i18n="insight.eyebrow">Sinyaller</p>
-          <h2 data-i18n="insight.title">Turnuva Radarı</h2>
-        </div>
-
-        <div id="radar" class="radar"></div>
-      </article>
+      <div id="aiSummary" class="prose"></div>
     </section>
 
     <!-- MAÇ MERKEZİ EN ALTTA -->
@@ -184,6 +150,6 @@
     </span>
   </footer>
 
-  <script src="assets/app.js" type="module"></script>
+  <script src="assets/app.js?v=2.2" type="module"></script>
 </body>
 </html>
