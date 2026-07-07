@@ -1326,3 +1326,14 @@ main > #stats + #turkiye {
     width: fit-content;
   }
 }
+/* Stats ile Final Merkezi arasına gerçek boşluk */
+#stats {
+  margin-bottom: 28px !important;
+}
+
+#finalRoad,
+#final-center,
+section:has(#finalRoad),
+.panel.final-road {
+  margin-top: 28px !important;
+}
