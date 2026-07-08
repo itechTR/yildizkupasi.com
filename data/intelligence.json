@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-04T07:32:14.082Z",
+  "updatedAt": "2026-07-08T10:51:32.757Z",
   "liveCount": 0,
-  "finishedCount": 88,
-  "scheduledCount": 16,
+  "finishedCount": 96,
+  "scheduledCount": 8,
   "groupQualification": {
     "A": [
       {
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Almanya 4-5 Paraguay, Hollanda 3-4 Fas, Belçika 3-2 Senegal, Avustralya 3-5 Mısır, Arjantin 3-2 Cape Verde."
+      "text": "Son yüksek skorlu maçlar: Arjantin 3-2 Cape Verde, Meksika 2-3 İngiltere, ABD 1-4 Belçika, Arjantin 3-2 Mısır, İsviçre 4-3 Kolombiya."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Kanada - Fas, Paraguay - Fransa, Brezilya - Norveç, Meksika - İngiltere, Portekiz - İspanya, ABD - Belçika, Arjantin - Mısır, İsviçre - Kolombiya"
+      "text": "Fransa - Fas, İspanya - Belçika, Norveç - İngiltere, Arjantin - İsviçre, TBD - TBD, TBD - TBD, TBD - TBD, TBD - TBD"
     }
   ],
   "groupLeaders": [
@@ -503,73 +503,19 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537415",
-      "text": "Almanya 4-5 Paraguay",
-      "goals": 9
-    },
-    {
-      "id": "537418",
-      "text": "Hollanda 3-4 Fas",
-      "goals": 7
-    },
-    {
-      "id": "537422",
-      "text": "Belçika 3-2 Senegal",
-      "goals": 5
-    },
-    {
-      "id": "537428",
-      "text": "Avustralya 3-5 Mısır",
-      "goals": 8
-    },
-    {
       "id": "537427",
       "text": "Arjantin 3-2 Cape Verde",
       "goals": 5
-    }
-  ],
-  "upcomingFocus": [
-    {
-      "id": "537376",
-      "text": "Kanada - Fas",
-      "date": "2026-07-04T17:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
-    {
-      "id": "537375",
-      "text": "Paraguay - Fransa",
-      "date": "2026-07-04T21:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
-    {
-      "id": "537377",
-      "text": "Brezilya - Norveç",
-      "date": "2026-07-05T20:00:00Z",
-      "group": "",
-      "stage": "knockout"
     },
     {
       "id": "537378",
-      "text": "Meksika - İngiltere",
-      "date": "2026-07-06T00:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
-    {
-      "id": "537379",
-      "text": "Portekiz - İspanya",
-      "date": "2026-07-06T19:00:00Z",
-      "group": "",
-      "stage": "knockout"
+      "text": "Meksika 2-3 İngiltere",
+      "goals": 5
     },
     {
       "id": "537380",
-      "text": "ABD - Belçika",
-      "date": "2026-07-07T00:00:00Z",
-      "group": "",
-      "stage": "knockout"
+      "text": "ABD 1-4 Belçika",
+      "goals": 5
     },
     {
       "id": "537381",
@@ -578,9 +524,65 @@
     },
     {
       "id": "537382",
-      "text": "İsviçre - Kolombiya",
-      "date": "2026-07-07T20:00:00Z",
+      "text": "İsviçre 4-3 Kolombiya",
+      "goals": 7
+    }
+  ],
+  "upcomingFocus": [
+    {
+      "id": "537383",
+      "text": "Fransa - Fas",
+      "date": "2026-07-09T20:00:00Z",
       "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537384",
+      "text": "İspanya - Belçika",
+      "date": "2026-07-10T19:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537385",
+      "text": "Norveç - İngiltere",
+      "date": "2026-07-11T21:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537386",
+      "text": "Arjantin - İsviçre",
+      "date": "2026-07-12T01:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537387",
+      "text": "TBD - TBD",
+      "date": "2026-07-14T19:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537388",
+      "text": "TBD - TBD",
+      "date": "2026-07-15T19:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537389",
+      "text": "TBD - TBD",
+      "date": "2026-07-18T21:00:00Z",
+      "group": "E",
+      "stage": "knockout"
+    },
+    {
+      "id": "537390",
+      "text": "TBD - TBD",
+      "date": "2026-07-19T19:00:00Z",
+      "group": "L",
       "stage": "knockout"
     }
   ]
