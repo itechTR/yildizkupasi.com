@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08T03:27:14.726Z",
+  "updatedAt": "2026-07-08T06:13:46.590Z",
   "liveCount": 0,
   "finishedCount": 96,
   "scheduledCount": 8,
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Fransa - Fas, İspanya - Belçika, Norveç - İngiltere, TBD - TBD, TBD - TBD, TBD - TBD, TBD - TBD, TBD - TBD"
+      "text": "Fransa - Fas, İspanya - Belçika, Norveç - İngiltere, Arjantin - İsviçre, TBD - TBD, TBD - TBD, TBD - TBD, TBD - TBD"
     }
   ],
   "groupLeaders": [
@@ -552,7 +552,7 @@
     },
     {
       "id": "537386",
-      "text": "TBD - TBD",
+      "text": "Arjantin - İsviçre",
       "date": "2026-07-12T01:00:00Z",
       "group": "",
       "stage": "knockout"
