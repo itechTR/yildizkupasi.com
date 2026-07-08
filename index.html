@@ -32,7 +32,7 @@
   <meta name="twitter:description" content="Bağımsız Dünya Kupası analiz, skor ve turnuva zekâsı platformu.">
   <meta name="twitter:image" content="https://yildizkupasi.com/assets/brand/main_horizontal_logo_1600x400.png">
 
-  <link rel="stylesheet" href="assets/styles.css?v=2.3" />
+  <link rel="stylesheet" href="assets/styles.css?v=2.4" />
 </head>
 
 <body>
@@ -70,10 +70,8 @@
           Yıldız Kupası artık final merkezli çalışır: kalan takımlar, maç rotaları, favoriler ve şampiyonluk senaryoları tek panelde izlenir.
         </p>
 
-        <div class="hero-actions">
-          <a class="primary" href="#finalRoad">Final yolunu aç</a>
-          <a class="secondary" href="#matchups">Eleme ağacına bak</a>
-        </div>
+        <div id="championCelebration" class="champion-celebration" hidden></div>
+
       </div>
 
       <aside class="score-live" aria-live="polite">
@@ -128,15 +126,6 @@
           <h2 data-i18n="matches.title">Maçlar</h2>
         </div>
 
-        <div class="filters">
-          <input
-            id="search"
-            type="search"
-            placeholder="Takım, grup veya aşama ara"
-            aria-label="Maçlarda ara"
-          />
-          <select id="stageFilter" aria-label="Aşama filtresi"></select>
-        </div>
       </div>
 
       <div id="matchList" class="match-list"></div>
@@ -150,6 +139,6 @@
     </span>
   </footer>
 
-  <script src="assets/app.js?v=2.3" type="module"></script>
+  <script src="assets/app.js?v=2.4" type="module"></script>
 </body>
 </html>

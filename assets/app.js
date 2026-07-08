@@ -410,93 +410,38 @@ function renderRadar() {
 }
 
 function filteredMatches() {
-  const search = $('#search');
-  const stageFilter = $('#stageFilter');
-
-  const q = search ? search.value.toLowerCase() : '';
-  const st = stageFilter ? stageFilter.value : 'all';
-
-  return allMatches.filter(m => {
-    const text = [
-      m.stage,
-      m.group,
-      name(m.home?.code),
-      name(m.away?.code),
-      m.home?.code,
-      m.away?.code
-    ].join(' ').toLowerCase();
-
-    const stageOk =
-      st === 'all' ||
-      (st === 'knockout' ? m.stage !== 'group' : m.stage === st);
-
-    return text.includes(q) && stageOk;
-  }).slice(0, 80);
+  // Final odaklı sürümde Maçlar bölümü eleme arşividir. Grup maçlarını ve 80 maçlık eski kesmeyi burada gömdük.
+  return getKnockoutMatches();
 }
 
 function renderMatches() {
+  const rows = filteredMatches();
 
-  const knockoutMatches = allMatches
-    .filter(m => 
-      m.stage &&
-      String(m.stage).toLowerCase() !== "group"
-    )
-    .sort((a,b)=> Number(a.n) - Number(b.n));
+  safeHTML('#matchList', rows.map(m => {
+    const cls = m.status === 'finished'
+      ? 'finished'
+      : (['in_play', 'live'].includes(m.status) ? 'live' : '');
 
-
-  return `
-    <section class="section-card">
-      <div class="section-kicker">
-        MAÇ MERKEZİ
-      </div>
-
-      <h2>Tüm Eleme Maçları</h2>
-
-      <div class="match-grid">
-
-      ${knockoutMatches.map(match => {
-
-        const homeScore =
-          match.home.score ?? "-";
-
-        const awayScore =
-          match.away.score ?? "-";
-
-
-        return `
-        <article class="match-card">
-
-          <div class="match-top">
-             <span>${match.stage}</span>
-             <span>${formatDate(match.date)}</span>
+    return `
+      <article class="match ${cls}">
+        <div class="match-head">
+          <span>M${m.n || m.no || '-'} · ${ROUND_LABELS[getRoundIdForMatchNo(m.n || m.no || m.matchNumber)] || 'Eleme'}</span>
+          <span>${formatMatchDate(m.date)}</span>
+        </div>
+        <div class="teams">
+          <div class="team-row">
+            <span>${name(m.home?.code)}</span>
+            <span class="score">${sideScoreDisplay(m, 'home')}</span>
           </div>
-
-          <div class="match-row">
-            <b>${name(match.home.code)}</b>
-            <strong>${homeScore}</strong>
+          <div class="team-row">
+            <span>${name(m.away?.code)}</span>
+            <span class="score">${sideScoreDisplay(m, 'away')}</span>
           </div>
-
-          <div class="match-row">
-            <b>${name(match.away.code)}</b>
-            <strong>${awayScore}</strong>
-          </div>
-
-          <p>
-          ${
-           match.status === "finished"
-           ? "Maç tamamlandı."
-           : "Planlandı."
-          }
-          </p>
-
-        </article>
-        `;
-
-      }).join("")}
-
-      </div>
-    </section>
-  `;
+        </div>
+        <div class="ai-note">${matchNote(m)}</div>
+      </article>
+    `;
+  }).join(''));
 }
 
 function matchNote(m) {
@@ -1717,6 +1662,55 @@ function getRoundIdForMatchNo(no) {
 function formatMatchDate(value) {
   if (!value) return '-';
   return new Date(value).toLocaleString('tr-TR', { dateStyle: 'medium', timeStyle: 'short' });
+}
+
+// Eski yamalarda çağrılmışsa patlamasın. JS zaten yeterince huysuz.
+function formatDate(value) {
+  return formatMatchDate(value);
+}
+
+const TEAM_FLAGS = {
+  MEX: '🇲🇽', RSA: '🇿🇦', CZE: '🇨🇿', KOR: '🇰🇷', CAN: '🇨🇦', QAT: '🇶🇦', SUI: '🇨🇭', BIH: '🇧🇦',
+  BRA: '🇧🇷', HAI: '🇭🇹', MAR: '🇲🇦', SCO: '🏴󠁧󠁢󠁳󠁣󠁴󠁿', AUS: '🇦🇺', PAR: '🇵🇾', USA: '🇺🇸', TUR: '🇹🇷',
+  GER: '🇩🇪', CIV: '🇨🇮', ECU: '🇪🇨', CUW: '🇨🇼', NED: '🇳🇱', JPN: '🇯🇵', TUN: '🇹🇳', SWE: '🇸🇪',
+  BEL: '🇧🇪', EGY: '🇪🇬', IRN: '🇮🇷', NZL: '🇳🇿', ESP: '🇪🇸', URU: '🇺🇾', KSA: '🇸🇦', CPV: '🇨🇻',
+  FRA: '🇫🇷', SEN: '🇸🇳', NOR: '🇳🇴', IRQ: '🇮🇶', ARG: '🇦🇷', ALG: '🇩🇿', DZA: '🇩🇿', AUT: '🇦🇹', JOR: '🇯🇴',
+  ENG: '🏴󠁧󠁢󠁥󠁮󠁧󠁿', CRO: '🇭🇷', GHA: '🇬🇭', PAN: '🇵🇦', POR: '🇵🇹', UZB: '🇺🇿', COL: '🇨🇴', COD: '🇨🇩'
+};
+
+function flagEmoji(code) {
+  return TEAM_FLAGS[code] || '🏳️';
+}
+
+function getChampionCode() {
+  const final = getKnockoutMatches().find(match => Number(match.n || match.no || match.matchNumber) === 104);
+  if (!final || final.status !== 'finished') return null;
+  return getMatchWinnerCode(final);
+}
+
+function renderChampionCelebration() {
+  const box = $('#championCelebration');
+  const hero = $('.hero');
+  if (!box || !hero) return;
+
+  const champion = getChampionCode();
+  hero.classList.toggle('champion-mode', Boolean(champion));
+
+  if (!champion) {
+    box.hidden = true;
+    box.innerHTML = '';
+    return;
+  }
+
+  box.hidden = false;
+  box.innerHTML = `
+    <div class="champion-flag">${flagEmoji(champion)}</div>
+    <div>
+      <span>ŞAMPİYON</span>
+      <strong>${name(champion)}</strong>
+    </div>
+    <i class="confetti c1"></i><i class="confetti c2"></i><i class="confetti c3"></i><i class="confetti c4"></i><i class="confetti c5"></i>
+  `;
 }
 
 function hasRealTeam(code) {

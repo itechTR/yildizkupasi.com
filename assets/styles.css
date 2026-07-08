@@ -1326,14 +1326,93 @@ main > #stats + #turkiye {
     width: fit-content;
   }
 }
-/* Stats ile Final Merkezi arasına gerçek boşluk */
-#stats {
-  margin-bottom: 28px !important;
+
+
+/* V2.4 cleanup: gereksiz hero butonları ve maç filtre kutuları gitti */
+.hero-actions,
+.filters {
+  display: none !important;
 }
 
-#finalRoad,
-#final-center,
-section:has(#finalRoad),
-.panel.final-road {
-  margin-top: 28px !important;
+/* Stats ile Final Merkezi birbirine yapışmasın. Dünya bunu da gördü. */
+#stats {
+  margin-bottom: 34px !important;
+}
+
+#finalRoad.final-road-panel {
+  margin-top: 34px !important;
+}
+
+/* Match Center artık sadece eleme arşivi; üst arama/filter şişkinliği yok */
+#matches .section-head.inline {
+  align-items: flex-start;
+}
+
+/* Şampiyon belli olunca ana sayfada bayrak + konfeti */
+.champion-celebration {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 28px;
+  padding: 18px 22px;
+  border: 1px solid rgba(255, 209, 102, .45);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top left, rgba(255, 209, 102, .24), transparent 42%),
+    linear-gradient(135deg, rgba(255, 209, 102, .14), rgba(39, 225, 157, .10));
+  box-shadow: 0 22px 70px rgba(0,0,0,.24);
+  overflow: hidden;
+}
+
+.champion-celebration[hidden] {
+  display: none !important;
+}
+
+.champion-flag {
+  font-size: clamp(56px, 8vw, 108px);
+  line-height: 1;
+  filter: drop-shadow(0 12px 24px rgba(0,0,0,.28));
+}
+
+.champion-celebration span {
+  display: block;
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 950;
+  letter-spacing: .18em;
+}
+
+.champion-celebration strong {
+  display: block;
+  color: var(--text);
+  font-size: clamp(28px, 4vw, 54px);
+  line-height: 1.05;
+}
+
+.hero.champion-mode h1::after {
+  content: ' 🏆';
+}
+
+.confetti {
+  position: absolute;
+  top: -18px;
+  width: 10px;
+  height: 18px;
+  border-radius: 3px;
+  background: var(--gold);
+  animation: confetti-fall 1.8s linear infinite;
+  opacity: .95;
+}
+
+.confetti.c1 { left: 18%; animation-delay: 0s; }
+.confetti.c2 { left: 38%; animation-delay: .25s; background: var(--green); }
+.confetti.c3 { left: 58%; animation-delay: .5s; background: var(--blue); }
+.confetti.c4 { left: 76%; animation-delay: .75s; background: #ff8fab; }
+.confetti.c5 { left: 88%; animation-delay: 1s; background: #fff; }
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-10px) rotate(0deg); opacity: 0; }
+  15% { opacity: 1; }
+  100% { transform: translateY(160px) rotate(240deg); opacity: 0; }
 }
