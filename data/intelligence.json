@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-09T21:50:19.186Z",
-  "liveCount": 1,
-  "finishedCount": 96,
-  "scheduledCount": 8,
+  "updatedAt": "2026-07-09T23:00:03.533Z",
+  "liveCount": 0,
+  "finishedCount": 97,
+  "scheduledCount": 7,
   "groupQualification": {
     "A": [
       {
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Fransa - Fas, İspanya - Belçika, Norveç - İngiltere, Arjantin - İsviçre, TBD - TBD, TBD - TBD, TBD - TBD, TBD - TBD"
+      "text": "İspanya - Belçika, Norveç - İngiltere, Arjantin - İsviçre, TBD - TBD, TBD - TBD, TBD - TBD, TBD - TBD"
     }
   ],
   "groupLeaders": [
@@ -529,13 +529,6 @@
     }
   ],
   "upcomingFocus": [
-    {
-      "id": "537383",
-      "text": "Fransa - Fas",
-      "date": "2026-07-09T20:00:00Z",
-      "group": "",
-      "stage": "knockout"
-    },
     {
       "id": "537384",
       "text": "İspanya - Belçika",
