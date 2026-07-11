@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-11T20:34:34.812Z",
-  "liveCount": 0,
-  "finishedCount": 98,
-  "scheduledCount": 6,
+  "updatedAt": "2026-07-11T21:29:29.715Z",
+  "liveCount": 1,
+  "finishedCount": 97,
+  "scheduledCount": 7,
   "groupQualification": {
     "A": [
       {
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Arjantin 3-2 Cape Verde, Meksika 2-3 İngiltere, ABD 1-4 Belçika, Arjantin 3-2 Mısır, İsviçre 4-3 Kolombiya."
+      "text": "Son yüksek skorlu maçlar: Avustralya 3-5 Mısır, Arjantin 3-2 Cape Verde, ABD 1-4 Belçika, Arjantin 3-2 Mısır, İsviçre 4-3 Kolombiya."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Norveç - İngiltere, Arjantin - İsviçre, Fransa - İspanya, TBD - TBD, TBD - TBD, TBD - TBD"
+      "text": "Meksika - İngiltere, Norveç - İngiltere, Arjantin - İsviçre, Fransa - İspanya, TBD - TBD, TBD - TBD, TBD - TBD"
     }
   ],
   "groupLeaders": [
@@ -503,13 +503,13 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537427",
-      "text": "Arjantin 3-2 Cape Verde",
-      "goals": 5
+      "id": "537428",
+      "text": "Avustralya 3-5 Mısır",
+      "goals": 8
     },
     {
-      "id": "537378",
-      "text": "Meksika 2-3 İngiltere",
+      "id": "537427",
+      "text": "Arjantin 3-2 Cape Verde",
       "goals": 5
     },
     {
@@ -529,6 +529,13 @@
     }
   ],
   "upcomingFocus": [
+    {
+      "id": "537378",
+      "text": "Meksika - İngiltere",
+      "date": "2026-07-06T01:00:00Z",
+      "group": "",
+      "stage": "knockout"
+    },
     {
       "id": "537385",
       "text": "Norveç - İngiltere",
