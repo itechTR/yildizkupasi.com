@@ -1,18 +1,12 @@
 {
-  "updatedAt": "2026-07-11T23:29:24.973Z",
+  "updatedAt": "2026-07-12T01:07:23.836Z",
   "title": "Yıldız Kupası Günlük Notu",
   "summary": [
-    "Turnuvada şu ana kadar 97 maç tamamlandı.",
+    "Turnuvada şu ana kadar 98 maç tamamlandı.",
     "Şu anda 1 canlı maç görünüyor.",
-    "Sıradaki dikkat çeken maçlar: Meksika - İngiltere, Norveç - İngiltere, Arjantin - İsviçre, Fransa - İspanya, TBD - TBD."
+    "Sıradaki dikkat çeken maçlar: Meksika - İngiltere, Arjantin - İsviçre, Fransa - İspanya, TBD - TBD, TBD - TBD."
   ],
   "latestResults": [
-    {
-      "id": "537380",
-      "text": "ABD 1-4 Belçika",
-      "group": "",
-      "stage": "knockout"
-    },
     {
       "id": "537381",
       "text": "Arjantin 3-2 Mısır",
@@ -34,6 +28,12 @@
     {
       "id": "537384",
       "text": "İspanya 2-1 Belçika",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537385",
+      "text": "Norveç 1-2 İngiltere",
       "group": "",
       "stage": "knockout"
     }
