@@ -2077,19 +2077,19 @@
       "stage": "knockout",
       "group": "",
       "date": "2026-07-07T16:00:00Z",
-      "status": "finished",
+      "status": "scheduled",
       "time": null,
       "home": {
         "code": "ARG",
-        "score": 3,
+        "score": null,
         "pen": null
       },
       "away": {
         "code": "EGY",
-        "score": 2,
+        "score": null,
         "pen": null
       },
-      "winner": "ARG",
+      "winner": null,
       "source": "football-data.org",
       "lastUpdated": "2026-07-07T08:50:59.137Z"
     },
@@ -2099,19 +2099,19 @@
       "stage": "knockout",
       "group": "",
       "date": "2026-07-07T20:00:00Z",
-      "status": "finished",
+      "status": "scheduled",
       "time": null,
       "home": {
         "code": "SUI",
-        "score": 4,
-        "pen": 4
+        "score": null,
+        "pen": null
       },
       "away": {
         "code": "COL",
-        "score": 3,
-        "pen": 3
+        "score": null,
+        "pen": null
       },
-      "winner": "SUI",
+      "winner": null,
       "source": "football-data.org",
       "lastUpdated": "2026-07-07T08:50:59.137Z"
     },
@@ -2190,12 +2190,12 @@
       "status": "scheduled",
       "time": null,
       "home": {
-        "code": "ARG",
+        "code": "TBD",
         "score": null,
         "pen": null
       },
       "away": {
-        "code": "SUI",
+        "code": "TBD",
         "score": null,
         "pen": null
       },

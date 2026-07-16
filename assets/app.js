@@ -1792,28 +1792,58 @@ function getNextImportantMatches() {
 }
 
 function getChampionRadar() {
-  const survivors = getSurvivors();
+  const knockoutMatches = getKnockoutMatches();
+  const finalMatch = knockoutMatches.find(match =>
+    Number(match.n || match.no || match.matchNumber) === 104
+  );
+
+  // Final eşleşmesi belli olduğunda yalnızca gerçek finalistler şampiyon olabilir.
+  // Üçüncülük maçına kalan takımların şampiyonluk ihtimali yoktur. Futbolun bu kısmı
+  // şaşırtıcı biçimde nettir; eski radar ise bunu uzun süre kişisel görüş saydı.
+  const finalParticipants = finalMatch
+    ? [finalMatch.home?.code, finalMatch.away?.code].filter(hasRealTeam)
+    : [];
+
+  const candidates = finalParticipants.length === 2
+    ? finalParticipants
+    : getSurvivors().filter(code => {
+        const upcoming = knockoutMatches.filter(match =>
+          match.status !== 'finished' &&
+          [match.home?.code, match.away?.code].includes(code)
+        );
+
+        // Takımın yalnızca üçüncülük maçı kaldıysa şampiyonluk radarına alınmaz.
+        return upcoming.some(match =>
+          Number(match.n || match.no || match.matchNumber) !== 103
+        );
+      });
+
   const brandWeight = {
     FRA: 96, ESP: 94, ENG: 91, ARG: 90, BEL: 88, POR: 87, BRA: 86, MAR: 84,
     NOR: 80, COL: 78, SUI: 76, EGY: 73, USA: 72, MEX: 70, CAN: 68, PAR: 67
   };
 
-  return survivors
+  return [...new Set(candidates)]
     .map(code => {
-      const next = getKnockoutMatches().find(match =>
-        match.status !== 'finished' && [match.home?.code, match.away?.code].includes(code)
+      const next = knockoutMatches.find(match =>
+        match.status !== 'finished' &&
+        Number(match.n || match.no || match.matchNumber) !== 103 &&
+        [match.home?.code, match.away?.code].includes(code)
       );
       const base = brandWeight[code] ?? 62;
       const routePenalty = next ? Math.min(10, Math.max(0, Number(next.n || 100) - 96)) : 6;
+
       return {
         code,
         name: name(code),
         score: Math.max(35, Math.min(99, base - routePenalty)),
-        next: next ? `M${next.n} · ${sideDisplay(next, 'home')} - ${sideDisplay(next, 'away')}` : 'Rakip bekleniyor'
+        next: next
+          ? `M${next.n} · ${sideDisplay(next, 'home')} - ${sideDisplay(next, 'away')}`
+          : 'Final eşleşmesi bekleniyor'
       };
     })
     .sort((a, b) => b.score - a.score)
-    .slice(0, 8);
+    .slice(0, finalParticipants.length === 2 ? 2 : 8);
 }
 
 function renderFinalRoad() {
