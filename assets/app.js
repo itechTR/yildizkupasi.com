@@ -48,14 +48,51 @@ function matchCard(m, compact=false){
     <div class="team ${win===m.away?.code?'winner':''}"><span>${name(m.away?.code)}</span><b>${scoreText(m.away)}</b></div>
   </article>`;
 }
-function renderStats(){
-  const ko=matches.filter(m=>Number(m.n)>=73);
-  const finished=ko.filter(isFinished).length;
-  const scheduled=ko.length-finished;
-  const finalists=stageMatches('final')[0];
-  const alive=new Set();
-  if(finalists){ if(finalists.home?.code) alive.add(finalists.home.code); if(finalists.away?.code) alive.add(finalists.away.code); }
-  $('#stats').innerHTML=[['32','Eleme maçı'],[finished,'Tamamlanan'],[scheduled,'Kalan maç'],[alive.size||'-','Finalist']].map(([v,l])=>`<div class="stat"><strong>${v}</strong><span>${l}</span></div>`).join('');
+function isFutureUnfinishedMatch(match) {
+  if (isFinished(match)) return false;
+
+  const matchTime = new Date(match?.date).getTime();
+
+  return (
+    Number.isFinite(matchTime) &&
+    matchTime >= Date.now()
+  );
+}
+
+function renderStats() {
+  const knockoutMatches = matches.filter(
+    match => Number(match.n) >= 73
+  );
+
+  const finishedMatches = knockoutMatches.filter(isFinished);
+
+  const remainingMatches = knockoutMatches.filter(
+    isFutureUnfinishedMatch
+  );
+
+  const finalMatch = stageMatches('final')[0];
+
+  const finalists = new Set();
+
+  if (finalMatch?.home?.code) {
+    finalists.add(finalMatch.home.code);
+  }
+
+  if (finalMatch?.away?.code) {
+    finalists.add(finalMatch.away.code);
+  }
+
+  $('#stats').innerHTML = [
+    [knockoutMatches.length, 'Eleme maçı'],
+    [finishedMatches.length, 'Tamamlanan'],
+    [remainingMatches.length, 'Kalan maç'],
+    [finalists.size || '-', 'Finalist']
+  ].map(([value, label]) => `
+    <div class="stat">
+      <strong>${value}</strong>
+      <span>${label}</span>
+    </div>
+  `).join('');
 }
 function renderHero(){
   const final=stageMatches('final')[0];
