@@ -1,144 +1,69 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Yıldız Kupası AI | Bağımsız Dünya Kupası Analiz Merkezi</title>
-  <meta name="description" content="Yıldız Kupası AI; Dünya Kupası maçlarını, grup tablolarını, Türkiye'nin durumunu, üst tur olasılıklarını ve AI destekli turnuva notlarını izlemek için bağımsız futbol analiz platformudur." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://yildizkupasi.com/" />
-
-  <!-- Favicons / App Icons -->
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/app_icon_32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/brand/app_icon_96x96.png">
-  <link rel="apple-touch-icon" sizes="192x192" href="assets/brand/app_icon_192x192.png">
-
-  <!-- PWA / Browser Theme -->
-  <link rel="manifest" href="manifest.json">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yıldız Kupası | Finale Giden Yol</title>
+  <meta name="description" content="Dünya Kupası eleme maçları, finale giden yol, sonuçlar ve şampiyonluk takibi.">
   <meta name="theme-color" content="#06111f">
-  <meta name="msapplication-TileColor" content="#06111f">
-
-  <!-- Social Preview -->
-  <meta property="og:title" content="Yıldız Kupası AI">
-  <meta property="og:description" content="Bağımsız Dünya Kupası analiz, skor ve turnuva zekâsı platformu.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yildizkupasi.com/">
-  <meta property="og:image" content="https://yildizkupasi.com/assets/brand/main_horizontal_logo_1600x400.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Yıldız Kupası AI">
-  <meta name="twitter:description" content="Bağımsız Dünya Kupası analiz, skor ve turnuva zekâsı platformu.">
-  <meta name="twitter:image" content="https://yildizkupasi.com/assets/brand/main_horizontal_logo_1600x400.png">
-
-  <link rel="stylesheet" href="assets/styles.css?v=2.5" />
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="assets/styles.css?v=3.0">
 </head>
-
 <body>
   <header class="topbar">
-    <a class="brand brand-logo" href="./" aria-label="YıldızKupası.com ana sayfa">
-      <img
-        src="assets/brand/compact_logo_mark_512x512.png"
-        alt=""
-        class="brand-mark"
-        width="40"
-        height="40"
-      >
-      <span class="brand-text">YILDIZKUPASI.COM</span>
+    <a class="brand" href="#home" aria-label="Ana sayfa">
+      <img src="assets/brand/compact_logo_mark_512x512.png" alt="" width="42" height="42">
+      <span>YILDIZKUPASI.COM</span>
     </a>
-
-    <nav class="nav" aria-label="Ana menü">
-      <a href="#finalRoad">Final Yolu</a>
-      <a href="#matchups">Eleme Ağacı</a>
-      <a href="#briefing" data-i18n="nav.briefing">Günlük Not</a>
-      <a href="#matches" data-i18n="nav.matches">Maçlar</a>
+    <nav>
+      <a href="#final-center">Final Merkezi</a>
+      <a href="#bracket">Eleme Ağacı</a>
+      <a href="#matches">Maçlar</a>
     </nav>
-
-    <div class="controls">
-      <button id="themeBtn" class="ghost" aria-label="Tema değiştir">◐</button>
-    </div>
+    <button id="themeBtn" class="icon-btn" type="button" aria-label="Tema değiştir">◐</button>
   </header>
 
   <main id="home">
-    <!-- HERO -->
-    <section class="hero panel">
+    <section class="hero shell">
       <div>
-        <p class="eyebrow" data-i18n="hero.eyebrow">Bağımsız Dünya Kupası Analiz Merkezi</p>
-        <h1>Finale Giden Yol</h1>
-        <p class="lead">
-          Yıldız Kupası artık final merkezli çalışır: kalan takımlar, maç rotaları, favoriler ve şampiyonluk senaryoları tek panelde izlenir.
-        </p>
-
-        <div id="championCelebration" class="champion-celebration" hidden></div>
-
+        <p class="eyebrow">BAĞIMSIZ DÜNYA KUPASI ANALİZ MERKEZİ</p>
+        <h1 id="heroTitle">Finale Giden Yol</h1>
+        <p id="heroLead" class="lead">Turnuvanın kalan yolu, oynanan maçlar ve final tablosu tek veri kaynağından güncellenir.</p>
+        <div id="championHero" class="champion-hero" hidden></div>
       </div>
-
-      <aside class="score-live" aria-live="polite">
-        <span class="pulse"></span>
-        <div>
-          <strong id="liveState">Veri hazırlanıyor</strong>
-          <small id="updatedAt">Son güncelleme kontrol ediliyor</small>
-        </div>
-      </aside>
+      <div class="data-status">
+        <span class="status-dot"></span>
+        <div><strong id="dataState">Veri yükleniyor</strong><small id="updatedAt">Bekleniyor</small></div>
+      </div>
     </section>
 
-    <!-- STATS -->
-    <section class="grid stats" id="stats" aria-label="Turnuva istatistikleri"></section>
+    <section id="stats" class="stats"></section>
 
-    <!-- FİNAL YOLU -->
-    <section class="panel final-road-panel" id="finalRoad">
-      <div class="section-head final-road-head">
-        <div>
-          <p class="eyebrow">FİNALE GİDEN YOL</p>
-          <h2>Final Merkezi</h2>
-        </div>
-        <div class="final-road-actions">
-          <select id="roundFocus" aria-label="Tur seçimi">
-            <option value="all">Tüm turlar</option>
-            <option value="r16">Son 16</option>
-            <option value="qf">Çeyrek Final</option>
-            <option value="sf">Yarı Final</option>
-            <option value="final">Final</option>
-          </select>
-          <button class="ghost" id="scenarioBtn" type="button">Senaryo modu</button>
-        </div>
+    <section id="final-center" class="shell section-block">
+      <div class="section-heading">
+        <div><p class="eyebrow">FİNALE GİDEN YOL</p><h2>Final Merkezi</h2></div>
+        <div class="tabs" id="roundTabs"></div>
       </div>
-
-      <div id="finalRoadBoard"></div>
+      <div id="finalCenter"></div>
     </section>
 
-    <!-- GÜNLÜK NOT -->
-    <section class="panel" id="briefing">
-      <div class="section-head">
-        <p class="eyebrow" data-i18n="today.eyebrow">Bugün Ne Oldu?</p>
-        <h2 data-i18n="today.title">AI Turnuva Özeti</h2>
-      </div>
-
-      <div id="aiSummary" class="prose"></div>
+    <section id="bracket" class="shell section-block">
+      <div class="section-heading"><div><p class="eyebrow">ELEME AĞACI</p><h2>Turnuva Yolu</h2></div></div>
+      <div id="bracketBoard" class="bracket-board"></div>
     </section>
 
-    <!-- MAÇ MERKEZİ EN ALTTA -->
-    <section class="panel" id="matches">
-      <div class="section-head inline">
-        <div>
-          <p class="eyebrow" data-i18n="matches.eyebrow">Match Center</p>
-          <h2 data-i18n="matches.title">Maçlar</h2>
-        </div>
-
+    <section id="matches" class="shell section-block">
+      <div class="section-heading">
+        <div><p class="eyebrow">MATCH CENTER</p><h2>Tüm Eleme Maçları</h2></div>
+        <select id="matchFilter" aria-label="Tur filtresi"></select>
       </div>
-
-      <div id="matchList" class="match-list"></div>
+      <div id="matchList" class="match-grid"></div>
     </section>
   </main>
 
-  <footer class="footer">
-    <strong>YildizKupasi.com</strong>
-    <span data-i18n="footer.copy">
-      Bağımsız futbol bilgi ve analiz platformudur. FIFA®, FIFA World Cup® veya resmi organizatörlerle bağlantılı değildir. Tüm marka ve ticari işaretler sahiplerine aittir.
-    </span>
-  </footer>
-
-  <script src="assets/app.js?v=2.5" type="module"></script>
+  <footer><strong>YildizKupasi.com</strong><span>Bağımsız futbol bilgi ve analiz platformudur. Resmî organizatörlerle bağlantılı değildir.</span></footer>
+  <div id="confettiLayer" aria-hidden="true"></div>
+  <script src="assets/app.js?v=3.0" type="module"></script>
 </body>
 </html>
