@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T04:22:41.492Z",
+  "updatedAt": "2026-07-16T06:40:05.424Z",
   "liveCount": 0,
   "finishedCount": 102,
   "scheduledCount": 2,
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Fransa - TBD, İspanya - TBD"
+      "text": "Fransa - İngiltere, İspanya - Arjantin"
     }
   ],
   "groupLeaders": [
@@ -531,14 +531,14 @@
   "upcomingFocus": [
     {
       "id": "537389",
-      "text": "Fransa - TBD",
+      "text": "Fransa - İngiltere",
       "date": "2026-07-18T21:00:00Z",
       "group": "E",
       "stage": "knockout"
     },
     {
       "id": "537390",
-      "text": "İspanya - TBD",
+      "text": "İspanya - Arjantin",
       "date": "2026-07-19T19:00:00Z",
       "group": "L",
       "stage": "knockout"
