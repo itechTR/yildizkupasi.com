@@ -76,7 +76,10 @@ function renderTabs(){
 function renderFinalCenter(){
   const final=stageMatches('final')[0];
   const third=stageMatches('third')[0];
-  const next=matches.filter(m=>Number(m.n)>=89&&!isFinished(m)).sort((a,b)=>new Date(a.date)-new Date(b.date));
+  const now=Date.now();
+  const next=matches
+    .filter(m=>Number(m.n)>=89&&!isFinished(m)&&new Date(m.date).getTime()>=now)
+    .sort((a,b)=>new Date(a.date)-new Date(b.date));
   if(activeRound!=='all'){
     const list=stageMatches(activeRound);
     $('#finalCenter').innerHTML=`<div class="round-panel"><div class="round-title"><span>${ROUND_LABEL[activeRound]}</span><b>${list.length} maç</b></div><div class="match-grid">${list.map(m=>matchCard(m)).join('')}</div></div>`;
