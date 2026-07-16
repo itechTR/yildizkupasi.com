@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T11:07:31.087Z",
+  "updatedAt": "2026-07-16T12:49:01.667Z",
   "liveCount": 0,
   "finishedCount": 102,
   "scheduledCount": 2,
@@ -514,10 +514,8 @@
     },
     {
       "id": "537381",
-      "text": "Arjantin - Mısır",
-      "date": "2026-07-07T16:00:00Z",
-      "group": "",
-      "stage": "knockout"
+      "text": "Arjantin 3-2 Mısır",
+      "goals": 5
     },
     {
       "id": "537382",
