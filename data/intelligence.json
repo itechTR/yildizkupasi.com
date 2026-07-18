@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-18T22:09:20.615Z",
-  "liveCount": 1,
-  "finishedCount": 102,
-  "scheduledCount": 2,
+  "updatedAt": "2026-07-18T23:10:07.232Z",
+  "liveCount": 0,
+  "finishedCount": 103,
+  "scheduledCount": 1,
   "groupQualification": {
     "A": [
       {
@@ -420,11 +420,11 @@
     },
     {
       "title": "Gol sinyali",
-      "text": "Son yüksek skorlu maçlar: Meksika 2-3 İngiltere, ABD 1-4 Belçika, Arjantin 3-2 Mısır, İsviçre 4-3 Kolombiya, Arjantin 3-1 İsviçre."
+      "text": "Son yüksek skorlu maçlar: ABD 1-4 Belçika, Arjantin 3-2 Mısır, İsviçre 4-3 Kolombiya, Arjantin 3-1 İsviçre, Fransa 4-6 İngiltere."
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "Fransa - İngiltere, İspanya - Arjantin"
+      "text": "İspanya - Arjantin"
     }
   ],
   "groupLeaders": [
@@ -503,11 +503,6 @@
   ],
   "highScoringMatches": [
     {
-      "id": "537378",
-      "text": "Meksika 2-3 İngiltere",
-      "goals": 5
-    },
-    {
       "id": "537380",
       "text": "ABD 1-4 Belçika",
       "goals": 5
@@ -526,16 +521,14 @@
       "id": "537386",
       "text": "Arjantin 3-1 İsviçre",
       "goals": 4
+    },
+    {
+      "id": "537389",
+      "text": "Fransa 4-6 İngiltere",
+      "goals": 10
     }
   ],
   "upcomingFocus": [
-    {
-      "id": "537389",
-      "text": "Fransa - İngiltere",
-      "date": "2026-07-18T21:00:00Z",
-      "group": "E",
-      "stage": "knockout"
-    },
     {
       "id": "537390",
       "text": "İspanya - Arjantin",
