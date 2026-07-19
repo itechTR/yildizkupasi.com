@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-07-19T21:26:13.507Z",
+  "updatedAt": "2026-07-19T22:27:05.988Z",
   "liveCount": 0,
-  "finishedCount": 103,
-  "scheduledCount": 1,
+  "finishedCount": 104,
+  "scheduledCount": 0,
   "groupQualification": {
     "A": [
       {
@@ -424,7 +424,7 @@
     },
     {
       "title": "Yaklaşan kritik maçlar",
-      "text": "İspanya - Arjantin"
+      "text": "Yaklaşan maç görünmüyor."
     }
   ],
   "groupLeaders": [
@@ -528,13 +528,5 @@
       "goals": 10
     }
   ],
-  "upcomingFocus": [
-    {
-      "id": "537390",
-      "text": "İspanya - Arjantin",
-      "date": "2026-07-19T19:00:00Z",
-      "group": "L",
-      "stage": "knockout"
-    }
-  ]
+  "upcomingFocus": []
 }
