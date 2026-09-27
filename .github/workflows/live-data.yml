@@ -9,6 +9,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: live-football-data
@@ -65,3 +67,23 @@ jobs:
             git push origin main
           fi
 
+      - name: Prepare public site
+        run: |
+          mkdir -p /tmp/public-site
+          rsync -a --exclude='.git' --exclude='.github' --exclude='tests' --exclude='scripts' --exclude='*.md' --exclude='*.tmp' ./ /tmp/public-site/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: /tmp/public-site
+
+  deploy:
+    needs: update-live-data
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy updated site and scores
+        id: deployment
+        uses: actions/deploy-pages@v4
