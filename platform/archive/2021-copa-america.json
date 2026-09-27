@@ -1,0 +1,736 @@
+{
+  "schemaVersion": 1,
+  "source": "ESPN",
+  "updatedAt": "2026-09-26T16:12:46.290Z",
+  "tournamentId": "2021-copa-america",
+  "matches": [
+    {
+      "id": "espn-560522",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-13T21:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BRA",
+        "name": "Brezilya",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "VEN",
+        "name": "Venezuela",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560524",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-14T00:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "COL",
+        "name": "Kolombiya",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "ECU",
+        "name": "Ekvador",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560526",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-14T21:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "CHI",
+        "name": "Şili",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560523",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-15T00:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "PAR",
+        "name": "Paraguay",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "BOL",
+        "name": "Bolivya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560518",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-17T21:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "COL",
+        "name": "Kolombiya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "VEN",
+        "name": "Venezuela",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560515",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-18T00:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BRA",
+        "name": "Brezilya",
+        "pen": null,
+        "winner": true,
+        "score": 4
+      },
+      "away": {
+        "code": "PER",
+        "name": "Peru",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560519",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-18T21:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CHI",
+        "name": "Şili",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "BOL",
+        "name": "Bolivya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560520",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-19T00:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "URU",
+        "name": "Uruguay",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560511",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-20T21:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "VEN",
+        "name": "Venezuela",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      },
+      "away": {
+        "code": "ECU",
+        "name": "Ekvador",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560513",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-21T00:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "COL",
+        "name": "Kolombiya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "PER",
+        "name": "Peru",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560512",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-21T21:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "URU",
+        "name": "Uruguay",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "CHI",
+        "name": "Şili",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560514",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-22T00:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "PAR",
+        "name": "Paraguay",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560505",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-23T21:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ECU",
+        "name": "Ekvador",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      },
+      "away": {
+        "code": "PER",
+        "name": "Peru",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560504",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-24T00:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BRA",
+        "name": "Brezilya",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "COL",
+        "name": "Kolombiya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560507",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-24T21:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BOL",
+        "name": "Bolivya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "URU",
+        "name": "Uruguay",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560508",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-25T00:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CHI",
+        "name": "Şili",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "PAR",
+        "name": "Paraguay",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560497",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-27T21:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BRA",
+        "name": "Brezilya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "ECU",
+        "name": "Ekvador",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560498",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-27T21:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "VEN",
+        "name": "Venezuela",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "PER",
+        "name": "Peru",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560500",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-29T00:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BOL",
+        "name": "Bolivya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": null,
+        "winner": true,
+        "score": 4
+      }
+    },
+    {
+      "id": "espn-560502",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-06-29T00:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "URU",
+        "name": "Uruguay",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "PAR",
+        "name": "Paraguay",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-603189",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-07-02T21:00Z",
+      "stage": "quarterfinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "PER",
+        "name": "Peru",
+        "pen": 4,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "PAR",
+        "name": "Paraguay",
+        "pen": 3,
+        "winner": false,
+        "score": 3
+      }
+    },
+    {
+      "id": "espn-603188",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-07-03T00:00Z",
+      "stage": "quarterfinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BRA",
+        "name": "Brezilya",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "CHI",
+        "name": "Şili",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-603187",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-07-03T22:00Z",
+      "stage": "quarterfinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "URU",
+        "name": "Uruguay",
+        "pen": 2,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "COL",
+        "name": "Kolombiya",
+        "pen": 4,
+        "winner": true,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-603186",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-07-04T01:00Z",
+      "stage": "quarterfinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "ECU",
+        "name": "Ekvador",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-603185",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-07-05T23:00Z",
+      "stage": "semifinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BRA",
+        "name": "Brezilya",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "PER",
+        "name": "Peru",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-603184",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-07-07T01:00Z",
+      "stage": "semifinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": 3,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "COL",
+        "name": "Kolombiya",
+        "pen": 2,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-603183",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-07-10T00:00Z",
+      "stage": "3rd-place",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "COL",
+        "name": "Kolombiya",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "PER",
+        "name": "Peru",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-603182",
+      "tournamentId": "2021-copa-america",
+      "kickoff": "2021-07-11T00:00Z",
+      "stage": "final",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.289Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "BRA",
+        "name": "Brezilya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    }
+  ]
+}

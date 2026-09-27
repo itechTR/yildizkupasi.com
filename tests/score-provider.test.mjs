@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {normalizeScoreboard,fetchScores} from '../platform/score-provider.mjs';
+import {filterMatches} from '../platform/model.mjs';
+const tournament={id:'test',startDate:'2026-09-24',endDate:'2026-11-17',scoreProvider:{name:'espn',league:'uefa.nations'}};
+const event={id:'fixture',date:'2026-09-25T18:45Z',competitions:[{status:{type:{state:'post',completed:true,name:'STATUS_FULL_TIME'}},competitors:[{homeAway:'away',score:'1',team:{abbreviation:'FRA',displayName:'France'}},{homeAway:'home',score:'0',team:{abbreviation:'TUR',displayName:'Türkiye'}}]}]};
+test('home and away use provider roles, not array order; zero scores survive',()=>{const m=normalizeScoreboard({events:[event]},tournament,'2026-09-26T15:00Z')[0];assert.equal(m.home.name,'Türkiye');assert.equal(m.home.score,0);assert.equal(m.away.name,'Fransa');assert.equal(m.away.score,1);assert.equal(m.status,'finished');assert.equal(filterMatches([m],'yesterday',new Date('2026-09-26T15:00Z')).length,1);});
+test('scheduled score defaults do not become fake 0-0 results',()=>{const copy=structuredClone(event);copy.competitions[0].status.type={state:'pre',name:'STATUS_SCHEDULED',completed:false};assert.equal(normalizeScoreboard({events:[copy]},tournament,new Date().toISOString())[0].home.score,null);});
+test('malformed payload fails instead of replacing scores with empty list',()=>assert.throws(()=>normalizeScoreboard({},tournament,new Date().toISOString())));
+test('wrong season is filtered and post without completed is not a final result',()=>{assert.deepEqual(normalizeScoreboard({events:[{...event,date:'2025-09-25T18:45Z'}]},tournament,new Date().toISOString()),[]);const copy=structuredClone(event);copy.competitions[0].status.type={state:'post',completed:false,name:'UNKNOWN'};assert.throws(()=>normalizeScoreboard({events:[copy]},tournament,new Date().toISOString()));});
+test('rolling provider window deduplicates events and rejects failed calls',async()=>{const fetcher=async()=>({ok:true,json:async()=>({events:[event]})});const result=await fetchScores([tournament],{now:new Date('2026-09-26T15:00Z'),fetcher});assert.equal(result.matches.length,1);await assert.rejects(fetchScores([tournament],{now:new Date('2026-09-26T15:00Z'),fetcher:async()=>({ok:false,status:503})}));});

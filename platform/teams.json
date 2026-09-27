@@ -1,0 +1,290 @@
+[
+  {
+    "code": "TUR",
+    "name": "Türkiye",
+    "slug": "turkiye",
+    "flag": "🇹🇷"
+  },
+  {
+    "code": "ARG",
+    "name": "Arjantin",
+    "slug": "arjantin",
+    "flag": "🇦🇷"
+  },
+  {
+    "code": "FRA",
+    "name": "Fransa",
+    "slug": "fransa",
+    "flag": "🇫🇷"
+  },
+  {
+    "code": "BRA",
+    "name": "Brezilya",
+    "slug": "brezilya",
+    "flag": "🇧🇷"
+  },
+  {
+    "code": "ESP",
+    "name": "İspanya",
+    "slug": "i-spanya",
+    "flag": "🇪🇸"
+  },
+  {
+    "code": "GER",
+    "name": "Almanya",
+    "slug": "almanya",
+    "flag": "🇩🇪"
+  },
+  {
+    "code": "USA",
+    "name": "ABD",
+    "slug": "abd",
+    "flag": "🇺🇸"
+  },
+  {
+    "code": "AUS",
+    "name": "Avustralya",
+    "slug": "avustralya",
+    "flag": "⚽"
+  },
+  {
+    "code": "AUT",
+    "name": "Avusturya",
+    "slug": "avusturya",
+    "flag": "⚽"
+  },
+  {
+    "code": "BEL",
+    "name": "Belçika",
+    "slug": "belcika",
+    "flag": "⚽"
+  },
+  {
+    "code": "BIH",
+    "name": "Bosna Hersek",
+    "slug": "bosna-hersek",
+    "flag": "⚽"
+  },
+  {
+    "code": "CPV",
+    "name": "Cape Verde",
+    "slug": "cape-verde",
+    "flag": "⚽"
+  },
+  {
+    "code": "ALG",
+    "name": "Cezayir",
+    "slug": "cezayir",
+    "flag": "⚽"
+  },
+  {
+    "code": "CUW",
+    "name": "Curaçao",
+    "slug": "curacao",
+    "flag": "⚽"
+  },
+  {
+    "code": "COD",
+    "name": "DR Kongo",
+    "slug": "dr-kongo",
+    "flag": "⚽"
+  },
+  {
+    "code": "ECU",
+    "name": "Ekvador",
+    "slug": "ekvador",
+    "flag": "⚽"
+  },
+  {
+    "code": "MAR",
+    "name": "Fas",
+    "slug": "fas",
+    "flag": "🇲🇦"
+  },
+  {
+    "code": "CIV",
+    "name": "Fildişi Sahili",
+    "slug": "fildisi-sahili",
+    "flag": "⚽"
+  },
+  {
+    "code": "GHA",
+    "name": "Gana",
+    "slug": "gana",
+    "flag": "⚽"
+  },
+  {
+    "code": "RSA",
+    "name": "Güney Afrika",
+    "slug": "guney-afrika",
+    "flag": "⚽"
+  },
+  {
+    "code": "KOR",
+    "name": "Güney Kore",
+    "slug": "guney-kore",
+    "flag": "⚽"
+  },
+  {
+    "code": "HAI",
+    "name": "Haiti",
+    "slug": "haiti",
+    "flag": "⚽"
+  },
+  {
+    "code": "NED",
+    "name": "Hollanda",
+    "slug": "hollanda",
+    "flag": "⚽"
+  },
+  {
+    "code": "CRO",
+    "name": "Hırvatistan",
+    "slug": "hirvatistan",
+    "flag": "⚽"
+  },
+  {
+    "code": "IRQ",
+    "name": "Irak",
+    "slug": "irak",
+    "flag": "⚽"
+  },
+  {
+    "code": "JPN",
+    "name": "Japonya",
+    "slug": "japonya",
+    "flag": "🇯🇵"
+  },
+  {
+    "code": "CAN",
+    "name": "Kanada",
+    "slug": "kanada",
+    "flag": "🇨🇦"
+  },
+  {
+    "code": "QAT",
+    "name": "Katar",
+    "slug": "katar",
+    "flag": "⚽"
+  },
+  {
+    "code": "COL",
+    "name": "Kolombiya",
+    "slug": "kolombiya",
+    "flag": "⚽"
+  },
+  {
+    "code": "MEX",
+    "name": "Meksika",
+    "slug": "meksika",
+    "flag": "🇲🇽"
+  },
+  {
+    "code": "EGY",
+    "name": "Mısır",
+    "slug": "misir",
+    "flag": "⚽"
+  },
+  {
+    "code": "NOR",
+    "name": "Norveç",
+    "slug": "norvec",
+    "flag": "⚽"
+  },
+  {
+    "code": "PAN",
+    "name": "Panama",
+    "slug": "panama",
+    "flag": "⚽"
+  },
+  {
+    "code": "PAR",
+    "name": "Paraguay",
+    "slug": "paraguay",
+    "flag": "⚽"
+  },
+  {
+    "code": "POR",
+    "name": "Portekiz",
+    "slug": "portekiz",
+    "flag": "🇵🇹"
+  },
+  {
+    "code": "SEN",
+    "name": "Senegal",
+    "slug": "senegal",
+    "flag": "⚽"
+  },
+  {
+    "code": "KSA",
+    "name": "Suudi Arabistan",
+    "slug": "suudi-arabistan",
+    "flag": "⚽"
+  },
+  {
+    "code": "TUN",
+    "name": "Tunus",
+    "slug": "tunus",
+    "flag": "⚽"
+  },
+  {
+    "code": "URU",
+    "name": "Uruguay",
+    "slug": "uruguay",
+    "flag": "⚽"
+  },
+  {
+    "code": "NZL",
+    "name": "Yeni Zelanda",
+    "slug": "yeni-zelanda",
+    "flag": "⚽"
+  },
+  {
+    "code": "CZE",
+    "name": "Çekya",
+    "slug": "cekya",
+    "flag": "⚽"
+  },
+  {
+    "code": "UZB",
+    "name": "Özbekistan",
+    "slug": "ozbekistan",
+    "flag": "⚽"
+  },
+  {
+    "code": "JOR",
+    "name": "Ürdün",
+    "slug": "urdun",
+    "flag": "⚽"
+  },
+  {
+    "code": "ENG",
+    "name": "İngiltere",
+    "slug": "i-ngiltere",
+    "flag": "🏴"
+  },
+  {
+    "code": "IRN",
+    "name": "İran",
+    "slug": "i-ran",
+    "flag": "⚽"
+  },
+  {
+    "code": "SCO",
+    "name": "İskoçya",
+    "slug": "i-skocya",
+    "flag": "⚽"
+  },
+  {
+    "code": "SWE",
+    "name": "İsveç",
+    "slug": "i-svec",
+    "flag": "⚽"
+  },
+  {
+    "code": "SUI",
+    "name": "İsviçre",
+    "slug": "i-svicre",
+    "flag": "⚽"
+  }
+]

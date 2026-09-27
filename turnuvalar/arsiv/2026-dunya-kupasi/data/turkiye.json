@@ -1,0 +1,43 @@
+{
+  "updatedAt": "2026-09-26T10:26:05.619Z",
+  "team": "TUR",
+  "teamName": "Türkiye",
+  "group": "D",
+  "position": 4,
+  "tournamentStatus": "eliminated",
+  "qualificationSignal": "Turnuvaya veda etti",
+  "qualificationProbability": 0,
+  "thirdPlaceRank": null,
+  "thirdPlaceQualifies": false,
+  "standing": {
+    "code": "TUR",
+    "team": "Türkiye",
+    "played": 3,
+    "won": 1,
+    "draw": 0,
+    "lost": 2,
+    "gf": 3,
+    "ga": 5,
+    "gd": -2,
+    "points": 3
+  },
+  "playedMatches": [
+    {
+      "id": "537346",
+      "text": "Avustralya 2-0 Türkiye",
+      "result": "loss"
+    },
+    {
+      "id": "537347",
+      "text": "Türkiye 0-1 Paraguay",
+      "result": "loss"
+    },
+    {
+      "id": "537349",
+      "text": "Türkiye 3-2 ABD",
+      "result": "win"
+    }
+  ],
+  "upcomingMatches": [],
+  "analysis": "Türkiye D Grubu'nu 4. sırada tamamladı ve turnuvaya veda etti. Yıldız Kupası, kalan maçlarda turnuva zekâsı, favoriler ve günlük notlarla devam ediyor."
+}

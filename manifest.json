@@ -1,12 +1,12 @@
 {
-  "name": "Yıldız Kupası AI",
+  "name": "Yıldız Kupası",
   "short_name": "Yıldız Kupası",
-  "description": "Bağımsız Dünya Kupası analiz, skor ve turnuva zekâsı platformu.",
-  "start_url": ".",
-  "scope": ".",
+  "description": "Milli futbolun yaşayan turnuva ve maç merkezi.",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#06111f",
-  "theme_color": "#06111f",
+  "background_color": "#080e18",
+  "theme_color": "#080e18",
   "icons": [
     {
       "src": "assets/brand/app_icon_192x192.png",

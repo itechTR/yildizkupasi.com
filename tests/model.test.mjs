@@ -1,0 +1,13 @@
+import {createHash} from 'node:crypto';
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {stateOf,chooseHero,filterMatches,validateFeed} from '../platform/model.mjs';
+const t={id:'cup',startDate:'2026-09-24',endDate:'2026-09-26',major:true,priority:90};
+const now=new Date('2026-09-26T18:00:00Z');
+const match={id:'1',tournamentId:'cup',kickoff:'2026-09-26T20:30:00Z',updatedAt:'2026-09-26T17:59:00Z',status:'live',important:true,home:{name:'A',score:0},away:{name:'B',score:0}};
+test('archive begins at midnight Istanbul, inclusive end date',()=>{assert.equal(stateOf(t,new Date('2026-09-26T20:59:59Z')),'active');assert.equal(stateOf(t,new Date('2026-09-26T21:00:00Z')),'archived');assert.equal(stateOf(t,new Date('2026-09-23T20:59:00Z')),'upcoming');});
+test('hero priority and expired live scores',()=>{assert.equal(chooseHero([t],[match],now).type,'live');assert.equal(chooseHero([t],[{...match,updatedAt:'2026-09-26T17:00:00Z'}],now).type,'active');assert.equal(chooseHero([{...t,startDate:'2027-01-01',endDate:'2027-01-31'}],[],now).type,'upcoming');assert.equal(chooseHero([t],[],new Date('2027-01-01')).type,'fallback');});
+test('today/tomorrow uses Istanbul rather than device timezone',()=>{assert.equal(filterMatches([match],'today',now).length,1);const afterMidnight={...match,kickoff:'2026-09-26T21:30:00Z'};assert.equal(filterMatches([afterMidnight],'tomorrow',now).length,1);assert.equal(filterMatches([afterMidnight],'today',now).length,0);});
+test('invalid and duplicate feeds are rejected',()=>{assert.throws(()=>validateFeed({matches:[]}));assert.throws(()=>validateFeed({schemaVersion:1,matches:[match,match]}));assert.throws(()=>validateFeed({schemaVersion:1,matches:[{...match,home:{name:'A',score:-1}}]}));assert.ok(validateFeed({schemaVersion:1,matches:[match]}));});
+test('archived data and legacy assets preserve the original snapshot',()=>{const hashes=JSON.parse(fs.readFileSync(new URL('./legacy-hashes.json',import.meta.url)));for(const [p,expected] of Object.entries(hashes))assert.equal(createHash('sha256').update(fs.readFileSync(new URL('../turnuvalar/arsiv/2026-dunya-kupasi/'+p,import.meta.url))).digest('hex'),expected,p);});

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-09-26",
+  "tournaments": [
+    {
+      "id": "2026-uluslar-ligi",
+      "name": "UEFA Uluslar Ligi",
+      "edition": "2026/27 · Lig aşaması",
+      "startDate": "2026-09-24",
+      "endDate": "2026-11-17",
+      "major": true,
+      "priority": 70,
+      "region": "Avrupa",
+      "label": "ULUSLAR LİGİ",
+      "source": "https://www.uefa.com/uefanationsleague/news/02a2-1fea18abbcbc-456e846509e7-1000--2026-27-uefa-nations-league-all-the-league-phase-fixtures/",
+      "description": "Milli takımlar yeniden sahnede. Lig aşamasının takvimini ve sisteme aktarılan maçlarını takip et.",
+      "scoreProvider": {
+        "name": "espn",
+        "league": "uefa.nations"
+      },
+      "matchdays": [
+        {
+          "from": "2026-09-24",
+          "to": "2026-09-26"
+        },
+        {
+          "from": "2026-09-27",
+          "to": "2026-09-29"
+        },
+        {
+          "from": "2026-10-01",
+          "to": "2026-10-03"
+        },
+        {
+          "from": "2026-10-04",
+          "to": "2026-10-06"
+        },
+        {
+          "from": "2026-11-12",
+          "to": "2026-11-14"
+        },
+        {
+          "from": "2026-11-15",
+          "to": "2026-11-17"
+        }
+      ]
+    },
+    {
+      "id": "2028-avrupa-sampiyonasi",
+      "name": "Avrupa Şampiyonası",
+      "edition": "EURO 2028",
+      "startDate": "2028-06-09",
+      "endDate": "2028-07-09",
+      "major": true,
+      "priority": 90,
+      "region": "Birleşik Krallık ve İrlanda",
+      "label": "EURO 2028",
+      "source": "https://www.uefa.com/euro2028/news/029f-1f2ffa63f511-1e265da34302-1000--euro-2028-host-cities-and-stadiums-venue-guide/",
+      "description": "Avrupa futbolunun büyük buluşması. Turnuva takvimi, maçlar ve sonuçlar aynı merkezde."
+    },
+    {
+      "id": "2026-dunya-kupasi",
+      "name": "Dünya Kupası",
+      "edition": "2026",
+      "startDate": "2026-06-11",
+      "endDate": "2026-07-19",
+      "major": true,
+      "priority": 100,
+      "region": "ABD · Kanada · Meksika",
+      "label": "DÜNYA KUPASI 2026",
+      "archiveUrl": "/turnuvalar/arsiv/2026-dunya-kupasi/",
+      "description": "Final Merkezi, eleme ağacı ve 2026 turnuva verileri.",
+      "source": "https://github.com/itechTR/yildizkupasi.com"
+    },
+    {
+      "id": "2024-avrupa-sampiyonasi",
+      "name": "EURO 2024",
+      "edition": "2024",
+      "startDate": "2024-06-14",
+      "endDate": "2024-07-14",
+      "region": "Almanya",
+      "champion": "İspanya",
+      "championCode": "ESP",
+      "description": "Almanya’da oynanan Avrupa Şampiyonası. Grup aşamasından Berlin’deki finale kadar tüm maçlar.",
+      "source": "https://www.uefa.com/uefaeuro/history/news/028f-1b5e5c2b7b67-d5faab9be20b-1000--spain-2-1-england-late-oyarzabal-winner-earns-la-roja-reco/",
+      "image": "/platform/images/euro-germany.png",
+      "expectedMatches": 51,
+      "major": true,
+      "priority": 80,
+      "status": "completed",
+      "archiveUrl": "/turnuvalar/arsiv/2024-avrupa-sampiyonasi/",
+      "archiveData": "/platform/archive/2024-avrupa-sampiyonasi.json"
+    },
+    {
+      "id": "2022-dunya-kupasi",
+      "name": "2022 Dünya Kupası",
+      "edition": "2022",
+      "startDate": "2022-11-20",
+      "endDate": "2022-12-18",
+      "region": "Katar",
+      "champion": "Arjantin",
+      "championCode": "ARG",
+      "description": "Katar 2022. Grup maçları, eleme turları ve penaltılarla sonuçlanan Arjantin–Fransa finali.",
+      "source": "https://www.fifa.com/fr/tournaments/mens/worldcup/articles/argentine-france-messi-mbappe-qatar-2022",
+      "image": "/platform/images/gold-cup.png",
+      "expectedMatches": 64,
+      "major": true,
+      "priority": 80,
+      "status": "completed",
+      "archiveUrl": "/turnuvalar/arsiv/2022-dunya-kupasi/",
+      "archiveData": "/platform/archive/2022-dunya-kupasi.json"
+    },
+    {
+      "id": "2021-copa-america",
+      "name": "Copa América 2021",
+      "edition": "2021",
+      "startDate": "2021-06-13",
+      "endDate": "2021-07-11",
+      "region": "Brezilya",
+      "champion": "Arjantin",
+      "championCode": "ARG",
+      "description": "Brezilya’da düzenlenen Copa América. Arjantin’in şampiyonluğuyla biten turnuvanın tüm maçları. Final, Brezilya saatiyle 10 Temmuz; Türkiye saatiyle 11 Temmuz 2021’de oynandı.",
+      "source": "https://www.youtube.com/watch?v=6tLxv5EsszA",
+      "image": "/platform/images/copa-america.png",
+      "expectedMatches": 28,
+      "major": true,
+      "priority": 80,
+      "status": "completed",
+      "archiveUrl": "/turnuvalar/arsiv/2021-copa-america/",
+      "archiveData": "/platform/archive/2021-copa-america.json"
+    },
+    {
+      "id": "2020-avrupa-sampiyonasi",
+      "name": "EURO 2020",
+      "edition": "2020 · 2021’de oynandı",
+      "startDate": "2021-06-11",
+      "endDate": "2021-07-11",
+      "region": "Avrupa · 11 ev sahibi şehir",
+      "champion": "İtalya",
+      "championCode": "ITA",
+      "description": "Adı EURO 2020 olarak korunan turnuva, 2021’de oynandı. İtalya’nın Wembley’de kupaya uzandığı turnuvanın grup ve eleme maçları.",
+      "source": "https://www.uefa.com/uefaeuro/history/news/026b-12bba5b7b7a1-5519282c3d1a-1000/",
+      "image": "/platform/images/silver-cup.png",
+      "expectedMatches": 51,
+      "major": true,
+      "priority": 80,
+      "status": "completed",
+      "archiveUrl": "/turnuvalar/arsiv/2020-avrupa-sampiyonasi/",
+      "archiveData": "/platform/archive/2020-avrupa-sampiyonasi.json"
+    }
+  ],
+  "stories": []
+}

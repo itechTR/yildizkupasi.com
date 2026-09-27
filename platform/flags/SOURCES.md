@@ -1,0 +1,1 @@
+Country flag images: https://flagcdn.com/ via https://flagpedia.net/download/api (Wikimedia Commons-based flag assets). Downloaded for local hosting. England, Scotland and Wales use their own flags. Northern Ireland uses the United Kingdom flag.

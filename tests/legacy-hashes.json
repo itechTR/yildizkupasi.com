@@ -1,0 +1,10 @@
+{
+  "assets/app.js": "a811c4f1625a45b56e2871bbbd8adb1cd5b016b1a634156d60a20b95116f30cc",
+  "assets/styles.css": "3aadcb53aaf8f63d2a1d2407576854974666ae547f15527056dbebba1a6b2b65",
+  "data/intelligence.json": "dcd8417191f34555539bc09ea8160b77ca5d896195119a890da587c6c23abf8d",
+  "data/probs.json": "bf314f86c1c1e88d197dfc542577d729eb263741dfb501826d93732290fbfd08",
+  "data/briefing.json": "dd1c8737456ce31ccce5f2894c7ed55e893b048a8ceecc24db99fd031fc2af93",
+  "data/turkiye.json": "64e81523f0863ff151fd76bece7d1947e8bdfa993ce512063df18e58f6f5b90d",
+  "data/matches.json": "88e6065f49f7e04766dad7c939522b039b6108d439180803b2800efbe0654448",
+  "data/meta.json": "53641f4ee0ddca811a3aa0af4ec9b6c5e97c8341e1ec08a53ec888db2d98fbad"
+}

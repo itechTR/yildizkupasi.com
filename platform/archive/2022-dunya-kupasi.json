@@ -1,0 +1,1672 @@
+{
+  "schemaVersion": 1,
+  "source": "ESPN",
+  "updatedAt": "2026-09-26T16:12:46.285Z",
+  "tournamentId": "2022-dunya-kupasi",
+  "matches": [
+    {
+      "id": "espn-633790",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-20T16:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "QAT",
+        "name": "Katar",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "ECU",
+        "name": "Ekvador",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633789",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-21T13:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ENG",
+        "name": "İngiltere",
+        "pen": null,
+        "winner": true,
+        "score": 6
+      },
+      "away": {
+        "code": "IRN",
+        "name": "İran",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633788",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-21T16:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "SEN",
+        "name": "Senegal",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "NED",
+        "name": "Hollanda",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633787",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-21T19:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "USA",
+        "name": "ABD",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "WAL",
+        "name": "Galler",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633794",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-22T10:00Z",
+      "stage": "group-stage",
+      "group": "Group C",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "KSA",
+        "name": "Suudi Arabistan",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633791",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-22T13:00Z",
+      "stage": "group-stage",
+      "group": "Group D",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "DEN",
+        "name": "Danimarka",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "TUN",
+        "name": "Tunus",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633793",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-22T16:00Z",
+      "stage": "group-stage",
+      "group": "Group C",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "MEX",
+        "name": "Meksika",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "POL",
+        "name": "Polonya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633792",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-22T19:00Z",
+      "stage": "group-stage",
+      "group": "Group D",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "FRA",
+        "name": "Fransa",
+        "pen": null,
+        "winner": true,
+        "score": 4
+      },
+      "away": {
+        "code": "AUS",
+        "name": "Avustralya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633795",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-23T10:00Z",
+      "stage": "group-stage",
+      "group": "Group F",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "MAR",
+        "name": "Fas",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "CRO",
+        "name": "Hırvatistan",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633797",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-23T13:00Z",
+      "stage": "group-stage",
+      "group": "Group E",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "GER",
+        "name": "Almanya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "JPN",
+        "name": "Japonya",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633798",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-23T16:00Z",
+      "stage": "group-stage",
+      "group": "Group E",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ESP",
+        "name": "İspanya",
+        "pen": null,
+        "winner": true,
+        "score": 7
+      },
+      "away": {
+        "code": "CRC",
+        "name": "Kosta Rika",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633796",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-23T19:00Z",
+      "stage": "group-stage",
+      "group": "Group F",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BEL",
+        "name": "Belçika",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "CAN",
+        "name": "Kanada",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633801",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-24T10:00Z",
+      "stage": "group-stage",
+      "group": "Group G",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "SUI",
+        "name": "İsviçre",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "CMR",
+        "name": "Cameroon",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633799",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-24T13:00Z",
+      "stage": "group-stage",
+      "group": "Group H",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "URU",
+        "name": "Uruguay",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "KOR",
+        "name": "Güney Kore",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633800",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-24T16:00Z",
+      "stage": "group-stage",
+      "group": "Group H",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "POR",
+        "name": "Portekiz",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "GHA",
+        "name": "Gana",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633802",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-24T19:00Z",
+      "stage": "group-stage",
+      "group": "Group G",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BRA",
+        "name": "Brezilya",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "SRB",
+        "name": "Sırbistan",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633806",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-25T10:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "WAL",
+        "name": "Galler",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "IRN",
+        "name": "İran",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633803",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-25T13:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "QAT",
+        "name": "Katar",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "SEN",
+        "name": "Senegal",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      }
+    },
+    {
+      "id": "espn-633805",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-25T16:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "NED",
+        "name": "Hollanda",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "ECU",
+        "name": "Ekvador",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633804",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-25T19:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ENG",
+        "name": "İngiltere",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "USA",
+        "name": "ABD",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633808",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-26T10:00Z",
+      "stage": "group-stage",
+      "group": "Group D",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "TUN",
+        "name": "Tunus",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "AUS",
+        "name": "Avustralya",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633809",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-26T13:00Z",
+      "stage": "group-stage",
+      "group": "Group C",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "POL",
+        "name": "Polonya",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "KSA",
+        "name": "Suudi Arabistan",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633810",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-26T16:00Z",
+      "stage": "group-stage",
+      "group": "Group D",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "FRA",
+        "name": "Fransa",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "DEN",
+        "name": "Danimarka",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633807",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-26T19:00Z",
+      "stage": "group-stage",
+      "group": "Group C",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "MEX",
+        "name": "Meksika",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633813",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-27T10:00Z",
+      "stage": "group-stage",
+      "group": "Group E",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "JPN",
+        "name": "Japonya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "CRC",
+        "name": "Kosta Rika",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633814",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-27T13:00Z",
+      "stage": "group-stage",
+      "group": "Group F",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BEL",
+        "name": "Belçika",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "MAR",
+        "name": "Fas",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633811",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-27T16:00Z",
+      "stage": "group-stage",
+      "group": "Group F",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CRO",
+        "name": "Hırvatistan",
+        "pen": null,
+        "winner": true,
+        "score": 4
+      },
+      "away": {
+        "code": "CAN",
+        "name": "Kanada",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633812",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-27T19:00Z",
+      "stage": "group-stage",
+      "group": "Group E",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ESP",
+        "name": "İspanya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "GER",
+        "name": "Almanya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633816",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-28T10:00Z",
+      "stage": "group-stage",
+      "group": "Group G",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CMR",
+        "name": "Cameroon",
+        "pen": null,
+        "winner": false,
+        "score": 3
+      },
+      "away": {
+        "code": "SRB",
+        "name": "Sırbistan",
+        "pen": null,
+        "winner": false,
+        "score": 3
+      }
+    },
+    {
+      "id": "espn-633818",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-28T13:00Z",
+      "stage": "group-stage",
+      "group": "Group H",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "KOR",
+        "name": "Güney Kore",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      },
+      "away": {
+        "code": "GHA",
+        "name": "Gana",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      }
+    },
+    {
+      "id": "espn-633815",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-28T16:00Z",
+      "stage": "group-stage",
+      "group": "Group G",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BRA",
+        "name": "Brezilya",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "SUI",
+        "name": "İsviçre",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633817",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-28T19:00Z",
+      "stage": "group-stage",
+      "group": "Group H",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "POR",
+        "name": "Portekiz",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "URU",
+        "name": "Uruguay",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633819",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-29T15:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ECU",
+        "name": "Ekvador",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "SEN",
+        "name": "Senegal",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633821",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-29T15:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "NED",
+        "name": "Hollanda",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "QAT",
+        "name": "Katar",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633822",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-29T19:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "IRN",
+        "name": "İran",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "USA",
+        "name": "ABD",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633820",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-29T19:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "WAL",
+        "name": "Galler",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "ENG",
+        "name": "İngiltere",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      }
+    },
+    {
+      "id": "espn-633826",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-30T15:00Z",
+      "stage": "group-stage",
+      "group": "Group D",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "AUS",
+        "name": "Avustralya",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "DEN",
+        "name": "Danimarka",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633825",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-30T15:00Z",
+      "stage": "group-stage",
+      "group": "Group D",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "TUN",
+        "name": "Tunus",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "FRA",
+        "name": "Fransa",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633824",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-30T19:00Z",
+      "stage": "group-stage",
+      "group": "Group C",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "POL",
+        "name": "Polonya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633823",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-11-30T19:00Z",
+      "stage": "group-stage",
+      "group": "Group C",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "KSA",
+        "name": "Suudi Arabistan",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "MEX",
+        "name": "Meksika",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633829",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-01T15:00Z",
+      "stage": "group-stage",
+      "group": "Group F",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CAN",
+        "name": "Kanada",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "MAR",
+        "name": "Fas",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633830",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-01T15:00Z",
+      "stage": "group-stage",
+      "group": "Group F",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CRO",
+        "name": "Hırvatistan",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "BEL",
+        "name": "Belçika",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633827",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-01T19:00Z",
+      "stage": "group-stage",
+      "group": "Group E",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CRC",
+        "name": "Kosta Rika",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      },
+      "away": {
+        "code": "GER",
+        "name": "Almanya",
+        "pen": null,
+        "winner": true,
+        "score": 4
+      }
+    },
+    {
+      "id": "espn-633828",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-01T19:00Z",
+      "stage": "group-stage",
+      "group": "Group E",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "JPN",
+        "name": "Japonya",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "ESP",
+        "name": "İspanya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633834",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-02T15:00Z",
+      "stage": "group-stage",
+      "group": "Group H",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "GHA",
+        "name": "Gana",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "URU",
+        "name": "Uruguay",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633832",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-02T15:00Z",
+      "stage": "group-stage",
+      "group": "Group H",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "KOR",
+        "name": "Güney Kore",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "POR",
+        "name": "Portekiz",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633831",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-02T19:00Z",
+      "stage": "group-stage",
+      "group": "Group G",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CMR",
+        "name": "Cameroon",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "BRA",
+        "name": "Brezilya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633833",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-02T19:00Z",
+      "stage": "group-stage",
+      "group": "Group G",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "SRB",
+        "name": "Sırbistan",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      },
+      "away": {
+        "code": "SUI",
+        "name": "İsviçre",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      }
+    },
+    {
+      "id": "espn-633835",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-03T15:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "NED",
+        "name": "Hollanda",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "USA",
+        "name": "ABD",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633836",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-03T19:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "AUS",
+        "name": "Avustralya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633837",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-04T15:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "FRA",
+        "name": "Fransa",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "POL",
+        "name": "Polonya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633838",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-04T19:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ENG",
+        "name": "İngiltere",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "SEN",
+        "name": "Senegal",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633839",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-05T15:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "JPN",
+        "name": "Japonya",
+        "pen": 1,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "CRO",
+        "name": "Hırvatistan",
+        "pen": 3,
+        "winner": true,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633840",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-05T19:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BRA",
+        "name": "Brezilya",
+        "pen": null,
+        "winner": true,
+        "score": 4
+      },
+      "away": {
+        "code": "KOR",
+        "name": "Güney Kore",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633841",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-06T15:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "MAR",
+        "name": "Fas",
+        "pen": 3,
+        "winner": true,
+        "score": 0
+      },
+      "away": {
+        "code": "ESP",
+        "name": "İspanya",
+        "pen": 0,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633842",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-06T19:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "POR",
+        "name": "Portekiz",
+        "pen": null,
+        "winner": true,
+        "score": 6
+      },
+      "away": {
+        "code": "SUI",
+        "name": "İsviçre",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633843",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-09T15:00Z",
+      "stage": "quarterfinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CRO",
+        "name": "Hırvatistan",
+        "pen": 4,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "BRA",
+        "name": "Brezilya",
+        "pen": 2,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633844",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-09T19:00Z",
+      "stage": "quarterfinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "NED",
+        "name": "Hollanda",
+        "pen": 3,
+        "winner": false,
+        "score": 2
+      },
+      "away": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": 4,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633845",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-10T15:00Z",
+      "stage": "quarterfinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "MAR",
+        "name": "Fas",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "POR",
+        "name": "Portekiz",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633846",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-10T19:00Z",
+      "stage": "quarterfinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ENG",
+        "name": "İngiltere",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "FRA",
+        "name": "Fransa",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-633847",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-13T19:00Z",
+      "stage": "semifinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "CRO",
+        "name": "Hırvatistan",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633848",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-14T19:00Z",
+      "stage": "semifinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "FRA",
+        "name": "Fransa",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "MAR",
+        "name": "Fas",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-633849",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-17T15:00Z",
+      "stage": "3rd-place-match",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CRO",
+        "name": "Hırvatistan",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "MAR",
+        "name": "Fas",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-633850",
+      "tournamentId": "2022-dunya-kupasi",
+      "kickoff": "2022-12-18T15:00Z",
+      "stage": "final",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.282Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ARG",
+        "name": "Arjantin",
+        "pen": 4,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "FRA",
+        "name": "Fransa",
+        "pen": 2,
+        "winner": false,
+        "score": 3
+      }
+    }
+  ]
+}

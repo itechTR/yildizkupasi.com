@@ -1,0 +1,59 @@
+{
+  "updatedAt": "2026-09-26T10:26:05.612Z",
+  "title": "Yıldız Kupası Günlük Notu",
+  "summary": [
+    "Turnuvada şu ana kadar 104 maç tamamlandı.",
+    "Şu anda canlı maç görünmüyor.",
+    "Yaklaşan maç görünmüyor."
+  ],
+  "latestResults": [
+    {
+      "id": "537386",
+      "text": "Arjantin 3-1 İsviçre",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537387",
+      "text": "Fransa 0-2 İspanya",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537388",
+      "text": "İngiltere 1-2 Arjantin",
+      "group": "",
+      "stage": "knockout"
+    },
+    {
+      "id": "537389",
+      "text": "Fransa 4-6 İngiltere",
+      "group": "E",
+      "stage": "knockout"
+    },
+    {
+      "id": "537390",
+      "text": "İspanya 1-0 Arjantin",
+      "group": "L",
+      "stage": "knockout"
+    }
+  ],
+  "biggestSignals": [
+    {
+      "id": "537351",
+      "text": "Almanya 7-1 Curaçao",
+      "signal": "Farklı galibiyet"
+    },
+    {
+      "id": "537336",
+      "text": "Kanada 6-0 Katar",
+      "signal": "Farklı galibiyet"
+    },
+    {
+      "id": "537405",
+      "text": "Portekiz 5-0 Özbekistan",
+      "signal": "Farklı galibiyet"
+    }
+  ],
+  "editorialNote": "Yıldız Kupası, ham skoru değil skorun turnuva içindeki anlamını izler. Grup dengesi, momentum ve kritik eşikler bu notta özetlenir."
+}

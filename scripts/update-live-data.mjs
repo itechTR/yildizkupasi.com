@@ -1,5 +1,10 @@
 import fs from "fs/promises";
 
+// The 2026 dataset is frozen after the tournament; later WC seasons must not overwrite it.
+if (Date.now() > Date.parse("2026-07-20T00:00:00Z")) {
+  console.log("2026 World Cup archived; data preserved.");
+  process.exit(0);
+}
 const TOKEN = process.env.FOOTBALL_DATA_TOKEN;
 const API = "https://api.football-data.org/v4";
 const COMPETITION = "WC";

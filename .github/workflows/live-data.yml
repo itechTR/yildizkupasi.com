@@ -1,6 +1,8 @@
 name: Update live football data
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: "*/5 * * * *"
@@ -37,6 +39,15 @@ jobs:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: node scripts/update-live-data.mjs
 
+      - name: Update multi-tournament platform feed
+        env:
+          PLATFORM_FEED_URL: ${{ secrets.PLATFORM_FEED_URL }}
+          PLATFORM_FEED_TOKEN: ${{ secrets.PLATFORM_FEED_TOKEN }}
+        run: node scripts/update-platform-data.mjs
+
+      - name: Check official FIFA ranking publication
+        run: node scripts/update-rankings.mjs
+
       - name: Generate intelligence files
         run: node scripts/generate-intelligence.mjs
 
@@ -45,7 +56,7 @@ jobs:
           git config user.name "yildizkupasi-bot"
           git config user.email "actions@github.com"
 
-          git add data/*.json
+          git add data/*.json platform/current.json platform/rankings.json
 
           if git diff --cached --quiet; then
             echo "No data changes to commit."
@@ -53,3 +64,4 @@ jobs:
             git commit -m "Update live football data and intelligence"
             git push origin main
           fi
+

@@ -1,0 +1,1334 @@
+{
+  "schemaVersion": 1,
+  "source": "ESPN",
+  "updatedAt": "2026-09-26T16:12:46.297Z",
+  "tournamentId": "2020-avrupa-sampiyonasi",
+  "matches": [
+    {
+      "id": "espn-560344",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-11T19:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 100,
+      "home": {
+        "code": "TUR",
+        "name": "Türkiye",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "ITA",
+        "name": "İtalya",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      }
+    },
+    {
+      "id": "espn-560343",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-12T13:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "WAL",
+        "name": "Galler",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "SUI",
+        "name": "İsviçre",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560341",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-12T16:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "DEN",
+        "name": "Danimarka",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "FIN",
+        "name": "Finlandiya",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560342",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-12T19:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BEL",
+        "name": "Belçika",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "RUS",
+        "name": "Rusya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560338",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-13T13:00Z",
+      "stage": "group-stage",
+      "group": "Group D",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ENG",
+        "name": "İngiltere",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "CRO",
+        "name": "Hırvatistan",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560340",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-13T16:00Z",
+      "stage": "group-stage",
+      "group": "Group C",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "AUT",
+        "name": "Avusturya",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "MKD",
+        "name": "Kuzey Makedonya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560339",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-13T19:00Z",
+      "stage": "group-stage",
+      "group": "Group C",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "NED",
+        "name": "Hollanda",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "UKR",
+        "name": "Ukrayna",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560335",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-14T13:00Z",
+      "stage": "group-stage",
+      "group": "Group D",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "SCO",
+        "name": "İskoçya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "CZE",
+        "name": "Çekya",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560337",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-14T16:00Z",
+      "stage": "group-stage",
+      "group": "Group E",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "POL",
+        "name": "Polonya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "SVK",
+        "name": "Slovakya",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560336",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-14T19:00Z",
+      "stage": "group-stage",
+      "group": "Group E",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ESP",
+        "name": "İspanya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "SWE",
+        "name": "İsveç",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560334",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-15T16:00Z",
+      "stage": "group-stage",
+      "group": "Group F",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "HUN",
+        "name": "Macaristan",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "POR",
+        "name": "Portekiz",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      }
+    },
+    {
+      "id": "espn-560333",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-15T19:00Z",
+      "stage": "group-stage",
+      "group": "Group F",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "FRA",
+        "name": "Fransa",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "GER",
+        "name": "Almanya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560330",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-16T13:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "FIN",
+        "name": "Finlandiya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "RUS",
+        "name": "Rusya",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560332",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-16T16:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 100,
+      "home": {
+        "code": "TUR",
+        "name": "Türkiye",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "WAL",
+        "name": "Galler",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560331",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-16T19:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ITA",
+        "name": "İtalya",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "SUI",
+        "name": "İsviçre",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560329",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-17T13:00Z",
+      "stage": "group-stage",
+      "group": "Group C",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "UKR",
+        "name": "Ukrayna",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "MKD",
+        "name": "Kuzey Makedonya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560328",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-17T16:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "DEN",
+        "name": "Danimarka",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "BEL",
+        "name": "Belçika",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560327",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-17T19:00Z",
+      "stage": "group-stage",
+      "group": "Group C",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "NED",
+        "name": "Hollanda",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "AUT",
+        "name": "Avusturya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560325",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-18T13:00Z",
+      "stage": "group-stage",
+      "group": "Group E",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "SWE",
+        "name": "İsveç",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "SVK",
+        "name": "Slovakya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560324",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-18T16:00Z",
+      "stage": "group-stage",
+      "group": "Group D",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CRO",
+        "name": "Hırvatistan",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "CZE",
+        "name": "Çekya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560326",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-18T19:00Z",
+      "stage": "group-stage",
+      "group": "Group D",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ENG",
+        "name": "İngiltere",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "SCO",
+        "name": "İskoçya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560321",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-19T13:00Z",
+      "stage": "group-stage",
+      "group": "Group F",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "HUN",
+        "name": "Macaristan",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "FRA",
+        "name": "Fransa",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560322",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-19T16:00Z",
+      "stage": "group-stage",
+      "group": "Group F",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "POR",
+        "name": "Portekiz",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      },
+      "away": {
+        "code": "GER",
+        "name": "Almanya",
+        "pen": null,
+        "winner": true,
+        "score": 4
+      }
+    },
+    {
+      "id": "espn-560323",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-19T19:00Z",
+      "stage": "group-stage",
+      "group": "Group E",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ESP",
+        "name": "İspanya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "POL",
+        "name": "Polonya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560320",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-20T16:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ITA",
+        "name": "İtalya",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "WAL",
+        "name": "Galler",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560319",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-20T16:00Z",
+      "stage": "group-stage",
+      "group": "Group A",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 100,
+      "home": {
+        "code": "SUI",
+        "name": "İsviçre",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "TUR",
+        "name": "Türkiye",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560318",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-21T16:00Z",
+      "stage": "group-stage",
+      "group": "Group C",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "MKD",
+        "name": "Kuzey Makedonya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "NED",
+        "name": "Hollanda",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      }
+    },
+    {
+      "id": "espn-560315",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-21T16:00Z",
+      "stage": "group-stage",
+      "group": "Group C",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "UKR",
+        "name": "Ukrayna",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "AUT",
+        "name": "Avusturya",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560316",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-21T19:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "FIN",
+        "name": "Finlandiya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "BEL",
+        "name": "Belçika",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560317",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-21T19:00Z",
+      "stage": "group-stage",
+      "group": "Group B",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "RUS",
+        "name": "Rusya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "DEN",
+        "name": "Danimarka",
+        "pen": null,
+        "winner": true,
+        "score": 4
+      }
+    },
+    {
+      "id": "espn-560314",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-22T19:00Z",
+      "stage": "group-stage",
+      "group": "Group D",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CRO",
+        "name": "Hırvatistan",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "SCO",
+        "name": "İskoçya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560313",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-22T19:00Z",
+      "stage": "group-stage",
+      "group": "Group D",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CZE",
+        "name": "Çekya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "ENG",
+        "name": "İngiltere",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560311",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-23T16:00Z",
+      "stage": "group-stage",
+      "group": "Group E",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "SVK",
+        "name": "Slovakya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "ESP",
+        "name": "İspanya",
+        "pen": null,
+        "winner": true,
+        "score": 5
+      }
+    },
+    {
+      "id": "espn-560310",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-23T16:00Z",
+      "stage": "group-stage",
+      "group": "Group E",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "SWE",
+        "name": "İsveç",
+        "pen": null,
+        "winner": true,
+        "score": 3
+      },
+      "away": {
+        "code": "POL",
+        "name": "Polonya",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560312",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-23T19:00Z",
+      "stage": "group-stage",
+      "group": "Group F",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "GER",
+        "name": "Almanya",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      },
+      "away": {
+        "code": "HUN",
+        "name": "Macaristan",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560309",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-23T19:00Z",
+      "stage": "group-stage",
+      "group": "Group F",
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "POR",
+        "name": "Portekiz",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      },
+      "away": {
+        "code": "FRA",
+        "name": "Fransa",
+        "pen": null,
+        "winner": false,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560307",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-26T16:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "WAL",
+        "name": "Galler",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "DEN",
+        "name": "Danimarka",
+        "pen": null,
+        "winner": true,
+        "score": 4
+      }
+    },
+    {
+      "id": "espn-560308",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-26T19:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ITA",
+        "name": "İtalya",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "AUT",
+        "name": "Avusturya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560306",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-27T16:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "NED",
+        "name": "Hollanda",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "CZE",
+        "name": "Çekya",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560305",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-27T19:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BEL",
+        "name": "Belçika",
+        "pen": null,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "POR",
+        "name": "Portekiz",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560304",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-28T16:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CRO",
+        "name": "Hırvatistan",
+        "pen": null,
+        "winner": false,
+        "score": 3
+      },
+      "away": {
+        "code": "ESP",
+        "name": "İspanya",
+        "pen": null,
+        "winner": true,
+        "score": 5
+      }
+    },
+    {
+      "id": "espn-560303",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-28T19:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "FRA",
+        "name": "Fransa",
+        "pen": 4,
+        "winner": false,
+        "score": 3
+      },
+      "away": {
+        "code": "SUI",
+        "name": "İsviçre",
+        "pen": 5,
+        "winner": true,
+        "score": 3
+      }
+    },
+    {
+      "id": "espn-560302",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-29T16:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ENG",
+        "name": "İngiltere",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "GER",
+        "name": "Almanya",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      }
+    },
+    {
+      "id": "espn-560301",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-06-29T19:00Z",
+      "stage": "round-of-16",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "SWE",
+        "name": "İsveç",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "UKR",
+        "name": "Ukrayna",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560300",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-07-02T16:00Z",
+      "stage": "quarterfinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "SUI",
+        "name": "İsviçre",
+        "pen": 1,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "ESP",
+        "name": "İspanya",
+        "pen": 3,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560299",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-07-02T19:00Z",
+      "stage": "quarterfinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "BEL",
+        "name": "Belçika",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "ITA",
+        "name": "İtalya",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560298",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-07-03T16:00Z",
+      "stage": "quarterfinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "CZE",
+        "name": "Çekya",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      },
+      "away": {
+        "code": "DEN",
+        "name": "Danimarka",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      }
+    },
+    {
+      "id": "espn-560297",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-07-03T19:00Z",
+      "stage": "quarterfinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "UKR",
+        "name": "Ukrayna",
+        "pen": null,
+        "winner": false,
+        "score": 0
+      },
+      "away": {
+        "code": "ENG",
+        "name": "İngiltere",
+        "pen": null,
+        "winner": true,
+        "score": 4
+      }
+    },
+    {
+      "id": "espn-560296",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-07-06T19:00Z",
+      "stage": "semifinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ITA",
+        "name": "İtalya",
+        "pen": 4,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "ESP",
+        "name": "İspanya",
+        "pen": 2,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560295",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-07-07T19:00Z",
+      "stage": "semifinals",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ENG",
+        "name": "İngiltere",
+        "pen": null,
+        "winner": true,
+        "score": 2
+      },
+      "away": {
+        "code": "DEN",
+        "name": "Danimarka",
+        "pen": null,
+        "winner": false,
+        "score": 1
+      }
+    },
+    {
+      "id": "espn-560294",
+      "tournamentId": "2020-avrupa-sampiyonasi",
+      "kickoff": "2021-07-11T19:00Z",
+      "stage": "final",
+      "group": null,
+      "status": "finished",
+      "updatedAt": "2026-09-26T16:12:46.295Z",
+      "source": "ESPN",
+      "important": false,
+      "priority": 50,
+      "home": {
+        "code": "ITA",
+        "name": "İtalya",
+        "pen": 3,
+        "winner": true,
+        "score": 1
+      },
+      "away": {
+        "code": "ENG",
+        "name": "İngiltere",
+        "pen": 2,
+        "winner": false,
+        "score": 1
+      }
+    }
+  ]
+}
